@@ -229,10 +229,10 @@
   .route.rec { border-left-color: var(--cinnabar); }
   .route-head {
     display: grid;
-    grid-template-columns: auto 1fr auto auto;
-    gap: 1rem;
+    grid-template-columns: auto 1fr auto;
+    gap: 1.1rem;
     align-items: center;
-    padding: 1.1rem 1.3rem;
+    padding: 0.9rem 1.1rem 0.9rem 0.9rem;
     cursor: pointer;
     width: 100%;
     background: none;
@@ -243,33 +243,40 @@
   }
   .route-head:hover { background: var(--paper-2); }
   .route-head:focus-visible { outline: 2px solid var(--cinnabar); outline-offset: -2px; }
+  .rthumb-wrap { position: relative; flex: 0 0 auto; align-self: start; }
+  .rthumb { width: 92px; height: 92px; object-fit: cover; border-radius: 3px; display: block; }
   .badge {
     font-family: var(--serif);
-    font-size: 1.6rem;
-    width: 2.6rem; height: 2.6rem;
+    font-size: 1.05rem;
+    width: 1.9rem; height: 1.9rem;
     display: grid; place-items: center;
     border-radius: 50%;
     background: var(--rc, var(--neutral));
     color: #FBFAF6;
-    flex: 0 0 auto;
+    position: absolute;
+    top: -0.5rem; left: -0.5rem;
+    border: 2px solid #FBFAF6;
   }
-  .route .title { display: flex; flex-direction: column; gap: 0.15rem; min-width: 0; }
-  .route .title .name { font-family: var(--serif); font-size: 1.2rem; display: flex; align-items: center; gap: 0.6rem; flex-wrap: wrap; }
-  .route .title .path { font-size: 0.84rem; color: var(--ink-soft); font-family: var(--mono); }
-  .tag-rec {
+  .route .title { display: flex; flex-direction: column; gap: 0.3rem; min-width: 0; }
+  .route .title .name { font-family: var(--serif); font-size: 1.2rem; line-height: 1.2; }
+  .rtags { display: flex; flex-wrap: wrap; gap: 0.35rem; }
+  .rtag {
     font-family: var(--mono);
-    font-size: 0.58rem;
-    letter-spacing: 0.14em;
+    font-size: 0.56rem;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #FBFAF6;
-    background: var(--cinnabar);
-    padding: 0.18rem 0.5rem;
+    color: var(--ink-soft);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 0.18rem 0.45rem;
     border-radius: 2px;
+    white-space: nowrap;
   }
-  .quickstats { display: flex; gap: 1.3rem; font-family: var(--mono); font-variant-numeric: tabular-nums; flex: 0 0 auto; }
-  .quickstats .qs { text-align: center; }
-  .quickstats .qs .n { font-size: 1.25rem; color: var(--ink); display: block; }
-  .quickstats .qs .l { font-size: 0.56rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--neutral); }
+  .rtag.hot { background: var(--rc, var(--cinnabar)); border-color: var(--rc, var(--cinnabar)); color: #FBFAF6; }
+  .tagline { font-size: 0.85rem; color: var(--ink-soft); line-height: 1.45; }
+  .rstats { font-family: var(--mono); font-size: 0.66rem; color: var(--neutral); display: flex; flex-wrap: wrap; gap: 0.35rem 0.9rem; font-variant-numeric: tabular-nums; }
+  .rstats b { color: var(--ink); font-weight: 700; }
+  .rpath { font-family: var(--mono); font-size: 0.78rem; color: var(--ink-soft); margin: 1.1rem 0 0; }
   .chev { color: var(--neutral); transition: transform 0.2s ease; flex: 0 0 auto; font-family: var(--mono); }
   .route[open-state="1"] .chev { transform: rotate(90deg); }
 
@@ -566,18 +573,11 @@
   @media (max-width: 720px) {
     .twov { grid-template-columns: 1fr; }
     .twov .clock { border-right: 0; border-bottom: 1px solid rgba(242,240,233,0.2); padding: 0 0 1rem; }
-    .route-head {
-      grid-template-columns: auto 1fr auto;
-      grid-template-rows: auto auto;
-      gap: 0.35rem 0.9rem;
-      padding: 0.95rem 1rem;
-    }
-    .badge { grid-row: 1 / span 2; align-self: start; }
-    .chev { grid-row: 1; }
-    .quickstats { grid-column: 2 / -1; grid-row: 2; gap: 1.1rem; }
-    .quickstats .qs { text-align: left; }
-    .quickstats .qs .n { font-size: 0.95rem; display: inline; margin-right: 0.3rem; }
-    .route .title .name { font-size: 1.1rem; }
+    .route-head { gap: 0.85rem; padding: 0.85rem 0.9rem 0.85rem 0.8rem; }
+    .rthumb { width: 78px; height: 96px; }
+    .chev { display: none; }
+    .route .title .name { font-size: 1.08rem; }
+    .tagline { font-size: 0.82rem; }
     .route-body { padding: 0 1rem 1.2rem; }
     .prep, .dates-grid, .food-grid { grid-template-columns: 1fr; }
     .gallery { grid-template-columns: repeat(2, 1fr); }
@@ -855,15 +855,22 @@
     {
       id: "A", color: "var(--cinnabar)", rec: true, recTag: "Baseline",
       name: "Current plan", path: "HK → Guangzhou → Wuzhen → Shanghai",
+      thumb: "images/wuzhen/wuzhen-canal-boats.jpg",
+      tagline: "The locked-in classic: Hong Kong, a full city of Cantonese food, one slow canal-town night, and a big Shanghai finish.",
+      tags: ["Canal town", "Cantonese food", "Easy exit"],
       stats: { main: 9, hk: 4, moves: "1✈ 1🚄" },
       why: "The locked-in plan. Canal-town evenings at Wuzhen, a full city for Cantonese food, finish strong in Shanghai with a direct PVG → AUS exit. Lowest friction overall. Nov 5 window dodges the Canton Fair.",
       buffer: { txt: "~1.5 days", cls: "s" },
       clock: "Mainland entry day 6 via West Kowloon HSR (immigration at Guangzhou South). Clock starts at the next midnight; exit from PVG on the final day.",
       photos: [
         ["images/hong-kong/dragons-back.jpg", "Dragon's Back"],
+        ["images/hong-kong/temple-street-market.jpg", "Temple Street"],
         ["images/guangzhou/shamian-island.jpg", "Shamian Island"],
+        ["images/guangzhou/dim-sum-guangzhou.jpg", "Dim sum"],
         ["images/wuzhen/wuzhen-canal-boats.jpg", "Wuzhen canals"],
-        ["images/shanghai/yu-garden-bridge.jpg", "Yu Garden"]
+        ["images/wuzhen/xizha-bridge-night.jpg", "Xizha at night"],
+        ["images/shanghai/yu-garden-bridge.jpg", "Yu Garden"],
+        ["images/shanghai/bund-night-skyline.jpg", "The Bund"]
       ],
       days: [
         ["Day 1","(in-flight)","AUS depart evening","—"],
@@ -886,14 +893,21 @@
     {
       id: "B", color: "var(--neutral)", rec: false,
       name: "Train south", path: "SHA → Hangzhou → Huangshan → Xiamen → Shenzhen → HK",
+      thumb: "images/huangshan/welcoming-pine.jpg",
+      tagline: "Five landscapes in ten days by rail — spectacular, exhausting, and one late train away from trouble.",
+      tags: ["Max variety", "5 trains", "Tight clock"],
       stats: { main: 10, hk: 3, moves: "5🚄" },
       why: "Maximum variety, the 'all five vibes' version — but 11 hours of train across 5 segments inside a razor-thin buffer. One slipped train and you're non-compliant.",
       buffer: { txt: "<12 hrs", cls: "c" },
       clock: "Entry at PVG on day 4 (fly, or take the G899 sleeper the evening before and arrive day 5 morning with the same clock). Exit via West Kowloon HSR on day 14 — under 12 hours of slack.",
       photos: [
         ["images/hangzhou/lingyin-temple.jpg", "Lingyin Temple"],
+        ["images/hangzhou/west-lake-panorama.jpg", "West Lake"],
         ["images/huangshan/welcoming-pine.jpg", "Welcoming Pine"],
+        ["images/huangshan/sea-of-clouds.jpg", "Sea of clouds"],
         ["images/xiamen/sunlight-rock.jpg", "Sunlight Rock"],
+        ["images/xiamen/gulangyu-beach.jpg", "Gulangyu beach"],
+        ["images/xiamen/xiamen-night-skyline.jpg", "Xiamen"],
         ["images/shenzhen/shenzhen-skyline.jpg", "Shenzhen"]
       ],
       days: [
@@ -917,14 +931,21 @@
     {
       id: "C", color: "var(--jade)", rec: false, recTag: "Best train variant",
       name: "Eastern, less rushed", path: "SHA → Hangzhou → Huangshan → Shenzhen → HK",
+      thumb: "images/huangshan/hongcun-reflection.jpg",
+      tagline: "West Lake tea fields, the Yellow Mountain sunrise, and a proper stretch of Shanghai — the landscape-painting trip.",
+      tags: ["Mountains", "West Lake", "Fall color"],
       stats: { main: 9, hk: 4, moves: "4🚄" },
       why: "The trip Route B should be — same inland variety, minus the 9-hour Xiamen detour. More Shanghai and Hangzhou, a real TWOV buffer. Oct 29 window lands Huangshan at peak foliage.",
       buffer: { txt: "~1 day", cls: "s" },
       clock: "Entry at PVG day 4 (flight or sleeper). Exit via West Kowloon HSR on day 13 morning with about a day in hand.",
       photos: [
         ["images/hangzhou/longjing-tea-terraces.jpg", "Longjing tea"],
+        ["images/hangzhou/su-causeway.jpg", "Su Causeway"],
+        ["images/hangzhou/west-lake-pagoda-sunset.jpg", "Leifeng sunset"],
         ["images/huangshan/huangshan-peaks.jpg", "Huangshan"],
+        ["images/huangshan/huangshan-sunrise.jpg", "Summit sunrise"],
         ["images/huangshan/xidi-village.jpg", "Xidi village"],
+        ["images/huangshan/tunxi-old-street.jpg", "Tunxi Old Street"],
         ["images/hong-kong/star-ferry-skyline.jpg", "Star Ferry"]
       ],
       days: [
@@ -948,15 +969,22 @@
     {
       id: "D", color: "var(--ochre)", rec: false,
       name: "Minimal 3-city", path: "SHA → Shenzhen → HK",
+      thumb: "images/shanghai/shanghai-tower-view.jpg",
+      tagline: "Two mega-cities, maximum Hong Kong, and the safest visa clock. The easy one to actually execute.",
+      tags: ["Simplest", "Max HK", "Jet-lag proof"],
       stats: { main: 7, hk: 6, moves: "1✈/🚄" },
       why: "Lowest friction. Two big-city anchors and maximum HK time. Only Shanghai gets a real city slot, so the trip leans on HK's variety — but it's the easiest to execute and the safest big-city clock.",
       buffer: { txt: "~3 days", cls: "s" },
       clock: "Entry at PVG day 4, exit via West Kowloon day 11. Seven mainland nights, three days of slack.",
       photos: [
         ["images/shanghai/wukang-road.jpg", "Wukang Road"],
+        ["images/shanghai/nanjing-road-night.jpg", "Nanjing Road"],
+        ["images/shanghai/jing-an-temple.jpg", "Jing'an Temple"],
         ["images/shanghai/shanghai-tower-view.jpg", "Shanghai Tower"],
         ["images/shenzhen/shenzhen-night-street.jpg", "Shenzhen streets"],
-        ["images/hong-kong/man-mo-temple-incense.jpg", "Man Mo Temple"]
+        ["images/shenzhen/shenzhen-civic-center.jpg", "Civic Center"],
+        ["images/hong-kong/man-mo-temple-incense.jpg", "Man Mo Temple"],
+        ["images/hong-kong/hk-tram-street.jpg", "Ding ding tram"]
       ],
       days: [
         ["Day 1","(in-flight)","AUS depart","—"],
@@ -979,15 +1007,22 @@
     {
       id: "E", color: "var(--jade-deep)", rec: false, recTag: "Avatar peaks",
       name: "Zhangjiajie variant", path: "SHA → Zhangjiajie → Shenzhen → HK",
+      thumb: "images/zhangjiajie/avatar-pillars.jpg",
+      tagline: "Three days among the floating-mountain pillars that inspired Avatar, bracketed by Shanghai and Hong Kong.",
+      tags: ["2 flights", "Glass skywalk", "Kaylee's pick"],
       stats: { main: 8, hk: 5, moves: "2✈ 1🚄" },
       why: "Built around Kaylee's pick. Trade Hangzhou + Huangshan for Zhangjiajie's quartz-sandstone pillars — the landscape that defined Avatar. Two internal flights, ~$400pp and a travel day, but a singular payoff. First half of Nov is its prime window.",
       buffer: { txt: "~2 days", cls: "s" },
       clock: "Entry at PVG day 4, exit via West Kowloon day 12. Internal flights between eligible regions are fine; entry/exit use fully-verified ports.",
       photos: [
         ["images/zhangjiajie/avatar-pillars.jpg", "Avatar pillars"],
+        ["images/zhangjiajie/tianzi-mountain.jpg", "Tianzi Mountain"],
+        ["images/zhangjiajie/pillar-peaks.jpg", "Pillar peaks"],
         ["images/zhangjiajie/tianmen-99-bend-road.jpg", "99-bend road"],
         ["images/zhangjiajie/tianmen-glass-skywalk.jpg", "Glass skywalk"],
-        ["images/zhangjiajie/bailong-elevator.jpg", "Bailong Elevator"]
+        ["images/zhangjiajie/zhangjiajie-glass-bridge.jpg", "Canyon glass bridge"],
+        ["images/zhangjiajie/bailong-elevator.jpg", "Bailong Elevator"],
+        ["images/zhangjiajie/tianmen-cave.jpg", "Tianmen Cave"]
       ],
       days: [
         ["Day 1","(in-flight)","AUS depart","—"],
@@ -1010,15 +1045,22 @@
     {
       id: "F", color: "var(--jade-deep)", rec: false, recTag: "Tops the matrix",
       name: "Karst by rail", path: "HK → Guangzhou → Yangshuo → Guilin → Shenzhen → HK",
+      thumb: "images/guilin/li-river-karst.jpg",
+      tagline: "Li River peaks, bamboo rafts, and rice terraces — postcard China, entirely by train, with the biggest visa buffer.",
+      tags: ["No flights", "Li River", "Biggest buffer"],
       stats: { main: 7, hk: 6, moves: "4🚄" },
       why: "The landscape-drama alternative that never boards a plane. Guangxi is TWOV-eligible, Guangzhou → Yangshuo is a 2.5-hr HSR hop, and the whole loop runs on rail with the biggest visa buffer in the lineup. The trade: no Shanghai, no Wuzhen.",
       buffer: { txt: "~4 days", cls: "s" },
       clock: "Entry via West Kowloon HSR day 5; exit via West Kowloon day 12. The safest clock of the seven.",
       photos: [
         ["images/guilin/li-river-karst.jpg", "Li River"],
+        ["images/guilin/xingping-li-river.jpg", "Xingping bend"],
         ["images/guilin/yangshuo-countryside.jpg", "Yangshuo"],
+        ["images/guilin/yulong-river-rafts.jpg", "Yulong rafts"],
         ["images/guilin/longji-rice-terraces.jpg", "Longji terraces"],
-        ["images/guilin/elephant-trunk-hill.jpg", "Elephant Trunk Hill"]
+        ["images/guilin/elephant-trunk-hill.jpg", "Elephant Trunk Hill"],
+        ["images/guilin/sun-moon-pagodas.jpg", "Sun & Moon Pagodas"],
+        ["images/guilin/reed-flute-cave.jpg", "Reed Flute Cave"]
       ],
       days: [
         ["Day 1","(in-flight)","AUS depart","—"],
@@ -1041,6 +1083,9 @@
     {
       id: "G", color: "var(--crit)", rec: false, recTag: "Foodie pick",
       name: "Hotpot swap", path: "HK → Chongqing → Wuzhen → Shanghai",
+      thumb: "images/chongqing/hongya-cave-night.jpg",
+      tagline: "Route A with the volume turned up: nine-grid hotpot, the Hongya Cave nightscape, then Wuzhen and Shanghai.",
+      tags: ["Hotpot", "Cyberpunk skyline", "Wuzhen kept"],
       stats: { main: 9, hk: 4, moves: "2✈ 1🚄" },
       why: "Route A's geometry with one substitution: Chongqing replaces Guangzhou. Same HK opening, same Wuzhen + Shanghai finish, same PVG exit — but the food-city slot goes to the hotpot capital and China's most cinematic cityscape. For a foodie friends trip, A's strongest challenger.",
       buffer: { txt: "~1.5 days", cls: "s" },
@@ -1048,8 +1093,12 @@
       photos: [
         ["images/chongqing/hongya-cave-night.jpg", "Hongya Cave"],
         ["images/chongqing/chongqing-skyline.jpg", "Two-river skyline"],
+        ["images/chongqing/yangtze-cableway.jpg", "Yangtze cableway"],
+        ["images/chongqing/jiefangbei.jpg", "Jiefangbei"],
         ["images/chongqing/ciqikou-old-town.jpg", "Ciqikou"],
-        ["images/chongqing/chongqing-hotpot.jpg", "Hotpot"]
+        ["images/chongqing/chongqing-hotpot.jpg", "Hotpot"],
+        ["images/wuzhen/xizha-central-canal.jpg", "Wuzhen"],
+        ["images/shanghai/bund-night-skyline.jpg", "The Bund"]
       ],
       days: [
         ["Day 1","(in-flight)","AUS depart","—"],
@@ -1116,21 +1165,27 @@
       `<figure><img class="zoom" loading="lazy" decoding="async" src="${src.replace('images/', 'images/thumbs/')}" data-full="${src}" alt="${cap}"><figcaption>${cap}</figcaption></figure>`
     ).join("");
 
+    const tagPills = [
+      ...(r.recTag ? [`<span class="rtag hot">${r.recTag}</span>`] : []),
+      ...r.tags.map(t => `<span class="rtag">${t}</span>`)
+    ].join("");
+
     el.innerHTML = `
       <button class="route-head" aria-expanded="${i===0}">
-        <span class="badge">${r.id}</span>
-        <span class="title">
-          <span class="name">${r.name} ${r.recTag ? `<span class="tag-rec">${r.recTag}</span>` : ""}</span>
-          <span class="path">${r.path}</span>
+        <span class="rthumb-wrap">
+          <img class="rthumb" loading="lazy" decoding="async" src="${r.thumb.replace('images/', 'images/thumbs/')}" alt="">
+          <span class="badge">${r.id}</span>
         </span>
-        <span class="quickstats">
-          <span class="qs"><span class="n">${r.stats.main}</span><span class="l">Mainland</span></span>
-          <span class="qs"><span class="n">${r.stats.hk}</span><span class="l">HK nts</span></span>
-          <span class="qs"><span class="n">${r.stats.moves}</span><span class="l">Moves</span></span>
+        <span class="title">
+          <span class="name">${r.name}</span>
+          <span class="rtags">${tagPills}</span>
+          <span class="tagline">${r.tagline}</span>
+          <span class="rstats"><span><b>${r.stats.main}</b> nts mainland</span><span><b>${r.stats.hk}</b> nts HK</span><span>${r.stats.moves}</span></span>
         </span>
         <span class="chev">›</span>
       </button>
       <div class="route-body">
+        <p class="rpath">${r.path}</p>
         <p class="why">${r.why}</p>
         <div class="gallery">${gallery}</div>
         <div class="itin-wrap">
