@@ -463,6 +463,74 @@
   .budget .amt { font-family: var(--serif); font-size: 2rem; color: var(--paper); }
   .budget .note { font-size: 0.78rem; color: var(--neutral); }
 
+  /* ---- Content links ---- */
+  .sleeper a, .clockline a, .collision a, .sec-note a, table.food a, .res-note a { color: var(--jade-deep); text-underline-offset: 3px; }
+  table.itin a { color: inherit; text-decoration: underline dotted var(--jade); text-underline-offset: 3px; }
+  .mapsym { color: var(--jade-deep); font-size: 0.85em; margin-left: 2px; text-decoration: none; display: inline-block; }
+
+  /* ---- Expand all ---- */
+  .xall {
+    font: inherit;
+    font-family: var(--mono);
+    font-size: 0.66rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    background: #FBFAF6;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.45rem 0.9rem;
+    cursor: pointer;
+    flex: 0 0 auto;
+  }
+  .xall:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+  /* ---- Route picker ---- */
+  .picker { background: #FBFAF6; border: 1px solid var(--line); border-radius: 3px; padding: 1.3rem 1.4rem; }
+  .picker .q { font-family: var(--serif); font-size: 1.15rem; margin: 0 0 0.9rem; }
+  .picker-chips { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.2rem; }
+  .picker-chips label {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.55rem 0.95rem;
+    cursor: pointer;
+    user-select: none;
+    line-height: 1;
+  }
+  .picker-chips label:has(input:checked) { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .picker-chips input { position: absolute; opacity: 0; pointer-events: none; }
+  .presult-row { display: grid; grid-template-columns: 2.2rem 1fr auto; gap: 0.8rem; align-items: center; padding: 0.4rem 0; }
+  .presult-row .rb {
+    font-family: var(--serif); font-size: 1.15rem; width: 2.1rem; height: 2.1rem;
+    display: grid; place-items: center; border-radius: 50%; color: #FBFAF6; background: var(--pc, var(--neutral));
+  }
+  .presult-bar { height: 9px; background: var(--paper-2); border-radius: 999px; overflow: hidden; }
+  .presult-bar span { display: block; height: 100%; background: var(--pc, var(--neutral)); border-radius: 999px; transition: width 0.35s ease; }
+  .presult-row .go { font-family: var(--mono); font-size: 0.7rem; color: var(--jade-deep); text-decoration: none; white-space: nowrap; }
+  .picker .hint { font-size: 0.8rem; color: var(--neutral); margin: 0.8rem 0 0; }
+
+  /* ---- Bookmarks ---- */
+  .resources { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 0.7rem; }
+  .res {
+    display: block;
+    background: #FBFAF6;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 0.85rem 1rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  .res:hover { border-color: var(--jade-deep); }
+  .res b { font-family: var(--serif); font-weight: 400; font-size: 1.02rem; display: block; }
+  .res small { color: var(--neutral); font-size: 0.76rem; line-height: 1.4; display: block; margin-top: 0.15rem; }
+  .res .tag { font-family: var(--mono); font-size: 0.56rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--jade-deep); }
+
   /* ---- Lightbox ---- */
   .lightbox {
     position: fixed;
@@ -544,9 +612,11 @@
     <a href="#sec-routes">Routes</a>
     <a href="#dates">When to go</a>
     <a href="#sec-matrix">Matrix</a>
+    <a href="#sec-picker">Picker</a>
     <a href="#sec-food">Eat</a>
     <a href="#sec-take">Our take</a>
     <a href="#sec-prep">Prep</a>
+    <a href="#sec-links">Links</a>
   </nav>
 
   <div class="filmstrip" aria-label="The cities in play">
@@ -569,7 +639,7 @@
       <span class="lbl">Hours · no visa</span>
     </div>
     <div>
-      <p>Every route runs on <b>240-hour visa-free transit</b> — no L visa. The clock starts 00:00 the day after we enter the mainland, so the arrival day is free. Confirmed active for 2026: 65 ports, 24 regions, cross-provincial travel allowed. This single rule shapes all seven itineraries.</p>
+      <p>Every route runs on <a href="https://en.nia.gov.cn/n147418/n147463/c183412/content.html" style="color:var(--ochre)"><b>240-hour visa-free transit</b></a> — no L visa. The clock starts 00:00 the day after we enter the mainland, so the arrival day is free. Confirmed active for 2026: 65 ports, 24 regions, cross-provincial travel allowed. This single rule shapes all seven itineraries.</p>
       <ol>
         <li>Max ~10 days on the mainland; HK &amp; Macau time doesn't count.</li>
         <li>Trip must start in one region and exit to a <b>different</b> one — HK counts, so AUS → mainland → HK → AUS qualifies.</li>
@@ -578,7 +648,7 @@
     </div>
   </section>
 
-  <div class="sec-head" id="sec-routes"><span class="num">01</span><h2>The seven routes</h2><span class="rule"></span></div>
+  <div class="sec-head" id="sec-routes"><span class="num">01</span><h2>The seven routes</h2><span class="rule"></span><button class="xall" id="xall">expand all</button></div>
   <p class="sec-note">Each is a complete itinerary inside the same 13-night envelope (shown on the Oct baseline dates — shift wholesale for a Nov window). Tap a route to open its day-by-day, photos, and TWOV clock.</p>
   <div class="routes" id="routes"></div>
 
@@ -595,10 +665,10 @@
         <p>Mid-Oct through early Nov is Hong Kong's high hotel corridor (Electronics, Optical, Wine fairs). Late Nov is noticeably cheaper for the same rooms.</p>
       </div>
       <div class="sleeper">
-        <b>New for 2026 — the overnight sleeper HSR.</b> The G899 high-speed sleeper (HK West Kowloon 19:49 → Shanghai Hongqiao 06:45) went daily in January. For routes B–E it replaces the ~$200 HK→PVG flight <b>and</b> a hotel night for ~$132/person, arrives city-center, keeps a full final HK day, and the TWOV math is identical. Book the deluxe cabin.
+        <b>New for 2026 — the overnight sleeper HSR.</b> The G899 high-speed sleeper (HK West Kowloon 19:49 → Shanghai Hongqiao 06:45) went daily in January. For routes B–E it replaces the ~$200 HK→PVG flight <b>and</b> a hotel night for ~$132/person, arrives city-center, keeps a full final HK day, and the TWOV math is identical. Book the deluxe cabin. <a href="https://www.seat61.com/HongKong.htm">seat61's guide ↗</a> · <a href="https://www.highspeed.mtr.com.hk/en/ticket/fare.html">MTR fares ↗</a>
       </div>
       <div class="sleeper" style="border-left-color: var(--ochre)">
-        <b>November bonuses:</b> HK's best month (23°/18°C, typhoon risk ≈ zero) · Shanghai's plane trees turn golden · Huangshan peak foliage + best sea-of-clouds odds · Zhangjiajie's most-recommended half-month · <b>hairy crab season</b> in Shanghai. Cost: one extra warm layer (summit nights ~0°C).
+        <b>November bonuses:</b> HK's best month (<b>73°/64°F</b>, typhoon risk ≈ zero) · Shanghai mild and golden (<b>~63°F</b> days) · Huangshan peak foliage + best sea-of-clouds odds · Zhangjiajie's most-recommended half-month (<b>59–77°F</b> early Nov) · <b>hairy crab season</b> in Shanghai. Cost: one extra warm layer (summit nights <b>~32°F</b>).
       </div>
     </div>
     <div class="windowbox">
@@ -616,20 +686,29 @@
   <p class="sec-note">Scored 1–5 per dimension (5 = best for this kind of trip). A heuristic, not a verdict — Route F tops the paper score, but it trades away Shanghai and Wuzhen.</p>
   <div class="matrix-wrap"><table class="matrix" id="matrix"></table></div>
 
-  <div class="sec-head" id="sec-food"><span class="num">04</span><h2>Eat here — the foodie file</h2><span class="rule"></span></div>
+  <div class="sec-head" id="sec-picker"><span class="num">04</span><h2>Route picker</h2><span class="rule"></span></div>
+  <p class="sec-note">Everyone in the group: tap what matters most to you (up to 3). The matrix does the rest — compare answers over dinner.</p>
+  <div class="picker">
+    <p class="q">What do you care about most?</p>
+    <div class="picker-chips" id="picker-chips"></div>
+    <div id="picker-result"></div>
+    <p class="hint">Nothing selected = overall totals. Scores come straight from the decision matrix above.</p>
+  </div>
+
+  <div class="sec-head" id="sec-food"><span class="num">05</span><h2>Eat here — the foodie file</h2><span class="rule"></span></div>
   <p class="sec-note">The tables that need a plan, ranked by booking lead. Full cross-city index (walk-in classics, dish lists) lives in the wiki's restaurant page.</p>
   <div class="food-grid">
     <div>
       <table class="food">
         <thead><tr><th>Table</th><th>Book</th><th>Why</th></tr></thead>
         <tbody>
-          <tr class="hot"><td><b>The Chairman</b><span class="city">Hong Kong · all routes</span></td><td class="lead">quarterly drop — 9am, 1st of month before the quarter</td><td>1★, former Asia's 50 Best #1. Hardest table on this list; gone in minutes. Nov trip = the <b>Sep 1</b> drop. Set an alarm.</td></tr>
-          <tr><td>Lung King Heen<span class="city">Hong Kong</span></td><td class="lead">30 days</td><td>2★ Cantonese at the Four Seasons; HKD 700+10% min pp</td></tr>
-          <tr><td>Ying Jee Club<span class="city">Hong Kong</span></td><td class="lead">1 week</td><td>2★ Cantonese, Central</td></tr>
-          <tr><td>T'ang Court (Langham Xintiandi)<span class="city">Shanghai · A/G</span></td><td class="lead">1 week</td><td>2★ Cantonese (upgraded in the 2026 Guide)</td></tr>
-          <tr><td>Fu 1088<span class="city">Shanghai · A/G</span></td><td class="lead">1 week</td><td>1★ Shanghainese in a 1930s villa; the red-braised pork</td></tr>
-          <tr><td>Yu Yue Heen<span class="city">Guangzhou · A/F</span></td><td class="lead">1 week</td><td>1★ Cantonese, Four Seasons</td></tr>
-          <tr><td>Mr. &amp; Mrs. Bund<span class="city">Shanghai · A/G</span></td><td class="lead">3–5 days</td><td>Paul Pairet's brasserie, Bund view (Ultraviolet is closed)</td></tr>
+          <tr class="hot"><td><a href="https://www.google.com/maps/search/?api=1&query=The+Chairman+restaurant+Sheung+Wan+Hong+Kong"><b>The Chairman</b><span class="mapsym">⌖</span></a><span class="city">Hong Kong · all routes</span></td><td class="lead">quarterly drop — 9am, 1st of month before the quarter</td><td>1★, former Asia's 50 Best #1. Hardest table on this list; gone in minutes. Nov trip = the <b>Sep 1</b> drop. <a href="https://www.thechairmangroup.com/">Book here ↗</a></td></tr>
+          <tr><td><a href="https://www.google.com/maps/search/?api=1&query=Lung+King+Heen+Four+Seasons+Hong+Kong">Lung King Heen<span class="mapsym">⌖</span></a><span class="city">Hong Kong</span></td><td class="lead">30 days</td><td>2★ Cantonese at the Four Seasons; HKD 700+10% min pp</td></tr>
+          <tr><td><a href="https://www.google.com/maps/search/?api=1&query=Ying+Jee+Club+Central+Hong+Kong">Ying Jee Club<span class="mapsym">⌖</span></a><span class="city">Hong Kong</span></td><td class="lead">1 week</td><td>2★ Cantonese, Central</td></tr>
+          <tr><td><a href="https://www.google.com/maps/search/?api=1&query=T'ang+Court+Langham+Xintiandi+Shanghai">T'ang Court (Langham Xintiandi)<span class="mapsym">⌖</span></a><span class="city">Shanghai · A/G</span></td><td class="lead">1 week</td><td>2★ Cantonese (upgraded in the 2026 Guide)</td></tr>
+          <tr><td><a href="https://www.google.com/maps/search/?api=1&query=Fu+1088+Zhenning+Road+Shanghai">Fu 1088<span class="mapsym">⌖</span></a><span class="city">Shanghai · A/G</span></td><td class="lead">1 week</td><td>1★ Shanghainese in a 1930s villa; the red-braised pork</td></tr>
+          <tr><td><a href="https://www.google.com/maps/search/?api=1&query=Yu+Yue+Heen+Four+Seasons+Guangzhou">Yu Yue Heen<span class="mapsym">⌖</span></a><span class="city">Guangzhou · A/F</span></td><td class="lead">1 week</td><td>1★ Cantonese, Four Seasons</td></tr>
+          <tr><td><a href="https://www.google.com/maps/search/?api=1&query=Mr+and+Mrs+Bund+Shanghai">Mr. &amp; Mrs. Bund<span class="mapsym">⌖</span></a><span class="city">Shanghai · A/G</span></td><td class="lead">3–5 days</td><td>Paul Pairet's brasserie, Bund view (Ultraviolet is closed)</td></tr>
         </tbody>
       </table>
     </div>
@@ -660,7 +739,7 @@
     </div>
   </div>
 
-  <div class="sec-head" id="sec-take"><span class="num">05</span><h2>Our take</h2><span class="rule"></span></div>
+  <div class="sec-head" id="sec-take"><span class="num">06</span><h2>Our take</h2><span class="rule"></span></div>
   <div class="takes">
     <div class="take" style="--tc:var(--cinnabar)">
       <img class="zoom" loading="lazy" decoding="async" src="images/thumbs/wuzhen/xizha-bridge-night.jpg" data-full="images/wuzhen/xizha-bridge-night.jpg" alt="Wuzhen stone bridge lit at night">
@@ -712,7 +791,7 @@
     </div>
   </div>
 
-  <div class="sec-head" id="sec-prep"><span class="num">06</span><h2>Before we go</h2><span class="rule"></span></div>
+  <div class="sec-head" id="sec-prep"><span class="num">07</span><h2>Before we go</h2><span class="rule"></span></div>
   <div class="prep">
     <div>
       <div class="locks">
@@ -734,13 +813,30 @@
         <li><b>Connectivity:</b> regional HK+mainland eSIM, two VPNs installed at home.</li>
         <li><b>Docs:</b> passport ≥6 mo validity, arrival card the night before entry, onward ticket.</li>
         <li><b>Weather flex:</b> book mountain hotels refundable; keep one unplanned day; insurance covers weather delay.</li>
-        <li><b>Packing:</b> fall layers; Nov window adds one warm layer (summit ~0°C); real shoes for E/F.</li>
+        <li><b>Packing:</b> fall layers; Nov window adds one warm layer (summit ~32°F); real shoes for E/F.</li>
       </ul>
       <div class="budget">
         <span class="amt">$9–11k</span>
         <span class="note">per couple · mid-range boutique · one splurge dinner per city · Route E adds ~$800 flights · Route F/sleeper variants run cheapest</span>
       </div>
     </div>
+  </div>
+
+  <div class="sec-head" id="sec-links"><span class="num">08</span><h2>Bookmarks</h2><span class="rule"></span></div>
+  <p class="sec-note">The links we keep reaching for — official rules, booking channels, and the blogs worth reading before we go.</p>
+  <div class="resources">
+    <a class="res" href="https://en.nia.gov.cn/n147418/n147463/c183412/content.html"><span class="tag">Official</span><b>NIA — TWOV rules</b><small>China's official 240-hour visa-free transit page. The source of truth.</small></a>
+    <a class="res" href="https://www.seat61.com/HongKong.htm"><span class="tag">Blog</span><b>seat61 — HK ↔ China trains</b><small>The train bible: cross-border HSR, the G899 sleeper, booking walkthroughs.</small></a>
+    <a class="res" href="https://www.highspeed.mtr.com.hk/en/main/index.html"><span class="tag">Booking</span><b>MTR High Speed Rail</b><small>Official West Kowloon booking — cross-border HSR + sleeper tickets.</small></a>
+    <a class="res" href="https://www.trip.com/trains/"><span class="tag">Booking</span><b>Trip.com Trains</b><small>Mainland HSR with US cards — easier than 12306 for foreigners.</small></a>
+    <a class="res" href="https://en.wuzhen.com.cn/"><span class="tag">Booking</span><b>Wuzhen official</b><small>Book inside-Xizha guesthouses direct — the re-entry card is the whole point.</small></a>
+    <a class="res" href="https://thewoksoflife.com/"><span class="tag">Blog</span><b>The Woks of Life</b><small>The Chinese-food blog — pre-trip homework on what we're about to eat.</small></a>
+    <a class="res" href="https://guide.michelin.com/en/hong-kong-region/hong-kong/restaurants"><span class="tag">Food</span><b>MICHELIN Guide — Hong Kong</b><small>Cross-check stars and Bib Gourmands before locking dinner plans.</small></a>
+    <a class="res" href="https://www.thechairmangroup.com/"><span class="tag">Food</span><b>The Chairman — reservations</b><small>Quarterly drop, 9am on the 1st of the month before the quarter. Set the alarm.</small></a>
+    <a class="res" href="https://www.trip.com/guide/events/canton-fair.html"><span class="tag">Dates</span><b>Canton Fair schedule</b><small>Autumn 2026: Oct 15–19 · 23–27 · Oct 31–Nov 4. Avoid Guangzhou hotels then.</small></a>
+    <a class="res" href="https://www.discoverhongkong.com/"><span class="tag">Guide</span><b>Discover Hong Kong</b><small>Official HK tourism — hikes, islands, events calendar for our window.</small></a>
+    <a class="res" href="https://www.chinahighlights.com/zhangjiajie/"><span class="tag">Guide</span><b>China Highlights — Zhangjiajie</b><small>Route E homework: park logistics, cable cars, weather by month.</small></a>
+    <a class="res" href="https://chriswiles.github.io/wiles-wiki/travel/china-2026/"><span class="tag">Ours</span><b>The trip wiki</b><small>Deep per-city pages: stays, day plans, packing, logistics, budget.</small></a>
   </div>
 
   <footer>
@@ -994,6 +1090,15 @@
     return stops[n] || "#8C948D";
   }
 
+  // Wrap a day-table city name in a Google Maps link
+  function mapsCity(cell) {
+    const name = cell.replace(/^→\s*/, "");
+    if (name.startsWith("(") || name === "—") return cell;
+    const q = encodeURIComponent(name === "Hong Kong" ? name : name + ", China");
+    const prefix = cell.startsWith("→") ? "→ " : "";
+    return `${prefix}<a href="https://www.google.com/maps/search/?api=1&query=${q}" target="_blank" rel="noopener">${name}<span class="mapsym">⌖</span></a>`;
+  }
+
   // Render routes
   const rc = document.getElementById("routes");
   ROUTES.forEach((r, i) => {
@@ -1004,7 +1109,7 @@
 
     const rows = r.days.map(d => {
       const gate = d[4] ? " class=\"gate\"" : "";
-      return `<tr${gate}><td class="date">${d[0]}</td><td class="city">${d[1]}</td><td>${d[2]}</td><td class="ov">${d[3]}</td></tr>`;
+      return `<tr${gate}><td class="date">${d[0]}</td><td class="city">${mapsCity(d[1])}</td><td>${d[2]}</td><td class="ov">${d[3]}</td></tr>`;
     }).join("");
 
     const gallery = r.photos.map(([src, cap]) =>
@@ -1081,6 +1186,60 @@
   document.addEventListener("keydown", (e) => {
     if (e.key === "Escape") { lb.classList.remove("on"); lbImg.src = ""; }
   });
+
+  // Expand / collapse all routes
+  const xall = document.getElementById("xall");
+  xall.addEventListener("click", () => {
+    const cards = [...document.querySelectorAll(".route")];
+    const anyClosed = cards.some(c => c.getAttribute("open-state") === "0");
+    cards.forEach(c => {
+      c.setAttribute("open-state", anyClosed ? "1" : "0");
+      c.querySelector(".route-head").setAttribute("aria-expanded", String(anyClosed));
+    });
+    xall.textContent = anyClosed ? "collapse all" : "expand all";
+  });
+
+  // Route picker — sum selected matrix dimensions, rank routes
+  const chipsEl = document.getElementById("picker-chips");
+  const resultEl = document.getElementById("picker-result");
+  MATRIX.dims.forEach(([label], i) => {
+    const lab = document.createElement("label");
+    lab.innerHTML = `<input type="checkbox" value="${i}">${label}`;
+    chipsEl.appendChild(lab);
+  });
+  function renderPick() {
+    const picked = [...chipsEl.querySelectorAll("input:checked")].map(i => +i.value);
+    // Cap at 3 selections: disable the rest once 3 are picked
+    chipsEl.querySelectorAll("input").forEach(i => { i.disabled = picked.length >= 3 && !i.checked; });
+    const dims = picked.length ? picked : MATRIX.dims.map((_, i) => i);
+    const scores = ROUTES.map((r, ri) => ({
+      r, total: dims.reduce((s, di) => s + MATRIX.dims[di][1][ri], 0)
+    })).sort((a, b) => b.total - a.total);
+    const max = scores[0].total;
+    resultEl.innerHTML = scores.slice(0, 3).map(({ r, total }) => `
+      <div class="presult-row" style="--pc:${r.color}">
+        <span class="rb">${r.id}</span>
+        <div>
+          <div style="display:flex;justify-content:space-between;font-size:0.84rem;margin-bottom:0.25rem">
+            <span>${r.name}</span>
+            <span style="font-family:var(--mono);font-variant-numeric:tabular-nums">${total}${picked.length ? " / " + picked.length * 5 : ""}</span>
+          </div>
+          <div class="presult-bar"><span style="width:${Math.round(total / max * 100)}%"></span></div>
+        </div>
+        <a class="go" href="#sec-routes" data-route="${r.id}">open ↑</a>
+      </div>`).join("");
+  }
+  chipsEl.addEventListener("change", renderPick);
+  resultEl.addEventListener("click", (e) => {
+    const go = e.target.closest("a.go");
+    if (!go) return;
+    const card = [...document.querySelectorAll(".route")].find(c => c.querySelector(".badge").textContent === go.dataset.route);
+    if (card) {
+      card.setAttribute("open-state", "1");
+      card.querySelector(".route-head").setAttribute("aria-expanded", "true");
+    }
+  });
+  renderPick();
 </script>
 </body>
 </html>
