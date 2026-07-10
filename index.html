@@ -479,6 +479,30 @@
   .city-foot { display: flex; flex-wrap: wrap; gap: 0.45rem 0.8rem; align-items: center; margin-top: 0.8rem; font-size: 0.72rem; }
   .city-foot a { color: var(--jade-deep); text-underline-offset: 3px; }
   .city-foot .save { font-family: var(--mono); color: var(--neutral); }
+  .museum-radar {
+    background: #FBFAF6;
+    border: 1px solid var(--line);
+    border-radius: 3px;
+    padding: 1.1rem;
+    margin: 0 0 1rem;
+  }
+  .museum-radar-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.4rem 1rem; margin-bottom: 0.85rem; }
+  .museum-radar-head h3 { font-family: var(--serif); font-size: 1.35rem; font-weight: 400; margin: 0; }
+  .museum-radar-head span { font-family: var(--mono); color: var(--neutral); font-size: 0.62rem; letter-spacing: 0.08em; text-transform: uppercase; }
+  .museum-radar-note { color: var(--ink-soft); font-size: 0.84rem; margin: 0 0 1rem; max-width: 74ch; }
+  .museum-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.6rem; }
+  .museum-card { min-width: 0; border: 1px solid var(--line); border-radius: 3px; padding: 0.8rem; background: var(--paper); }
+  .museum-card-top { display: flex; flex-wrap: wrap; gap: 0.35rem 0.5rem; align-items: center; margin-bottom: 0.35rem; }
+  .museum-status, .museum-city { font-family: var(--mono); font-size: 0.56rem; letter-spacing: 0.09em; text-transform: uppercase; }
+  .museum-status { color: #FBFAF6; border-radius: 999px; padding: 0.18rem 0.45rem; background: var(--jade-deep); }
+  .museum-status.fresh { background: var(--cinnabar); }
+  .museum-status.watch { background: var(--ochre); color: var(--ink); }
+  .museum-city { color: var(--neutral); }
+  .museum-card h4 { font-family: var(--serif); font-size: 1.03rem; font-weight: 400; line-height: 1.25; margin: 0; }
+  .museum-card p { color: var(--ink-soft); font-size: 0.76rem; line-height: 1.43; margin: 0.35rem 0 0; }
+  .museum-card .museum-call { color: var(--ink); }
+  .museum-card .museum-call b { color: var(--cinnabar); }
+  .museum-card a { display: inline-block; margin-top: 0.45rem; color: var(--jade-deep); font-size: 0.7rem; text-underline-offset: 3px; }
 
   /* ---- Take / cards ---- */
   .takes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr)); gap: 1rem; }
@@ -639,7 +663,7 @@
     .route .title .name { font-size: 1.08rem; }
     .tagline { font-size: 0.82rem; }
     .route-body { padding: 0 1rem 1.2rem; }
-    .prep, .dates-grid, .food-grid, .playbook-intro, .city-grid { grid-template-columns: minmax(0, 1fr); }
+    .prep, .dates-grid, .food-grid, .playbook-intro, .city-grid, .museum-grid { grid-template-columns: minmax(0, 1fr); }
     .gallery { grid-template-columns: repeat(2, 1fr); }
     .gallery img { height: 108px; }
     .filmstrip img { height: 124px; }
@@ -675,7 +699,7 @@
     .route-body { padding-inline: 0.75rem; }
     .gallery { gap: 0.35rem; }
     .gallery img { height: 92px; }
-    .windowbox, .foodbox, .prepbox, .picker, .playbook-callout { padding: 1rem; }
+    .windowbox, .foodbox, .prepbox, .picker, .playbook-callout, .museum-radar { padding: 1rem; }
     .windowbox table, .windowbox tbody, .windowbox tr, .windowbox td { display: block; width: 100%; }
     .windowbox tr { padding: 0.5rem 0; border-bottom: 1px solid rgba(242,240,233,0.15); }
     .windowbox td { padding: 0.08rem 0; border: 0; white-space: normal !important; }
@@ -795,6 +819,11 @@
   <div class="playbook-intro">
     <p class="sec-note">The vacation layer: the must-do icons, active days, big-view meals and drinks, destination spas, water experiences, and day trips that are easy to miss when we only compare routes. Open any city that appears in a route you like.</p>
     <div class="playbook-callout"><p><b>Instagram reality check.</b> Save these now, but re-check hours, reservation channels, weather closures, and foreign-guest rules 2–4 weeks before the trip. Mainland venues often move booking into WeChat or Alipay.</p></div>
+  </div>
+  <div class="museum-radar">
+    <div class="museum-radar-head"><h3>Museum radar — the new China</h3><span>researched · July 2026</span></div>
+    <p class="museum-radar-note">Shenzhen and Shanghai are in a museum-building arms race. These are the genuinely trip-worthy openings and major renewals—not a generic list of every city museum. “Watch” means the venue is scheduled to open before our fall window but needs a final confirmation.</p>
+    <div class="museum-grid" id="museum-grid"></div>
   </div>
   <div class="city-grid" id="city-guides"></div>
 
@@ -1394,6 +1423,79 @@
     }
   ];
 
+  const MUSEUM_RADAR = [
+    {
+      city: "Shenzhen · Pingshan", status: "Opens Jul 28", statusClass: "fresh",
+      name: "Shenzhen Natural History Museum",
+      why: "A brand-new 105,300 m² landmark and the largest comprehensive natural-history venue in South China. Eight galleries move from cosmic origins and 4.6 billion years of Earth history to Shenzhen’s mountains and sea.",
+      call: "Top new opening. Pick this for dinosaurs, geology and big-building spectacle; it is far from Futian, so it needs a dedicated half-day.",
+      source: "https://www.sz.gov.cn/en_szgov/aboutsz/whatson/content/post_12855133.html"
+    },
+    {
+      city: "Shenzhen · Guangming", status: "Opened May 2025", statusClass: "fresh",
+      name: "Shenzhen Science & Technology Museum",
+      why: "The 128,300 m² ‘Big Spaceship’ has 950 exhibits across AI, robots, smart industry, film, aerospace and cosmic origins; 80% are immersive or interactive. It was shortlisted among the 2026 World’s Most Beautiful Museums.",
+      call: "Best fit for this friends trip. Allow 3–5 hours and favor weekdays; it has bilingual signage and translation support.",
+      source: "https://www.szgm.gov.cn/english/news/latestnews/content/post_12770850.html"
+    },
+    {
+      city: "Shenzhen · Guangming", status: "Opened May 2026", statusClass: "fresh",
+      name: "Shenzhen International Museum of Art",
+      why: "A new global-art anchor that debuted with seven exhibitions spanning European old masters, contemporary international art and Chinese national treasures.",
+      call: "Pair with the Science & Technology Museum only if the fall exhibition lineup is strong; both are in Guangming.",
+      source: "https://www.sz.gov.cn/en_szgov/aboutsz/photos/content/post_12814524.html"
+    },
+    {
+      city: "Shenzhen · Qianhai", status: "Watch · Sep 2026", statusClass: "watch",
+      name: "Qianhai Museum",
+      why: "Planned late-September trial opening with 3,000+ artifacts, seven major exhibitions and more than 30 halls in a 126,000 m² waterfront complex created with the National Museum of China.",
+      call: "Potentially huge for our Oct–Nov trip, but do not plan around it until the opening date, foreign-ticket process and initial crowd levels are confirmed.",
+      source: "https://qh.sz.gov.cn/en/news/content/post_12806466.html"
+    },
+    {
+      city: "Shanghai · Pudong", status: "Reopened 2026", statusClass: "fresh",
+      name: "Shanghai Science & Technology Museum",
+      why: "Fresh from the world’s largest single science-museum renovation: 405 interactive displays, 926 exhibits, AI and aviation galleries, immersive environments and the first CLED giant-screen theater built for a science museum.",
+      call: "The easiest high-tech museum to fit into a Pudong day. Reserve special experiences in its official WeChat account.",
+      source: "https://english.shanghai.gov.cn/en-MuseumsGalleries/20231218/7575ddf0f78140fb99531d7717ad650c.html"
+    },
+    {
+      city: "Shanghai · Lingang", status: "World’s largest", statusClass: "",
+      name: "Shanghai Astronomy Museum",
+      why: "The world’s largest astronomy museum by building scale: a 38,000 m² orbital-form landmark with immersive universe galleries, planetarium shows and meteorite displays.",
+      call: "Architecture-and-space wow, but remote. Treat it as a half/full-day Dishui Lake excursion, not an add-on between central sights.",
+      source: "https://english.shanghai.gov.cn/en-UniqueExperience-travelinshanghai/20250901/d495335ae8cb4bbb9d1fd43afc790db7.html"
+    },
+    {
+      city: "Shanghai · Pudong", status: "New East branch", statusClass: "",
+      name: "Shanghai Museum East",
+      why: "Shanghai’s major new home for ancient Chinese art, with expanded bronze, jade, ceramics, painting and calligraphy galleries plus Shanghai archaeology and cross-cultural ceramics displays.",
+      call: "Best history/art choice in Shanghai. Combine it with Pudong rather than crossing back to People’s Square.",
+      source: "https://english.shanghai.gov.cn/en-ArtExhibitions/20240626/75cf1a2f3c1442a69778b9088139b5b8.html"
+    },
+    {
+      city: "Hong Kong · WestK", status: "Two-museum campus", statusClass: "",
+      name: "M+ + Hong Kong Palace Museum",
+      why: "One waterfront district pairs Asia’s global museum of visual culture with imperial Chinese treasures and international loans. M+ has moving image, design, architecture and digital culture—not just gallery walls.",
+      call: "Choose one deeply or buy the combined day only if the 2026 temporary shows excite the group; stay for sunset on the Art Park promenade.",
+      source: "https://www.mplus.org.hk/en/press/mplus-announces-2026-exhibition-and-programmes/"
+    },
+    {
+      city: "Guangzhou · Liwan", status: "Opened 2024", statusClass: "",
+      name: "Bai’e Tan Greater Bay Area Art Center",
+      why: "A giant Pearl River cultural ship containing three institutions: the Guangdong Museum of Art, Intangible Cultural Heritage Exhibition Center and Guangdong Literature Center.",
+      call: "Strong rainy-day or design stop near old Liwan; pair it with Shamian rather than crossing the city twice.",
+      source: "https://www.eguangzhou.gov.cn/gzwhatson/content/post_30557.html"
+    },
+    {
+      city: "Hangzhou · Liangzhu", status: "Archaeology day", statusClass: "",
+      name: "Liangzhu Museum + Archaeological Ruins Park",
+      why: "An immersive, digitally interpreted introduction to the 5,000-year-old Liangzhu civilization, paired with the actual palace, water-system and royal-tomb landscape. A second archaeological museum opened nearby in 2025.",
+      call: "Worth the detour for archaeology or architecture people; otherwise protect the short Hangzhou stay for West Lake, tea and Lingyin.",
+      source: "https://www.liangzhusite.com/Web/Visit/59"
+    }
+  ];
+
   function scoreColor(n) {
     const stops = { 1: "#BC4B3C", 2: "#C77A3B", 3: "#B0883C", 4: "#7E9A5E", 5: "#5E8A5A" };
     return stops[n] || "#8C948D";
@@ -1485,6 +1587,20 @@
         <div class="city-foot"><a href="${mapUrl}" target="_blank" rel="noopener">map the shortlist ↗</a><a href="${guide.source}" target="_blank" rel="noopener">research source ↗</a><span class="save">save · verify · book</span></div>
       </div>`;
     cityGuides.appendChild(details);
+  });
+
+  // Render current and near-future museum openings
+  const museumGrid = document.getElementById("museum-grid");
+  MUSEUM_RADAR.forEach(museum => {
+    const card = document.createElement("article");
+    card.className = "museum-card";
+    card.innerHTML = `
+      <div class="museum-card-top"><span class="museum-status ${museum.statusClass}">${museum.status}</span><span class="museum-city">${museum.city}</span></div>
+      <h4>${museum.name}</h4>
+      <p>${museum.why}</p>
+      <p class="museum-call"><b>Trip call:</b> ${museum.call}</p>
+      <a href="${museum.source}" target="_blank" rel="noopener">official/current source ↗</a>`;
+    museumGrid.appendChild(card);
   });
 
   // Render matrix
