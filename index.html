@@ -404,29 +404,99 @@
   table.matrix .colhead small { display:block; font-family: var(--mono); font-size: 0.56rem; color: var(--neutral); letter-spacing: 0.08em; font-weight: 400; }
 
   /* ---- Food ---- */
-  .food-grid { display: grid; grid-template-columns: 1.4fr 1fr; gap: 1.6rem; align-items: start; }
-  table.food { border-collapse: collapse; width: 100%; font-size: 0.85rem; }
-  table.food th {
-    font-family: var(--mono);
-    font-size: 0.6rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--neutral);
-    text-align: left;
-    padding: 0.45rem 0.6rem;
-    border-bottom: 2px solid var(--ink);
-    font-weight: 400;
+  .food-intro { display: grid; grid-template-columns: minmax(0, 1.45fr) minmax(240px, 0.75fr); gap: 1rem; align-items: stretch; margin-bottom: 1rem; }
+  .food-intro .sec-note { margin: 0; }
+  .food-rule {
+    background: var(--ink);
+    color: #D2CFC6;
+    border-radius: 3px;
+    padding: 0.9rem 1rem;
+    font-size: 0.78rem;
+    line-height: 1.5;
   }
-  table.food td { padding: 0.55rem 0.6rem; border-bottom: 1px solid var(--line); vertical-align: top; }
-  table.food td.lead { font-family: var(--mono); font-size: 0.72rem; color: var(--jade-deep); white-space: nowrap; }
-  table.food tr.hot td { background: rgba(192,57,43,0.07); }
-  table.food .city { font-family: var(--mono); font-size: 0.7rem; color: var(--neutral); display: block; }
-  .foodbox { background: var(--ink); color: var(--paper); border-radius: 3px; padding: 1.3rem 1.4rem; }
-  .foodbox h3 { font-family: var(--serif); font-weight: 400; margin: 0 0 0.8rem; color: var(--ochre); }
-  .foodbox ul { margin: 0 0 1rem; padding-left: 1.1rem; display: grid; gap: 0.4rem; }
-  .foodbox li { font-size: 0.84rem; color: #D2CFC6; }
-  .foodbox li b { color: var(--paper); }
-  .foodbox .h { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--neutral); margin: 0 0 0.4rem; }
+  .food-rule b { color: var(--ochre); }
+  .food-kicker { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.4rem 1rem; margin: 1.25rem 0 0.65rem; }
+  .food-kicker h3 { margin: 0; font-family: var(--serif); font-size: 1.35rem; font-weight: 400; }
+  .food-kicker span { font-family: var(--mono); font-size: 0.58rem; letter-spacing: 0.11em; text-transform: uppercase; color: var(--neutral); }
+  .restaurant-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.8rem; }
+  .restaurant-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    background: #FBFAF6;
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--jade-deep);
+    border-radius: 3px;
+    padding: 1rem;
+  }
+  .restaurant-card.featured {
+    grid-column: 1 / -1;
+    border-top-color: var(--cinnabar);
+    background: linear-gradient(115deg, rgba(192,57,43,0.08), #FBFAF6 58%);
+  }
+  .restaurant-top { display: flex; justify-content: space-between; gap: 0.8rem; align-items: flex-start; }
+  .restaurant-place { min-width: 0; }
+  .restaurant-place .city {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--cinnabar);
+    font-family: var(--mono);
+    font-size: 0.58rem;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+  }
+  .restaurant-place h4 { margin: 0; font-family: var(--serif); font-size: 1.35rem; line-height: 1.15; font-weight: 400; }
+  .restaurant-place h4 a { color: var(--ink); text-decoration: none; }
+  .restaurant-place h4 a:hover { color: var(--jade-deep); text-decoration: underline; text-underline-offset: 3px; }
+  .restaurant-award {
+    flex: 0 0 auto;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.28rem 0.5rem;
+    color: var(--jade-deep);
+    font-family: var(--mono);
+    font-size: 0.58rem;
+    line-height: 1.2;
+    white-space: nowrap;
+  }
+  .restaurant-card.featured .restaurant-award { border-color: rgba(192,57,43,0.32); color: var(--cinnabar); }
+  .restaurant-tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin: 0.75rem 0; }
+  .restaurant-tags span {
+    border-radius: 999px;
+    background: var(--paper-2);
+    color: var(--ink-soft);
+    padding: 0.28rem 0.5rem;
+    font-family: var(--mono);
+    font-size: 0.57rem;
+    line-height: 1.25;
+  }
+  .restaurant-summary { margin: 0; color: var(--ink-soft); font-size: 0.82rem; line-height: 1.5; }
+  .restaurant-notes { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5rem; margin-top: 0.8rem; }
+  .restaurant-note { min-width: 0; background: var(--paper); border-radius: 3px; padding: 0.65rem 0.7rem; color: var(--ink-soft); font-size: 0.74rem; line-height: 1.42; }
+  .restaurant-note b { display: block; margin-bottom: 0.12rem; color: var(--ink); font-family: var(--mono); font-size: 0.56rem; letter-spacing: 0.1em; text-transform: uppercase; }
+  .restaurant-actions { display: flex; flex-wrap: wrap; gap: 0.45rem; margin-top: auto; padding-top: 0.9rem; }
+  .restaurant-actions a {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    padding: 0.45rem 0.75rem;
+    color: var(--jade-deep);
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    text-decoration: none;
+  }
+  .restaurant-actions a.primary { background: var(--ink); border-color: var(--ink); color: var(--paper); }
+  .restaurant-actions a:hover { border-color: var(--jade-deep); }
+  .walkin-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.65rem; }
+  .walkin-card { min-width: 0; background: var(--ink); color: var(--paper); border-radius: 3px; padding: 0.9rem; }
+  .walkin-card h4 { margin: 0 0 0.65rem; color: var(--ochre); font-family: var(--serif); font-size: 1.05rem; font-weight: 400; }
+  .walkin-card ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.6rem; }
+  .walkin-card li { color: #D2CFC6; font-size: 0.72rem; line-height: 1.4; }
+  .walkin-card li b { display: block; color: var(--paper); font-size: 0.76rem; }
+  .walkin-card .strategy { margin: 0.75rem 0 0; padding-top: 0.65rem; border-top: 1px solid rgba(242,240,233,0.14); color: var(--neutral); font-family: var(--mono); font-size: 0.56rem; line-height: 1.45; text-transform: uppercase; letter-spacing: 0.06em; }
 
   /* ---- City playbook ---- */
   .playbook-intro {
@@ -699,7 +769,10 @@
     .route .title .name { font-size: 1.08rem; }
     .tagline { font-size: 0.82rem; }
     .route-body { padding: 0 1rem 1.2rem; }
-    .prep, .dates-grid, .food-grid, .playbook-intro, .city-grid, .museum-grid { grid-template-columns: minmax(0, 1fr); }
+    .prep, .dates-grid, .food-intro, .playbook-intro, .city-grid, .museum-grid { grid-template-columns: minmax(0, 1fr); }
+    .restaurant-grid { grid-template-columns: minmax(0, 1fr); }
+    .restaurant-card.featured { grid-column: auto; }
+    .walkin-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     .gallery { grid-template-columns: repeat(2, 1fr); }
     .gallery img { height: 108px; }
     .filmstrip img { height: 124px; }
@@ -708,12 +781,6 @@
     .lightbox { padding: 0.8rem; }
     .meta-row { gap: 1rem 1.6rem; }
     .meta .v { font-size: 1.15rem; }
-    table.food thead { display: none; }
-    table.food, table.food tbody { display: block; }
-    table.food tr { display: block; padding: 0.75rem 0; border-bottom: 1px solid var(--line); }
-    table.food tr.hot { background: rgba(192,57,43,0.07); padding-inline: 0.65rem; }
-    table.food td, table.food tr.hot td { display: block; padding: 0.12rem 0; border: 0; background: none; }
-    table.food td.lead { white-space: normal; margin: 0.18rem 0; }
     .lock { grid-template-columns: auto minmax(0, 1fr); gap: 0.2rem 0.75rem; }
     .lock .lead { grid-column: 2; white-space: normal; }
     .city-picks, .intel-calls { grid-template-columns: minmax(0, 1fr); }
@@ -735,7 +802,11 @@
     .route-body { padding-inline: 0.75rem; }
     .gallery { gap: 0.35rem; }
     .gallery img { height: 92px; }
-    .windowbox, .foodbox, .prepbox, .picker, .playbook-callout, .museum-radar { padding: 1rem; }
+    .windowbox, .prepbox, .picker, .playbook-callout, .museum-radar { padding: 1rem; }
+    .restaurant-notes, .walkin-grid { grid-template-columns: minmax(0, 1fr); }
+    .restaurant-card { padding: 0.85rem; }
+    .restaurant-top { gap: 0.55rem; }
+    .restaurant-place h4 { font-size: 1.2rem; }
     .windowbox table, .windowbox tbody, .windowbox tr, .windowbox td { display: block; width: 100%; }
     .windowbox tr { padding: 0.5rem 0; border-bottom: 1px solid rgba(242,240,233,0.15); }
     .windowbox td { padding: 0.08rem 0; border: 0; white-space: normal !important; }
@@ -865,47 +936,118 @@
   <div class="city-grid" id="city-guides"></div>
 
   <div class="sec-head" id="sec-food"><span class="num">06</span><h2>Eat here — the foodie file</h2><span class="rule"></span></div>
-  <p class="sec-note">The tables that need a plan, ranked by booking lead. Full cross-city index (walk-in classics, dish lists) lives in the wiki's restaurant page.</p>
-  <div class="food-grid">
-    <div>
-      <table class="food">
-        <thead><tr><th>Table</th><th>Book</th><th>Why</th></tr></thead>
-        <tbody>
-          <tr class="hot"><td><a href="https://www.google.com/maps/search/?api=1&query=The+Chairman+restaurant+Central+Hong+Kong"><b>The Chairman</b><span class="mapsym">⌖</span></a><span class="city">Hong Kong · all routes</span></td><td class="lead">quarterly release · monitor official site</td><td>1★, Asia's 50 Best #1 in 2021. Book only through its official site; release dates have varied and fake booking sites are active. <a href="https://www.thechairmangroup.com/">Book here ↗</a></td></tr>
-          <tr><td><a href="https://www.google.com/maps/search/?api=1&query=Lung+King+Heen+Four+Seasons+Hong+Kong">Lung King Heen<span class="mapsym">⌖</span></a><span class="city">Hong Kong</span></td><td class="lead">30 days</td><td>2★ Cantonese at the Four Seasons; HKD 700+10% min pp</td></tr>
-          <tr><td><a href="https://www.google.com/maps/search/?api=1&query=Ying+Jee+Club+Central+Hong+Kong">Ying Jee Club<span class="mapsym">⌖</span></a><span class="city">Hong Kong</span></td><td class="lead">1 week</td><td>2★ Cantonese, Central</td></tr>
-          <tr><td><a href="https://www.google.com/maps/search/?api=1&query=T'ang+Court+Langham+Xintiandi+Shanghai">T'ang Court (Langham Xintiandi)<span class="mapsym">⌖</span></a><span class="city">Shanghai · A/G</span></td><td class="lead">1 week</td><td>1★ Cantonese in the current MICHELIN listing</td></tr>
-          <tr><td><a href="https://www.google.com/maps/search/?api=1&query=Fu+1088+Zhenning+Road+Shanghai">Fu 1088<span class="mapsym">⌖</span></a><span class="city">Shanghai · A/G</span></td><td class="lead">1 week</td><td>1★ Shanghainese in a 1930s villa; the red-braised pork</td></tr>
-          <tr><td><a href="https://www.google.com/maps/search/?api=1&query=Yu+Yue+Heen+Four+Seasons+Guangzhou">Yu Yue Heen<span class="mapsym">⌖</span></a><span class="city">Guangzhou · A/F</span></td><td class="lead">1 week</td><td>1★ Cantonese, Four Seasons</td></tr>
-          <tr><td><a href="https://www.google.com/maps/search/?api=1&query=Mr+and+Mrs+Bund+Shanghai">Mr. &amp; Mrs. Bund<span class="mapsym">⌖</span></a><span class="city">Shanghai · A/G</span></td><td class="lead">3–5 days</td><td>Paul Pairet's brasserie, Bund view (Ultraviolet is closed)</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="foodbox">
-      <h3>Walk-in legends (queue, don't book)</h3>
-      <p class="h">Hong Kong</p>
-      <ul>
-        <li><b>Kam's Roast Goose</b> / <b>Yat Lok</b> — 1★ roast goose</li>
-        <li><b>Tim Ho Wan</b> — baked char siu buns</li>
-        <li><b>Mak's Noodle</b> — wontons since 1920</li>
-      </ul>
-      <p class="h">Shanghai</p>
-      <ul>
-        <li><b>Jia Jia Tang Bao</b> — XLB, 127 Huanghe Lu, 10:00 sharp</li>
-        <li><b>Lai Lai Xiao Long</b> — Bib Gourmand crab-roe XLB</li>
-      </ul>
-      <p class="h">Chongqing (Route G)</p>
-      <ul>
-        <li><b>Zhao Er Hotpot</b> — the local institution; duck blood, fresh tripe</li>
-        <li><b>Nine-grid hotpot</b> anywhere packed — order 微辣 (mild!)</li>
-        <li><b>Xiaomian stalls</b> — CNY 12 breakfast religion</li>
-      </ul>
-      <p class="h">Guangzhou / Yangshuo</p>
-      <ul>
-        <li><b>Taotaoju / Panxi</b> — trolley dim sum since the 1880s</li>
-        <li><b>Beer fish</b> on Xianqian Jie · <b>Guilin mifen</b> anywhere</li>
-      </ul>
-    </div>
+  <div class="food-intro">
+    <p class="sec-note">This is the actual dinner shortlist—not a trophy list. Every card answers four useful questions: why spend a meal here, what to order, what it costs, and how hard it is to book.</p>
+    <div class="food-rule"><b>Do not overbook the trip.</b> Pick one destination dinner in Hong Kong and one on the mainland. Keep the other nights open for roast meat, noodles, dumplings, markets and whatever looks busy.</div>
+  </div>
+
+  <div class="food-kicker"><h3>Reservation-worthy</h3><span>7 researched picks · choose 2</span></div>
+  <div class="restaurant-grid">
+    <article class="restaurant-card featured">
+      <div class="restaurant-top">
+        <div class="restaurant-place"><span class="city">Hong Kong · Central · all routes</span><h4><a href="https://www.google.com/maps/search/?api=1&amp;query=The+Chairman+198+Wellington+Street+Hong+Kong">The Chairman</a></h4></div>
+        <span class="restaurant-award">1★ · hardest table</span>
+      </div>
+      <div class="restaurant-tags"><span>Contemporary Cantonese</span><span>Set-menu splurge</span><span>Best for the whole group</span></div>
+      <p class="restaurant-summary">The one meal worth planning the calendar around: ingredient-led Cantonese cooking from small suppliers and local fishermen, with a menu that changes by season. It topped Asia's 50 Best in 2021 and remains the most difficult reservation on this list.</p>
+      <div class="restaurant-notes">
+        <div class="restaurant-note"><b>Order this</b>Steamed flowery crab with aged Shaoxing wine, chicken oil and flat rice noodles; add thick-cut char siu if it appears on the menu.</div>
+        <div class="restaurant-note"><b>Booking reality</b>Reserve only through the official site when a release opens. The restaurant emails set-menu choices shortly before the meal; some whole-seafood dishes need a larger party.</div>
+      </div>
+      <div class="restaurant-actions"><a class="primary" href="https://www.thechairmangroup.com/">Official booking ↗</a><a href="https://www.thechairmangroup.com/today-menu">Today's menu ↗</a><a href="https://www.google.com/maps/search/?api=1&amp;query=The+Chairman+198+Wellington+Street+Hong+Kong">Map ⌖</a></div>
+    </article>
+
+    <article class="restaurant-card">
+      <div class="restaurant-top">
+        <div class="restaurant-place"><span class="city">Hong Kong · Four Seasons · all routes</span><h4><a href="https://www.google.com/maps/search/?api=1&amp;query=Lung+King+Heen+Four+Seasons+Hong+Kong">Lung King Heen</a></h4></div>
+        <span class="restaurant-award">2★ · 2026</span>
+      </div>
+      <div class="restaurant-tags"><span>Refined Cantonese</span><span>Best at lunch</span><span>HKD 700 minimum</span></div>
+      <p class="restaurant-summary">The polished dim-sum lunch: harbour-side Four Seasons service without committing the evening. It is the safest high-end Hong Kong fallback if The Chairman does not happen.</p>
+      <div class="restaurant-notes">
+        <div class="restaurant-note"><b>Order this</b>Pineapple pork buns with pine nuts, whole-abalone puffs and the fish-maw casserole; the weekday lunch menu is the most approachable way in.</div>
+        <div class="restaurant-note"><b>Booking reality</b>Target 30 days ahead. Minimum spend is HKD 700 + 10% per adult; tasting menus currently start at HKD 2,780.</div>
+      </div>
+      <div class="restaurant-actions"><a class="primary" href="https://www.fourseasons.com/hongkong/dining/restaurants/lung_king_heen/">Reserve direct ↗</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Lung+King+Heen+Four+Seasons+Hong+Kong">Map ⌖</a></div>
+    </article>
+
+    <article class="restaurant-card">
+      <div class="restaurant-top">
+        <div class="restaurant-place"><span class="city">Hong Kong · Central · all routes</span><h4><a href="https://www.google.com/maps/search/?api=1&amp;query=Ying+Jee+Club+Nexxus+Building+Hong+Kong">Ying Jee Club</a></h4></div>
+        <span class="restaurant-award">2★ · 2026</span>
+      </div>
+      <div class="restaurant-tags"><span>Cantonese</span><span>Dim sum or tasting</span><span>Easiest HK splurge</span></div>
+      <p class="restaurant-summary">A serious two-star kitchen in Central with much more flexibility than the headline tables: seasonal menus, dim sum, à la carte, tasting and vegetarian options all live under one roof.</p>
+      <div class="restaurant-notes">
+        <div class="restaurant-note"><b>Choose it when</b>The group wants a dress-up Cantonese meal without building the itinerary around a reservation drop. Lunch works especially well between Central sights.</div>
+        <div class="restaurant-note"><b>Booking reality</b>Start checking 1–2 weeks out and use the restaurant's own reservation link. Open daily for lunch and dinner in the Nexxus Building.</div>
+      </div>
+      <div class="restaurant-actions"><a class="primary" href="https://yingjeeclub.hk/menu/">Menus + reserve ↗</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Ying+Jee+Club+Nexxus+Building+Hong+Kong">Map ⌖</a></div>
+    </article>
+
+    <article class="restaurant-card">
+      <div class="restaurant-top">
+        <div class="restaurant-place"><span class="city">Shanghai · Xintiandi · Routes A/G</span><h4><a href="https://www.google.com/maps/search/?api=1&amp;query=T%27ang+Court+Langham+Shanghai+Xintiandi">T'ang Court</a></h4></div>
+        <span class="restaurant-award">2★ · 2026</span>
+      </div>
+      <div class="restaurant-tags"><span>Classic Cantonese</span><span>18-seat dining room</span><span>Formal</span></div>
+      <p class="restaurant-summary">A tiny, opulent Cantonese dining room inside the Langham. Choose it for precise wok cooking and a quiet formal meal—not because Shanghai lacks excellent local food.</p>
+      <div class="restaurant-notes">
+        <div class="restaurant-note"><b>Order this</b>Three-onion Australian lobster, salted-egg-yolk frog leg, or the black-bean abalone and geoduck built around proper wok hei.</div>
+        <div class="restaurant-note"><b>Booking reality</b>Email or call 1–2 weeks ahead and provide a local or hotel number. Tables are held only 15 minutes, so do not schedule it after a tight day trip.</div>
+      </div>
+      <div class="restaurant-actions"><a class="primary" href="https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/">Official details ↗</a><a href="https://www.google.com/maps/search/?api=1&amp;query=T%27ang+Court+Langham+Shanghai+Xintiandi">Map ⌖</a></div>
+    </article>
+
+    <article class="restaurant-card">
+      <div class="restaurant-top">
+        <div class="restaurant-place"><span class="city">Shanghai · Jing'an · Routes A/G</span><h4><a href="https://www.google.com/maps/search/?api=1&amp;query=Fu+1088+375+Zhenning+Road+Shanghai">Fu 1088</a></h4></div>
+        <span class="restaurant-award">1★ · Shanghainese</span>
+      </div>
+      <div class="restaurant-tags"><span>1920s townhouse</span><span>Private rooms</span><span>Best local splurge</span></div>
+      <p class="restaurant-summary">This is the Shanghai-specific choice: sophisticated local cooking inside a preserved townhouse with 16 traditionally furnished rooms. It feels like old Shanghai rather than an international hotel restaurant.</p>
+      <div class="restaurant-notes">
+        <div class="restaurant-note"><b>Order this</b>Made-to-order river shrimp, sweet-glazed smoked mackerel belly and the cashew-praline puff. Ask the restaurant to help balance the order for the table.</div>
+        <div class="restaurant-note"><b>Booking reality</b>Call direct 1–2 weeks ahead, especially for a group private room. Address: 375 Zhenning Road; phone +86 21 5239 7878.</div>
+      </div>
+      <div class="restaurant-actions"><a class="primary" href="https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/fu-1088">Guide + contact ↗</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Fu+1088+375+Zhenning+Road+Shanghai">Map ⌖</a></div>
+    </article>
+
+    <article class="restaurant-card">
+      <div class="restaurant-top">
+        <div class="restaurant-place"><span class="city">Guangzhou · Four Seasons · Routes A/F</span><h4><a href="https://www.google.com/maps/search/?api=1&amp;query=Yu+Yue+Heen+Four+Seasons+Guangzhou">Yu Yue Heen</a></h4></div>
+        <span class="restaurant-award">1★ · Cantonese</span>
+      </div>
+      <div class="restaurant-tags"><span>Seasonal seafood</span><span>À la carte</span><span>Reopening watch</span></div>
+      <p class="restaurant-summary">The Guangzhou splurge, focused on polished regional Cantonese cooking rather than spectacle. The original 71st-floor room is being enhanced and is scheduled to return in September.</p>
+      <div class="restaurant-notes">
+        <div class="restaurant-note"><b>Order this</b>Prawn dumplings with bamboo shoots, crispy chicken and roasted Magang goose; add seasonal seafood only after confirming the market price.</div>
+        <div class="restaurant-note"><b>Booking reality</b>Book 1–2 weeks ahead and reconfirm the dining-room location for fall. During renovation the restaurant is temporarily on the podium's second floor.</div>
+      </div>
+      <div class="restaurant-actions"><a class="primary" href="https://www.fourseasons.com/en/guangzhou/dining/restaurants/yu_yue_heen/">Reserve direct ↗</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Yu+Yue+Heen+Four+Seasons+Guangzhou">Map ⌖</a></div>
+    </article>
+
+    <article class="restaurant-card">
+      <div class="restaurant-top">
+        <div class="restaurant-place"><span class="city">Shanghai · Bund 18 · Routes A/G</span><h4><a href="https://www.google.com/maps/search/?api=1&amp;query=Mr+and+Mrs+Bund+18+Shanghai">Mr. &amp; Mrs. Bund</a></h4></div>
+        <span class="restaurant-award">Best view meal</span>
+      </div>
+      <div class="restaurant-tags"><span>French brasserie</span><span>Pudong skyline</span><span>Lunch from RMB 280</span></div>
+      <p class="restaurant-summary">The non-Chinese wildcard: Paul Pairet's lively brasserie pairs a real Bund-night-out atmosphere with floor-to-ceiling Pudong views. Pick it for the room and the group energy, not for Michelin collecting.</p>
+      <div class="restaurant-notes">
+        <div class="restaurant-note"><b>Order this</b>Share a chilled seafood platter, something from the grill and the sorbet-filled lemon tart. Weekday lunch is the value move; dinner is the view move.</div>
+        <div class="restaurant-note"><b>Booking reality</b>Reserve 3–7 days ahead and request a window or terrace table—it is a request, not a guarantee. Weekend three-course brunch currently starts at RMB 420.</div>
+      </div>
+      <div class="restaurant-actions"><a class="primary" href="https://www.mmbund.com/food/">Menu + booking ↗</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Mr+and+Mrs+Bund+18+Shanghai">Map ⌖</a></div>
+    </article>
+  </div>
+
+  <div class="food-kicker"><h3>Walk-in legends</h3><span>queue, graze, repeat</span></div>
+  <div class="walkin-grid">
+    <article class="walkin-card"><h4>Hong Kong</h4><ul><li><b>Kam's or Yat Lok</b>Roast goose with crisp skin; go off-peak and accept a shared table.</li><li><b>Tim Ho Wan</b>Baked char-siu buns and a fast dim-sum hit—do not build a whole afternoon around it.</li><li><b>Mak's Noodle</b>Small wonton-noodle bowls made for stacking with another nearby stop.</li></ul><p class="strategy">Strategy · one progressive lunch beats three separate queues</p></article>
+    <article class="walkin-card"><h4>Shanghai</h4><ul><li><b>Jia Jia Tang Bao</b>Pork-and-crab xiaolongbao; arrive near opening because popular fillings sell out.</li><li><b>Lai Lai Xiao Long</b>Crab-roe xiaolongbao and a useful backup when the famous queue is unreasonable.</li><li><b>Scallion-oil noodles</b>Add a neighborhood noodle shop so the city is not reduced to soup dumplings.</li></ul><p class="strategy">Strategy · Huanghe Road early, then coffee or People's Square</p></article>
+    <article class="walkin-card"><h4>Chongqing · Route G</h4><ul><li><b>Zhao Er Hotpot</b>Classic old-school hotpot; duck blood, fresh tripe and lotus root are the point.</li><li><b>Nine-grid hotpot</b>Choose a busy local room and order 微辣—“mild” is still properly hot.</li><li><b>Xiaomian</b>Spicy breakfast noodles, eaten standing or on a plastic stool, for roughly pocket change.</li></ul><p class="strategy">Strategy · ask the hotel to reserve hotpot; breakfast is spontaneous</p></article>
+    <article class="walkin-card"><h4>Guangzhou + Yangshuo</h4><ul><li><b>Taotaoju or Panxi</b>Morning tea with har gow, siu mai, steamed ribs and enough time for multiple rounds.</li><li><b>Beer fish</b>Yangshuo's signature; confirm the fish and price by weight before it hits the wok.</li><li><b>Guilin mifen</b>Rice noodles with braised meat, peanuts and pickles—best as a fast breakfast.</li></ul><p class="strategy">Strategy · dim sum is a two-hour event; noodles are a 20-minute meal</p></article>
   </div>
 
   <div class="sec-head" id="sec-take"><span class="num">07</span><h2>Our take</h2><span class="rule"></span></div>
