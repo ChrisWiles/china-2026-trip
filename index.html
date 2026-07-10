@@ -39,7 +39,11 @@
     font-family: var(--sans);
     line-height: 1.6;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
   }
+
+  img, table { max-width: 100%; }
+  a, p, li, td, small { overflow-wrap: anywhere; }
 
   .wrap {
     max-width: 1080px;
@@ -420,8 +424,64 @@
   .foodbox li b { color: var(--paper); }
   .foodbox .h { font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--neutral); margin: 0 0 0.4rem; }
 
+  /* ---- City playbook ---- */
+  .playbook-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1.45fr) minmax(240px, 0.8fr);
+    gap: 1rem;
+    align-items: stretch;
+    margin-bottom: 1rem;
+  }
+  .playbook-intro > * { min-width: 0; }
+  .playbook-callout {
+    background: var(--ink);
+    color: var(--paper);
+    border-radius: 3px;
+    padding: 1rem 1.2rem;
+    font-size: 0.84rem;
+  }
+  .playbook-callout b { color: var(--ochre); }
+  .playbook-callout p { margin: 0; color: #D2CFC6; }
+  .city-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.9rem; }
+  .city-guide {
+    min-width: 0;
+    background: #FBFAF6;
+    border: 1px solid var(--line);
+    border-top: 3px solid var(--city-color, var(--jade));
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .city-guide summary {
+    min-height: 60px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.8rem;
+    align-items: center;
+    padding: 0.85rem 1rem;
+    cursor: pointer;
+  }
+  .city-guide summary::-webkit-details-marker { display: none; }
+  .city-guide summary::after { content: "+"; font-family: var(--mono); color: var(--neutral); font-size: 1rem; }
+  .city-guide[open] summary::after { content: "−"; }
+  .city-guide summary:hover { background: var(--paper-2); }
+  .city-guide summary:focus-visible { outline: 2px solid var(--cinnabar); outline-offset: -2px; }
+  .city-title { min-width: 0; }
+  .city-title b { display: block; font-family: var(--serif); font-size: 1.22rem; font-weight: 400; line-height: 1.2; }
+  .city-title small { display: block; margin-top: 0.2rem; color: var(--neutral); font-family: var(--mono); font-size: 0.62rem; letter-spacing: 0.07em; text-transform: uppercase; }
+  .city-body { border-top: 1px solid var(--line); padding: 0.95rem 1rem 1.1rem; }
+  .city-vibe { margin: 0 0 0.85rem; color: var(--ink-soft); font-size: 0.88rem; }
+  .city-picks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.55rem; }
+  .city-pick { min-width: 0; background: var(--paper); border-radius: 3px; padding: 0.7rem 0.75rem; }
+  .city-pick .kind { display: block; color: var(--cinnabar); font-family: var(--mono); font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.15rem; }
+  .city-pick b { display: block; font-size: 0.84rem; line-height: 1.35; }
+  .city-pick span { display: block; margin-top: 0.22rem; color: var(--ink-soft); font-size: 0.76rem; line-height: 1.42; }
+  .city-foot { display: flex; flex-wrap: wrap; gap: 0.45rem 0.8rem; align-items: center; margin-top: 0.8rem; font-size: 0.72rem; }
+  .city-foot a { color: var(--jade-deep); text-underline-offset: 3px; }
+  .city-foot .save { font-family: var(--mono); color: var(--neutral); }
+
   /* ---- Take / cards ---- */
-  .takes { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; }
+  .takes { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(230px, 100%), 1fr)); gap: 1rem; }
   .take {
     background: #FBFAF6;
     border: 1px solid var(--line);
@@ -523,7 +583,7 @@
   .picker .hint { font-size: 0.8rem; color: var(--neutral); margin: 0.8rem 0 0; }
 
   /* ---- Bookmarks ---- */
-  .resources { display: grid; grid-template-columns: repeat(auto-fill, minmax(230px, 1fr)); gap: 0.7rem; }
+  .resources { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(230px, 100%), 1fr)); gap: 0.7rem; }
   .res {
     display: block;
     background: #FBFAF6;
@@ -579,7 +639,7 @@
     .route .title .name { font-size: 1.08rem; }
     .tagline { font-size: 0.82rem; }
     .route-body { padding: 0 1rem 1.2rem; }
-    .prep, .dates-grid, .food-grid { grid-template-columns: 1fr; }
+    .prep, .dates-grid, .food-grid, .playbook-intro, .city-grid { grid-template-columns: minmax(0, 1fr); }
     .gallery { grid-template-columns: repeat(2, 1fr); }
     .gallery img { height: 108px; }
     .filmstrip img { height: 124px; }
@@ -588,6 +648,41 @@
     .lightbox { padding: 0.8rem; }
     .meta-row { gap: 1rem 1.6rem; }
     .meta .v { font-size: 1.15rem; }
+    table.food thead { display: none; }
+    table.food, table.food tbody { display: block; }
+    table.food tr { display: block; padding: 0.75rem 0; border-bottom: 1px solid var(--line); }
+    table.food tr.hot { background: rgba(192,57,43,0.07); padding-inline: 0.65rem; }
+    table.food td, table.food tr.hot td { display: block; padding: 0.12rem 0; border: 0; background: none; }
+    table.food td.lead { white-space: normal; margin: 0.18rem 0; }
+    .lock { grid-template-columns: auto minmax(0, 1fr); gap: 0.2rem 0.75rem; }
+    .lock .lead { grid-column: 2; white-space: normal; }
+    .city-picks { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 480px) {
+    .wrap { padding-inline: 0.85rem; }
+    .eyebrow { letter-spacing: 0.17em; gap: 0.45rem; }
+    .meta-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .jumpnav { margin-inline: -0.85rem; padding-inline: 0.85rem; }
+    .jumpnav a { min-height: 44px; display: grid; place-items: center; padding-inline: 0.85rem; }
+    .sec-head { align-items: center; gap: 0.55rem; flex-wrap: wrap; }
+    .sec-head h2 { min-width: 0; flex: 1 1 auto; line-height: 1.1; }
+    .sec-head .rule { display: none; }
+    .sec-head .xall { flex-basis: 100%; min-height: 44px; }
+    .route-head { grid-template-columns: 62px minmax(0, 1fr); padding: 0.75rem; }
+    .rthumb { width: 62px; height: 84px; }
+    .badge { width: 1.7rem; height: 1.7rem; font-size: 0.95rem; }
+    .rtag { white-space: normal; letter-spacing: 0.06em; }
+    .route-body { padding-inline: 0.75rem; }
+    .gallery { gap: 0.35rem; }
+    .gallery img { height: 92px; }
+    .windowbox, .foodbox, .prepbox, .picker, .playbook-callout { padding: 1rem; }
+    .windowbox table, .windowbox tbody, .windowbox tr, .windowbox td { display: block; width: 100%; }
+    .windowbox tr { padding: 0.5rem 0; border-bottom: 1px solid rgba(242,240,233,0.15); }
+    .windowbox td { padding: 0.08rem 0; border: 0; white-space: normal !important; }
+    .presult-row { grid-template-columns: 2.2rem minmax(0, 1fr); gap: 0.6rem; }
+    .presult-row .go { grid-column: 2; min-height: 44px; display: inline-flex; align-items: center; }
+    .city-guide summary, .city-body { padding-inline: 0.8rem; }
+    .lightbox .cap { padding-inline: 1rem; letter-spacing: 0.08em; }
   }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
@@ -613,6 +708,7 @@
     <a href="#dates">When to go</a>
     <a href="#sec-matrix">Matrix</a>
     <a href="#sec-picker">Picker</a>
+    <a href="#sec-playbook">Explore</a>
     <a href="#sec-food">Eat</a>
     <a href="#sec-take">Our take</a>
     <a href="#sec-prep">Prep</a>
@@ -695,7 +791,14 @@
     <p class="hint">Nothing selected = overall totals. Scores come straight from the decision matrix above.</p>
   </div>
 
-  <div class="sec-head" id="sec-food"><span class="num">05</span><h2>Eat here — the foodie file</h2><span class="rule"></span></div>
+  <div class="sec-head" id="sec-playbook"><span class="num">05</span><h2>The city playbook</h2><span class="rule"></span></div>
+  <div class="playbook-intro">
+    <p class="sec-note">The vacation layer: the must-do icons, active days, big-view meals and drinks, destination spas, water experiences, and day trips that are easy to miss when we only compare routes. Open any city that appears in a route you like.</p>
+    <div class="playbook-callout"><p><b>Instagram reality check.</b> Save these now, but re-check hours, reservation channels, weather closures, and foreign-guest rules 2–4 weeks before the trip. Mainland venues often move booking into WeChat or Alipay.</p></div>
+  </div>
+  <div class="city-grid" id="city-guides"></div>
+
+  <div class="sec-head" id="sec-food"><span class="num">06</span><h2>Eat here — the foodie file</h2><span class="rule"></span></div>
   <p class="sec-note">The tables that need a plan, ranked by booking lead. Full cross-city index (walk-in classics, dish lists) lives in the wiki's restaurant page.</p>
   <div class="food-grid">
     <div>
@@ -739,7 +842,7 @@
     </div>
   </div>
 
-  <div class="sec-head" id="sec-take"><span class="num">06</span><h2>Our take</h2><span class="rule"></span></div>
+  <div class="sec-head" id="sec-take"><span class="num">07</span><h2>Our take</h2><span class="rule"></span></div>
   <div class="takes">
     <div class="take" style="--tc:var(--cinnabar)">
       <img class="zoom" loading="lazy" decoding="async" src="images/thumbs/wuzhen/xizha-bridge-night.jpg" data-full="images/wuzhen/xizha-bridge-night.jpg" alt="Wuzhen stone bridge lit at night">
@@ -791,7 +894,7 @@
     </div>
   </div>
 
-  <div class="sec-head" id="sec-prep"><span class="num">07</span><h2>Before we go</h2><span class="rule"></span></div>
+  <div class="sec-head" id="sec-prep"><span class="num">08</span><h2>Before we go</h2><span class="rule"></span></div>
   <div class="prep">
     <div>
       <div class="locks">
@@ -822,7 +925,7 @@
     </div>
   </div>
 
-  <div class="sec-head" id="sec-links"><span class="num">08</span><h2>Bookmarks</h2><span class="rule"></span></div>
+  <div class="sec-head" id="sec-links"><span class="num">09</span><h2>Bookmarks</h2><span class="rule"></span></div>
   <p class="sec-note">The links we keep reaching for — official rules, booking channels, and the blogs worth reading before we go.</p>
   <div class="resources">
     <a class="res" href="https://en.nia.gov.cn/n147418/n147463/c183412/content.html"><span class="tag">Official</span><b>NIA — TWOV rules</b><small>China's official 240-hour visa-free transit page. The source of truth.</small></a>
@@ -1134,6 +1237,163 @@
     totals: [34,24,32,32,31,36,33]
   };
 
+  const CITY_GUIDES = [
+    {
+      city: "Hong Kong", routes: "All routes · 4–6 nights", color: "var(--cinnabar)",
+      vibe: "Harbour drama, dim sum, beaches and genuinely great hiking in the same day.",
+      picks: [
+        ["Must", "Peak Tram + Lugard Road at blue hour", "Ride up before sunset, walk the mostly level lookout loop, then stay for the lights."],
+        ["Active", "Dragon’s Back to Big Wave Bay", "The signature half-day ridge hike; pair it with a beach finish and late dim sum."],
+        ["View + eat", "Harbour night: Star Ferry + Ozone or Aqua", "Take the cheap skyline crossing first, then choose one high-floor drink instead of stacking observation decks."],
+        ["Reset", "Asaya or Ritz-Carlton harbour-view spa", "A true splurge recovery block; Asaya adds a harbour-facing infinity pool."],
+        ["Day trip", "Lamma food hike or Lantau cable-car circuit", "Lamma is the relaxed seafood-and-walk pick; Lantau is the bigger Buddha, gondola and Tai O day."],
+        ["Wildcard", "Cheung Chau island day", "Ferry out for coastal trails, beaches, street snacks and a slower village rhythm."]
+      ],
+      source: "https://www.discoverhongkong.com/eng/attractions/the-best-vantage-points-for-viewing-the-iconic-skyline.html",
+      map: "Hong Kong Peak Tram Dragon's Back Lamma Island Asaya"
+    },
+    {
+      city: "Guangzhou", routes: "Routes A / F · 1–3 nights", color: "var(--ochre)",
+      vibe: "Old Canton, absurdly good dim sum and a futuristic Pearl River skyline.",
+      picks: [
+        ["Must", "Shamian + Chen Clan + Old Liwan", "A compact old-city circuit of banyan streets, carved halls, markets and arcade lanes."],
+        ["Active", "Baiyun Mountain sunset hike", "Use the cable car to tune the effort, then walk the ridge viewpoints over the city."],
+        ["On the water", "Pearl River night cruise", "The cleanest way to see Canton Tower and Zhujiang New Town light up together."],
+        ["View + eat", "Skyline dinner at Four Seasons or Rosewood", "Book a window table; do this instead of another observation ticket if the group wants a splurge."],
+        ["Day trip", "Conghua hot springs", "Make the spa day the destination: mineral pools, forest air and a full reset outside the center."],
+        ["Big fun", "Chimelong Paradise or Safari Park", "A full-day theme-park swap when the group wants rides or animals instead of another temple."]
+      ],
+      source: "https://www.gz.gov.cn/guangzhouinternational/visitors/whattodo/sportsandrecreation/hiking/",
+      map: "Guangzhou Baiyun Mountain Pearl River Cruise Conghua Hot Spring"
+    },
+    {
+      city: "Hangzhou", routes: "Routes B / C · 1–2 nights", color: "var(--jade)",
+      vibe: "Lake-and-tea serenity with enough hills, temples and design hotels to become a trip highlight.",
+      picks: [
+        ["Must", "Hand-rowed West Lake boat", "Go early or late for softer light; land at Three Pools Mirroring the Moon."],
+        ["Active", "Jiuxi → Longjing tea-field hike", "Walk creek, bamboo and tea hills, then finish with a farmer-hosted tea tasting."],
+        ["Culture", "Lingyin + Feilai Feng before 09:30", "Carved grottoes and temple halls before the tour groups arrive."],
+        ["View + eat", "Jin Sha or Lou Wai Lou by the lake", "Reserve a lake-facing table and order West Lake fish, Dongpo pork and Longjing shrimp."],
+        ["Reset", "Amanfayun or Four Seasons spa", "The atmospheric version is temple-valley quiet; the convenient version stays on West Lake."],
+        ["Day trip", "Xixi Wetland or Shaoxing", "Choose reeds and slow boats at Xixi, or canals, rice wine and Lu Xun history in Shaoxing."]
+      ],
+      source: "https://www.ehangzhou.gov.cn/2025-03/19/c_293059.htm",
+      map: "Hangzhou West Lake Jiuxi Longjing Lingyin Temple"
+    },
+    {
+      city: "Huangshan", routes: "Routes B / C · 2 nights", color: "var(--jade-deep)",
+      vibe: "A physical mountain day rewarded with cloud seas, granite silhouettes and ancient villages.",
+      picks: [
+        ["Must", "Summit night + sunrise", "Stay on the mountain so sunrise does not depend on a pre-dawn transfer or cable-car queue."],
+        ["Active", "West Sea Grand Canyon stair circuit", "The most dramatic trail option; shorten it with the monorail if knees or weather say no."],
+        ["Photo", "Hongcun at 07:00", "Mirror-pond lanes before buses arrive, then continue to quieter Xidi or Chengkan."],
+        ["Reset", "Huangshan hot-spring soak", "Schedule it after the descent, not before; tired legs are the entire point."],
+        ["Day trip", "Xidi + Hongcun village loop", "Hire a driver for the UNESCO villages and preserve time for alleys beyond the main ponds."],
+        ["Weather save", "Tunxi Old Street + Huizhou food", "The lower-altitude fallback for clouded-in mountain hours."]
+      ],
+      source: "https://www.cnto.org.uk/wp-content/uploads/2025/05/Huangshan-Travel-Guide.pdf",
+      map: "Huangshan Mountain Hongcun Xidi Huangshan Hot Spring"
+    },
+    {
+      city: "Xiamen", routes: "Route B · 1–2 nights", color: "var(--ochre)",
+      vibe: "A warm coastal break: car-free island lanes, sea air, Hokkien food and a real hot-spring option.",
+      picks: [
+        ["Must", "Gulangyu before the day-trippers", "Catch an early timed ferry, climb Sunlight Rock, then lose the crowds in residential lanes."],
+        ["Active", "Cycle Huandao Road", "Rent bikes for the coast, Baicheng Beach and breezy boardwalk sections."],
+        ["View + eat", "Lujiang Harbourview rooftop", "Sunset drinks or breakfast looking straight across to Gulangyu."],
+        ["Water spa", "Riyuegu Hot Springs", "Dozens of landscaped indoor and outdoor mineral pools, saunas, slides and massage outside the center."],
+        ["Culture", "Nanputuo + Wulao Peak", "Temple first, vegetarian lunch, then climb above the campus and coast if the weather is clear."],
+        ["Day trip", "Tulou cluster with a guide", "A long but memorable day to Fujian’s circular earthen villages; only add it with a spare night."]
+      ],
+      source: "https://www.riyuegu.com/EN/wenquan.aspx",
+      map: "Xiamen Gulangyu Huandao Road Riyuegu Hot Spring"
+    },
+    {
+      city: "Shenzhen", routes: "Routes B–F · 1 night", color: "var(--jade-deep)",
+      vibe: "Use the transit night as a neon, rooftop and mega-spa sampler—not a checklist city.",
+      picks: [
+        ["Must", "Ping An deck + Civic Center light show", "Stack the high view and ground-level city axis in one compact Futian evening."],
+        ["Design", "OCT-LOFT + Nantou Ancient City", "Creative warehouses, cafés and a restored urban village make the best non-skyline afternoon."],
+        ["View + drink", "St. Regis 96F or Talent Park", "Choose the glass-tower cocktail or the free bayfront skyline walk."],
+        ["Water spa", "Queen Spa 24-hour bathhouse", "The social-media China spa format: baths, sauna, massage, food and lounge time; verify current foreign-guest rules."],
+        ["Active", "Nanshan sunset hike", "A short, stair-heavy climb with Shenzhen Bay and skyline views."],
+        ["Day trip", "Dapeng Fortress + beach", "Only with a full spare day: old lanes, coastal trail and a swim far east of downtown."]
+      ],
+      source: "https://www.dpxq.gov.cn/english/travel/naturalattractions/",
+      map: "Shenzhen Ping An Finance Center OCT Loft Queen Spa Nanshan"
+    },
+    {
+      city: "Zhangjiajie", routes: "Route E · 2–3 nights", color: "var(--jade-deep)",
+      vibe: "The trip’s pure thrill stop: pillar peaks, cliff walks, giant lifts and cable cars.",
+      picks: [
+        ["Must", "Yuanjiajie + Tianzi Mountain", "Link the Avatar pillar overlooks by eco-bus and cable car; start at opening."],
+        ["Thrill", "Grand Canyon glass bridge", "Add the canyon walk, zip line or elevator so it is more than one bridge photo."],
+        ["Active", "Golden Whip Stream", "A forest-floor walk beneath the towers; the quiet contrast to the cliff-top crowds."],
+        ["Big ride", "Tianmen cableway + glass skywalk", "A separate full mountain day with Heaven’s Gate and the 99-bend road."],
+        ["Night", "72 Wonder Tower or Tujia dinner", "Use the evening for a glowing architectural spectacle or a less-produced local meal."],
+        ["Weather save", "Huanglong Cave", "A huge underground karst system when fog erases the mountain views."]
+      ],
+      source: "https://whhlyt.hunan.gov.cn/whhlyt/english/Tourism/5AScenicAreas/202206/t20220608_25435436.html",
+      map: "Zhangjiajie Yuanjiajie Tianmen Mountain Glass Bridge"
+    },
+    {
+      city: "Guilin + Yangshuo", routes: "Route F · 3–4 nights", color: "var(--jade)",
+      vibe: "The most activity-rich nature stop: bikes, boats, rafts, climbing, caves and sunrise peaks.",
+      picks: [
+        ["Must", "Li River cruise to Yangshuo", "Let the karst unfold from the water; use the one-way cruise as transport, not a return excursion."],
+        ["Active", "Yulong River bike + bamboo raft", "Cycle village lanes, put the bikes on a raft section, and finish at a farmhouse lunch."],
+        ["Hike", "Xianggong or Cuiping sunrise", "Hire a driver for the trailhead; the elevated river bends are the view you came for."],
+        ["Adventure", "Guided rock climbing", "Yangshuo is a global climbing base with beginner-friendly limestone routes and gear included."],
+        ["View + stay", "Sugar House or Yulong valley guesthouse", "Pick a pool, terrace or breakfast room facing the peaks—the hotel view matters here."],
+        ["Day trip", "Longji rice terraces", "A full hiking day through Ping’an or Dazhai villages; better with an overnight than a rushed bus loop."]
+      ],
+      source: "https://visitguilin.org/travel-information/about-guilin/areas-of-guilin/",
+      map: "Yangshuo Yulong River Xianggong Mountain Longji Rice Terraces"
+    },
+    {
+      city: "Chongqing", routes: "Route G · 2–3 nights", color: "var(--crit)",
+      vibe: "Cyberpunk hills, spicy food, river views and surprisingly serious hot-spring culture.",
+      picks: [
+        ["Must", "Hongya Cave from Qiansimen Bridge", "Photograph the glowing cliff-side complex from across the river before entering the crowds."],
+        ["City thrill", "Yangtze cableway + Raffles skybridge", "Cross the river in the old gondola, then go high for the two-river sunset."],
+        ["Active", "8D city stair walk", "Link Kuixinglou, Shibati, Longmenhao and hillside alleys with metro hops and a lot of stairs."],
+        ["Water spa", "Ronghui Hot Spring", "Open-air pools, hydrotherapy and spa facilities make the easiest in-city recovery half-day."],
+        ["View + eat", "Nanbin Road grilled fish", "Eat riverside with the lit Yuzhong skyline across the water."],
+        ["Day trip", "Wulong Three Natural Bridges", "A long guided or rail-and-car day to giant karst arches; choose this over Ciqikou if landscapes win."]
+      ],
+      source: "https://www.cqspb.gov.cn/wzywb/exploreleisure/attractions/202209/t20220930_11159549.html",
+      map: "Chongqing Hongya Cave Raffles City Ronghui Hot Spring Wulong"
+    },
+    {
+      city: "Wuzhen", routes: "Routes A / G · 1–2 nights", color: "var(--cinnabar)",
+      vibe: "The slow-down stop: boats, lantern reflections, workshops and the town after tour buses leave.",
+      picks: [
+        ["Must", "Xizha after 21:00", "Stay inside the scenic zone and walk again when the day-trippers have gone."],
+        ["On the water", "Private sculled boat at dawn or dusk", "The canals are the attraction; pay for the quiet light, not the middle-of-day traffic."],
+        ["Culture", "Dyehouse + distillery + water market", "Pick a few living-craft stops instead of speed-running every small museum."],
+        ["View + eat", "Canalside mutton + Sanbai wine", "Reserve the scenery, then order the local braised mutton and rice wine."],
+        ["Reset", "Guesthouse courtyard afternoon", "Protect unplanned time for tea, a foot massage and watching boats from the room."],
+        ["Day trip", "Nanxun or Mogan Mountain", "Only add one: another quieter canal town, or bamboo hills and villas for nature."]
+      ],
+      source: "https://en.wuzhen.com.cn/web/traver/tour/details?id=8",
+      map: "Wuzhen Xizha Water Market Indigo Fabric Workshop"
+    },
+    {
+      city: "Shanghai", routes: "Routes A–E / G · 3–5 nights", color: "var(--cinnabar)",
+      vibe: "Do the impossible skyline, old lanes, contemporary art, tasting menus and viral mega-spa in one finish.",
+      picks: [
+        ["Must", "Bund blue hour + Huangpu cruise", "Walk north-to-south as lights come on, then see both skylines from the river."],
+        ["High view", "Shanghai Tower—or the new Long Beach sky swing", "Choose the classic 118F deck or the 180 m open-air thrill ride; confirm operations near the trip."],
+        ["Culture", "West Bund art mile by bike", "Ride the riverfront between Long Museum, West Bund Museum, galleries and cafés."],
+        ["Water spa", "Shuiguo Hot Spring 24-hour bathhouse", "The viral all-day format: themed pools, saunas, lounge food and entertainment; go on a recovery day."],
+        ["View + eat", "Bund dinner: Hakkasan or Mr. & Mrs. Bund", "Reserve a window-facing dinner and arrive before dark for the skyline transition."],
+        ["Day trip", "Suzhou gardens or Zhujiajiao", "Suzhou is the richer full day; Zhujiajiao is the easier half-day water-town escape."]
+      ],
+      source: "https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260421/7b108876c4b54081a29f2aec3e8616d1.html",
+      map: "Shanghai Shuiguo Hot Spring West Bund Shanghai Tower"
+    }
+  ];
+
   function scoreColor(n) {
     const stops = { 1: "#BC4B3C", 2: "#C77A3B", 3: "#B0883C", 4: "#7E9A5E", 5: "#5E8A5A" };
     return stops[n] || "#8C948D";
@@ -1204,6 +1464,27 @@
       btn.setAttribute("aria-expanded", String(!open));
     });
     rc.appendChild(el);
+  });
+
+  // Render the destination activity playbook
+  const cityGuides = document.getElementById("city-guides");
+  CITY_GUIDES.forEach((guide, i) => {
+    const details = document.createElement("details");
+    details.className = "city-guide";
+    details.style.setProperty("--city-color", guide.color);
+    if (i === 0) details.open = true;
+    const picks = guide.picks.map(([kind, title, note]) => `
+      <div class="city-pick"><span class="kind">${kind}</span><b>${title}</b><span>${note}</span></div>
+    `).join("");
+    const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(guide.map)}`;
+    details.innerHTML = `
+      <summary><span class="city-title"><b>${guide.city}</b><small>${guide.routes}</small></span></summary>
+      <div class="city-body">
+        <p class="city-vibe">${guide.vibe}</p>
+        <div class="city-picks">${picks}</div>
+        <div class="city-foot"><a href="${mapUrl}" target="_blank" rel="noopener">map the shortlist ↗</a><a href="${guide.source}" target="_blank" rel="noopener">research source ↗</a><span class="save">save · verify · book</span></div>
+      </div>`;
+    cityGuides.appendChild(details);
   });
 
   // Render matrix
