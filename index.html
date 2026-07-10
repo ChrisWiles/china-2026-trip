@@ -588,7 +588,23 @@
   .city-pick { min-width: 0; background: var(--paper); border-radius: 3px; padding: 0.7rem 0.75rem; }
   .city-pick .kind { display: block; color: var(--cinnabar); font-family: var(--mono); font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 0.15rem; }
   .city-pick b { display: block; font-size: 0.84rem; line-height: 1.35; }
-  .city-pick span { display: block; margin-top: 0.22rem; color: var(--ink-soft); font-size: 0.76rem; line-height: 1.42; }
+  .city-pick-title { color: var(--ink); text-decoration-color: color-mix(in srgb, var(--jade-deep) 55%, transparent); text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  .city-pick-title:hover { color: var(--jade-deep); text-decoration-color: currentColor; }
+  .city-pick .pick-note { display: block; margin-top: 0.3rem; color: var(--ink-soft); font-size: 0.76rem; line-height: 1.42; }
+  .city-pick-link {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 0.55rem;
+    padding-top: 0.45rem;
+    border-top: 1px solid var(--line);
+    color: var(--jade-deep);
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+  }
+  .city-pick-link:hover { color: var(--cinnabar); }
   .city-foot { display: flex; flex-wrap: wrap; gap: 0.45rem 0.8rem; align-items: center; margin-top: 0.8rem; font-size: 0.72rem; }
   .city-foot a { color: var(--jade-deep); text-underline-offset: 3px; }
   .city-foot .save { font-family: var(--mono); color: var(--neutral); }
@@ -1025,7 +1041,7 @@
 
   <div class="sec-head" id="sec-playbook"><span class="num">07</span><h2>The city playbook</h2><span class="rule"></span></div>
   <div class="playbook-intro">
-    <p class="sec-note">The vacation layer: the must-do icons, active days, big-view meals and drinks, destination spas, water experiences, and day trips that are easy to miss when we only compare routes. Open any city that appears in a route you like.</p>
+    <p class="sec-note">The vacation layer: the must-do icons, active days, big-view meals and drinks, destination spas, water experiences, and day trips that are easy to miss when we only compare routes. Every activity title is clickable; trail cards open AllTrails and the rest open a focused Google Maps search.</p>
     <div class="playbook-callout"><p><b>Instagram reality check.</b> Save these now, but re-check hours, reservation channels, weather closures, and foreign-guest rules 2–4 weeks before the trip. Mainland venues often move booking into WeChat or Alipay.</p></div>
   </div>
   <div class="museum-radar">
@@ -2058,14 +2074,28 @@
 
   // Render the destination activity playbook
   const cityGuides = document.getElementById("city-guides");
+  const TRAIL_DETAIL_TERMS = /Lugard Road|Dragon’s Back|Baiyun Mountain|Jiuxi|West Sea Grand Canyon|Wulao Peak|Nanshan sunset|Golden Whip Stream|Xianggong|Cuiping|Longji rice terraces/i;
+  function activityDetails(city, title) {
+    const trail = TRAIL_DETAIL_TERMS.test(title);
+    const query = encodeURIComponent(`${title} ${city}`);
+    return trail
+      ? { url: `https://www.alltrails.com/search?q=${query}`, label: "Trail details on AllTrails" }
+      : { url: `https://www.google.com/maps/search/?api=1&query=${query}`, label: "Place details on Google Maps" };
+  }
   CITY_GUIDES.forEach((guide, i) => {
     const details = document.createElement("details");
     details.className = "city-guide";
     details.style.setProperty("--city-color", guide.color);
     if (i === 0) details.open = true;
-    const picks = guide.picks.map(([kind, title, note]) => `
-      <div class="city-pick"><span class="kind">${kind}</span><b>${title}</b><span>${note}</span></div>
-    `).join("");
+    const picks = guide.picks.map(([kind, title, note]) => {
+      const detailsLink = activityDetails(guide.city, title);
+      return `<div class="city-pick">
+        <span class="kind">${kind}</span>
+        <b><a class="city-pick-title" href="${detailsLink.url}" target="_blank" rel="noopener" aria-label="${title}: ${detailsLink.label}">${title}</a></b>
+        <span class="pick-note">${note}</span>
+        <a class="city-pick-link" href="${detailsLink.url}" target="_blank" rel="noopener">${detailsLink.label} ↗</a>
+      </div>`;
+    }).join("");
     const intel = TRAVELER_NOTES[guide.city];
     const travelerIntel = intel ? `
       <div class="traveler-intel">
