@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>China · Fall 2026 — Route Plan</title>
+<meta name="description" content="A researched, mobile-first comparison of seven Fall 2026 China routes, with transit-without-visa clocks, city playbooks, new museums, food, activities and booking guidance.">
 <meta property="og:title" content="China · Fall 2026 — Route Plan">
 <meta property="og:description" content="Seven route variants for the Fall 2026 China friends trip — photos, TWOV clocks, day-by-day itineraries, restaurants, and the decision matrix.">
 <meta property="og:image" content="https://chriswiles.github.io/china-2026-trip/images/chongqing/hongya-cave-night.jpg">
@@ -211,6 +212,9 @@
     border-radius: 999px;
     padding: 0.55rem 0.95rem;
     line-height: 1;
+    min-height: 44px;
+    display: grid;
+    place-items: center;
   }
   .jumpnav a:active, .jumpnav a:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 
@@ -586,6 +590,7 @@
     padding: 0.45rem 0.9rem;
     cursor: pointer;
     flex: 0 0 auto;
+    min-height: 44px;
   }
   .xall:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
 
@@ -606,8 +611,12 @@
     cursor: pointer;
     user-select: none;
     line-height: 1;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
   }
   .picker-chips label:has(input:checked) { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+  .picker-chips label:has(input:focus-visible) { outline: 2px solid var(--cinnabar); outline-offset: 2px; }
   .picker-chips input { position: absolute; opacity: 0; pointer-events: none; }
   .presult-row { display: grid; grid-template-columns: 2.2rem 1fr auto; gap: 0.8rem; align-items: center; padding: 0.4rem 0; }
   .presult-row .rb {
@@ -616,7 +625,7 @@
   }
   .presult-bar { height: 9px; background: var(--paper-2); border-radius: 999px; overflow: hidden; }
   .presult-bar span { display: block; height: 100%; background: var(--pc, var(--neutral)); border-radius: 999px; transition: width 0.35s ease; }
-  .presult-row .go { font-family: var(--mono); font-size: 0.7rem; color: var(--jade-deep); text-decoration: none; white-space: nowrap; }
+  .presult-row .go { font-family: var(--mono); font-size: 0.7rem; color: var(--jade-deep); text-decoration: none; white-space: nowrap; min-width: 44px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; }
   .picker .hint { font-size: 0.8rem; color: var(--neutral); margin: 0.8rem 0 0; }
 
   /* ---- Bookmarks ---- */
@@ -648,6 +657,20 @@
   }
   .lightbox.on { display: grid; }
   .lightbox img { max-width: min(1100px, 100%); max-height: 88vh; border-radius: 3px; box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+  .lightbox-close {
+    position: absolute;
+    top: max(0.8rem, env(safe-area-inset-top));
+    right: max(0.8rem, env(safe-area-inset-right));
+    width: 44px;
+    height: 44px;
+    border: 1px solid rgba(242,240,233,0.45);
+    border-radius: 999px;
+    background: rgba(20,26,23,0.72);
+    color: var(--paper);
+    font: 1.35rem/1 var(--sans);
+    cursor: pointer;
+  }
+  .lightbox-close:focus-visible { outline: 2px solid var(--ochre); outline-offset: 2px; }
   .lightbox .cap {
     position: absolute;
     bottom: 1.2rem;
@@ -734,7 +757,7 @@
     <div class="meta-row">
       <div class="meta"><span class="k">Window</span><span class="v">Oct–Nov · flex</span></div>
       <div class="meta"><span class="k">Nights</span><span class="v">13</span></div>
-      <div class="meta"><span class="k">Visa</span><span class="v">None (TWOV)</span></div>
+      <div class="meta"><span class="k">Visa plan</span><span class="v">240h TWOV</span></div>
       <div class="meta"><span class="k">Budget</span><span class="v">$9 – 11k / 2ppl</span></div>
       <div class="meta"><span class="k">Status</span><span class="v" style="color:var(--cinnabar)">Route TBD</span></div>
     </div>
@@ -772,17 +795,18 @@
       <span class="lbl">Hours · no visa</span>
     </div>
     <div>
-      <p>Every route runs on <a href="https://en.nia.gov.cn/n147418/n147463/c183412/content.html" style="color:var(--ochre)"><b>240-hour visa-free transit</b></a> — no L visa. The clock starts 00:00 the day after we enter the mainland, so the arrival day is free. Confirmed active for 2026: 65 ports, 24 regions, cross-provincial travel allowed. This single rule shapes all seven itineraries.</p>
+      <p>Every route is designed around <a href="https://en.nia.gov.cn/n147413/c187308/content.html" style="color:var(--ochre)"><b>240-hour visa-free transit</b></a> — no L visa if temporary entry is approved. The clock starts 00:00 the day after mainland entry, so the arrival day is free. Confirmed active for 2026: 65 ports, 24 regions, cross-provincial travel allowed. This single rule shapes all seven itineraries.</p>
       <ol>
         <li>Max ~10 days on the mainland; HK &amp; Macau time doesn't count.</li>
-        <li>Trip must start in one region and exit to a <b>different</b> one — HK counts, so AUS → mainland → HK → AUS qualifies.</li>
+        <li>The region immediately before mainland entry and the onward region must be <b>different</b>. HK → mainland → HK does not qualify.</li>
+        <li>HK counts as a separate region, so Austin (AUS) → mainland → HK → Austin qualifies; do not connect through HK on the inbound ticket for Routes B–F.</li>
         <li>A confirmed onward ticket out within 240 hrs is checked at entry.</li>
       </ol>
     </div>
   </section>
 
   <div class="sec-head" id="sec-routes"><span class="num">01</span><h2>The seven routes</h2><span class="rule"></span><button class="xall" id="xall">expand all</button></div>
-  <p class="sec-note">Each is a complete itinerary inside the same 13-night envelope (shown on the Oct baseline dates — shift wholesale for a Nov window). Tap a route to open its day-by-day, photos, and TWOV clock.</p>
+  <p class="sec-note">Each is a complete Day 1–15 itinerary inside the same 13-night envelope; shift it wholesale to the recommended window. Tap a route to open its plan, photos, and TWOV clock. Full dossier audit completed 10 July 2026; recheck fall flight and rail schedules before purchase.</p>
   <div class="routes" id="routes"></div>
 
   <div class="sec-head" id="dates"><span class="num">02</span><h2>When to go</h2><span class="rule"></span></div>
@@ -791,14 +815,14 @@
     <div>
       <div class="collision">
         <h3>Collision #1 — Canton Fair</h3>
-        <p>Autumn 2026 phases: <b>Oct 15–19 · Oct 23–27 · Oct 31–Nov 4</b>. Guangzhou hotels run 2–3× and sell out during phases — the baseline Route A/F Guangzhou stay walks into Phase 1.</p>
+        <p>Official Autumn 2026 phases: <b>Oct 15–19 · Oct 23–27 · Oct 31–Nov 4</b>. Guangzhou hotels tighten sharply during every phase — baseline Route A lands in Phase 1; the corrected Route F enters before it.</p>
       </div>
       <div class="collision">
         <h3>Collision #2 — HK trade-fair season</h3>
         <p>Mid-Oct through early Nov is Hong Kong's high hotel corridor (Electronics, Optical, Wine fairs). Late Nov is noticeably cheaper for the same rooms.</p>
       </div>
       <div class="sleeper">
-        <b>New for 2026 — the overnight sleeper HSR.</b> The G899 high-speed sleeper (HK West Kowloon 19:49 → Shanghai Hongqiao 06:45) went daily in January. For routes B–E it replaces the ~$200 HK→PVG flight <b>and</b> a hotel night for ~$132/person, arrives city-center, keeps a full final HK day, and the TWOV math is identical. Book the deluxe cabin. <a href="https://www.seat61.com/HongKong.htm">seat61's guide ↗</a> · <a href="https://www.highspeed.mtr.com.hk/en/ticket/fare.html">MTR fares ↗</a>
+        <b>Important sleeper trap.</b> The G899 overnight HSR from Hong Kong to Shanghai is useful on a visa trip, but <b>not</b> for Routes B–F as drawn: entering from HK and later exiting to HK fails the required third-region geometry. It only works if the mainland exit is to the US or another region. <a href="https://www.seat61.com/HongKong.htm">seat61's guide ↗</a> · <a href="https://www.highspeed.mtr.com.hk/en/ticket/fare.html">MTR fares ↗</a>
       </div>
       <div class="sleeper" style="border-left-color: var(--ochre)">
         <b>November bonuses:</b> HK's best month (<b>73°/64°F</b>, typhoon risk ≈ zero) · Shanghai mild and golden (<b>~63°F</b> days) · Huangshan peak foliage + best sea-of-clouds odds · Zhangjiajie's most-recommended half-month (<b>59–77°F</b> early Nov) · <b>hairy crab season</b> in Shanghai. Cost: one extra warm layer (summit nights <b>~32°F</b>).
@@ -808,10 +832,10 @@
       <h3>Recommended windows</h3>
       <table>
         <tr><td>Route A / G / F</td><td><b style="color:#F2F0E9">Thu Nov 5 → Thu Nov 19</b><br>Guangzhou fully post-fair · Shanghai golden · home a week before Thanksgiving</td></tr>
-        <tr><td>Route B / C / E</td><td><b style="color:#F2F0E9">Thu Oct 29 → Thu Nov 12</b><br>Huangshan / Zhangjiajie land Nov 5–8: peak foliage, prime sea of clouds</td></tr>
+        <tr><td>Route B / C / E</td><td><b style="color:#F2F0E9">Thu Oct 29 → Thu Nov 12</b><br>Huangshan / Zhangjiajie land Nov 2–5: foliage, cooler trails and better sea-of-clouds odds</td></tr>
         <tr><td>Tune-up</td><td>Departing <b style="color:#F2F0E9">Tuesday</b> instead of Thursday puts the Wuzhen guesthouse on Wed–Thu nights — cheaper, emptier canals — and weekday transpacific fares price lower.</td></tr>
       </table>
-      <p class="fine">Transpacific fares hold October-shoulder pricing until Thanksgiving week (Nov 26). Any window home by ~Nov 20 prices the same. TWOV math is date-independent.</p>
+      <p class="fine">Avoid returning in Thanksgiving week, but do not assume fares are equal: price each open-jaw pattern live before choosing the window. TWOV math is date-independent.</p>
     </div>
   </div>
 
@@ -847,10 +871,10 @@
       <table class="food">
         <thead><tr><th>Table</th><th>Book</th><th>Why</th></tr></thead>
         <tbody>
-          <tr class="hot"><td><a href="https://www.google.com/maps/search/?api=1&query=The+Chairman+restaurant+Sheung+Wan+Hong+Kong"><b>The Chairman</b><span class="mapsym">⌖</span></a><span class="city">Hong Kong · all routes</span></td><td class="lead">quarterly drop — 9am, 1st of month before the quarter</td><td>1★, former Asia's 50 Best #1. Hardest table on this list; gone in minutes. Nov trip = the <b>Sep 1</b> drop. <a href="https://www.thechairmangroup.com/">Book here ↗</a></td></tr>
+          <tr class="hot"><td><a href="https://www.google.com/maps/search/?api=1&query=The+Chairman+restaurant+Central+Hong+Kong"><b>The Chairman</b><span class="mapsym">⌖</span></a><span class="city">Hong Kong · all routes</span></td><td class="lead">quarterly release · monitor official site</td><td>1★, Asia's 50 Best #1 in 2021. Book only through its official site; release dates have varied and fake booking sites are active. <a href="https://www.thechairmangroup.com/">Book here ↗</a></td></tr>
           <tr><td><a href="https://www.google.com/maps/search/?api=1&query=Lung+King+Heen+Four+Seasons+Hong+Kong">Lung King Heen<span class="mapsym">⌖</span></a><span class="city">Hong Kong</span></td><td class="lead">30 days</td><td>2★ Cantonese at the Four Seasons; HKD 700+10% min pp</td></tr>
           <tr><td><a href="https://www.google.com/maps/search/?api=1&query=Ying+Jee+Club+Central+Hong+Kong">Ying Jee Club<span class="mapsym">⌖</span></a><span class="city">Hong Kong</span></td><td class="lead">1 week</td><td>2★ Cantonese, Central</td></tr>
-          <tr><td><a href="https://www.google.com/maps/search/?api=1&query=T'ang+Court+Langham+Xintiandi+Shanghai">T'ang Court (Langham Xintiandi)<span class="mapsym">⌖</span></a><span class="city">Shanghai · A/G</span></td><td class="lead">1 week</td><td>2★ Cantonese (upgraded in the 2026 Guide)</td></tr>
+          <tr><td><a href="https://www.google.com/maps/search/?api=1&query=T'ang+Court+Langham+Xintiandi+Shanghai">T'ang Court (Langham Xintiandi)<span class="mapsym">⌖</span></a><span class="city">Shanghai · A/G</span></td><td class="lead">1 week</td><td>1★ Cantonese in the current MICHELIN listing</td></tr>
           <tr><td><a href="https://www.google.com/maps/search/?api=1&query=Fu+1088+Zhenning+Road+Shanghai">Fu 1088<span class="mapsym">⌖</span></a><span class="city">Shanghai · A/G</span></td><td class="lead">1 week</td><td>1★ Shanghainese in a 1930s villa; the red-braised pork</td></tr>
           <tr><td><a href="https://www.google.com/maps/search/?api=1&query=Yu+Yue+Heen+Four+Seasons+Guangzhou">Yu Yue Heen<span class="mapsym">⌖</span></a><span class="city">Guangzhou · A/F</span></td><td class="lead">1 week</td><td>1★ Cantonese, Four Seasons</td></tr>
           <tr><td><a href="https://www.google.com/maps/search/?api=1&query=Mr+and+Mrs+Bund+Shanghai">Mr. &amp; Mrs. Bund<span class="mapsym">⌖</span></a><span class="city">Shanghai · A/G</span></td><td class="lead">3–5 days</td><td>Paul Pairet's brasserie, Bund view (Ultraviolet is closed)</td></tr>
@@ -907,7 +931,7 @@
       <div class="tx">
         <h3>Route F</h3>
         <div class="when">Tops the matrix</div>
-        <p>Li River karst with zero flights, a 4-day TWOV buffer, and six HK nights. The paper winner — if the group can live without Shanghai and Wuzhen.</p>
+        <p>Li River karst with zero internal flights, a ~3.5-day TWOV buffer, and six HK nights. The paper winner — if the group can live without Shanghai and Wuzhen.</p>
       </div>
     </div>
     <div class="take" style="--tc:var(--jade)">
@@ -931,7 +955,7 @@
       <div class="tx">
         <h3>Route B</h3>
         <div class="when">The one to avoid</div>
-        <p>11 hours of train across 5 segments inside a &lt;12-hour TWOV buffer. One slipped train turns into a real problem. Take C — it's most of B — or commit to E.</p>
+        <p>About 10 hours onboard across 5 rail segments inside a same-day TWOV margin. One serious disruption turns into a real problem. Take C — it's most of B — or commit to E.</p>
       </div>
     </div>
   </div>
@@ -940,14 +964,15 @@
   <div class="prep">
     <div>
       <div class="locks">
-        <div class="lock"><span class="what">The Chairman reservation drop<small>9am, first of the month before the quarter — Sep 1 for a Nov trip</small></span><span class="lead">quarterly</span></div>
-        <div class="lock"><span class="what">Flights<small>Google Flights multi-city; open-jaw for A/G</small></span><span class="lead">mid-Aug</span></div>
+        <div class="lock"><span class="what">TWOV ticket geometry<small>confirmed inbound + onward tickets; prior and onward regions must differ</small></span><span class="lead">before flights</span></div>
+        <div class="lock"><span class="what">The Chairman reservation release<small>monitor the official site; book nowhere else</small></span><span class="lead">quarterly</span></div>
+        <div class="lock"><span class="what">Flights<small>Google Flights multi-city; Routes B–F must enter mainland without connecting through HK</small></span><span class="lead">mid-Aug</span></div>
         <div class="lock"><span class="what">Wuzhen guesthouse inside Xizha<small>Routes A/G · en.wuzhen.com.cn · aim midweek</small></span><span class="lead">2 mo</span></div>
         <div class="lock"><span class="what">Huangshan summit hotel<small>Routes B/C · refundable rates, weather flex</small></span><span class="lead">2+ mo</span></div>
         <div class="lock"><span class="what">Yulong valley guesthouse<small>Route F · small places, they fill</small></span><span class="lead">4–6 wk</span></div>
-        <div class="lock"><span class="what">Internal flights<small>CAN→HGH · HKG→CKG · CKG→HGH · PVG↔DYG↔SZX</small></span><span class="lead">4–6 wk</span></div>
+        <div class="lock"><span class="what">Internal flights<small>CAN→HGH · HKG→CKG · CKG→HGH · PVG→DYG · DYG→SZX (limited frequency)</small></span><span class="lead">as schedules open</span></div>
         <div class="lock"><span class="what">Splurge dinners<small>Lung King Heen, T'ang Court, Fu 1088</small></span><span class="lead">2–4 wk</span></div>
-        <div class="lock"><span class="what">HSR / sleeper / cross-border rail<small>12306 + MTR channels; G899 sleeper for B–E</small></span><span class="lead">15 d</span></div>
+        <div class="lock"><span class="what">HSR / cross-border rail<small>12306 + MTR channels; verify exact station and final timetable</small></span><span class="lead">15 d</span></div>
         <div class="lock"><span class="what">Observation decks &amp; trams<small>weather-dependent</small></span><span class="lead">1–7 d</span></div>
       </div>
     </div>
@@ -956,13 +981,14 @@
       <ul>
         <li><b>Payments:</b> Alipay + WeChat Pay set up before landing.</li>
         <li><b>Connectivity:</b> regional HK+mainland eSIM, two VPNs installed at home.</li>
-        <li><b>Docs:</b> passport ≥6 mo validity, arrival card the night before entry, onward ticket.</li>
+        <li><b>Docs:</b> NIA requires passport validity ≥3 months; keep ≥6 months as the safer airline/other-country standard. Complete the arrival card and carry confirmed onward proof.</li>
+        <li><b>Final TWOV check:</b> reconfirm ports, permitted regions and ticket geometry with the airline and China Immigration hotline 12367 before departure.</li>
         <li><b>Weather flex:</b> book mountain hotels refundable; keep one unplanned day; insurance covers weather delay.</li>
         <li><b>Packing:</b> fall layers; Nov window adds one warm layer (summit ~32°F); real shoes for E/F.</li>
       </ul>
       <div class="budget">
         <span class="amt">$9–11k</span>
-        <span class="note">per couple · mid-range boutique · one splurge dinner per city · Route E adds ~$800 flights · Route F/sleeper variants run cheapest</span>
+        <span class="note">planning range per couple · mid-range boutique · one splurge dinner per city · excludes fare spikes; reprice after choosing a route · Route E adds roughly $800 in internal flights</span>
       </div>
     </div>
   </div>
@@ -970,15 +996,15 @@
   <div class="sec-head" id="sec-links"><span class="num">09</span><h2>Bookmarks</h2><span class="rule"></span></div>
   <p class="sec-note">The links we keep reaching for — official rules, booking channels, and the blogs worth reading before we go.</p>
   <div class="resources">
-    <a class="res" href="https://en.nia.gov.cn/n147418/n147463/c183412/content.html"><span class="tag">Official</span><b>NIA — TWOV rules</b><small>China's official 240-hour visa-free transit page. The source of truth.</small></a>
+    <a class="res" href="https://en.nia.gov.cn/n147413/c187308/content.html"><span class="tag">Official</span><b>NIA — TWOV rules</b><small>Current 55-country, 65-port policy, permitted areas, arrival-card links and hotline.</small></a>
     <a class="res" href="https://www.seat61.com/HongKong.htm"><span class="tag">Blog</span><b>seat61 — HK ↔ China trains</b><small>The train bible: cross-border HSR, the G899 sleeper, booking walkthroughs.</small></a>
     <a class="res" href="https://www.highspeed.mtr.com.hk/en/main/index.html"><span class="tag">Booking</span><b>MTR High Speed Rail</b><small>Official West Kowloon booking — cross-border HSR + sleeper tickets.</small></a>
     <a class="res" href="https://www.trip.com/trains/"><span class="tag">Booking</span><b>Trip.com Trains</b><small>Mainland HSR with US cards — easier than 12306 for foreigners.</small></a>
     <a class="res" href="https://en.wuzhen.com.cn/"><span class="tag">Booking</span><b>Wuzhen official</b><small>Book inside-Xizha guesthouses direct — the re-entry card is the whole point.</small></a>
     <a class="res" href="https://thewoksoflife.com/"><span class="tag">Blog</span><b>The Woks of Life</b><small>The Chinese-food blog — pre-trip homework on what we're about to eat.</small></a>
     <a class="res" href="https://guide.michelin.com/en/hong-kong-region/hong-kong/restaurants"><span class="tag">Food</span><b>MICHELIN Guide — Hong Kong</b><small>Cross-check stars and Bib Gourmands before locking dinner plans.</small></a>
-    <a class="res" href="https://www.thechairmangroup.com/"><span class="tag">Food</span><b>The Chairman — reservations</b><small>Quarterly drop, 9am on the 1st of the month before the quarter. Set the alarm.</small></a>
-    <a class="res" href="https://www.trip.com/guide/events/canton-fair.html"><span class="tag">Dates</span><b>Canton Fair schedule</b><small>Autumn 2026: Oct 15–19 · 23–27 · Oct 31–Nov 4. Avoid Guangzhou hotels then.</small></a>
+    <a class="res" href="https://www.thechairmangroup.com/"><span class="tag">Food</span><b>The Chairman — official reservations</b><small>The restaurant warns that impersonator sites take fake deposits; use only this domain.</small></a>
+    <a class="res" href="https://www.cantonfair.org.cn/en-US/pages/ExhibitCategories"><span class="tag">Dates</span><b>Canton Fair — official schedule</b><small>Autumn 2026: Oct 15–19 · 23–27 · Oct 31–Nov 4. Avoid Guangzhou hotels then.</small></a>
     <a class="res" href="https://www.discoverhongkong.com/"><span class="tag">Guide</span><b>Discover Hong Kong</b><small>Official HK tourism — hikes, islands, events calendar for our window.</small></a>
     <a class="res" href="https://www.chinahighlights.com/zhangjiajie/"><span class="tag">Guide</span><b>China Highlights — Zhangjiajie</b><small>Route E homework: park logistics, cable cars, weather by month.</small></a>
     <a class="res" href="https://chriswiles.github.io/wiles-wiki/travel/china-2026/"><span class="tag">Ours</span><b>The trip wiki</b><small>Deep per-city pages: stays, day plans, packing, logistics, budget.</small></a>
@@ -990,7 +1016,8 @@
   </footer>
 </div>
 
-<div class="lightbox" id="lightbox" role="dialog" aria-label="Enlarged photo">
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Enlarged photo" aria-hidden="true">
+  <button class="lightbox-close" type="button" aria-label="Close enlarged photo">×</button>
   <img id="lightbox-img" src="" alt="">
   <div class="cap" id="lightbox-cap"></div>
 </div>
@@ -1006,7 +1033,7 @@
       stats: { main: 9, hk: 4, moves: "1✈ 1🚄" },
       why: "The locked-in plan. Canal-town evenings at Wuzhen, a full city for Cantonese food, finish strong in Shanghai with a direct PVG → AUS exit. Lowest friction overall. Nov 5 window dodges the Canton Fair.",
       buffer: { txt: "~1.5 days", cls: "s" },
-      clock: "Mainland entry day 6 via West Kowloon HSR (immigration at Guangzhou South). Clock starts at the next midnight; exit from PVG on the final day.",
+      clock: "Mainland entry day 6 via the West Kowloon port, where mainland immigration is completed before boarding. The clock starts at the next midnight; exit from PVG on the final day.",
       photos: [
         ["images/hong-kong/dragons-back.jpg", "Dragon's Back"],
         ["images/hong-kong/temple-street-market.jpg", "Temple Street"],
@@ -1042,9 +1069,9 @@
       tagline: "Five landscapes in ten days by rail — spectacular, exhausting, and one late train away from trouble.",
       tags: ["Max variety", "5 trains", "Tight clock"],
       stats: { main: 10, hk: 3, moves: "5🚄" },
-      why: "Maximum variety, the 'all five vibes' version — but 11 hours of train across 5 segments inside a razor-thin buffer. One slipped train and you're non-compliant.",
+      why: "Maximum variety, the 'all five vibes' version — but about 10 hours onboard across 5 rail segments inside a razor-thin buffer. One major disruption and you're non-compliant.",
       buffer: { txt: "<12 hrs", cls: "c" },
-      clock: "Entry at PVG on day 4 (fly, or take the G899 sleeper the evening before and arrive day 5 morning with the same clock). Exit via West Kowloon HSR on day 14 — under 12 hours of slack.",
+      clock: "Entry at PVG on day 2 from the US side, connecting outside Hong Kong. The clock runs from 00:00 day 3 through 24:00 day 12; exit via West Kowloon HSR on day 12 with a same-day margin.",
       photos: [
         ["images/hangzhou/lingyin-temple.jpg", "Lingyin Temple"],
         ["images/hangzhou/west-lake-panorama.jpg", "West Lake"],
@@ -1056,20 +1083,20 @@
         ["images/shenzhen/shenzhen-skyline.jpg", "Shenzhen"]
       ],
       days: [
-        ["Day 1","(in-flight)","AUS depart","—"],
-        ["Day 2","Hong Kong","HKG arrival, jet lag","HK"],
-        ["Day 3","Hong Kong","Victoria Peak, Central","HK"],
-        ["Day 4","→ Shanghai","fly HK → PVG (~3 hr) — or G899 sleeper","SHA",1],
-        ["Day 5","Shanghai","Pudong, Bund","SHA"],
-        ["Day 6","Shanghai","French Concession, Yu Garden","SHA"],
-        ["Day 7","→ Hangzhou","HSR Hongqiao → Hangzhou E (~45 min)","HGH"],
-        ["Day 8","Hangzhou","Lingyin Temple, tea fields","HGH"],
-        ["Day 9","→ Huangshan","HSR → Huangshan N (~1.5 hr) + bus","Summit"],
-        ["Day 10","Huangshan","Sunrise, descend to Hongcun","Hongcun"],
-        ["Day 11","→ Xiamen","HSR → Xiamen N (~5.5 hr)","XM"],
-        ["Day 12","Xiamen","Gulangyu Island day","XM"],
-        ["Day 13","→ Shenzhen","HSR → Shenzhen N (~3.5 hr)","SZ"],
-        ["Day 14","→ Hong Kong","HSR Futian → W. Kowloon (~15 min)","HK",1],
+        ["Day 1","(in-flight)","AUS depart; connect via Tokyo / Seoul / Taipei, not HK","—"],
+        ["Day 2","Shanghai","PVG arrival, mainland entry, easy Bund evening","SHA",1],
+        ["Day 3","Shanghai","Pudong + Bund","SHA"],
+        ["Day 4","Shanghai","French Concession, Yu Garden","SHA"],
+        ["Day 5","→ Hangzhou","HSR Hongqiao → Hangzhou E (~45 min)","HGH"],
+        ["Day 6","Hangzhou","Lingyin Temple, tea fields","HGH"],
+        ["Day 7","→ Huangshan","HSR → Huangshan N (~1.5 hr) + bus","Summit"],
+        ["Day 8","Huangshan","Sunrise, descend to Hongcun","Hongcun"],
+        ["Day 9","→ Xiamen","direct HSR → Xiamen N (~4–5 hr)","XM"],
+        ["Day 10","Xiamen","Gulangyu Island day","XM"],
+        ["Day 11","→ Shenzhen","HSR → Shenzhen N (~2.5–3.5 hr)","SZ"],
+        ["Day 12","→ Hong Kong","HSR Futian → W. Kowloon (~15 min)","HK",1],
+        ["Day 13","Hong Kong","Victoria Peak, Central, dim sum","HK"],
+        ["Day 14","Hong Kong","Dragon's Back / Lantau / markets","HK"],
         ["Day 15","(in-flight)","HK → AUS","—"]
       ]
     },
@@ -1082,7 +1109,7 @@
       stats: { main: 9, hk: 4, moves: "4🚄" },
       why: "The trip Route B should be — same inland variety, minus the 9-hour Xiamen detour. More Shanghai and Hangzhou, a real TWOV buffer. Oct 29 window lands Huangshan at peak foliage.",
       buffer: { txt: "~1 day", cls: "s" },
-      clock: "Entry at PVG day 4 (flight or sleeper). Exit via West Kowloon HSR on day 13 morning with about a day in hand.",
+      clock: "Entry at PVG day 2 from the US side, connecting outside Hong Kong. Exit via West Kowloon HSR on day 11, roughly 1.5 days before the end-of-day-12 deadline.",
       photos: [
         ["images/hangzhou/longjing-tea-terraces.jpg", "Longjing tea"],
         ["images/hangzhou/su-causeway.jpg", "Su Causeway"],
@@ -1094,20 +1121,20 @@
         ["images/hong-kong/star-ferry-skyline.jpg", "Star Ferry"]
       ],
       days: [
-        ["Day 1","(in-flight)","AUS depart","—"],
-        ["Day 2","Hong Kong","HKG arrival","HK"],
-        ["Day 3","Hong Kong","Victoria Peak","HK"],
-        ["Day 4","→ Shanghai","fly HK → PVG — or G899 sleeper","SHA",1],
-        ["Day 5","Shanghai","Pudong + Bund","SHA"],
-        ["Day 6","Shanghai","French Concession","SHA"],
-        ["Day 7","Shanghai","Yu Garden, museums","SHA"],
-        ["Day 8","→ Hangzhou","HSR Hongqiao → Hangzhou E","HGH"],
-        ["Day 9","Hangzhou","Tea + temple","HGH"],
-        ["Day 10","→ Huangshan","HSR → Huangshan N + bus","Summit"],
-        ["Day 11","Huangshan","Sunrise + Hongcun","Hongcun"],
-        ["Day 12","→ Shenzhen","HSR → Shenzhen N (~6 hr)","SZ"],
-        ["Day 13","→ Hong Kong","HSR Futian → W. Kowloon","HK",1],
-        ["Day 14","Hong Kong","Dragon's Back / Lantau / dim sum","HK"],
+        ["Day 1","(in-flight)","AUS depart; connect via Tokyo / Seoul / Taipei, not HK","—"],
+        ["Day 2","Shanghai","PVG arrival, mainland entry, Bund evening","SHA",1],
+        ["Day 3","Shanghai","Pudong + museums","SHA"],
+        ["Day 4","Shanghai","French Concession, Yu Garden","SHA"],
+        ["Day 5","→ Hangzhou","HSR Hongqiao → Hangzhou E","HGH"],
+        ["Day 6","Hangzhou","Tea + temple","HGH"],
+        ["Day 7","→ Huangshan","HSR → Huangshan N + bus","Summit"],
+        ["Day 8","Huangshan","Sunrise + Hongcun","Hongcun"],
+        ["Day 9","→ Shenzhen","direct HSR → Shenzhen N (~5 hr)","SZ"],
+        ["Day 10","Shenzhen","Museum, bayfront or OCT-LOFT","SZ"],
+        ["Day 11","→ Hong Kong","HSR Futian → W. Kowloon","HK",1],
+        ["Day 12","Hong Kong","Victoria Peak + Central","HK"],
+        ["Day 13","Hong Kong","Dragon's Back / beaches","HK"],
+        ["Day 14","Hong Kong","Lantau / island day / dim sum","HK"],
         ["Day 15","(in-flight)","HK → AUS","—"]
       ]
     },
@@ -1120,7 +1147,7 @@
       stats: { main: 7, hk: 6, moves: "1✈/🚄" },
       why: "Lowest friction. Two big-city anchors and maximum HK time. Only Shanghai gets a real city slot, so the trip leans on HK's variety — but it's the easiest to execute and the safest big-city clock.",
       buffer: { txt: "~3 days", cls: "s" },
-      clock: "Entry at PVG day 4, exit via West Kowloon day 11. Seven mainland nights, three days of slack.",
+      clock: "Entry at PVG day 2 from the US side, connecting outside Hong Kong. Exit via West Kowloon on day 9, about 3.5 days before the end-of-day-12 deadline.",
       photos: [
         ["images/shanghai/wukang-road.jpg", "Wukang Road"],
         ["images/shanghai/nanjing-road-night.jpg", "Nanjing Road"],
@@ -1132,19 +1159,19 @@
         ["images/hong-kong/hk-tram-street.jpg", "Ding ding tram"]
       ],
       days: [
-        ["Day 1","(in-flight)","AUS depart","—"],
-        ["Day 2","Hong Kong","HKG arrival","HK"],
-        ["Day 3","Hong Kong","Victoria Peak","HK"],
-        ["Day 4","→ Shanghai","fly HK → PVG — or G899 sleeper","SHA",1],
-        ["Day 5","Shanghai","Pudong + Bund","SHA"],
-        ["Day 6","Shanghai","French Concession","SHA"],
-        ["Day 7","Shanghai","Old Shanghai, museum","SHA"],
-        ["Day 8","Shanghai","West Bund, riverfront","SHA"],
-        ["Day 9","→ Shenzhen","fly ~2.5 hr (skip 10-hr HSR)","SZ"],
-        ["Day 10","Shenzhen","Ping An Tower, OCT-LOFT","SZ"],
-        ["Day 11","→ Hong Kong","HSR Futian → W. Kowloon","HK",1],
+        ["Day 1","(in-flight)","AUS depart; connect outside Hong Kong","—"],
+        ["Day 2","Shanghai","PVG arrival, mainland entry, Bund evening","SHA",1],
+        ["Day 3","Shanghai","Pudong + Shanghai Tower","SHA"],
+        ["Day 4","Shanghai","French Concession","SHA"],
+        ["Day 5","Shanghai","Old Shanghai, museum","SHA"],
+        ["Day 6","Shanghai","West Bund, riverfront","SHA"],
+        ["Day 7","→ Shenzhen","fly ~2.5 hr (skip 10-hr HSR)","SZ"],
+        ["Day 8","Shenzhen","Ping An Tower, OCT-LOFT","SZ"],
+        ["Day 9","→ Hong Kong","HSR Futian → W. Kowloon","HK",1],
+        ["Day 10","Hong Kong","Victoria Peak + Central","HK"],
+        ["Day 11","Hong Kong","Dragon's Back + beach","HK"],
         ["Day 12","Hong Kong","Lantau / Big Buddha","HK"],
-        ["Day 13","Hong Kong","Outlying islands / hiking","HK"],
+        ["Day 13","Hong Kong","Outlying island / museums","HK"],
         ["Day 14","Hong Kong","Last day, dim sum","HK"],
         ["Day 15","(in-flight)","HK → AUS","—"]
       ]
@@ -1156,9 +1183,9 @@
       tagline: "Three days among the floating-mountain pillars that inspired Avatar, bracketed by Shanghai and Hong Kong.",
       tags: ["2 flights", "Glass skywalk", "Kaylee's pick"],
       stats: { main: 8, hk: 5, moves: "2✈ 1🚄" },
-      why: "Built around Kaylee's pick. Trade Hangzhou + Huangshan for Zhangjiajie's quartz-sandstone pillars — the landscape that defined Avatar. Two internal flights, ~$400pp and a travel day, but a singular payoff. First half of Nov is its prime window.",
+      why: "Built around Kaylee's pick. Trade Hangzhou + Huangshan for Zhangjiajie's quartz-sandstone pillars — the landscape that defined Avatar. Two internal flights, ~$400pp and a travel day, but a singular payoff. The current DYG → SZX nonstop runs only about 4 times weekly, so lock the fall schedule before fixing day order.",
       buffer: { txt: "~2 days", cls: "s" },
-      clock: "Entry at PVG day 4, exit via West Kowloon day 12. Internal flights between eligible regions are fine; entry/exit use fully-verified ports.",
+      clock: "Entry at PVG day 2 from the US side, connecting outside Hong Kong. Exit via West Kowloon day 10, about 2.5 days before the end-of-day-12 deadline.",
       photos: [
         ["images/zhangjiajie/avatar-pillars.jpg", "Avatar pillars"],
         ["images/zhangjiajie/tianzi-mountain.jpg", "Tianzi Mountain"],
@@ -1170,33 +1197,33 @@
         ["images/zhangjiajie/tianmen-cave.jpg", "Tianmen Cave"]
       ],
       days: [
-        ["Day 1","(in-flight)","AUS depart","—"],
-        ["Day 2","Hong Kong","HKG arrival","HK"],
-        ["Day 3","Hong Kong","Victoria Peak","HK"],
-        ["Day 4","→ Shanghai","fly HK → PVG — or G899 sleeper","SHA",1],
-        ["Day 5","Shanghai","Pudong + Bund","SHA"],
-        ["Day 6","Shanghai","French Concession","SHA"],
-        ["Day 7","Shanghai","Old Shanghai","SHA"],
-        ["Day 8","→ Zhangjiajie","fly PVG → DYG (~2.5 hr) + ground","Wulingyuan"],
-        ["Day 9","Zhangjiajie","Tianzi Mtn + glass bridge","Wulingyuan"],
-        ["Day 10","Zhangjiajie","Tianmen Mountain day","ZJJ city"],
-        ["Day 11","→ Shenzhen","fly DYG → SZX (~2 hr)","SZ"],
-        ["Day 12","→ Hong Kong","HSR Futian → W. Kowloon","HK",1],
-        ["Day 13","Hong Kong","Dim sum + hiking","HK"],
-        ["Day 14","Hong Kong","Last full day","HK"],
+        ["Day 1","(in-flight)","AUS depart; connect outside Hong Kong","—"],
+        ["Day 2","Shanghai","PVG arrival, mainland entry, Bund evening","SHA",1],
+        ["Day 3","Shanghai","Pudong + Bund","SHA"],
+        ["Day 4","Shanghai","French Concession + museum","SHA"],
+        ["Day 5","→ Zhangjiajie","fly PVG → DYG (~2.5 hr) + ground","Wulingyuan"],
+        ["Day 6","Zhangjiajie","Yuanjiajie + Tianzi Mountain","Wulingyuan"],
+        ["Day 7","Zhangjiajie","Tianmen Mountain day","ZJJ city"],
+        ["Day 8","→ Shenzhen","DYG → SZX nonstop (~2 hr) if operating; otherwise connect","SZ"],
+        ["Day 9","Shenzhen","Science museum, OCT-LOFT or bayfront","SZ"],
+        ["Day 10","→ Hong Kong","HSR Futian → W. Kowloon","HK",1],
+        ["Day 11","Hong Kong","Victoria Peak + Central","HK"],
+        ["Day 12","Hong Kong","Dragon's Back + beach","HK"],
+        ["Day 13","Hong Kong","Lantau / Big Buddha","HK"],
+        ["Day 14","Hong Kong","Dim sum + last full day","HK"],
         ["Day 15","(in-flight)","HK → AUS","—"]
       ]
     },
     {
       id: "F", color: "var(--jade-deep)", rec: false, recTag: "Tops the matrix",
-      name: "Karst by rail", path: "HK → Guangzhou → Yangshuo → Guilin → Shenzhen → HK",
+      name: "Karst by rail", path: "Guangzhou → Yangshuo → Guilin → Shenzhen → HK",
       thumb: "images/guilin/li-river-karst.jpg",
-      tagline: "Li River peaks, bamboo rafts, and rice terraces — postcard China, entirely by train, with the biggest visa buffer.",
+      tagline: "Li River peaks, bamboo rafts, and rice terraces — postcard China, with every mainland move by rail and the biggest visa buffer.",
       tags: ["No flights", "Li River", "Biggest buffer"],
       stats: { main: 7, hk: 6, moves: "4🚄" },
-      why: "The landscape-drama alternative that never boards a plane. Guangxi is TWOV-eligible, Guangzhou → Yangshuo is a 2.5-hr HSR hop, and the whole loop runs on rail with the biggest visa buffer in the lineup. The trade: no Shanghai, no Wuzhen.",
-      buffer: { txt: "~4 days", cls: "s" },
-      clock: "Entry via West Kowloon HSR day 5; exit via West Kowloon day 12. The safest clock of the seven.",
+      why: "The landscape-drama alternative with no internal flights. Guangxi is TWOV-eligible, Guangzhou → Yangshuo is roughly 2–3 hours by HSR, and the mainland loop runs on rail with the biggest visa buffer in the lineup. The trade: no Shanghai, no Wuzhen.",
+      buffer: { txt: "~3.5 days", cls: "s" },
+      clock: "Entry at CAN day 2 from the US side, connecting outside Hong Kong. Exit via West Kowloon day 9, about 3.5 days before the end-of-day-12 deadline.",
       photos: [
         ["images/guilin/li-river-karst.jpg", "Li River"],
         ["images/guilin/xingping-li-river.jpg", "Xingping bend"],
@@ -1208,20 +1235,20 @@
         ["images/guilin/reed-flute-cave.jpg", "Reed Flute Cave"]
       ],
       days: [
-        ["Day 1","(in-flight)","AUS depart","—"],
-        ["Day 2","Hong Kong","HKG arrival","HK"],
-        ["Day 3","Hong Kong","Victoria Peak, Central","HK"],
-        ["Day 4","Hong Kong","Dragon's Back, dim sum","HK"],
-        ["Day 5","→ Guangzhou","HSR W. Kowloon → Guangzhou S (~50 min)","GZ",1],
-        ["Day 6","Guangzhou","Shamian Island, trolley dim sum","GZ"],
-        ["Day 7","→ Yangshuo","HSR GZ South → Yangshuo (~2.5 hr) + car","Yangshuo"],
-        ["Day 8","Yangshuo","Li River boat from Xingping, sunset","Yangshuo"],
-        ["Day 9","Yangshuo","Yulong cycling + bamboo rafting","Yangshuo"],
-        ["Day 10","→ Guilin","car/HSR (~1 hr); Elephant Trunk Hill or Longji day","Guilin"],
-        ["Day 11","→ Shenzhen","HSR Guilin → Shenzhen N (~3.5 hr)","SZ"],
-        ["Day 12","→ Hong Kong","HSR Futian → W. Kowloon","HK",1],
-        ["Day 13","Hong Kong","Lantau / Big Buddha","HK"],
-        ["Day 14","Hong Kong","Last day","HK"],
+        ["Day 1","(in-flight)","AUS depart; connect via Tokyo / Seoul / Taipei, not HK","—"],
+        ["Day 2","Guangzhou","CAN arrival, mainland entry, easy river evening","GZ",1],
+        ["Day 3","Guangzhou","Shamian, Old Liwan, dim sum, night cruise","GZ"],
+        ["Day 4","→ Yangshuo","HSR GZ South → Yangshuo (~2–3 hr) + car","Yangshuo"],
+        ["Day 5","Yangshuo","Li River boat from Xingping, sunset","Yangshuo"],
+        ["Day 6","Yangshuo","Yulong cycling + bamboo rafting","Yangshuo"],
+        ["Day 7","→ Guilin","car/HSR (~1 hr); lakes or Longji option","Guilin"],
+        ["Day 8","→ Shenzhen","HSR Guilin N → Shenzhen N (~3–3.5 hr)","SZ"],
+        ["Day 9","→ Hong Kong","HSR Futian → W. Kowloon","HK",1],
+        ["Day 10","Hong Kong","Victoria Peak + Central","HK"],
+        ["Day 11","Hong Kong","Dragon's Back + beach","HK"],
+        ["Day 12","Hong Kong","Lantau / Big Buddha","HK"],
+        ["Day 13","Hong Kong","Lamma / Cheung Chau island day","HK"],
+        ["Day 14","Hong Kong","Museums, dim sum, last day","HK"],
         ["Day 15","(in-flight)","HK → AUS","—"]
       ]
     },
@@ -1251,7 +1278,7 @@
         ["Day 3","Hong Kong","Victoria Peak, Central","HK"],
         ["Day 4","Hong Kong","Dragon's Back, beaches","HK"],
         ["Day 5","Hong Kong","Outlying islands","HK"],
-        ["Day 6","→ Chongqing","fly HKG → CKG (~2.5 hr, Cathay daily)","CQ",1],
+        ["Day 6","→ Chongqing","nonstop HKG → CKG (~2.5 hr); verify fall schedule","CQ",1],
         ["Day 7","Chongqing","Hongya Cave night, Yangtze cableway, hotpot","CQ"],
         ["Day 8","Chongqing","Ciqikou + xiaomian crawl, or Wulong karst day","CQ"],
         ["Day 9","→ Wuzhen","fly CKG → HGH (~2 hr) + car","Wuzhen"],
@@ -1794,20 +1821,43 @@
   const lb = document.getElementById("lightbox");
   const lbImg = document.getElementById("lightbox-img");
   const lbCap = document.getElementById("lightbox-cap");
+  const lbClose = lb.querySelector(".lightbox-close");
+  let lightboxTrigger = null;
+  function openLightbox(img) {
+    lightboxTrigger = img;
+    lbImg.src = img.dataset.full || img.src;
+    lbImg.alt = img.alt;
+    lbCap.textContent = img.alt;
+    lb.classList.add("on");
+    lb.setAttribute("aria-hidden", "false");
+    lbClose.focus();
+  }
+  function closeLightbox() {
+    lb.classList.remove("on");
+    lb.setAttribute("aria-hidden", "true");
+    lbImg.src = "";
+    lightboxTrigger?.focus();
+  }
+  document.querySelectorAll("img.zoom").forEach(img => {
+    img.tabIndex = 0;
+    img.setAttribute("role", "button");
+    img.setAttribute("aria-label", `View full-size photo: ${img.alt}`);
+  });
   document.addEventListener("click", (e) => {
     const img = e.target.closest("img.zoom");
     if (img) {
-      lbImg.src = img.dataset.full || img.src;
-      lbImg.alt = img.alt;
-      lbCap.textContent = img.alt;
-      lb.classList.add("on");
-    } else if (e.target.closest("#lightbox")) {
-      lb.classList.remove("on");
-      lbImg.src = "";
+      openLightbox(img);
+    } else if (e.target === lb || e.target.closest(".lightbox-close")) {
+      closeLightbox();
     }
   });
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") { lb.classList.remove("on"); lbImg.src = ""; }
+    if ((e.key === "Enter" || e.key === " ") && e.target.matches("img.zoom")) {
+      e.preventDefault();
+      openLightbox(e.target);
+    } else if (e.key === "Escape" && lb.classList.contains("on")) {
+      closeLightbox();
+    }
   });
 
   // Expand / collapse all routes
