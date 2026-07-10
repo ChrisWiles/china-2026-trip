@@ -211,6 +211,11 @@
   .hotel-card .actions a { min-height: 44px; display: inline-flex; align-items: center; padding: 0.45rem 0.65rem; border: 1px solid var(--line); color: var(--jade-deep); text-decoration: none; font: 0.65rem/1 var(--mono); }
   .hotel-legend { display: flex; flex-wrap: wrap; gap: 0.4rem; margin: -0.6rem 0 1rem; }
   .hotel-legend span { padding: 0.3rem 0.5rem; border: 1px solid var(--line); border-radius: 999px; color: var(--ink-soft); font: 0.6rem/1 var(--mono); }
+  .hotel-tools { display: flex; align-items: center; gap: 0.45rem; overflow-x: auto; margin: 0 0 0.9rem; padding-bottom: 0.2rem; scrollbar-width: none; }
+  .hotel-tools::-webkit-scrollbar { display: none; }
+  .hotel-tools > span { flex: 0 0 auto; color: var(--neutral); font: 0.58rem/1.2 var(--mono); letter-spacing: 0.1em; text-transform: uppercase; }
+  .hotel-filter { flex: 0 0 auto; min-width: 44px; min-height: 44px; border: 1px solid var(--line); border-radius: 999px; background: var(--paper); color: var(--ink-soft); font: 0.62rem/1 var(--mono); cursor: pointer; }
+  .hotel-filter[aria-pressed="true"], .hotel-filter:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
   .audit-section { margin: 2.5rem 0; }
   .audit-section > p { color: var(--ink-soft); }
   .audit-table-wrap { max-width: 100%; overflow-x: auto; border: 1px solid var(--line); background: #FBFAF6; }
@@ -563,6 +568,7 @@
   .walkin-card ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.6rem; }
   .walkin-card li { color: #D2CFC6; font-size: 0.72rem; line-height: 1.4; }
   .walkin-card li b { display: block; color: var(--paper); font-size: 0.76rem; }
+  .walkin-card li b a { color: inherit; text-underline-offset: 3px; }
   .walkin-card .strategy { margin: 0.75rem 0 0; padding-top: 0.65rem; border-top: 1px solid rgba(242,240,233,0.14); color: var(--neutral); font-family: var(--mono); font-size: 0.56rem; line-height: 1.45; text-transform: uppercase; letter-spacing: 0.06em; }
 
   /* ---- City playbook ---- */
@@ -594,6 +600,9 @@
   .route-filters::-webkit-scrollbar { display: none; }
   .route-filter { flex: 0 0 auto; min-width: 44px; }
   .playbook-status { grid-column: 1 / -1; margin: 0; color: var(--neutral); font: 0.6rem/1.3 var(--mono); }
+  .city-pick[hidden] { display: none; }
+  .search-match-note { display: none; margin: 0 0 0.65rem; padding: 0.55rem 0.65rem; background: rgba(176,136,60,0.12); color: var(--ink-soft); font-size: 0.72rem; }
+  .city-guide[data-searching="true"] .search-match-note { display: block; }
   .city-guide {
     min-width: 0;
     background: #FBFAF6;
@@ -906,6 +915,8 @@
     .badge { width: 1.7rem; height: 1.7rem; font-size: 0.95rem; }
     .rtag { white-space: normal; letter-spacing: 0.06em; }
     .route-body { padding-inline: 0.75rem; }
+    .route-body .gallery figure:nth-child(n+5) { display: none; }
+    .route-body .gallery { margin-bottom: 0.8rem; }
     .route-practical { grid-template-columns: minmax(0, 1fr); }
     .table-swipe { display: block; }
     .playbook-tools { grid-template-columns: minmax(0, 1fr); }
@@ -999,8 +1010,8 @@
 
   <main id="main-content">
   <section class="trip-call" aria-labelledby="trip-call-title">
-    <span class="kicker">Fast decision</span>
-    <h2 id="trip-call-title">Pick the trip by effort, not by how many pins fit on a map.</h2>
+    <span class="kicker">Recommendation board · no route chosen yet</span>
+    <h2 id="trip-call-title">Compare the trips by effort, not by how many pins fit on a map.</h2>
     <div class="trip-call-grid">
       <p><b>Best balance · Route A</b> Hong Kong, Cantonese food, Wuzhen and Shanghai with two protected transfer days.</p>
       <p><b>Easiest · Route D</b> Shanghai, Shenzhen and Hong Kong with the fewest hotel changes and the most recovery time.</p>
@@ -1010,25 +1021,26 @@
   </section>
 
   <div class="sec-head" id="sec-routes"><span class="num">01</span><h2>The seven routes</h2><span class="rule"></span><button class="xall" id="xall">expand all</button></div>
-  <p class="sec-note">Each is a complete Day 1–15 itinerary inside the same 13-night envelope. Tap a route for the day plan, realistic door-to-door transfers and the simplest way to make it work. Every fall flight and train stays flexible until its exact timetable is live.</p>
+  <p class="sec-note">Nothing here is booked or selected. Each option is a complete Day 1–15 recommendation inside the same 13-night envelope. Tap only the routes you want to inspect; every fall flight and train remains provisional until its exact timetable is live.</p>
   <div class="routes" id="routes"></div>
 
   <div class="sec-head" id="sec-hotels"><span class="num">02</span><h2>Walkable hotel bases</h2><span class="rule"></span></div>
-  <p class="sec-note">These are neighborhood-first recommendations: food, sights and transit outside the door; full-service desks; luggage storage; fewer avoidable car rides. Book refundable direct, confirm every guest’s passport details and ask rural properties in writing about foreign-passport registration.</p>
-  <div class="hotel-legend" aria-label="Hotel recommendation key"><span>Card title = preferred base</span><span>Text links = useful alternatives</span><span>Verify direct = not ready to book</span></div>
+  <p class="sec-note">These are shortlists, not reservations: neighborhood first, then a representative hotel with food, sights and transit outside the door. Use the route buttons to hide cities that are irrelevant. Exact rooms, deposits and registration checks wait until the group chooses a route.</p>
+  <div class="hotel-legend" aria-label="Hotel recommendation key"><span>Card title = leading recommendation</span><span>Text links = useful alternatives</span><span>Final property comes later</span></div>
+  <div class="hotel-tools" aria-label="Filter hotel recommendations by route"><span>Show route</span><button class="hotel-filter" type="button" data-hotel-route="all" aria-pressed="true">All</button><button class="hotel-filter" type="button" data-hotel-route="A" aria-pressed="false">A</button><button class="hotel-filter" type="button" data-hotel-route="B" aria-pressed="false">B</button><button class="hotel-filter" type="button" data-hotel-route="C" aria-pressed="false">C</button><button class="hotel-filter" type="button" data-hotel-route="D" aria-pressed="false">D</button><button class="hotel-filter" type="button" data-hotel-route="E" aria-pressed="false">E</button><button class="hotel-filter" type="button" data-hotel-route="F" aria-pressed="false">F</button><button class="hotel-filter" type="button" data-hotel-route="G" aria-pressed="false">G</button></div>
   <div class="hotel-grid">
-    <article class="hotel-card"><span class="area">Hong Kong · Central</span><div class="hotel-top"><h4>The Pottinger</h4><span class="status-pill">best location</span></div><p>Best for Peak, Central, ferries and restaurant nights on foot. Central MTR Exit D2 is nearby. Choose Eaton in Jordan if West Kowloon rail and local food matter more than Central.</p><div class="actions"><a href="https://web.sino-hotels.com/en/hk/the-pottinger-hong-kong/location">official ↗</a><a href="https://www.eatonworkshop.com/en-us/hong-kong/getting-to-eaton-hk/">Eaton option ↗</a></div></article>
-    <article class="hotel-card"><span class="area">Shanghai · Xintiandi</span><div class="hotel-top"><h4>The Langham Xintiandi</h4><span class="status-pill">least hassle</span></div><p>Walkable dining and lanes with multiple metro lines; Xintiandi Station Exit 6 is steps away. It is a better all-trip base than a Bund hotel that forces more taxi rides.</p><div class="actions"><a href="https://www.langhamhotels.com/en/the-langham/shanghai/discover/">official ↗</a><a href="https://www.andazxintiandi.cn/">Andaz option ↗</a></div></article>
-    <article class="hotel-card"><span class="area">Guangzhou · Beijing Road</span><div class="hotel-top"><h4>LN Hotel Five</h4><span class="status-pill">walkable</span></div><p>Better all-around base for Beijing Road, food and metro access than an isolated luxury tower. White Swan is the atmospheric Shamian alternative, but it is less convenient city-wide.</p><div class="actions"><a href="https://www.hilton.com/en-gb/hotels/canlnlx-ln-hotel-five/hotel-location/">official ↗</a><a href="https://whiteswan.hotelcanton.cn/en">White Swan ↗</a></div></article>
-    <article class="hotel-card"><span class="area">Wuzhen · inside Xizha</span><div class="hotel-top"><h4>Waterside Resort</h4><span class="status-pill">stay inside</span></div><p>Inside the scenic zone, with centralized check-in and luggage handling. The quiet post-tour-bus evening and early morning are the reason to stop in Wuzhen at all.</p><div class="actions"><a href="https://en.wuzhen.com.cn/web/vacation/details?id=50D43E0DB89B388EA9397071AAF95EA2">official ↗</a><a href="https://en.wuzhen.com.cn/web/event/notice?id=8">passport notice ↗</a></div></article>
-    <article class="hotel-card"><span class="area">Hangzhou · Hubin / West Lake</span><div class="hotel-top"><h4>Midtown Shangri-La</h4><span class="status-pill">metro + lake</span></div><p>Five to ten minutes on foot to West Lake with Lines 1 and 2 nearby. Grand Hyatt is the east-shore splurge if lakefront beats metro convenience.</p><div class="actions"><a href="https://www.shangri-la.com/hangzhou/midtownshangrila/about/local-guide/explore-hangzhou/transportation/">official ↗</a><a href="https://www.hyatt.com/en-US/hotel/china/hyatt-regency-hangzhou/hangz">Grand Hyatt ↗</a></div></article>
-    <article class="hotel-card"><span class="area">Huangshan · summit + Tunxi</span><div class="hotel-top"><h4>Xihai Hotel + Crowne Plaza</h4><span class="status-pill">two-stage</span></div><p>Xihai suits the western summit loop; Baiyun suits Bright Summit. After descending and visiting Hongcun, sleep in Tunxi rather than an unverified rural guesthouse to simplify the Shenzhen train.</p><div class="actions"><a href="https://www.xihaihotelhuangshan.cn/en">Xihai ↗</a><a href="https://www.ihg.com/crowneplaza/hotels/us/en/huangshan/txncp/hoteldetail/directions">Tunxi ↗</a></div></article>
-    <article class="hotel-card"><span class="area">Xiamen · Zhongshan Road</span><div class="hotel-top"><h4>Swiss Grand Xiamen</h4><span class="status-pill">ferry access</span></div><p>Walkable to Zhongshan Road and the waterfront, with metro access. Ask the concierge to verify the correct foreign-tourist Gulangyu ferry terminal and ticket procedure.</p><div class="actions"><a href="https://www.swissgrandxiamen.com.cn/en">official ↗</a></div></article>
-    <article class="hotel-card"><span class="area">Shenzhen · Futian</span><div class="hotel-top"><h4>Four Seasons Shenzhen</h4><span class="status-pill">easy rail</span></div><p>Near Futian’s malls, metro and cross-border HSR. More useful for a one-night stop than a remote resort-style tower.</p><div class="actions"><a href="https://www.fourseasons.com/shenzhen/getting-here/">official ↗</a></div></article>
-    <article class="hotel-card"><span class="area">Zhangjiajie · two practical bases</span><div class="hotel-top"><h4>Pullman + Hampton Tianmen</h4><span class="status-pill">worth moving</span></div><p>Pullman is about a ten-minute walk from the forest-park entrance. Move to Hampton opposite the Tianmen cableway before the flight; this hotel change removes more hassle than it creates.</p><div class="actions"><a href="https://pullman.accor.com/en/hotels/zhangjiajie/7934.html">Pullman ↗</a><a href="https://www.hilton.com/en/hotels/dygzahx-hampton-zhangjiajie-tianmen-mountain/">Hampton ↗</a></div></article>
-    <article class="hotel-card"><span class="area">Yangshuo · north edge of West Street</span><div class="hotel-top"><h4>River View shortlist</h4><span class="status-pill">verify direct</span></div><p>Choose the Li River / north West Street edge: walkable but quieter. Do not use an isolated design resort for this group. The specific property’s official English booking and foreign-guest confirmation remain unverified.</p><div class="actions"><a href="https://www.booking.com/landmark/cn/yangshuo-west-street.en-gb.html">location shortlist ↗</a></div></article>
-    <article class="hotel-card"><span class="area">Guilin · Two Rivers &amp; Four Lakes</span><div class="hotel-top"><h4>Jolie Vue Boutique</h4><span class="status-pill">central</span></div><p>Binjiang Road base by Elephant Trunk Hill and the lakes. This is a one-night walkable stop, not a resort stay.</p><div class="actions"><a href="https://www.jvbhotel.com/">official ↗</a></div></article>
-    <article class="hotel-card"><span class="area">Chongqing · Jiefangbei</span><div class="hotel-top"><h4>Glenview ITC Plaza</h4><span class="status-pill">downhill walks</span></div><p>Central base for Jiefangbei, food and Yuzhong’s vertical city. Walk downhill through one cluster and metro back instead of fighting traffic uphill.</p><div class="actions"><a href="https://www.glenviewitcplazachongqing.com/en">official ↗</a></div></article>
+    <article class="hotel-card" data-routes="ABCDEFG"><span class="area">Hong Kong · Central</span><div class="hotel-top"><h4>The Pottinger</h4><span class="status-pill">best location</span></div><p>Best for Peak, Central, ferries and restaurant nights on foot. Central MTR Exit D2 is nearby. Choose Eaton in Jordan if West Kowloon rail and local food matter more than Central.</p><div class="actions"><a href="https://web.sino-hotels.com/en/hk/the-pottinger-hong-kong/location">official ↗</a><a href="https://www.eatonworkshop.com/en-us/hong-kong/getting-to-eaton-hk/">Eaton option ↗</a></div></article>
+    <article class="hotel-card" data-routes="ABCDEG"><span class="area">Shanghai · Xintiandi</span><div class="hotel-top"><h4>The Langham Xintiandi</h4><span class="status-pill">least hassle</span></div><p>Walkable dining and lanes with multiple metro lines; Xintiandi Station Exit 6 is steps away. It is a better all-trip base than a Bund hotel that forces more taxi rides.</p><div class="actions"><a href="https://www.langhamhotels.com/en/the-langham/shanghai/discover/">official ↗</a><a href="https://www.andazxintiandi.cn/">Andaz option ↗</a></div></article>
+    <article class="hotel-card" data-routes="AF"><span class="area">Guangzhou · Beijing Road</span><div class="hotel-top"><h4>LN Hotel Five</h4><span class="status-pill">walkable</span></div><p>Better all-around base for Beijing Road, food and metro access than an isolated luxury tower. White Swan is the atmospheric Shamian alternative, but it is less convenient city-wide.</p><div class="actions"><a href="https://www.hilton.com/en-gb/hotels/canlnlx-ln-hotel-five/hotel-location/">official ↗</a><a href="https://whiteswan.hotelcanton.cn/en">White Swan ↗</a></div></article>
+    <article class="hotel-card" data-routes="AG"><span class="area">Wuzhen · inside Xizha</span><div class="hotel-top"><h4>Waterside Resort</h4><span class="status-pill">stay inside</span></div><p>Inside the scenic zone, with centralized check-in and luggage handling. The quiet post-tour-bus evening and early morning are the reason to stop in Wuzhen at all.</p><div class="actions"><a href="https://en.wuzhen.com.cn/web/vacation/details?id=50D43E0DB89B388EA9397071AAF95EA2">official ↗</a><a href="https://en.wuzhen.com.cn/web/event/notice?id=8">passport notice ↗</a></div></article>
+    <article class="hotel-card" data-routes="BC"><span class="area">Hangzhou · Hubin / West Lake</span><div class="hotel-top"><h4>Midtown Shangri-La</h4><span class="status-pill">metro + lake</span></div><p>Five to ten minutes on foot to West Lake with Lines 1 and 2 nearby. Grand Hyatt is the east-shore splurge if lakefront beats metro convenience.</p><div class="actions"><a href="https://www.shangri-la.com/hangzhou/midtownshangrila/about/local-guide/explore-hangzhou/transportation/">official ↗</a><a href="https://www.hyatt.com/en-US/hotel/china/hyatt-regency-hangzhou/hangz">Grand Hyatt ↗</a></div></article>
+    <article class="hotel-card" data-routes="C"><span class="area">Huangshan · summit + Tunxi</span><div class="hotel-top"><h4>Xihai Hotel + Crowne Plaza</h4><span class="status-pill">two-stage</span></div><p>Xihai suits the western summit loop; Baiyun suits Bright Summit. After descending and visiting Hongcun, sleep in Tunxi rather than an unverified rural guesthouse to simplify the Shenzhen train.</p><div class="actions"><a href="https://www.xihaihotelhuangshan.cn/en">Xihai ↗</a><a href="https://www.ihg.com/crowneplaza/hotels/us/en/huangshan/txncp/hoteldetail/directions">Tunxi ↗</a></div></article>
+    <article class="hotel-card" data-routes="B"><span class="area">Xiamen · Zhongshan Road</span><div class="hotel-top"><h4>Swiss Grand Xiamen</h4><span class="status-pill">ferry access</span></div><p>Walkable to Zhongshan Road and the waterfront, with metro access. Ask the concierge to verify the correct foreign-tourist Gulangyu ferry terminal and ticket procedure.</p><div class="actions"><a href="https://www.swissgrandxiamen.com.cn/en">official ↗</a></div></article>
+    <article class="hotel-card" data-routes="BCDEF"><span class="area">Shenzhen · Futian</span><div class="hotel-top"><h4>Four Seasons Shenzhen</h4><span class="status-pill">easy rail</span></div><p>Near Futian’s malls, metro and cross-border HSR. More useful for a one-night stop than a remote resort-style tower.</p><div class="actions"><a href="https://www.fourseasons.com/shenzhen/getting-here/">official ↗</a></div></article>
+    <article class="hotel-card" data-routes="E"><span class="area">Zhangjiajie · two practical bases</span><div class="hotel-top"><h4>Pullman + Hampton Tianmen</h4><span class="status-pill">worth moving</span></div><p>Pullman is about a ten-minute walk from the forest-park entrance. Move to Hampton opposite the Tianmen cableway before the flight; this hotel change removes more hassle than it creates.</p><div class="actions"><a href="https://pullman.accor.com/en/hotels/zhangjiajie/7934.html">Pullman ↗</a><a href="https://www.hilton.com/en/hotels/dygzahx-hampton-zhangjiajie-tianmen-mountain/">Hampton ↗</a></div></article>
+    <article class="hotel-card" data-routes="F"><span class="area">Yangshuo · Li River / West Street edge</span><div class="hotel-top"><h4>Green Lotus Hotel</h4><span class="status-pill">walkable splurge</span></div><p>A full-service riverfront candidate about a 15-minute walk from West Street: close enough for dinner without sleeping in the loudest blocks. River View Hotel is the smaller, better-value candidate two minutes from West Street.</p><div class="actions"><a href="https://yangshuogreenlotushotel.com/en/attractions-list.html">Green Lotus ↗</a><a href="https://www.booking.com/hotel/cn/yang-shuo-wang-jiang-lou-jiu-dian.en-gb.html">River View option ↗</a></div></article>
+    <article class="hotel-card" data-routes="F"><span class="area">Guilin · Two Rivers &amp; Four Lakes</span><div class="hotel-top"><h4>Jolie Vue Boutique</h4><span class="status-pill">central</span></div><p>Binjiang Road base by Elephant Trunk Hill and the lakes. This is a one-night walkable stop, not a resort stay.</p><div class="actions"><a href="https://www.jvbhotel.com/">official ↗</a></div></article>
+    <article class="hotel-card" data-routes="G"><span class="area">Chongqing · Jiefangbei</span><div class="hotel-top"><h4>Glenview ITC Plaza</h4><span class="status-pill">downhill walks</span></div><p>Central base for Jiefangbei, food and Yuzhong’s vertical city. Walk downhill through one cluster and metro back instead of fighting traffic uphill.</p><div class="actions"><a href="https://www.glenviewitcplazachongqing.com/en">official ↗</a></div></article>
   </div>
 
   <div class="sec-head" id="dates"><span class="num">03</span><h2>When to go</h2><span class="rule"></span></div>
@@ -1084,13 +1096,8 @@
     <p class="sec-note">The vacation layer: the must-do icons, active days, big-view meals and drinks, destination spas, water experiences, and day trips that are easy to miss when we only compare routes. Every activity title is clickable; trail cards open AllTrails and the rest open a focused Google Maps search.</p>
     <div class="playbook-callout"><p><b>Instagram reality check.</b> Save these now, but re-check hours, reservation channels, weather closures, and foreign-guest rules 2–4 weeks before the trip. Mainland venues often move booking into WeChat or Alipay.</p></div>
   </div>
-  <div class="museum-radar">
-    <div class="museum-radar-head"><h3>Museum radar — the new China</h3><span>researched · July 2026</span></div>
-    <p class="museum-radar-note">Shenzhen and Shanghai are in a museum-building arms race. These are the genuinely trip-worthy openings and major renewals—not a generic list of every city museum. “Watch” means the venue is scheduled to open before our fall window but needs a final confirmation.</p>
-    <div class="museum-grid" id="museum-grid"></div>
-  </div>
   <div class="playbook-tools" aria-label="Filter city playbook">
-    <div class="playbook-search"><label for="city-search">Find a city or activity</label><input id="city-search" type="search" placeholder="Try spa, hike, museum, Yangshuo…" autocomplete="off"></div>
+    <div class="playbook-search"><label for="city-search">Find a specific activity</label><input id="city-search" type="search" placeholder="Try spa, hike, museum, Yangshuo…" autocomplete="off"></div>
     <div class="playbook-actions"><button type="button" id="cities-open">Open shown</button><button type="button" id="cities-close">Close all</button></div>
     <div class="route-filters" aria-label="Show cities on route">
       <button class="route-filter" type="button" data-route="all" aria-pressed="true">All routes</button>
@@ -1099,7 +1106,11 @@
     <p class="playbook-status" id="playbook-status" aria-live="polite">Showing all 11 city guides.</p>
   </div>
   <div class="city-grid" id="city-guides"></div>
-
+  <div class="museum-radar">
+    <div class="museum-radar-head"><h3>Museum radar — the new China</h3><span>researched · July 2026</span></div>
+    <p class="museum-radar-note">Shenzhen and Shanghai are in a museum-building arms race. These are the genuinely trip-worthy openings and major renewals—not a generic list of every city museum. “Watch” means the venue is scheduled to open before our fall window but needs a final confirmation.</p>
+    <div class="museum-grid" id="museum-grid"></div>
+  </div>
   <div class="sec-head" id="sec-food"><span class="num">07</span><h2>Eat here — the foodie file</h2><span class="rule"></span></div>
   <div class="food-intro">
     <p class="sec-note">This is the actual dinner shortlist—not a trophy list. Every card answers four useful questions: why spend a meal here, what to order, what it costs, and how hard it is to book.</p>
@@ -1221,8 +1232,8 @@
       <img class="zoom" loading="lazy" decoding="async" src="images/thumbs/wuzhen/xizha-bridge-night.jpg" data-full="images/wuzhen/xizha-bridge-night.jpg" alt="Wuzhen stone bridge lit at night">
       <div class="tx">
         <h3>Route A</h3>
-        <div class="when">The easy, locked plan</div>
-        <p>Wuzhen is the trip-maker — nothing else has that slow canal-town night — and the direct PVG → AUS exit saves a day. Best food-and-scenery balance with the lowest friction.</p>
+        <div class="when">The leading low-friction option</div>
+        <p>Wuzhen is the trip-maker — nothing else has that slow canal-town night — and departing from PVG avoids backtracking to Hong Kong. Best food-and-scenery balance with the lowest friction.</p>
       </div>
     </div>
     <div class="take" style="--tc:var(--crit)">
@@ -1274,7 +1285,7 @@
     <table class="audit-table">
       <thead><tr><th>When</th><th>Reservation / dependency</th><th>Action</th><th>Fallback / cancellation check</th></tr></thead>
       <tbody>
-        <tr data-priority="first"><td>Now</td><td>Route + exact Nov window</td><td>Choose one route; collect passport names/numbers/expiry in one controlled sheet.</td><td>Do not reserve seven speculative versions.</td></tr>
+        <tr data-priority="first"><td>Decision phase</td><td>Route + approximate Nov window</td><td>Compare the seven recommendations and agree on the pace, scenery and number of transfer days.</td><td>Do not collect booking data or reserve seven speculative versions.</td></tr>
         <tr data-priority="first"><td>Before airfare</td><td>Open-jaw international flights</td><td>Verify airport, terminal, arrival date and every passport name. Favor changeable fares.</td><td>Price AUS→HKG / PVG→AUS and reverse-direction variants.</td></tr>
         <tr data-priority="first"><td>Before non-refundable hotels</td><td>Internal flights: CAN→HGH, HKG→CKG, CKG→HGH, PVG/SHA→DYG, DYG→SZX</td><td>Confirm required day, airport and nonstop status from the operating airline.</td><td>For Route E, drop Shenzhen and use Guangzhou if the DYG→SZX nonstop is absent.</td></tr>
         <tr data-priority="early"><td>As soon as route is chosen</td><td>Walkable hotels</td><td>Book refundable direct; send all guest names; ask about early luggage, deposit and foreign-passport registration.</td><td>Record free-cancel date and hotel phone in both English and Chinese.</td></tr>
@@ -1306,7 +1317,7 @@
       <article class="check-card"><h4>Payments</h4><ul><li>Set up both Alipay and WeChat Pay before departure; bind at least two unrelated Visa/Mastercard cards.</li><li>Tell banks the travel dates and enable app-based verification before leaving.</li><li>Carry physical cards plus RMB cash in two wallets. Foreign-card binding can still fail at the issuer or merchant.</li><li>Confirm hotel deposit method and release timing; keep credit headroom.</li></ul></article>
       <article class="check-card"><h4>Transport + maps</h4><ul><li>12306 with passport verification; original passport on rail days.</li><li>DiDi Greater China with a foreign number/card; save hotel pins and Chinese pickup text.</li><li>Apple Maps and Amap/Gaode for mainland navigation; do not make Google Maps the only map.</li><li>Save exact station/airport terminal and allow for huge interchanges.</li></ul></article>
       <article class="check-card"><h4>Data + authentication</h4><ul><li>Use international roaming or a mainland-capable eSIM with roaming breakout; test it before the first transfer.</li><li>Internet restrictions and service availability change. Do not rely on a VPN as the sole plan.</li><li>Keep the U.S. number able to receive bank/airline SMS; store recovery codes offline.</li><li>Download Chinese and Cantonese translation packs and all critical documents.</li></ul></article>
-      <article class="check-card"><h4>Driver-ready package</h4><ul><li>For every hotel, station, airport and attraction: Chinese name, full address, phone, map pin, entrance and metro exit.</li><li>One screenshot per destination with text large enough for a driver.</li><li>Put the next hotel card on every traveler’s lock screen on transfer days.</li><li>Never show only an English brand name to a driver.</li></ul></article>
+      <article class="check-card"><h4>After the route is chosen</h4><ul><li>Turn only the winning route into a detailed booking tracker.</li><li>Then add confirmed hotel names, Chinese addresses, phones, map pins, entrances and metro exits.</li><li>Create driver screenshots only after properties and stations are final.</li><li>Until then, keep this page focused on recommendations and tradeoffs.</li></ul></article>
       <article class="check-card"><h4>Meals + dietary safety</h4><ul><li>Save every restaurant’s Chinese name, address, phone, current service hours and reservation under the hotel neighborhood.</li><li>Write allergies in Chinese with “cannot eat / cross-contact” language; do not depend on spoken translation.</li><li>Never schedule the only available meal after a flight, mountain descent or cross-border train.</li><li>Carry a snack and water on rail/mountain days; confirm late-arrival food near each hotel.</li></ul></article>
     </div>
     <p class="source-line">Confirmed framework · checked 10 Jul 2026 · <a href="https://english.www.gov.cn/2025special/bizexpatsinchina2025">China government visitor guide</a> · <a href="https://travel.state.gov/en/international-travel/planning/guidance/communication-abroad.html">U.S. State Department communications guidance</a></p>
@@ -1350,7 +1361,7 @@
 
   <div class="audit-section">
     <h3>Recheck before paying</h3>
-    <div class="assumption-note">Fall 2026 internal-flight operating days and terminals; exact mainland train times before schedules release; Gulangyu and Zhangjiajie passport-booking flows; the Yangshuo hotel’s direct foreign-guest confirmation; live hotel prices, deposits and cancellation terms; special-exhibition tickets; final restaurant hours; weather, air quality, events and temporary closures.</div>
+    <div class="assumption-note">Fall 2026 internal-flight operating days and terminals; exact mainland train times before schedules release; Gulangyu and Zhangjiajie passport-booking flows; foreign-guest confirmation for whichever hotels make the final shortlist; live hotel prices, deposits and cancellation terms; special-exhibition tickets; final restaurant hours; weather, air quality, events and temporary closures.</div>
   </div>
 
   <div class="sec-head" id="sec-links"><span class="num">10</span><h2>Bookmarks</h2><span class="rule"></span></div>
@@ -1367,12 +1378,11 @@
     <a class="res" href="https://www.cantonfair.org.cn/en-US/pages/ExhibitCategories"><span class="tag">Dates</span><b>Canton Fair — official schedule</b><small>Autumn 2026: Oct 15–19 · 23–27 · Oct 31–Nov 4. Avoid Guangzhou hotels then.</small></a>
     <a class="res" href="https://www.discoverhongkong.com/"><span class="tag">Guide</span><b>Discover Hong Kong</b><small>Official HK tourism — hikes, islands, events calendar for our window.</small></a>
     <a class="res" href="https://www.chinahighlights.com/zhangjiajie/"><span class="tag">Guide</span><b>China Highlights — Zhangjiajie</b><small>Route E homework: park logistics, cable cars, weather by month.</small></a>
-    <a class="res" href="https://chriswiles.github.io/wiles-wiki/travel/china-2026/"><span class="tag">Ours</span><b>The trip wiki</b><small>Deep per-city pages: stays, day plans, packing, logistics, budget.</small></a>
   </div>
 
   </main>
   <footer>
-    <span><a href="https://chriswiles.github.io/wiles-wiki/travel/china-2026/">full trip wiki →</a></span>
+    <span>Recommendation board · updated July 2026</span>
     <span>China Fall 2026 · friends trip · route TBD</span>
   </footer>
 </div>
@@ -1387,15 +1397,15 @@
   const ROUTES = [
     {
       id: "A", color: "var(--cinnabar)", rec: true, recTag: "Baseline",
-      name: "Current plan", path: "HK → Guangzhou → Wuzhen → Shanghai",
+      name: "Canton + canals", path: "HK → Guangzhou → Wuzhen → Shanghai",
       thumb: "images/wuzhen/wuzhen-canal-boats.jpg",
-      tagline: "The locked-in classic: Hong Kong, a full city of Cantonese food, one slow canal-town night, and a big Shanghai finish.",
+      tagline: "The leading all-round recommendation: Hong Kong, Cantonese food, one slow canal-town night, and a big Shanghai finish.",
       tags: ["Canal town", "Cantonese food", "Moderate friction"],
       stats: { main: 9, hk: 4, moves: "4 bases · 1✈ 2🚄" },
       effort: { label: "Moderate", cls: "moderate" },
       decision: { label: "Keep", cls: "keep", text: "Best balance of food, scenery and easy neighborhoods." },
       practical: { stay: "The Pottinger → LN Hotel Five → Waterside Resort → Langham Xintiandi", rain: "M+/HKPM · Guangdong Museum · Wuzhen workshops · Shanghai Museum East", food: "Central/Sheung Wan · Beijing Road/Liwan · Xizha · Xintiandi/French Concession", book: "CAN→HGH flight first; then Xizha hotel, cross-border HSR and Shanghai hotel." },
-      why: "The locked-in plan. Canal-town evenings at Wuzhen, a full city for Cantonese food, finish strong in Shanghai with a direct PVG → AUS exit. Lowest friction overall. Nov 5 window dodges the Canton Fair.",
+      why: "The leading recommendation, not a locked plan. Canal-town evenings at Wuzhen, a full city for Cantonese food, and a Shanghai finish that departs from PVG without backtracking to Hong Kong. Lowest friction overall; the Nov 5 window dodges the Canton Fair.",
       buffer: { txt: "Protected transfer days", cls: "s" },
       clock: "No mainland reentry after Hong Kong. The weak point is the Guangzhou → Wuzhen flight day, not immigration eligibility.",
       routeNote: "Best all-round route after two fixes: protect the West Kowloon transfer and treat Guangzhou → Wuzhen as a full travel day. Nothing timed is placed after either move.",
@@ -1423,8 +1433,8 @@
         ["Day 11","→ Shanghai","Tongxiang → Hongqiao; check in, then Xintiandi dinner only","SHA"],
         ["Day 12","Shanghai","Pudong + Shanghai Tower","SHA"],
         ["Day 13","Shanghai","Old Shanghai, Yu Garden","SHA"],
-        ["Day 14","Shanghai","Museum, farewell dinner","SHA"],
-        ["Day 15","(in-flight)","Maglev → PVG → AUS","—",1]
+        ["Day 14","Shanghai","Choose Shanghai Museum East or People’s Square after checking the weekday; farewell dinner","SHA"],
+        ["Day 15","(in-flight)","Hotel → PVG with a full international-flight buffer; connect onward to AUS","—",1]
       ]
     },
     {
@@ -1458,7 +1468,7 @@
         ["Day 4","Shanghai","French Concession, Yu Garden","SHA"],
         ["Day 5","→ Hangzhou","Hongqiao → Hangzhou; allow 2.5–3.5 hr door-to-door","HGH"],
         ["Day 6","Hangzhou","Lingyin Temple, tea fields","HGH"],
-        ["Day 7","→ Xiamen","Hangzhou East → Xiamen; full rail day, easy Zhongshan Road dinner","XM"],
+        ["Day 7","→ Xiamen","Hangzhou East → Xiamen; treat as a 7–8 hr hotel-to-hotel rail day and keep only an easy Zhongshan Road dinner","XM"],
         ["Day 8","Xiamen","Early Gulangyu ferry, Sunlight Rock, residential lanes","XM"],
         ["Day 9","Xiamen","Nanputuo + Huandao coast; spa or free evening","XM"],
         ["Day 10","→ Shenzhen","Xiamen → Shenzhen; allow 5–6 hr door-to-door","SZ"],
@@ -1585,7 +1595,7 @@
         ["Day 5","→ Zhangjiajie","Flight + ground transfer; allow ~6 hr hotel-to-hotel","Wulingyuan"],
         ["Day 6","Zhangjiajie","Yuanjiajie + Tianzi Mountain","Wulingyuan"],
         ["Day 7","Zhangjiajie","Tianmen Mountain day","ZJJ city"],
-        ["Day 8","→ Shenzhen","DYG → SZX if confirmed; otherwise travel to Guangzhou and sleep there","SZ / GZ"],
+        ["Day 8","→ Shenzhen","DYG → SZX only if the nonstop operates; otherwise Route E needs a Guangzhou-based rewrite before booking","SZ / GZ"],
         ["Day 9","Shenzhen","Futian recovery + one museum; Guangzhou fallback gets an easy city day","SZ / GZ"],
         ["Day 10","→ Hong Kong","Futian → West Kowloon; allow 2.5–3 hr door-to-door","HK",1],
         ["Day 11","Hong Kong","Victoria Peak + Central","HK"],
@@ -1675,8 +1685,8 @@
         ["Day 11","→ Shanghai","Tongxiang → Hongqiao; allow 2.5–3.5 hr door-to-door","SHA"],
         ["Day 12","Shanghai","Pudong + Shanghai Tower","SHA"],
         ["Day 13","Shanghai","Old Shanghai, Yu Garden","SHA"],
-        ["Day 14","Shanghai","Museum, farewell dinner","SHA"],
-        ["Day 15","(in-flight)","Maglev → PVG → AUS","—",1]
+        ["Day 14","Shanghai","Choose Shanghai Museum East or People’s Square after checking the weekday; farewell dinner","SHA"],
+        ["Day 15","(in-flight)","Hotel → PVG with a full international-flight buffer; connect onward to AUS","—",1]
       ]
     }
   ];
@@ -2091,7 +2101,7 @@
     const el = document.createElement("div");
     el.className = "route" + (r.rec ? " rec" : "");
     el.style.setProperty("--rc", r.color);
-    el.setAttribute("open-state", i === 0 ? "1" : "0");
+    el.setAttribute("open-state", "0");
     const routeBodyId = `route-${r.id.toLowerCase()}-body`;
 
     const rows = r.days.map(d => {
@@ -2109,7 +2119,7 @@
     ].join("");
 
     el.innerHTML = `
-      <button class="route-head" aria-expanded="${i===0}" aria-controls="${routeBodyId}">
+      <button class="route-head" aria-expanded="false" aria-controls="${routeBodyId}">
         <span class="rthumb-wrap">
           <img class="rthumb" loading="lazy" decoding="async" src="${r.thumb.replace('images/', 'images/thumbs/')}" alt="">
           <span class="badge">${r.id}</span>
@@ -2200,6 +2210,7 @@
       <summary aria-expanded="${details.open}" aria-controls="city-guide-body-${i + 1}"><span class="city-title"><b>${guide.city}</b><small>${guide.routes}</small></span></summary>
       <div class="city-body" id="city-guide-body-${i + 1}">
         <p class="city-vibe">${guide.vibe}</p>
+        <p class="search-match-note">Only activities matching your search are shown below.</p>
         <div class="city-picks">${picks}</div>
         ${travelerIntel}
         <div class="city-foot"><a href="${mapUrl}" target="_blank" rel="noopener">map the shortlist ↗</a><a href="${guide.source}" target="_blank" rel="noopener">research source ↗</a><span class="save">save · verify · book</span></div>
@@ -2216,15 +2227,28 @@
   function filterCityGuides() {
     const term = citySearch.value.trim().toLocaleLowerCase();
     let shown = 0;
+    let matchingActivities = 0;
     [...cityGuides.children].forEach((card, index) => {
       const guide = CITY_GUIDES[index];
       const routeMatch = activeCityRoute === "all" || CITY_ROUTE_MAP[guide.city].includes(activeCityRoute);
-      const haystack = `${guide.city} ${guide.vibe} ${guide.picks.flat().join(" ")}`.toLocaleLowerCase();
-      const textMatch = !term || haystack.includes(term);
+      const cityMatch = guide.city.toLocaleLowerCase().includes(term);
+      let pickMatches = 0;
+      [...card.querySelectorAll(".city-pick")].forEach((pick, pickIndex) => {
+        const pickText = guide.picks[pickIndex].join(" ").toLocaleLowerCase();
+        const matches = !term || cityMatch || pickText.includes(term);
+        pick.hidden = !matches;
+        if (matches) pickMatches++;
+      });
+      const textMatch = !term || cityMatch || pickMatches > 0;
       card.hidden = !(routeMatch && textMatch);
-      if (!card.hidden) shown++;
+      card.dataset.searching = String(Boolean(term));
+      if (!card.hidden) {
+        shown++;
+        matchingActivities += pickMatches;
+        if (term) card.open = true;
+      }
     });
-    playbookStatus.textContent = shown ? `Showing ${shown} city guide${shown === 1 ? "" : "s"}.` : "No city guides match. Clear the search or choose another route.";
+    playbookStatus.textContent = shown ? (term ? `Showing ${matchingActivities} matching activit${matchingActivities === 1 ? "y" : "ies"} in ${shown} cit${shown === 1 ? "y" : "ies"}.` : `Showing ${shown} city guide${shown === 1 ? "" : "s"}.`) : "No activities match. Clear the search or choose another route.";
   }
   citySearch.addEventListener("input", filterCityGuides);
   routeFilters.forEach(button => button.addEventListener("click", () => {
@@ -2374,6 +2398,26 @@
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     card.querySelector(".actions")?.appendChild(link);
+  });
+
+  // Hotel shortlists are recommendations; route filters simply remove irrelevant cities.
+  const hotelFilters = [...document.querySelectorAll(".hotel-filter")];
+  const hotelCards = [...document.querySelectorAll(".hotel-card")];
+  hotelFilters.forEach(button => button.addEventListener("click", () => {
+    const route = button.dataset.hotelRoute;
+    hotelFilters.forEach(filter => filter.setAttribute("aria-pressed", String(filter === button)));
+    hotelCards.forEach(card => card.hidden = route !== "all" && !card.dataset.routes.includes(route));
+  }));
+
+  // Every named walk-in recommendation opens a focused map search.
+  document.querySelectorAll(".walkin-card li b").forEach(label => {
+    if (label.querySelector("a")) return;
+    const city = label.closest(".walkin-card")?.querySelector("h4")?.textContent || "China";
+    const link = document.createElement("a");
+    link.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${label.textContent} ${city}`)}`;
+    link.textContent = `${label.textContent} ↗`;
+    label.textContent = "";
+    label.appendChild(link);
   });
 
   // Keep outbound links consistent and isolated from the trip page.
