@@ -479,6 +479,19 @@
   .city-foot { display: flex; flex-wrap: wrap; gap: 0.45rem 0.8rem; align-items: center; margin-top: 0.8rem; font-size: 0.72rem; }
   .city-foot a { color: var(--jade-deep); text-underline-offset: 3px; }
   .city-foot .save { font-family: var(--mono); color: var(--neutral); }
+  .traveler-intel { margin-top: 0.95rem; padding-top: 0.9rem; border-top: 1px dashed var(--line); }
+  .traveler-intel-head { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.3rem 0.8rem; align-items: baseline; margin-bottom: 0.55rem; }
+  .traveler-intel-head b { font-family: var(--serif); font-size: 1rem; font-weight: 400; }
+  .traveler-intel-head span { font-family: var(--mono); font-size: 0.56rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--neutral); }
+  .traveler-intel ul { margin: 0; padding-left: 1.05rem; display: grid; gap: 0.3rem; }
+  .traveler-intel li { color: var(--ink-soft); font-size: 0.76rem; line-height: 1.45; }
+  .intel-calls { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.45rem; margin-top: 0.7rem; }
+  .intel-call { min-width: 0; border-radius: 3px; padding: 0.58rem 0.65rem; background: rgba(110,140,120,0.11); color: var(--ink-soft); font-size: 0.73rem; line-height: 1.4; }
+  .intel-call.caution { background: rgba(192,57,43,0.08); }
+  .intel-call b { display: block; margin-bottom: 0.08rem; color: var(--jade-deep); font-family: var(--mono); font-size: 0.56rem; letter-spacing: 0.1em; text-transform: uppercase; }
+  .intel-call.caution b { color: var(--cinnabar); }
+  .intel-sources { display: flex; flex-wrap: wrap; gap: 0.35rem 0.7rem; margin-top: 0.6rem; }
+  .intel-sources a { color: var(--jade-deep); font-size: 0.68rem; text-underline-offset: 3px; }
   .museum-radar {
     background: #FBFAF6;
     border: 1px solid var(--line);
@@ -680,7 +693,7 @@
     table.food td.lead { white-space: normal; margin: 0.18rem 0; }
     .lock { grid-template-columns: auto minmax(0, 1fr); gap: 0.2rem 0.75rem; }
     .lock .lead { grid-column: 2; white-space: normal; }
-    .city-picks { grid-template-columns: minmax(0, 1fr); }
+    .city-picks, .intel-calls { grid-template-columns: minmax(0, 1fr); }
   }
   @media (max-width: 480px) {
     .wrap { padding-inline: 0.85rem; }
@@ -1496,6 +1509,152 @@
     }
   ];
 
+  const TRAVELER_NOTES = {
+    "Hong Kong": {
+      heard: [
+        "Travelers consistently get more out of Hong Kong when they alternate dense city blocks with a hike or island day instead of treating it as one long urban checklist.",
+        "The Peak is still worth doing, but the tram queue and Sky Terrace are not the whole experience—Lugard Road gives the spacious view, and weather matters more than the reservation time.",
+        "Build a real rain backup. A wet day can erase the Peak and hiking views but works well for M+, the Palace Museum, covered markets, tea and a long lunch."
+      ],
+      best: "Use ferries as sightseeing: Star Ferry at blue hour and one outlying-island ferry deliver more atmosphere per dollar than another observation deck.",
+      avoid: "Do not stack Peak Tram, Ngong Ping and a famous restaurant on rigid timed tickets. Transport queues and mountain weather can make that day brittle.",
+      sources: [
+        ["Tripadvisor forum · 3-day planning", "https://www.tripadvisor.com/ShowTopic-g294217-i1496-k15503904-Suggestions_for_Three_Full_Days_in_Hong_Kong-Hong_Kong.html"],
+        ["2026 traveler megathread", "https://www.reddit.com/r/HongKong/comments/1q0caun/traveling_to_hong_kong_megathread_2026/"]
+      ]
+    },
+    "Guangzhou": {
+      heard: [
+        "Recent reviews favor the Pearl River after dark; the stretch from Shamian toward Canton Tower shows the old-to-new city transition better than the tower alone.",
+        "Food is the main event. A morning dim-sum reservation, old Liwan snack stops and one modern Cantonese dinner outperform a rushed monument checklist.",
+        "Shamian, Yongqingfang, Chen Clan Hall and the new Bai’e Tan arts complex belong in one west-side day; Zhujiang New Town and Canton Tower form a separate evening."
+      ],
+      best: "Choose either a river cruise or Canton Tower for the paid skyline experience, then use the free Huacheng Square and river promenades for the other angles.",
+      avoid: "Beijing Road and Shangxiajiu can feel like generic retail at peak hours. Go for specific food and archaeology stops, not because they are labeled must-see streets.",
+      sources: [
+        ["Tripadvisor · Pearl River reviews", "https://www.tripadvisor.com.sg/Attraction_Review-g298555-d550693-Reviews-Pearl_River-Guangzhou_Guangdong.html"],
+        ["2026 traveler-priority guide", "https://chinafortravelers.com/guides/things-to-do-in-guangzhou/"]
+      ]
+    },
+    "Hangzhou": {
+      heard: [
+        "West Lake still lives up to the hype when visited early. Travelers repeatedly recommend bikes or a hand-rowed boat over attempting the entire five-hour walking circuit.",
+        "The tea hills are the part many visitors remember most: Jiuxi, Longjing and a simple farmer-hosted tasting feel more distinct than another crowded lakefront stop.",
+        "Lingyin is iconic but can become shoulder-to-shoulder. Arrive near opening, visit Feilai Feng first and do not add Hefang Street unless the group still wants a busy souvenir street."
+      ],
+      best: "For a one-day shape, combine the quieter south/west lake edge, Lingyin and one tea-village block; stay overnight before or after rather than commuting both ways from Shanghai.",
+      avoid: "Do not circle all of West Lake, add Lingyin, a tea village and a distant attraction such as OMG Heartbeat Park in one day—the cross-city transfers erase the calm.",
+      sources: [
+        ["Tripadvisor · West Lake 2026 reviews", "https://www.tripadvisor.com/Attraction_Review-g298559-d386917-Reviews-West_Lake_Xi_Hu-Hangzhou_Zhejiang.html"],
+        ["Local-guide West Lake notes", "https://www.reddit.com/r/hangzhou/comments/1srgmim/my_west_lake_takes_after_being_a_tour_guide_2/"]
+      ]
+    },
+    "Huangshan": {
+      heard: [
+        "The mountain is mostly relentless stone stairs, not a casual dirt trail. The western side is more dramatic and more punishing; the eastern cable-car approach is the accessible route.",
+        "A summit night is expensive but buys the quiet hour after sunrise before the first cable cars unload. Famous sunrise platforms can still be packed, so scout a secondary viewpoint at check-in.",
+        "Weather determines whether this is extraordinary or frustrating. Travelers who book a rigid single mountain day are the ones most vulnerable to a total whiteout."
+      ],
+      best: "Pack light, use cable cars strategically and let the summit hotel advise the open sunrise route; rotating trail closures can invalidate old blog itineraries.",
+      avoid: "Do not hike from the base merely to prove you can. It consumes hours of stairs below the signature ridge scenery and can leave no energy for West Sea Canyon.",
+      sources: [
+        ["Tripadvisor · mountain trip report", "https://www.tripadvisor.com/ShowTopic-g303685-i10955-k8113452-Trip_Report_HUANGSHAN_hiking_routes_hotels_transport-Huangshan_Anhui.html"],
+        ["2025 traveler report · mountain and villages", "https://www.tripadvisor.com/ShowTopic-g294211-i642-k15494310-China_2025_2_of_3_HuangShan_mountain_villages-China.html"]
+      ]
+    },
+    "Xiamen": {
+      heard: [
+        "Gulangyu is still the essential stop, but reviews split sharply based on timing: early ferries and residential lanes feel atmospheric; midday Longtou Road feels like a crowded shopping attraction.",
+        "Foreign visitors use designated tourist ferry terminals and timed tickets. Old guidebook advice about taking the cheap local ferry from the central waterfront is unreliable.",
+        "The island involves hills, stairs and much more walking than its map suggests. Sunlight Rock plus Shuzhuang Garden is enough structure; wandering is the point."
+      ],
+      best: "Book the outbound ferry in advance, arrive early, walk away from the main snack street first and leave the island from whichever tourist pier best fits the evening schedule.",
+      avoid: "Do not turn a short Xiamen stop into Gulangyu, coastal cycling, Riyuegu and a Fujian tulou day trip. The tulou excursion alone consumes a long day.",
+      sources: [
+        ["Tripadvisor · Gulangyu 2026 reviews", "https://www.tripadvisor.co.uk/Attraction_Review-g297407-d1131761-Reviews-Gulangyu_Island-Xiamen_Fujian.html"],
+        ["Tripadvisor forum · foreign ferry guide", "https://www.tripadvisor.com/ShowTopic-g297407-i7332-k14409997-A_Foreign_Visitor_s_Guide_to_the_Gulangyu_Ferries-Xiamen_Fujian.html"]
+      ]
+    },
+    "Shenzhen": {
+      heard: [
+        "Travelers like Shenzhen most when they lean into what is uniquely Shenzhen—interactive science, hardware markets, huge public spaces, design districts and skyline parks—not imitation heritage parks.",
+        "The city is extremely spread out. Guangming’s science museums, Pingshan’s natural-history museum, Dapeng and Futian cannot be mixed casually into one transit day.",
+        "Recent visitor discussion says COCO Park is no longer a destination by itself; Talent Park, Nantou, OCT-LOFT, Huaqiangbei and a deliberate museum choice give a stronger sense of the city."
+      ],
+      best: "For one night, choose one geographic cluster: Futian skyline + spa, Nanshan design + bayfront, or a dedicated Guangming museum half-day before the Hong Kong transfer.",
+      avoid: "Do not chase ‘top attractions’ across districts. A Dapeng beach day or Pingshan museum requires a full-day commitment, not a spare two-hour window.",
+      sources: [
+        ["Tripadvisor · 2026 attraction rankings", "https://www.tripadvisor.com/Attractions-g297415-Activities-Shenzhen_Guangdong.html"],
+        ["Recent first-visit discussion", "https://www.reddit.com/r/shenzhen/comments/1t77wha/visited_shenzen_for_the_1st_time_this_is_what_i/"]
+      ]
+    },
+    "Zhangjiajie": {
+      heard: [
+        "Travelers repeatedly say the main forest park deserves two days if possible. Viewpoint buses make distances look short, but queues and one-way route choices consume time.",
+        "The Glass Bridge is divisive when treated as a photo stop and well-liked when combined with the full canyon walk, slides, boats or zip line.",
+        "Golden Whip Stream and the valleys below the famous terraces are quieter and change the experience from theme-park logistics back into a mountain landscape."
+      ],
+      best: "Ask the hotel to choose the day order from the next morning’s visibility and run a reverse route when practical. Tianmen, Wulingyuan and the Grand Canyon are separate zones.",
+      avoid: "Do not enter the national park at 14:00 expecting a meaningful Avatar-peaks day, and do not bolt distant Furong Town onto an already compressed two-night stay.",
+      sources: [
+        ["Tripadvisor forum · DIY route notes", "https://www.tripadvisor.com.au/ShowTopic-g494933-i14757-k15270025-Zhangjiajie_Easy_to_DIY-Zhangjiajie_Hunan.html"],
+        ["2026 traveler verdicts", "https://www.reddit.com/r/travelchina/comments/1s580hs/zhangjiajie_what_was_worth_it_and_what_wasnt/"]
+      ]
+    },
+    "Guilin + Yangshuo": {
+      heard: [
+        "The recurring consensus is to spend the real time in Yangshuo’s countryside, not central Guilin. Guilin works as an arrival night or the start of the one-way Li River cruise.",
+        "A bike or scooter along the Yulong valley creates more freedom than an all-in-one tour. Travelers warn against packages that cram cruise, rafting, caves and a show into one exhausting day.",
+        "The classic big Li River boat and the shorter Xingping/Yulong experiences are different, not duplicates: choose the full cruise for the unfolding landscape and rafting for intimacy."
+      ],
+      best: "Base outside noisy West Street, start Xingping before tour groups, and give cycling or walking its own unrushed half-day with no string of paid roadside attractions.",
+      avoid: "Skip the Ten-Mile Gallery’s minor ticketed stops unless one specifically interests the group. The free road, rice fields and karst views are the experience.",
+      sources: [
+        ["Tripadvisor forum · Guilin planning", "https://www.tripadvisor.co.uk/ShowTopic-g298556-i9070-k14869873-Seeking_advice_on_my_Guilin_trip-Guilin_Guangxi.html"],
+        ["Recent traveler consensus", "https://www.reddit.com/r/travelchina/comments/1rflwfp/guilinyangshou_yay_or_nay/"]
+      ]
+    },
+    "Chongqing": {
+      heard: [
+        "Travelers either love Chongqing’s vertical urban wandering or find the viral photo checklist overhyped. The difference is usually whether they explore neighborhoods and food beyond Hongya Cave, Liziba and Kuixinglou.",
+        "Hotpot service can have little English and ‘mild’ is still intense. Screenshot dishes, use camera translation and order a divided pot if spice tolerance differs across the group.",
+        "Wulong is impressive but consumes almost an entire day. With only two city days, reviews favor staying in Chongqing unless karst landscapes are the reason for choosing Route G."
+      ],
+      best: "Walk downhill through one connected Yuzhong route, then use the metro back up. The city’s altitude changes make map distances misleading and taxis can be slower than expected.",
+      avoid: "Do not queue inside Hongya Cave just because the exterior is famous. See it from Qiansimen Bridge, then leave for dinner or a riverside walk.",
+      sources: [
+        ["Traveler debate · worth the hype?", "https://www.reddit.com/r/travelchina/comments/1k6nz60/is_chongqing_actually_worth_it/"],
+        ["Tripadvisor forum · Wulong logistics", "https://www.tripadvisor.com/ShowTopic-g294213-i6492-k15401202-Wulong_Karst_National_Geology_Park-Chongqing.html"]
+      ]
+    },
+    "Wuzhen": {
+      heard: [
+        "Overnight visitors consistently describe Wuzhen as two different places: crowded and commercial during the day, atmospheric after dark and again at dawn.",
+        "Staying inside Xizha is the key purchase because it eliminates the commute and preserves access when the town is quiet; an outside hotel loses much of the reason to stop here.",
+        "Dongzha closes earlier and is more museum-heavy. Travelers with one night usually do it first, then move into Xizha for evening rather than bouncing between zones."
+      ],
+      best: "Arrive with a small overnight bag, protect the 21:00 canal walk and 06:30 photo hour, and treat the midday period as tea, museum or guesthouse downtime.",
+      avoid: "Do not add another water town from Shanghai after sleeping in Wuzhen. Suzhou is worthwhile for gardens, but Zhujiajiao largely repeats the canal-town beat.",
+      sources: [
+        ["Tripadvisor forum · overnight verdict", "https://www.tripadvisor.in/ShowTopic-g294211-i642-k14916651-Overnight_in_WuZhen-China.html"],
+        ["Tripadvisor forum · Wuzhen vs Nanxun", "https://www.tripadvisor.com/ShowTopic-g297468-i7152-k15457625-Wuzhen_or_Nanxun-Zhejiang.html"]
+      ]
+    },
+    "Shanghai": {
+      heard: [
+        "Travelers find two or three full days to be the sweet spot: Bund and old lanes, one museum or futuristic attraction, one neighborhood/food day and an optional excursion.",
+        "Nanjing East Road, the Bund Sightseeing Tunnel and midday Yuyuan generate the most repeated tourist-trap warnings. Better skyline space begins north near the International Cruise Terminal.",
+        "Shanghai rewards wandering more than box-checking: French Concession lanes, Suzhou Creek and West Bund become the memorable connective tissue between marquee sights."
+      ],
+      best: "Schedule one major timed anchor per half-day and group by river side. Museum East, Lujiazui and the Science & Technology Museum belong together in Pudong.",
+      avoid: "Do not spend a Shanghai day commuting to both Lingang Astronomy Museum and central Bund sights; the astronomy museum is a separate excursion over an hour from the center.",
+      sources: [
+        ["Tripadvisor · 2026 attraction index", "https://www.tripadvisor.com/Attractions-g308272-Activities-Shanghai.html"],
+        ["2026 traveler trap notes", "https://www.reddit.com/r/travelchina/comments/1rporqj/first_time_in_shanghai_dont_make_these_8_common/"]
+      ]
+    }
+  };
+
   function scoreColor(n) {
     const stops = { 1: "#BC4B3C", 2: "#C77A3B", 3: "#B0883C", 4: "#7E9A5E", 5: "#5E8A5A" };
     return stops[n] || "#8C948D";
@@ -1578,12 +1737,24 @@
     const picks = guide.picks.map(([kind, title, note]) => `
       <div class="city-pick"><span class="kind">${kind}</span><b>${title}</b><span>${note}</span></div>
     `).join("");
+    const intel = TRAVELER_NOTES[guide.city];
+    const travelerIntel = intel ? `
+      <div class="traveler-intel">
+        <div class="traveler-intel-head"><b>What travelers keep saying</b><span>blogs · reviews · forums</span></div>
+        <ul>${intel.heard.map(note => `<li>${note}</li>`).join("")}</ul>
+        <div class="intel-calls">
+          <div class="intel-call"><b>Best move</b>${intel.best}</div>
+          <div class="intel-call caution"><b>Watch out</b>${intel.avoid}</div>
+        </div>
+        <div class="intel-sources">${intel.sources.map(([label, url]) => `<a href="${url}" target="_blank" rel="noopener">${label} ↗</a>`).join("")}</div>
+      </div>` : "";
     const mapUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(guide.map)}`;
     details.innerHTML = `
       <summary><span class="city-title"><b>${guide.city}</b><small>${guide.routes}</small></span></summary>
       <div class="city-body">
         <p class="city-vibe">${guide.vibe}</p>
         <div class="city-picks">${picks}</div>
+        ${travelerIntel}
         <div class="city-foot"><a href="${mapUrl}" target="_blank" rel="noopener">map the shortlist ↗</a><a href="${guide.source}" target="_blank" rel="noopener">research source ↗</a><span class="save">save · verify · book</span></div>
       </div>`;
     cityGuides.appendChild(details);
