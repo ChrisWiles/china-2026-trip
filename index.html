@@ -49,6 +49,7 @@
 
   img, table { max-width: 100%; }
   a, p, li, td, small { overflow-wrap: anywhere; }
+  [id^="sec-"], #dates { scroll-margin-top: 5.5rem; }
 
   .wrap {
     max-width: 1080px;
@@ -229,6 +230,43 @@
   .shortlist-verdict { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.55rem; margin-top: 0.9rem; }
   .shortlist-verdict div { min-width: 0; padding: 0.75rem; background: var(--paper-2); color: var(--ink-soft); font-size: 0.75rem; }
   .shortlist-verdict b { display: block; margin-bottom: 0.15rem; color: var(--ink); font: 0.56rem/1.2 var(--mono); letter-spacing: 0.09em; text-transform: uppercase; }
+
+  /* ---- Live November transport snapshot ---- */
+  .price-snapshot { margin: 0 0 3.2rem; padding: 1.1rem; border: 1px solid var(--line); border-top: 5px solid var(--ochre); background: #FBFAF6; }
+  .price-snapshot-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 1rem; margin-bottom: 0.9rem; }
+  .price-snapshot-head h2 { margin: 0.15rem 0 0.35rem; font: 400 clamp(1.45rem, 3.2vw, 2.2rem)/1.08 var(--serif); }
+  .price-snapshot-head p { max-width: 68ch; margin: 0; color: var(--ink-soft); font-size: 0.82rem; }
+  .live-stamp { flex: 0 0 auto; padding: 0.42rem 0.55rem; border: 1px solid var(--ochre); border-radius: 999px; color: var(--ochre); font: 0.58rem/1 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; white-space: nowrap; }
+  .price-kicker { display: block; color: var(--cinnabar); font: 0.58rem/1.2 var(--mono); letter-spacing: 0.12em; text-transform: uppercase; }
+  .international-fare { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(250px, 0.7fr); gap: 0.75rem; margin-bottom: 0.75rem; }
+  .flight-card { min-width: 0; padding: 0.9rem; background: var(--ink); color: var(--paper); }
+  .flight-card-top { display: flex; justify-content: space-between; gap: 0.8rem; align-items: flex-start; margin-bottom: 0.6rem; }
+  .flight-card h3 { margin: 0; font: 400 1.25rem/1.2 var(--serif); }
+  .flight-price { flex: 0 0 auto; color: var(--ochre); font: 400 1.45rem/1 var(--serif); white-space: nowrap; }
+  .flight-price small { display: block; margin-top: 0.2rem; color: var(--neutral); font: 0.55rem/1.2 var(--mono); text-align: right; text-transform: uppercase; }
+  .flight-leg { display: grid; grid-template-columns: 5.1rem minmax(0, 1fr); gap: 0.6rem; padding: 0.55rem 0; border-top: 1px solid rgba(242,240,233,0.16); }
+  .flight-leg time { color: var(--ochre); font: 0.62rem/1.35 var(--mono); }
+  .flight-leg span { min-width: 0; color: #D8D5CC; font-size: 0.76rem; line-height: 1.45; }
+  .fare-call { min-width: 0; padding: 0.9rem; border: 1px solid var(--line); background: var(--paper); }
+  .fare-call b { display: block; margin-bottom: 0.25rem; font: 400 1.05rem/1.2 var(--serif); }
+  .fare-call p { margin: 0; color: var(--ink-soft); font-size: 0.76rem; }
+  .route-price-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; }
+  .route-price-card { min-width: 0; padding: 0.9rem; border: 1px solid var(--line); border-top: 4px solid var(--pc); background: var(--paper); }
+  .route-price-top { display: flex; justify-content: space-between; gap: 0.75rem; align-items: flex-start; margin-bottom: 0.55rem; }
+  .route-price-top h3 { margin: 0; font: 400 1.15rem/1.2 var(--serif); }
+  .route-price-top span { color: var(--pc); font: 0.58rem/1.25 var(--mono); text-transform: uppercase; text-align: right; }
+  .cost-list { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--line); }
+  .cost-list li { display: flex; justify-content: space-between; gap: 0.75rem; padding: 0.42rem 0; border-bottom: 1px solid var(--line); color: var(--ink-soft); font-size: 0.74rem; }
+  .cost-list b { flex: 0 0 auto; color: var(--ink); font-family: var(--mono); font-weight: 500; white-space: nowrap; }
+  .cost-total { display: flex; justify-content: space-between; gap: 0.75rem; align-items: baseline; margin-top: 0.65rem; }
+  .cost-total span { color: var(--neutral); font: 0.58rem/1.3 var(--mono); letter-spacing: 0.08em; text-transform: uppercase; }
+  .cost-total strong { color: var(--pc); font: 400 1.4rem/1 var(--serif); white-space: nowrap; }
+  .route-price-note { margin: 0.6rem 0 0; color: var(--ink-soft); font-size: 0.72rem; }
+  .price-caveats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.55rem; margin-top: 0.75rem; }
+  .price-caveats div { min-width: 0; padding: 0.7rem; background: var(--paper-2); color: var(--ink-soft); font-size: 0.7rem; }
+  .price-caveats b { display: block; margin-bottom: 0.15rem; color: var(--ink); font: 0.56rem/1.2 var(--mono); letter-spacing: 0.07em; text-transform: uppercase; }
+  .price-sources { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.75rem; }
+  .price-sources a { min-height: 44px; display: inline-flex; align-items: center; padding: 0.45rem 0.65rem; border: 1px solid var(--line); border-radius: 999px; color: var(--jade-deep); font: 0.6rem/1.15 var(--mono); text-decoration: none; }
 
   /* ---- Practical trip planning ---- */
   .audit-section h3 { margin: 0 0 0.45rem; font-family: var(--serif); font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 400; }
@@ -917,7 +955,8 @@
     .route .title .name { font-size: 1.08rem; }
     .tagline { font-size: 0.82rem; }
     .route-body { padding: 0 1rem 1.2rem; }
-    .prep, .dates-grid, .food-intro, .playbook-intro, .city-grid, .museum-grid, .hotel-grid, .check-grid, .contingency-grid, .trip-call-grid, .shortlist-intro, .finalist-grid { grid-template-columns: minmax(0, 1fr); }
+    .prep, .dates-grid, .food-intro, .playbook-intro, .city-grid, .museum-grid, .hotel-grid, .check-grid, .contingency-grid, .trip-call-grid, .shortlist-intro, .finalist-grid, .international-fare, .route-price-grid { grid-template-columns: minmax(0, 1fr); }
+    .price-caveats { grid-template-columns: minmax(0, 1fr); }
     .shortlist-verdict { grid-template-columns: minmax(0, 1fr); }
     .restaurant-grid { grid-template-columns: minmax(0, 1fr); }
     .restaurant-card.featured { grid-column: auto; }
@@ -981,6 +1020,15 @@
     .city-guide summary, .city-body { padding-inline: 0.8rem; }
     .finalist summary { min-height: 0; padding: 0.85rem; }
     .finalist-body { padding-inline: 0.75rem; }
+    .price-snapshot { padding: 0.85rem; }
+    .price-snapshot-head { display: block; }
+    .live-stamp { display: inline-flex; margin-top: 0.55rem; white-space: normal; }
+    .flight-card-top, .route-price-top { align-items: flex-start; }
+    .flight-price { font-size: 1.25rem; }
+    .flight-leg { grid-template-columns: minmax(0, 1fr); gap: 0.15rem; }
+    .cost-list li { align-items: flex-start; }
+    .cost-list li span { min-width: 0; }
+    .price-sources a { flex: 1 1 145px; justify-content: center; text-align: center; }
     .lightbox .cap { padding-inline: 1rem; letter-spacing: 0.08em; }
   }
   @media (prefers-reduced-data: reduce) { .filmstrip figure:nth-child(n+5), .gallery figure:nth-child(n+5) { display: none; } }
@@ -1002,9 +1050,9 @@
   <header class="mast">
     <div class="eyebrow">Friends Trip Dossier · Fall 2026</div>
     <h1>China<span class="zh">秋</span></h1>
-    <p class="dek">Two weeks, first time on the mainland for all of us. Baseline window <b>Thu 8 Oct → Thu 22 Oct 2026</b>, but we're flexible across Oct–Nov — and the research says <b>shift to November</b> (see <a href="#dates" style="color:var(--cinnabar)">When to go</a>). 13 in-country nights either way. Two Shanghai-first finalists now lead the decision; seven earlier routes remain below for comparison.</p>
+    <p class="dek">Two weeks, first time on the mainland for all of us. The cleanest working window is now <b>Thu Nov 5 → Thu Nov 19, 2026</b>, while the final dates and route remain flexible (see <a href="#dates" style="color:var(--cinnabar)">When to go</a>). 13 in-country nights either way. Two Shanghai-first finalists now lead the decision; seven earlier routes remain below for comparison.</p>
     <div class="meta-row">
-      <div class="meta"><span class="k">Window</span><span class="v">Oct–Nov · flex</span></div>
+      <div class="meta"><span class="k">Working window</span><span class="v">Nov 5–19 · flex</span></div>
       <div class="meta"><span class="k">Nights</span><span class="v">13</span></div>
       <div class="meta"><span class="k">Documents</span><span class="v">US passport + L visa</span></div>
       <div class="meta"><span class="k">Budget</span><span class="v">$9 – 18k / couple</span></div>
@@ -1014,6 +1062,7 @@
 
   <nav class="jumpnav" aria-label="Sections">
     <a href="#sec-shortlist">Shortlist</a>
+    <a href="#sec-prices">Live prices</a>
     <a href="#sec-routes">All routes</a>
     <a href="#sec-hotels">Hotels</a>
     <a href="#dates">When to go</a>
@@ -1073,7 +1122,7 @@
     <div class="sec-head"><span class="num">00</span><h2 id="shortlist-title">The Shanghai-first shortlist</h2><span class="rule"></span></div>
     <div class="shortlist-intro">
       <p class="shortlist-note"><b>Why four bases now lead:</b> Shanghai provides a forgiving arrival base, dropping Wuzhen removes a hotel move, Shenzhen adds the new-China museum and architecture day, and Hong Kong becomes the energetic finale with the strongest international exit options. Wuzhen remains an optional one-night swap, not a required stop.</p>
-      <p class="flight-math"><b>Flight math:</b> “6–7 hours” means the whole hotel-to-hotel transfer—not six hours airborne. Allow roughly 1–1½ hr to the airport, a 2 hr airport buffer, 2–2½ hr in the air, then bags and the next hotel.</p>
+      <p class="flight-math"><b>Flight math:</b> “6–7 hours” means the whole hotel-to-hotel transfer—not six hours airborne. Allow roughly 1–1½ hr to the airport, a 2 hr airport buffer, 2¼–3¼ hr in the air for these live options, then bags and the next hotel.</p>
     </div>
     <div class="finalist-grid">
       <details class="finalist" id="finalist-l" style="--fc:var(--jade-deep)">
@@ -1086,7 +1135,7 @@
           <span class="finalist-open">Open the 15-day plan ↓</span>
         </summary>
         <div class="finalist-body">
-          <p class="finalist-call"><b>Transfer reality:</b> Shanghai → Guangzhou is the only airport day at roughly 5½–7 hours hotel to hotel; the flight itself is about 2–2½ hours. Guangzhou → Shenzhen and Shenzhen → Hong Kong are much easier rail moves.</p>
+          <p class="finalist-call"><b>Transfer reality:</b> The live Nov 10 SHA → CAN option is 2 hr 25 min in the air; protect roughly 5½–6½ hours hotel to hotel. Guangzhou → Shenzhen and Shenzhen → Hong Kong are much easier rail moves.</p>
           <div class="finalist-links"><a href="https://www.google.com/maps/search/?api=1&amp;query=Shanghai+Guangzhou+Shenzhen+Hong+Kong">map the four bases ↗</a><a href="#sec-hotels">compare hotels ↓</a><a href="#sec-playbook">open city activities ↓</a></div>
           <span class="table-swipe">Swipe itinerary sideways ↔</span>
           <div class="itin-wrap"><table class="itin"><thead><tr><th>Day</th><th>City</th><th>Plan</th><th>Sleep</th></tr></thead><tbody>
@@ -1118,7 +1167,7 @@
           <span class="finalist-open">Open the 15-day plan ↓</span>
         </summary>
         <div class="finalist-body">
-          <p class="finalist-call"><b>Transfer reality:</b> Shanghai → Chongqing and Chongqing → Shenzhen are each roughly 5½–7 hours hotel to hotel, although each flight is only about 2–2½ hours. Dropping Wuzhen removes one hotel change but not Chongqing’s second airport day.</p>
+          <p class="finalist-call"><b>Transfer reality:</b> The live Nov 10 SHA → CKG flight is 3 hr 10 min and the Nov 13 CKG → SZX flight is 2 hr 15 min. Each still consumes roughly 5–6½ hours hotel to hotel. Dropping Wuzhen removes one hotel change but not Chongqing’s second airport day.</p>
           <div class="finalist-links"><a href="https://www.google.com/maps/search/?api=1&amp;query=Shanghai+Chongqing+Shenzhen+Hong+Kong">map the four bases ↗</a><a href="#sec-hotels">compare hotels ↓</a><a href="#sec-playbook">open city activities ↓</a></div>
           <span class="table-swipe">Swipe itinerary sideways ↔</span>
           <div class="itin-wrap"><table class="itin"><thead><tr><th>Day</th><th>City</th><th>Plan</th><th>Sleep</th></tr></thead><tbody>
@@ -1146,6 +1195,69 @@
       <div><b>Choose Guangzhou if</b>The group values fewer airport days, Cantonese food and a smoother train-based finish more than novelty.</div>
       <div><b>Choose Chongqing if</b>Hotpot and one of China’s most dramatic night cities are worth spending a second day in airports.</div>
       <div><b>Want Wuzhen anyway?</b>Make it an optional one-night swap from Shanghai. It adds a fifth hotel; it is no longer baked into either leading route.</div>
+    </div>
+  </section>
+
+  <section class="price-snapshot" id="sec-prices" aria-labelledby="price-snapshot-title">
+    <div class="price-snapshot-head">
+      <div>
+        <span class="price-kicker">Real inventory · planning snapshot</span>
+        <h2 id="price-snapshot-title">What the November routes cost right now</h2>
+        <p>Live comparison for one adult in economy using the working Thu Nov 5 → Thu Nov 19, 2026 window. Couple totals assume two seats remain in the same fare bucket. These are recommendations, not bookings; re-run every fare before paying.</p>
+      </div>
+      <span class="live-stamp">Checked Jul 15, 2026</span>
+    </div>
+
+    <div class="international-fare">
+      <article class="flight-card">
+        <div class="flight-card-top"><h3>Best-value open jaw · Delta</h3><div class="flight-price">$1,283<small>per person · $2,566 couple</small></div></div>
+        <div class="flight-leg"><time datetime="2026-11-05">Thu Nov 5</time><span><b>AUS 7:10 AM → PVG 5:25 PM Friday</b><br>DL2438 to LAX, 2 hr 48 min connection, then DL39 · 20 hr 15 min total</span></div>
+        <div class="flight-leg"><time datetime="2026-11-19">Thu Nov 19</time><span><b>HKG 10:55 AM → AUS 3:42 PM</b><br>DL88 to LAX, 2 hr 30 min connection, then DL986 · 18 hr 47 min total</span></div>
+      </article>
+      <aside class="fare-call">
+        <b>Why not the $1,146 floor?</b>
+        <p>The cheapest displayed Alaska + Asiana pairing saves only $137 per person and uses a two-stop outbound; its return pairing still needs a fresh checkout review. The inspected Delta itinerary is the lower-hassle buy. Google also flagged the long-haul Delta legs as often 30+ minutes late, but both LAX connections still have workable buffers.</p>
+      </aside>
+    </div>
+
+    <div class="route-price-grid">
+      <article class="route-price-card" style="--pc:var(--jade-deep)">
+        <div class="route-price-top"><h3>Finalist L · Guangzhou</h3><span>1 flight + 2 rail</span></div>
+        <ul class="cost-list">
+          <li><span>Delta open jaw</span><b>$2,566</b></li>
+          <li><span>Spring SHA → CAN · Nov 10 · 7:25–9:50 AM</span><b>$154</b></li>
+          <li><span>Guangzhou → Shenzhen HSR</span><b>~$22</b></li>
+          <li><span>Futian → West Kowloon HSR</span><b>~$20</b></li>
+          <li><span>One Spring checked bag each</span><b>$50–90</b></li>
+        </ul>
+        <div class="cost-total"><span>Couple · ticketed transport</span><strong>$2,812–2,852</strong></div>
+        <p class="route-price-note">Allow another $60–100 per couple for shared airport/station rides. Realistic transport planning total: <b>$2,872–3,000</b>, before any Delta Basic checked-bag charge.</p>
+      </article>
+
+      <article class="route-price-card" style="--pc:var(--cinnabar)">
+        <div class="route-price-top"><h3>Finalist X · Chongqing</h3><span>2 flights + 1 rail</span></div>
+        <ul class="cost-list">
+          <li><span>Delta open jaw</span><b>$2,566</b></li>
+          <li><span>Spring SHA → CKG · Nov 10 · 7:50–11:00 AM</span><b>$160</b></li>
+          <li><span>Spring CKG → SZX · Nov 13 · 9:55 AM–12:10 PM</span><b>$196</b></li>
+          <li><span>Futian → West Kowloon HSR</span><b>~$20</b></li>
+          <li><span>Two Spring checked bags each</span><b>$100–180</b></li>
+        </ul>
+        <div class="cost-total"><span>Couple · ticketed transport</span><strong>$3,042–3,122</strong></div>
+        <p class="route-price-note">Allow another $100–160 per couple for shared airport rides. Realistic transport planning total: <b>$3,142–3,300</b>, before any Delta Basic checked-bag charge.</p>
+      </article>
+    </div>
+
+    <div class="price-caveats">
+      <div><b>The real Chongqing premium</b>About $230–270 per couple in tickets and domestic bags, plus the extra airport rides—and roughly 5–7 more trip hours.</div>
+      <div><b>Spring baggage is not optional math</b>SpringSaver has no free checked bag and only a 7 kg, 20 × 30 × 40 cm carry-on. Buy baggage online; airport rates are charged in 5 kg blocks.</div>
+      <div><b>Delta fare family still matters</b>The Google result did not expose the final Basic/Main baggage allowance. Compare the upgrade against baggage and seat-selection charges at checkout.</div>
+    </div>
+    <div class="price-sources" aria-label="Transport price sources">
+      <a href="https://www.google.com/travel/flights">Re-run Google Flights ↗</a>
+      <a href="https://en.ch.com/static/InternalTermsConditions?id=4010c391db2e4592b8592ad2ff6072a4">Spring baggage rules ↗</a>
+      <a href="https://www.travelchinaguide.com/china-trains/high-speed/guangzhou-shenzhen.htm">Guangzhou–Shenzhen fares ↗</a>
+      <a href="https://www.highspeed.mtr.com.hk/res/pdf/hkd-implemented-fare-chart-june15.pdf">Hong Kong HSR fare chart ↗</a>
     </div>
   </section>
 
@@ -1486,9 +1598,9 @@
   </div>
 
   <div class="prepbox">
-    <h3>Working budget · planning assumption, not a quote</h3>
-    <ul><li><b>International flights:</b> $2,400–4,000 / couple</li><li><b>13 hotel nights:</b> $2,600–5,200</li><li><b>Internal air + rail:</b> $600–1,600</li><li><b>Food:</b> $1,400–2,600</li><li><b>Attractions, tours, local transport:</b> $800–1,800</li><li><b>Insurance, data, misc:</b> $400–800</li><li><b>Contingency:</b> add 15%</li></ul>
-    <div class="budget"><span class="amt">$9–18k</span><span class="note">realistic planning band per couple, excluding shopping · Route D sits toward the low end; mountain/internal-flight routes and luxury hotel picks trend high · reprice only after exact dates and route are chosen</span></div>
+    <h3>Working budget · live flights plus planning ranges</h3>
+    <ul><li><b>International flights:</b> $2,566 / couple in the Jul 15 live snapshot; protect up to $3,000</li><li><b>13 hotel nights:</b> $2,600–5,200</li><li><b>Finalist L internal air + rail + domestic bags:</b> $246–286 / couple</li><li><b>Finalist X internal air + rail + domestic bags:</b> $476–556 / couple</li><li><b>Food:</b> $1,400–2,600</li><li><b>Attractions, tours, local transport:</b> $800–1,800</li><li><b>Insurance, data, misc:</b> $400–800</li><li><b>Contingency:</b> add 15%</li></ul>
+    <div class="budget"><span class="amt">$9–18k</span><span class="note">realistic planning band per couple, excluding shopping · the live transport snapshot now anchors the low end · luxury hotels, tours and splurge meals create most of the remaining spread · reprice before booking</span></div>
   </div>
 
   <div class="audit-section">
