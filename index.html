@@ -37,8 +37,10 @@
   .weather{overflow:auto}.weather table{width:100%;min-width:720px;border-collapse:collapse;background:var(--white)}th,td{text-align:left;border:1px solid var(--line);padding:.8rem;font-size:.78rem}th{font:700 .58rem/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--cinnabar)}td b{font-family:var(--serif);font-size:1rem}.prep{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.check h3{font-size:1.22rem}.check ul{padding-left:1rem}.check li{font-size:.78rem;color:var(--ink-soft);margin:.45rem 0}
   .sources{font-size:.76rem;color:var(--ink-soft)}.sources ul{columns:2;padding-left:1.1rem}.sources li{margin:.35rem 0}.credit{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.68rem;color:var(--ink-soft)}
   .lightbox{position:fixed;inset:0;display:none;z-index:80;background:rgba(5,12,10,.93);padding:4vw;align-items:center;justify-content:center}.lightbox.on{display:flex}.lightbox img{max-height:88vh;max-width:92vw}.lightbox button{position:absolute;right:18px;top:18px;width:48px;height:48px;border:1px solid rgba(255,255,255,.5);background:transparent;color:white;font-size:1.5rem;cursor:pointer}
+  .detail-trigger{position:relative;cursor:pointer;transition:transform .18s,box-shadow .18s}.detail-trigger:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(23,33,30,.1)}.detail-trigger:focus-visible{outline:3px solid #1684ff;outline-offset:3px}.detail-trigger:after{content:"Photos + links ↗";display:block;margin-top:.45rem;color:var(--jade-deep);font:700 .54rem/1 var(--mono);letter-spacing:.06em;text-transform:uppercase}.foodlist li.detail-trigger{min-height:44px;margin:.45rem 0;padding:.65rem .7rem;list-style:none;background:var(--paper);border-left:3px solid var(--ochre)}
+  .detail-modal{position:fixed;inset:0;z-index:70;display:none;overflow:auto;padding:clamp(12px,4vw,44px);background:rgba(5,12,10,.82);align-items:flex-start;justify-content:center}.detail-modal.on{display:flex}.detail-sheet{position:relative;width:min(900px,100%);margin:auto;background:var(--white);border:1px solid var(--line);box-shadow:0 24px 80px rgba(0,0,0,.38)}.detail-close{position:absolute;z-index:2;right:12px;top:12px;width:48px;height:48px;border:0;border-radius:50%;background:var(--ink);color:white;font-size:1.4rem;cursor:pointer}.detail-gallery{display:grid;grid-template-columns:1.35fr 1fr;gap:3px;background:var(--ink)}.detail-gallery img{width:100%;height:clamp(210px,34vw,390px);object-fit:cover}.detail-copy{padding:clamp(1.2rem,4vw,2.4rem)}.detail-copy h2{max-width:700px;margin:.35rem 0 .7rem;font:400 clamp(2rem,6vw,4.1rem)/.95 var(--serif);letter-spacing:-.04em}.detail-copy>p{max-width:720px;color:var(--ink-soft)}.detail-tip{max-width:720px;margin:1rem 0;padding:.85rem 1rem;border-left:4px solid var(--ochre);background:var(--paper);font-size:.82rem}.detail-actions{display:flex;flex-wrap:wrap;gap:.55rem;margin-top:1.2rem}.detail-actions a{min-height:44px;display:inline-flex;align-items:center;padding:.6rem .8rem;border:1px solid var(--line);text-decoration:none;font:700 .62rem/1 var(--mono);color:var(--jade-deep)}.detail-actions a:first-child{background:var(--ink);border-color:var(--ink);color:var(--paper)}body.modal-open{overflow:hidden}
   @media(max-width:850px){.meta{grid-template-columns:repeat(2,1fr)}.meta>div:last-child{grid-column:1/-1}.film{grid-template-columns:1fr 1fr}.film figure{min-height:230px}.route-lock,.shenzhen-grid{grid-template-columns:1fr}.clockbox{border-left:0;border-top:1px solid rgba(255,255,255,.15)}.flight-grid,.hotel-grid,.restaurant-grid,.prep{grid-template-columns:1fr 1fr}.city-body{grid-template-columns:1fr}.day{grid-template-columns:6.5rem 1fr 3.2rem}.day .plan{grid-column:2/4}.day details{grid-column:2/4}.place{grid-column:2}.sleep{grid-column:3;grid-row:1}}
-  @media(max-width:560px){.wrap{padding:0 14px 50px}.mast{padding-top:42px}.film{display:flex;overflow:auto;scroll-snap-type:x mandatory}.film figure{flex:0 0 84%;min-height:270px;scroll-snap-align:start}.head .rule{display:none}.flight-grid,.hotel-grid,.restaurant-grid,.prep{grid-template-columns:1fr}.day{gap:.55rem;padding:.85rem;grid-template-columns:5.5rem 1fr 2.6rem}.sources ul{columns:1}.route-line{display:grid;grid-template-columns:auto 1fr}.route-line i{display:none}}
+  @media(max-width:560px){.wrap{padding:0 14px 50px}.mast{padding-top:42px}.film{display:flex;overflow:auto;scroll-snap-type:x mandatory}.film figure{flex:0 0 84%;min-height:270px;scroll-snap-align:start}.head .rule{display:none}.flight-grid,.hotel-grid,.restaurant-grid,.prep{grid-template-columns:1fr}.day{gap:.55rem;padding:.85rem;grid-template-columns:5.5rem 1fr 2.6rem}.sources ul{columns:1}.route-line{display:grid;grid-template-columns:auto 1fr}.route-line i{display:none}.detail-modal{padding:0;align-items:flex-end}.detail-sheet{margin-top:42px;border-radius:18px 18px 0 0}.detail-gallery{grid-template-columns:1.25fr .75fr}.detail-gallery img{height:210px}.detail-copy{padding:1rem 1rem 1.5rem}.detail-copy h2{padding-right:2rem}}
   @media print{.nav,.actions,.lightbox{display:none!important}.wrap{max-width:none}.city-hero{min-height:220px}.card,.day,.city-hero{break-inside:avoid}body{background:white}}
 </style>
 </head>
@@ -246,9 +248,17 @@
         <li><a href="https://www.tripadvisor.com/Attraction_Review-g13806879-d321216-Reviews-National_Palace_Museum-Shilin_Taipei.html">TripAdvisor · National Palace Museum traveler consensus</a></li>
         <li><a href="https://www.nickkembel.com/taipei-itinerary-3-days/">Nick Kembel · independent Taipei itinerary</a></li>
       </ul>
-      <p class="credit">Taipei skyline photo: Heeheemalu, CC BY-SA 2.0, via Wikimedia Commons. Raohe Night Market photo: Ounfs Robmmy 238, CC0, via Wikimedia Commons. Other photo credits remain with the source files collected for this trip dossier. Flight schedules, fares, border rules, opening hours and restaurant operations can change; recheck before purchase and again before travel.</p>
+      <p class="credit">New detail photos via Wikimedia Commons: Huaqiangbei by Mx. Granger (CC0); National Palace Museum (CC0); Beitou Hot Spring Museum by Tatsundo h (public domain); Longshan Temple by Bgag; Shanghai xiaolongbao by Robigasp (CC BY-SA 4.0); Taiwanese braised pork rice by Ralff Nestor Nacor (CC BY-SA 4.0). Taipei skyline: Heeheemalu (CC BY-SA 2.0); Raohe Night Market: Ounfs Robmmy 238 (CC0). Other photo credits remain with the source files collected for this trip dossier. Flight schedules, fares, border rules, opening hours and restaurant operations can change; recheck before purchase and again before travel.</p>
     </section>
   </main>
+</div>
+
+<div class="detail-modal" id="detail-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="detail-title">
+  <article class="detail-sheet">
+    <button class="detail-close" type="button" aria-label="Close details">×</button>
+    <div class="detail-gallery" id="detail-gallery"></div>
+    <div class="detail-copy"><span class="kicker" id="detail-kicker"></span><h2 id="detail-title"></h2><p id="detail-description"></p><div class="detail-tip" id="detail-tip"></div><div class="detail-actions" id="detail-actions"></div></div>
+  </article>
 </div>
 
 <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Photo viewer"><button type="button" aria-label="Close photo">×</button><img alt="Expanded trip photo"></div>
@@ -265,6 +275,87 @@
     });
   }));
 
+  const detailData={
+    'hong-kong':{city:'Hong Kong',dir:'hong-kong',guide:'https://www.discoverhongkong.com/eng/attractions/your-guide-to-experiencing-hong-kong.html',picks:[
+      {query:'Victoria Peak Lugard Road Hong Kong',tip:'Best move: check the tram line before committing. Bus 15 up plus Lugard Road at blue hour protects the view; the tram ride down still gives the classic experience.',images:['victoria-peak-dusk.jpg','hk-tram-street.jpg']},
+      {query:'Tai Kwun Man Mo Temple Hong Kong',tip:'Start at Tai Kwun and move west through the Mid-Levels, PMQ and Man Mo Temple. This works best as an unhurried street walk with food stops.',images:['man-mo-temple-incense.jpg','hk-tram-street.jpg']},
+      {query:'Star Ferry Hong Kong',tip:'Board shortly before sunset and sit outside. M+ is the worthwhile indoor anchor; Avenue of Stars is simply part of the waterfront walk.',images:['star-ferry-skyline.jpg','victoria-peak-dusk.jpg']},
+      {query:"Dragon's Back Hong Kong",tip:'Protect this only with a dry forecast and reasonable visibility. Carry water, use shoes with grip and finish at Big Wave Bay rather than doubling back.',images:['dragons-back.jpg','star-ferry-skyline.jpg']}
+    ],food:[
+      {query:'The Chairman restaurant Hong Kong',tip:'Treat The Chairman as a bonus, not a dependency. If the release fails, Yardbird or Ho Lee Fook still gives the group a memorable anchor dinner.',images:['temple-street-market.jpg','victoria-peak-dusk.jpg']},
+      {query:'Yat Lok Restaurant Hong Kong',tip:'Go outside the main lunch rush, expect a small fast-moving room and order roast goose first. This is a meal, not a lingering restaurant night.',images:['temple-street-market.jpg','man-mo-temple-incense.jpg']},
+      {query:"Mak's Noodle Kau Kee Hong Kong",tip:'Use these as short neighborhood meals rather than crossing town for a single bowl. Kau Kee can queue; Mak’s is the easier quick stop.',images:['hk-tram-street.jpg','man-mo-temple-incense.jpg']},
+      {query:'Temple Street Night Market Hong Kong',tip:'Come for the street energy and flexible grazing. Order from a busy stall, share plates and keep expectations focused on atmosphere rather than fine dining.',images:['temple-street-market.jpg','star-ferry-skyline.jpg']}
+    ]},
+    chongqing:{city:'Chongqing',dir:'chongqing',guide:'https://www.ichongqing.info/2026/04/30/beat-the-may-day-crowds-three-riverside-walks-that-unlock-chongqings-iconic-sights/',picks:[
+      {query:'Liziba Station Chongqing',tip:'Ride Line 2 through the building first. The street platform is only a quick photo stop; continuing toward Fotuguan and Eling makes the detour worthwhile.',images:['chongqing-skyline.jpg','jiefangbei.jpg']},
+      {query:'Shancheng Lane Shibati Chongqing',tip:'Use the metro or taxi to start high and walk downhill. Map estimates understate the stairs, elevators and level changes, so keep this block geographically tight.',images:['jiefangbei.jpg','ciqikou-old-town.jpg']},
+      {query:'Hongya Cave Chongqing',tip:'Arrive before the lights switch on around 19:30. Qiansimen Bridge or the opposite bank gives the payoff without entering the crowded retail interior.',images:['hongya-cave-night.jpg','chongqing-skyline.jpg']},
+      {query:'Yangtze River Cableway Chongqing',tip:'Use a timed ticket or bail if the queue exceeds roughly 45 minutes. The public ferry and riverside path are excellent no-regret fallbacks.',images:['yangtze-cableway.jpg','raffles-city-cq.jpg']}
+    ],food:[
+      {query:'Peijie Old Hotpot Chongqing Jiefangbei',tip:'Confirm the current branch in Amap or Dianping. Ask for 微辣 and a split pot if available; Chongqing “mild” can still be genuinely hot.',images:['chongqing-hotpot.jpg','jiefangbei.jpg']},
+      {query:'Chongqing hotpot Jiefangbei',tip:'Start conservatively, then add heat. Tripe, duck blood, goose intestine, tofu skin and cilantro meatballs are the destination-specific order.',images:['chongqing-hotpot.jpg','hongya-cave-night.jpg']},
+      {query:'Chongqing xiaomian Jiefangbei',tip:'Look for a busy breakfast counter and order 小面; add peas and minced pork for a heartier bowl. The best choice is usually the one near the hotel with local turnover.',images:['chongqing-hotpot.jpg','jiefangbei.jpg']},
+      {query:'Wanzhou grilled fish Chongqing',tip:'Choose one non-hotpot dinner so the stop is not a single-note spice marathon. Grilled fish or laziji works well for a table that wants shareable dishes.',images:['chongqing-hotpot.jpg','chongqing-skyline.jpg']}
+    ]},
+    shanghai:{city:'Shanghai',dir:'shanghai',guide:'https://www.meet-in-shanghai.net/en/news/all-the-exhibitions-coming-to-shanghai-museum-in-2026-%E2%80%93-save-this-list-238693/',picks:[
+      {query:'The Bund Shanghai Waibaidu Bridge',tip:'Reach the river before sunset and walk north as both banks light up. Use the public ferry for the crossing and skip the sightseeing tunnel.',images:['bund-night-skyline.jpg','shanghai-tower-view.jpg']},
+      {query:'Wukang Road Anfu Road Shanghai',tip:'Wukang Mansion is the opening photograph. The real experience is the slower walk through Wukang, Anfu and Fuxing roads with unscheduled café and shop stops.',images:['wukang-road.jpg','jing-an-temple.jpg']},
+      {query:'Shanghai Museum East',tip:'Reserve if required and choose the galleries that matter most. A focused half-day beats museum fatigue and leaves the Pudong waterfront for later.',images:['shanghai-tower-view.jpg','bund-night-skyline.jpg']},
+      {query:'Yu Garden Shanghai',tip:'Enter at opening and distinguish the ticketed Ming garden from the surrounding commercial bazaar. Ninety calm minutes inside is the target.',images:['yu-garden-bridge.jpg','xiaolongbao.jpg']},
+      {query:'Suzhou classical gardens day trip from Shanghai',tip:'Choose Suzhou for a full change of scene in decent weather. Choose West Bund when the group wants an easy, flexible city day or cold rain makes rail logistics unappealing.',images:['wukang-road.jpg','bund-night-skyline.jpg']}
+    ],food:[
+      {query:'Fu 1088 Shanghai',tip:'Reserve the townhouse meal in advance and let staff guide a shared seasonal order. This is the one formal dinner that is specifically about Shanghainese cuisine.',images:['xiaolongbao.jpg','wukang-road.jpg']},
+      {query:'Jia Jia Tang Bao Shanghai',tip:'Go early, order pork xiaolongbao first and add crab roe only if the table likes richer flavors. Eat carefully—the soup is hotter than it looks.',images:['xiaolongbao.jpg','yu-garden-bridge.jpg']},
+      {query:'Ren He Guan Shanghai restaurant',tip:'Order red-braised pork, smoked fish and seasonal vegetables for a broader Shanghainese meal than dumplings alone.',images:['xiaolongbao.jpg','jing-an-temple.jpg']},
+      {query:'Mr and Mrs Bund Shanghai',tip:'Choose this only if the group wants one international meal with a dramatic view. The skyline is the reason to book; local food should win the other nights.',images:['bund-night-skyline.jpg','shanghai-tower-view.jpg']}
+    ]},
+    taipei:{city:'Taipei',dir:'taipei',guide:'https://www.travel.taipei/en/attraction',picks:[
+      {query:'Longshan Temple Bopiliao Dihua Street Taipei',tip:'Begin at Longshan while worship is active, walk through Bopiliao, then move to Dihua for tea and shops. Keep Thanksgiving morning relaxed.',images:['longshan-temple.jpg','raohe-night-market.jpg']},
+      {query:'National Palace Museum Taipei',tip:'Allow about three hours and choose two or three collection areas. Large tour groups move in waves, so pause or change floors rather than fighting every display.',images:['national-palace-museum.jpg','longshan-temple.jpg']},
+      {query:'Elephant Mountain Taipei',tip:'Go only with worthwhile visibility, arrive before sunset and expect steep stairs. Taipei 101’s observatory is optional afterward, not mandatory.',images:['elephant-mountain-skyline.jpg','raohe-night-market.jpg']},
+      {query:'Beitou Hot Spring Museum Taipei',tip:'Beitou is the drizzle-friendly recovery choice. Pick Jiufen instead only when visibility is decent and the group is willing to start early or stay past tour-bus hours.',images:['beitou-hot-spring-museum.jpg','elephant-mountain-skyline.jpg']}
+    ],food:[
+      {query:'Thanksgiving dinner Taipei',tip:'This is the fixed family event, so leave the afternoon empty and avoid placing a timed attraction across town before dinner.',images:['braised-pork-rice.jpg','raohe-night-market.jpg']},
+      {query:'Raohe Night Market Taipei',tip:'Bring cash, split portions and start with the black-pepper bun. Raohe’s linear layout makes it easier to browse as a group than sprawling Shilin.',images:['raohe-night-market.jpg','braised-pork-rice.jpg']},
+      {query:'Mountain and Sea House Taipei',tip:'Reserve in advance, especially for a group. The roast suckling pig requires preparation and should be ordered ahead if it is the reason for visiting.',images:['braised-pork-rice.jpg','longshan-temple.jpg']},
+      {query:'Jin Feng Braised Pork Rice Taipei',tip:'Use these everyday classics between attractions: soy milk at breakfast, beef noodles at lunch and braised pork rice when the group wants a fast comforting meal.',images:['braised-pork-rice.jpg','raohe-night-market.jpg']}
+    ]}
+  };
+
+  const detailModal=document.getElementById('detail-modal');
+  const detailGallery=document.getElementById('detail-gallery');
+  const detailKicker=document.getElementById('detail-kicker');
+  const detailTitle=document.getElementById('detail-title');
+  const detailDescription=document.getElementById('detail-description');
+  const detailTip=document.getElementById('detail-tip');
+  const detailActions=document.getElementById('detail-actions');
+  let detailTrigger=null;
+  function openDetail(element,data,meta,kind){
+    detailTrigger=element;
+    const title=element.querySelector('b')?.textContent.trim()||'Trip detail';
+    const description=kind==='Attraction'?element.querySelector('span')?.textContent.trim():element.textContent.replace(element.querySelector('b')?.textContent||'','').trim();
+    detailKicker.textContent=`${data.city} · ${kind}`;
+    detailTitle.textContent=title;
+    detailDescription.textContent=description;
+    detailTip.innerHTML=`<b>Best move</b><br>${meta.tip}`;
+    detailGallery.innerHTML=meta.images.map((file,index)=>`<img class="zoom" tabindex="0" role="button" src="images/thumbs/${data.dir}/${file}" data-full="images/${data.dir}/${file}" alt="${title} — photo ${index+1}" aria-label="Open full photo: ${title}">`).join('');
+    const map=`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(meta.query)}`;
+    detailActions.innerHTML=`<a href="${map}" target="_blank" rel="noopener noreferrer">Open map ↗</a><a href="${data.guide}" target="_blank" rel="noopener noreferrer">Planning guide ↗</a>`;
+    detailModal.classList.add('on');detailModal.setAttribute('aria-hidden','false');document.body.classList.add('modal-open');detailModal.querySelector('.detail-close').focus();
+  }
+  function closeDetail(){detailModal.classList.remove('on');detailModal.setAttribute('aria-hidden','true');document.body.classList.remove('modal-open');detailTrigger?.focus()}
+  Object.entries(detailData).forEach(([id,data])=>{
+    const city=document.getElementById(id);if(!city)return;
+    const groups=[[[...city.querySelectorAll('.pick')],data.picks,'Attraction'],[[...city.querySelectorAll('.foodlist li')],data.food,'Food']];
+    groups.forEach(([elements,metadata,kind])=>elements.forEach((element,index)=>{
+      const meta=metadata[index];if(!meta)return;
+      element.classList.add('detail-trigger');element.tabIndex=0;element.setAttribute('role','button');element.setAttribute('aria-label',`Open photos and links for ${element.querySelector('b')?.textContent.trim()}`);
+      element.addEventListener('click',()=>openDetail(element,data,meta,kind));
+    }));
+  });
+  detailModal.addEventListener('click',event=>{if(event.target===detailModal||event.target.closest('.detail-close'))closeDetail()});
+
   const box=document.getElementById('lightbox');
   const boxImage=box.querySelector('img');
   let trigger=null;
@@ -277,7 +368,17 @@
   });
   document.addEventListener('keydown',event=>{
     if((event.key==='Enter'||event.key===' ')&&event.target.matches('img.zoom')){event.preventDefault();event.target.click()}
-    if(event.key==='Escape'&&box.classList.contains('on'))closeBox();
+    if((event.key==='Enter'||event.key===' ')&&event.target.matches('.detail-trigger')){event.preventDefault();event.target.click()}
+    if(event.key==='Escape'){
+      if(box.classList.contains('on'))closeBox();
+      else if(detailModal.classList.contains('on'))closeDetail();
+    }
+    if(event.key==='Tab'&&detailModal.classList.contains('on')&&!box.classList.contains('on')){
+      const focusable=[...detailModal.querySelectorAll('button,a[href],img[tabindex="0"]')];
+      const first=focusable[0],last=focusable[focusable.length-1];
+      if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus()}
+      else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus()}
+    }
   });
 
   const links=[...document.querySelectorAll('.nav a')];
