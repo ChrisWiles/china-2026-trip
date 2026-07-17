@@ -6,6 +6,8 @@ Mobile-first planning site for the locked November 2026 friends trip:
 
 The single-page dossier includes exact dates, 240-hour transit math, flight-search links, hotel shortlists, daily plans, attractions, restaurants, weather and booking priorities.
 
+Attraction priorities are triangulated across official destination guidance, current independent travel blogs, TripAdvisor traveler-review patterns and recent traveler forums. The research rationale and source set are recorded in `RECOMMENDATION_RESEARCH.md`.
+
 **Live site:** https://chriswiles.github.io/china-2026-trip/
 
 The trip-content source of truth lives in the companion [wiles-wiki travel folder](https://chriswiles.github.io/wiles-wiki/travel/china-2026/). This repository contains the presentation page and its photo assets.
