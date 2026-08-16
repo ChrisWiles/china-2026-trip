@@ -57,6 +57,7 @@
   @media(max-width:560px){.market-index{grid-template-columns:1fr}.city-chapter>summary{grid-template-columns:1fr;gap:.7rem;min-height:152px;padding:1rem 3.2rem 1rem 1rem}.chapter-summary-main{grid-column:auto;padding-right:5.5rem}.chapter-summary-meta,.chapter-summary-weather{padding-right:.5rem}.chapter-summary-status{right:3.5rem;top:1rem;max-width:5.5rem;text-align:center}.city-chapter-content{padding:6px}.city-topic-content{padding:.8rem}.city-topic .city-food,.city-topic .city-markets,.city-topic .city-shopping,.city-topic .city-nature,.city-topic .city-spas,.city-topic .city-tech,.city-topic .city-views{padding:.8rem}}
   @media print{.nav,.actions,.lightbox,.city-tools,.city-local-nav{display:none!important}.wrap{max-width:none}.city-hero{min-height:220px}.card,.day,.city-hero{break-inside:avoid}body{background:white}.city-chapter,.city-topic{display:block!important}.city-chapter>summary,.city-topic>summary{display:none!important}.city-chapter-content,.city-topic-content{display:block!important;padding:0}.city-topic>div{display:block!important}}
   .hotel.hidden-booked-option{display:none}
+  .hotel-image{position:relative;margin:-1.15rem -1.15rem .9rem;height:150px;overflow:hidden;background:var(--ink)}.hotel-image img{width:100%;height:100%;object-fit:cover;cursor:zoom-in;transition:transform .3s}.hotel-image:hover img{transform:scale(1.025)}.hotel-image figcaption{position:absolute;inset:auto 0 0;padding:30px 12px 9px;background:linear-gradient(transparent,rgba(0,0,0,.8));color:white;font:700 .56rem/1.2 var(--mono);letter-spacing:.08em;text-transform:uppercase}
 </style>
 </head>
 <body>
@@ -169,6 +170,7 @@
       <div class="head"><span class="num">03</span><h2>Where to stay</h2><span class="rule"></span></div>
       <p class="note">Choose the base that makes evenings easy, not just the room. The booked-city alternatives are now hidden from the published view; Shanghai and Taipei options remain visible until those stays are booked. Re-open any remaining dated link to confirm the total, room type, taxes, cancellation terms and availability.</p>
       <p class="note"><b>Booked Hong Kong base:</b> The Salisbury for value, harbour access and the easiest sightseeing position.</p>
+      <p class="note"><b>Research picks for the remaining stays:</b> Andaz Xintiandi is the Shanghai location-first choice; Atour is the value fallback and The Langham is the two-bed splurge. MGH Mitsui Garden Taipei Zhongxiao is the Taipei logistics pick; Kimpton Da An is the livelier boutique alternative and Les Suites is the quieter breakfast-included fallback. Prices are planning snapshots, not bookings.</p>
       <div class="note"><b>Booked — The Salisbury – YMCA of Hong Kong:</b> 41 Salisbury Road, Hong Kong · check-in Fri, Nov 13, 2026 at 3:00 p.m. · check-out Tue, Nov 17 at 11:00 a.m. · 4 nights · 1 room, Harbor View (1 queen bed or 2 beds) · 2 adults · prepaid total US$1,387.77 · booking ref. 1042167082 · confirmation R6534573952 · booked through Guest Reservations. The reservation is non-refundable, including no-shows and early checkout. Bring photo ID and a major credit card for incidentals; contact the hotel if arriving after 9:00 p.m. to avoid cancellation.</div>
       <div class="note"><b>Booked — JW Marriott Hotel Chongqing:</b> 235 Minsheng Road, Chongqing 400010, China · check-in Tue, Nov 17, 2026 at 3:00 p.m. · check-out Fri, Nov 20 at 12:00 p.m. · 3 nights · 1 room, 1 King Bed, Guest Room · 2 adults · total CNY 2,371.33 · confirmation 95516550 · Visa deposit guarantee. High Floor (17th and above) requested; hotel +86 23 6379 9999.</div>
       <p class="note"><b>Why these bases fit us:</b> We are optimizing for a group that wants to step outside into food and evening energy, keep transfers short, and avoid spending every night in taxis. Each city base is close to the main experience while still giving us a practical airport or intercity departure.</p>
@@ -561,6 +563,21 @@
   hotels.forEach(hotel=>{
     const city=hotel.dataset.city, name=hotel.querySelector('h3')?.textContent.trim()||'';
     if((city==='hk'||city==='cq')&&!/Salisbury|JW Marriott Hotel Chongqing/.test(name))hotel.classList.add('hidden-booked-option');
+  });
+  const researchedHotelVisuals={
+    'Andaz Xintiandi':{image:'images/thumbs/shanghai/wukang-road.jpg',full:'images/shanghai/wukang-road.jpg',alt:'Tree-lined central Shanghai streets near the Xintiandi base',caption:'Shanghai base · central-city context'},
+    'Mitsui Garden Zhongxiao':{image:'images/thumbs/taipei/elephant-mountain-skyline.jpg',full:'images/taipei/elephant-mountain-skyline.jpg',alt:'Taipei skyline and Taipei 101 from Elephant Mountain',caption:'Taipei base · Da’an / skyline context'}
+  };
+  const researchedHotelCopy={
+    'Andaz Xintiandi':{band:'US$274–292/night snapshot · reprice Nov 20–25',rate:'Rate calendar snapshot: roughly US$1,354 room subtotal for five nights; taxes, fees and room type can change.',walk:'Best Shanghai base · Xintiandi · Lines 10 and 13 nearby',description:'Research pick: the strongest evening doorstep and the cleanest fit for Bund, Old City, French Concession and restaurants. The current snapshot is above the original $250 target, so book it only if location beats the premium.'},
+    'Mitsui Garden Zhongxiao':{band:'NT$6,236/night snapshot · reprice Nov 25–29',rate:'Current one-night planning reference; exact four-night November pricing and room type still need a fresh quote.',walk:'Best Taipei logistics · 30 seconds from Zhongxiao Xinsheng MRT Exit 3 · Blue / Orange lines',description:'Research pick: the easiest final base for airport access, Taipei 101, Huashan and family plans. The top-floor public bath is a real recovery advantage; there is no pool.'}
+  };
+  hotels.forEach(hotel=>{
+    const title=hotel.querySelector('h3')?.textContent.trim(),visual=researchedHotelVisuals[title],copy=researchedHotelCopy[title];
+    if(!visual||!copy)return;
+    hotel.classList.add('researched-best');
+    const figure=document.createElement('figure');figure.className='hotel-image';figure.innerHTML=`<img class="zoom" loading="lazy" src="${visual.image}" data-full="${visual.full}" alt="${visual.alt}"><figcaption>${visual.caption}</figcaption>`;hotel.prepend(figure);
+    hotel.querySelector('.band').textContent=copy.band;hotel.querySelector('.rate-note').textContent=copy.rate;hotel.querySelector('.walk-note').textContent=copy.walk;hotel.querySelector('p').textContent=copy.description;
   });
   const cityMeta={
     'hong-kong':{name:'Hong Kong',dates:'Nov 13–17 · 4 nights',base:'Tsim Sha Tsui · The Salisbury',weather:'75–81°F days · generally dry',status:'First base'},
