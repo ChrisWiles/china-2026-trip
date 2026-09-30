@@ -61,6 +61,25 @@
   @media(max-width:560px){.market-index{grid-template-columns:1fr}.city-chapter>summary{grid-template-columns:1fr;gap:.7rem;min-height:152px;padding:1rem 3.2rem 1rem 1rem}.chapter-summary-main{grid-column:auto;padding-right:5.5rem}.chapter-summary-meta,.chapter-summary-weather{padding-right:.5rem}.chapter-summary-status{right:3.5rem;top:1rem;max-width:5.5rem;text-align:center}.city-chapter-content{padding:6px}.city-topic-content{padding:.8rem}.city-topic .city-food,.city-topic .city-markets,.city-topic .city-shopping,.city-topic .city-nature,.city-topic .city-spas,.city-topic .city-tech,.city-topic .city-views,.city-topic .city-pickleball{padding:.8rem}.pickleball-facts{grid-template-columns:1fr}}
   @media(max-width:560px){.map-guides>.grid{grid-template-columns:1fr}}
   @media print{.nav,.actions,.lightbox,.city-tools,.city-local-nav{display:none!important}.wrap{max-width:none}.city-hero{min-height:220px}.card,.day,.city-hero{break-inside:avoid}body{background:white}.city-chapter,.city-topic{display:block!important}.city-chapter>summary,.city-topic>summary{display:none!important}.city-chapter-content,.city-topic-content{display:block!important;padding:0}.city-topic>div{display:block!important}}
+  .city-jumps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:0 0 1.4rem}.city-jumps a{display:flex;flex-direction:column;justify-content:center;min-height:64px;padding:.65rem .8rem;border:1px solid var(--line);border-left:3px solid var(--jade);background:var(--white);text-decoration:none;font-weight:650}.city-jumps span{font:400 .75rem/1.5 var(--mono);color:var(--ink-soft)}
+  .day .day-notes{grid-column:3/5;margin-top:-.6rem}.day-notes summary{gap:.5rem;list-style:none;font-size:.7rem;line-height:1.4}.day-notes summary::-webkit-details-marker{display:none}.day-notes summary:before{content:"+";font-size:1.1rem}.day-notes[open] summary:before{content:"−"}.day-notes .day-plan{display:block;margin:0;padding:.6rem .8rem;border-left:2px solid var(--jade);font-size:.9rem;line-height:1.6;color:var(--ink-soft)}
+  .reference-fold{border:1px solid var(--line);background:var(--white)}.reference-fold>summary{display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:56px;padding:1rem;cursor:pointer;font-weight:650;list-style:none}.reference-fold>summary::-webkit-details-marker{display:none}.reference-fold>summary:after{content:"+";font-size:1.25rem;color:var(--jade-deep)}.reference-fold[open]>summary:after{content:"−"}.reference-content{padding:1rem}.reference-content>.note{margin-top:0}
+  @media(min-width:561px) and (max-width:850px){.day .day-notes{grid-column:2/4}}
+  .itinerary-context{margin:0 0 1rem}.itinerary-context>summary{min-height:44px;padding:.65rem .9rem;font-size:.85rem}.itinerary-context .note{margin:0}
+  a:focus-visible,summary:focus-visible{outline:3px solid var(--jade);outline-offset:3px}
+  @media(max-width:560px){
+    .mast{padding:26px 0 20px}.dek{font-size:1.15rem}.status{margin-top:1rem;font-size:.65rem;line-height:1.55;letter-spacing:.04em;border-radius:8px}.meta{margin-top:1rem}.meta>div{padding:.75rem}.meta b{font-size:.65rem}.meta span{font-size:1.1rem}
+    .nav{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:2px;overflow:visible;padding:6px 0}.nav a{justify-content:center;padding:0 2px;font:650 .75rem/1.2 var(--sans);letter-spacing:0;text-transform:none;border-radius:6px}.nav a[href="#route"]{display:none}
+    #main,main>section,#maps-guides,#sources{scroll-margin-top:64px}.city{scroll-margin-top:64px}.city-local-nav{position:static;gap:4px;flex-wrap:wrap;overflow:visible}.city-local-nav a{font-size:.68rem;padding:.55rem .65rem}.city-topic[id],.city-topic [id]{scroll-margin-top:64px}
+    .film{margin-top:14px}.film figure{flex-basis:78%;height:170px;min-height:170px}.film figcaption{font-size:.68rem;line-height:1.4}.film img{height:170px}section{padding-top:32px}.route-lock>div{padding:1.2rem}.route-line{gap:.65rem}.clockbox ul{font-size:.94rem}
+    .city-jumps{grid-template-columns:repeat(2,minmax(0,1fr))}.city-jumps a{font-size:.95rem}
+    .day{grid-template-columns:minmax(0,1fr) auto;gap:.45rem .65rem;padding:1rem}.day .date{grid-column:1;font-size:.75rem}.day .sleep{grid-column:2;grid-row:1;font-size:.68rem;line-height:1.4}.day .place{grid-column:1/-1;grid-row:2;font-size:1.3rem}.day .plan{grid-column:1/-1;font-size:.95rem;line-height:1.6}.day .day-notes{grid-column:1/-1;margin:0}.day-notes summary{font-size:.78rem}.day-notes .day-plan{font-size:.95rem;padding:.7rem}
+    .card p,.flight p,.market-option p,.market-note,.pick span,.foodlist li,.reality,.restaurant .why,.detail-tip,.detail-facts dd,.more-card span,.escape-copy p,.escape-decision,.event-fit,.pickleball-callout,.pickleball-card p,.spa-card p,.nature-card p,.shopping-card p,.sunset-card p{font-size:.95rem;line-height:1.6}.pick b,.more-card b{font-size:1rem}.actions a,.detail-actions a{font-size:.73rem;line-height:1.35}.fare{font-size:.76rem;line-height:1.6}.warning{font-size:.95rem}.pill{font-size:.65rem;line-height:1.4}.flight .when,.card .kicker{font-size:.72rem;line-height:1.5}
+    .check li,.restaurant .order,.city-food-head p,.hotel p,.pickleball-facts span,td{font-size:.95rem;line-height:1.6}
+    .city-chapter>summary{min-height:0;gap:.6rem}.chapter-summary-main{padding-right:0}.chapter-summary-status{position:static;max-width:none;justify-self:start;text-align:left;font-size:.65rem;line-height:1.4}.chapter-summary-meta,.chapter-summary-weather{font-size:.85rem}.chapter-summary-weather{display:none}.city-hero{min-height:220px}.city-title{padding:1rem}.city-title p{font-size:.95rem}.city-chapter-content{padding:4px}.city-topic-content{padding:.65rem}.city-topic .city-food,.city-topic .city-markets,.city-topic .city-shopping,.city-topic .city-nature,.city-topic .city-spas,.city-topic .city-tech,.city-topic .city-views,.city-topic .city-pickleball{padding:.65rem}.city-topic>summary{font-size:1.15rem}.city-topic-label{font-size:.65rem}.reference-content{padding:.75rem}
+  }
+  @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.film img{transition:none}}
+  @media print{.city-jumps{display:none}.day .day-notes{grid-column:1/-1}.day-notes>summary{display:none}.day-notes .day-plan,.reference-fold>div{display:block!important}}
 </style>
 </head>
 <body>
@@ -77,7 +96,7 @@
   </header>
 
   <nav class="nav" aria-label="Trip sections">
-    <a href="#route">Overview</a><a href="#itinerary">Itinerary</a><a href="#cities">Cities</a><a href="#flights">Logistics</a><a href="#maps-guides">Maps</a><a href="#prep">Book</a>
+    <a href="#route">Overview</a><a href="#itinerary">Days</a><a href="#cities">Cities</a><a href="#flights">Flights</a><a href="#maps-guides">Maps</a><a href="#prep">Prep</a>
   </nav>
 
   <div class="film" aria-label="Trip destinations">
@@ -113,7 +132,8 @@
     </section>
 
     <section id="itinerary">
-      <div class="head"><span class="num">01</span><h2>The dates</h2><span class="rule"></span></div>
+      <div class="head"><span class="num">01</span><h2>The daily plan</h2><span class="rule"></span></div>
+      <nav class="city-jumps" aria-label="Open a city guide"><a href="#hong-kong">Hong Kong <span>Nov 13–17</span></a><a href="#chongqing">Chongqing <span>Nov 17–20</span></a><a href="#shanghai">Shanghai <span>Nov 20–25</span></a><a href="#taipei">Taipei <span>Nov 25–29</span></a></nav>
       <p class="note">Sixteen consecutive hotel nights, with no stay shorter than three nights. Hotel confirmations cover one room for two adults at each base; the crew’s other rooms still need their own confirmation. All times are local. Airport and city-transfer targets are planning allowances, not check-in cutoffs or guaranteed journey times.</p>
       <div class="itin">
         <div class="day travel"><span class="date">Fri · Nov 13</span><span class="place">Hong Kong</span><span class="plan">Planning arrival: 7:20 p.m. on UA 869, pending the outbound receipt. Airport Express or taxi → Salisbury → nearby food. Arrange the hotel’s acknowledgement for arrival after 9 p.m.; no timed attraction or market.</span><span class="sleep">HK 1/4</span></div>
@@ -594,6 +614,33 @@
 <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Photo viewer"><button type="button" aria-label="Close photo">×</button><img alt="Expanded trip photo"></div>
 
 <script>
+  // Keep the complete itinerary in the HTML; enhance it with a scannable overview.
+  const dayOverviews=[
+    'Planning arrival 7:20 p.m.; outbound receipt still needed. Check in and eat near Salisbury.',
+    'Central and the Peak. BIGBANG at 6 p.m. only with tickets; visit the Peak in daylight if attending.',
+    'M+ from 10 a.m., waterfront and ferry. Shenzhen is an alternative only with its separate SEZ visa.',
+    'Palace Museum 10 a.m.–6 p.m., then Temple Street. M+ is closed Monday.',
+    'Leave Salisbury 9:15–9:30 a.m. CX966: HKG 1:20 p.m. → CKG 4 p.m. Carry transit-entry documents.',
+    'Liziba, alleys and one sunset stop. Opera replaces the evening riverfront route.',
+    'Choose one half-day: a reserved robot demo, teahouse district or central museum.',
+    'Reach CKG around 9 a.m. HO1250: 11:50 a.m. → PVG 2:20 p.m. Check rollers; concert remains conditional.',
+    'French Concession. Unitree demo and the distant drone show both need confirmation; otherwise stay central.',
+    'Museum East from 10 a.m., then Pudong and the Bund at dusk. Check special-exhibition access.',
+    'Choose one: Suzhou, Wuzhen, Hangzhou or a slow Shanghai day. Yu Garden is closed Monday.',
+    'Yu Garden at 9 a.m., Old City lunch, then Science Museum if energy allows. Skip one for a slower day.',
+    'Leave the hotel around 12:30 p.m. CI202: SHA Hongqiao 4:15 p.m. → TSA Songshan 6:20 p.m.',
+    'Thanksgiving with Jen’s family comes first. Morning sights and the evening show remain optional.',
+    'Palace Museum from 9 a.m., then Beitou. A 7:30 p.m. concert needs an early finish at the bath.',
+    'Choose one finale or a full-day escape. Performance tickets and festival dates still need checking.',
+    'Leave San Want 4:15–4:30 p.m. JX32: TPE 8:30 p.m. → SEA; Austin arrival 11:14 p.m. the same day.'
+  ];
+  document.querySelectorAll('.day').forEach((day,index)=>{
+    const plan=day.querySelector('.plan');if(!plan||!dayOverviews[index])return;
+    const overview=document.createElement('span');overview.className='plan';overview.textContent=dayOverviews[index];
+    const notes=document.createElement('details');notes.className='day-notes';
+    const summary=document.createElement('summary');summary.textContent='Timing, alternatives + reminders';summary.setAttribute('aria-label',`Timing, alternatives and reminders for ${day.querySelector('.date').textContent}`);
+    plan.before(overview);plan.className='day-plan';notes.append(summary,plan);day.append(notes);
+  });
   const hotels=[...document.querySelectorAll('.hotel')];
   const cityMeta={
     'hong-kong':{name:'Hong Kong',dates:'Nov 13–17 · 4 nights',base:'Tsim Sha Tsui · The Salisbury',weather:'About 76°F days · generally dry',status:'First base'},
@@ -713,20 +760,34 @@
       const stayTopic=topicContents.get(`${id}:stay`)?.parentElement;
       if(stayTopic)stayTopic.after(content.parentElement);
     }
+    wrapExistingTopic(city.querySelector('.city-body'),'Start here');
     const labels=[['.city-tech','Technology'],['.city-food','Eat'],['.city-markets','Markets'],['.city-views','Views'],['.city-shopping','Shop'],['.city-nature','Nature'],['.city-spas','Recover']];
     labels.forEach(([selector,label])=>city.querySelectorAll(selector).forEach(element=>wrapExistingTopic(element,element.id==='shanghai-drone-show'?'Drones':label)));
     const nav=document.createElement('nav');nav.className='city-local-nav';nav.setAttribute('aria-label',`${cityMeta[id].name} sections`);
     city.querySelectorAll(':scope > .city-topic').forEach(topic=>{
       const target=topic.querySelector('[id]')||topic;const label=topic.querySelector('.city-topic-label')?.textContent||'Section';
-      if(!target.id)target.id=`${id}-${topic.dataset.topic||label.toLowerCase()}`;
+      if(!target.id)target.id=`${id}-${topic.dataset.topic||label.toLowerCase().replace(/[^a-z0-9]+/g,'-')}`;
       nav.insertAdjacentHTML('beforeend',`<a href="#${target.id}">${label}</a>`);
     });
-    const hero=city.querySelector('.city-hero');hero?.after(nav)||city.prepend(nav);
+    const hero=city.querySelector('.city-hero');if(hero)hero.after(nav);else city.prepend(nav);
   });
 
   document.querySelectorAll('#cities > .nature-index,#cities > .spa-index,#food').forEach(element=>element.remove());
   const citySection=document.getElementById('cities'),flightSection=document.getElementById('flights'),weatherSection=document.getElementById('weather');
-  citySection.after(flightSection);flightSection.after(weatherSection);
+  const cityJumps=document.querySelector('.city-jumps');citySection.querySelector('.head').after(cityJumps);
+  const itineraryNote=document.querySelector('#itinerary>.note'),itineraryContext=document.createElement('details');itineraryContext.className='reference-fold itinerary-context';
+  itineraryContext.innerHTML='<summary>Room coverage + transfer planning</summary><div class="reference-content"></div>';
+  itineraryNote.before(itineraryContext);itineraryContext.lastElementChild.append(itineraryNote);
+  const dailyIntro=document.createElement('p');dailyIntro.className='note';dailyIntro.textContent='Nov 13–29 · 16 hotel nights · All times local. Open a day for full timing and backup plans.';itineraryContext.before(dailyIntro);
+  citySection.after(flightSection);
+  // Maps get their own destination so the Flights link leads directly to flights.
+  const mapGuides=document.getElementById('maps-guides'),mapSection=document.createElement('section');
+  mapSection.id=mapGuides.id;mapSection.className=mapGuides.className;
+  mapSection.innerHTML='<div class="head"><span class="num">04</span><h2>Maps + saved places</h2><span class="rule"></span></div>';
+  mapSection.append(...mapGuides.childNodes);mapGuides.remove();flightSection.after(mapSection);mapSection.after(weatherSection);
+  const marketSection=document.getElementById('markets'),marketFold=document.createElement('details');marketFold.className='reference-fold';
+  marketFold.innerHTML='<summary>Browse markets, tea and gift ideas</summary><div class="reference-content"></div>';
+  [...marketSection.children].filter(child=>!child.classList.contains('head')).forEach(child=>marketFold.lastElementChild.append(child));marketSection.append(marketFold);weatherSection.after(marketSection);
   document.getElementById('expand-cities').addEventListener('click',()=>document.querySelectorAll('.city-chapter').forEach(chapter=>chapter.open=true));
   document.getElementById('collapse-cities').addEventListener('click',()=>document.querySelectorAll('.city-chapter').forEach(chapter=>chapter.open=false));
 
@@ -734,19 +795,20 @@
   function revealHashTarget(){
     const requested=decodeURIComponent(location.hash.slice(1));if(!requested)return;
     const target=document.getElementById(requested)||document.getElementById(legacyHashes[requested]);if(!target)return;
-    const chapter=target.closest('.city-chapter');if(chapter)chapter.open=true;
-    const topic=target.closest('.city-topic');if(topic)topic.open=true;
+    openTargetDetails(target);
     requestAnimationFrame(()=>requestAnimationFrame(()=>target.scrollIntoView({block:'start'})));
+  }
+  function openTargetDetails(target){
+    for(let ancestor=target;ancestor;ancestor=ancestor.parentElement){if(ancestor.tagName==='DETAILS')ancestor.open=true}
   }
   document.addEventListener('click',event=>{
     const link=event.target.closest('a[href^="#"]');if(!link)return;
     const target=document.getElementById(decodeURIComponent(link.hash.slice(1)));if(!target)return;
-    const chapter=target.closest('.city-chapter');if(chapter)chapter.open=true;
-    const topic=target.closest('.city-topic');if(topic)topic.open=true;
+    openTargetDetails(target);
   });
   let printDetailsState=[];
-  addEventListener('beforeprint',()=>{printDetailsState=[...document.querySelectorAll('.city-chapter,.city-topic')].map(details=>details.open);document.querySelectorAll('.city-chapter,.city-topic').forEach(details=>details.open=true)});
-  addEventListener('afterprint',()=>document.querySelectorAll('.city-chapter,.city-topic').forEach((details,index)=>details.open=printDetailsState[index]));
+  addEventListener('beforeprint',()=>{printDetailsState=[...document.querySelectorAll('details')].map(details=>details.open);document.querySelectorAll('details').forEach(details=>details.open=true)});
+  addEventListener('afterprint',()=>document.querySelectorAll('details').forEach((details,index)=>details.open=printDetailsState[index]));
   addEventListener('hashchange',revealHashTarget);addEventListener('load',()=>setTimeout(revealHashTarget,120),{once:true});revealHashTarget();
 
   const detailData={
@@ -937,7 +999,7 @@
 
   const links=[...document.querySelectorAll('.nav a')];
   const sections=links.map(link=>document.querySelector(link.getAttribute('href'))).filter(Boolean);
-  function updateNav(){const active=[...sections].reverse().find(section=>section.getBoundingClientRect().top<=120)||sections[0];links.forEach(link=>link.removeAttribute('aria-current'));document.querySelector(`.nav a[href="#${active.id}"]`)?.setAttribute('aria-current','location')}
+  function updateNav(){const active=[...sections].sort((a,b)=>a.getBoundingClientRect().top-b.getBoundingClientRect().top).reverse().find(section=>section.getBoundingClientRect().top<=80)||sections[0];links.forEach(link=>link.removeAttribute('aria-current'));document.querySelector(`.nav a[href="#${active.id}"]`)?.setAttribute('aria-current','location')}
   addEventListener('scroll',updateNav,{passive:true});updateNav();
   document.querySelectorAll('a[href]').forEach(link=>{const url=new URL(link.href,location.href);if(url.origin!==location.origin){link.target='_blank';link.rel='noopener noreferrer'}});
 
