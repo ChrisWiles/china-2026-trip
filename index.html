@@ -3,6 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="China 2026">
 <meta name="theme-color" content="#f2f0e9">
 <meta name="description" content="The November 2026 China trip: Hong Kong, Chongqing, Shanghai and Taipei, with flights, hotels, food and daily plans.">
 <meta property="og:title" content="China · Nov 2026">
@@ -107,11 +111,21 @@
   .day-booking b{font:400 1.1rem/1.25 var(--serif)}.day-booking .booking-time{color:var(--ink-soft)}
   .reservation-jump{display:inline-flex;align-items:center;min-height:44px;font-weight:650;color:var(--jade-deep)}
   @media(max-width:560px){.reservation-summary{padding:1rem}.reservation-grid{grid-template-columns:1fr}.reservation-date{font-size:.75rem}.reservation-place,.reservation-unbooked{font-size:.9rem}.day-booking{grid-column:1/-1;font-size:.9rem;padding:.7rem}.booking-badge{font-size:.68rem}}
+  .offline-kit{margin:1rem 0;padding:1rem;border:1px solid var(--line);background:var(--white);font-size:.85rem}.offline-kit summary{min-height:44px;display:flex;align-items:center;cursor:pointer;color:var(--jade-deep);font-weight:700}.offline-kit p{margin:.5rem 0}.offline-kit button{min-height:44px;padding:.5rem .8rem;background:var(--jade-deep);color:var(--paper);border:0;cursor:pointer}.offline-kit [hidden]{display:none}
 </style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to itinerary</a>
 <div class="wrap">
+  <aside class="offline-kit" aria-label="Offline guide">
+    <p id="offline-status" role="status">Preparing the guide for offline use…</p>
+    <details><summary>Save this trip as a phone app</summary>
+      <p><b>iPhone:</b> Open in Safari, tap Share, then Add to Home Screen. Keep Open as Web App on if shown, then tap Add.</p>
+      <p><b>Android:</b> Open in Chrome, tap the menu, then Install app or Add to Home screen.</p>
+      <p>Open the home-screen app while connected and wait for “Saved for offline” before traveling. The first download includes about 70 MB of photos. Maps, booking sites, and other external links need internet. Open the app online before your trip to get the latest guide.</p>
+      <button id="install-app" hidden>Install trip app</button>
+    </details>
+  </aside>
   <header class="mast">
     <div class="eyebrow">China · Nov 2026</div>
     <h1>China<span class="zh">秋</span></h1>
@@ -1116,5 +1130,6 @@
   document.querySelectorAll('a[href]').forEach(link=>{const url=new URL(link.href,location.href);if(url.origin!==location.origin){link.target='_blank';link.rel='noopener noreferrer'}});
 
 </script>
+<script src="offline.js"></script>
 </body>
 </html>

@@ -42,6 +42,10 @@ Published via GitHub Pages: **https://chriswiles.github.io/china-2026-trip/**
 - Route data + the decision matrix live in the `ROUTES` / `MATRIX` JS constants at the bottom of
   `index.html` — edit those, not the rendered markup.
 
+## Offline app
+
+After changing the guide or assets, run `python3 scripts/build-offline.py` and include the generated `sw.js`. See `OFFLINE.md` for installation and verification.
+
 ## Deploy
 
 `git push origin main` → GitHub Pages (legacy build from `main` root) redeploys automatically, usually <1 min.
