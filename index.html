@@ -119,6 +119,20 @@
 
   .city-bars{padding:1.2rem;background:var(--paper-deep);border-top:1px solid var(--line)}.city-bars>.note{margin:.7rem 0 1rem;font-size:.85rem}.bar-card{border-top:3px solid var(--jade);display:flex;flex-direction:column}.bar-card .bar-chinese{margin:0;color:var(--jade-deep)}.bar-facts{margin:.2rem 0;font-size:.82rem}.bar-facts>div{padding:.6rem 0;border-top:1px solid var(--line)}.bar-facts dt{font:700 .65rem/1.4 var(--mono);color:var(--cinnabar);margin-bottom:.25rem}.bar-facts dd{margin:0;color:var(--ink-soft)}.bar-card .actions{margin-top:auto;padding-top:.6rem}.bar-night-plan{background:var(--white);padding:1rem;border-left:3px solid var(--ochre);margin-bottom:1rem}.bar-night-plan summary{min-height:44px;display:flex;align-items:center;cursor:pointer;font-weight:650;color:var(--jade-deep)}.bar-night-plan p{font-size:.85rem;color:var(--ink-soft);margin:.6rem 0}.bar-night-plan strong{color:var(--ink)}.bar-cabaret{margin-top:1rem;background:var(--white);padding:0 1rem 1rem;border:1px solid var(--line)}.bar-cabaret summary{min-height:44px;padding:.7rem 0;cursor:pointer;color:var(--jade-deep)}.bar-cabaret p{font-size:.85rem;color:var(--ink-soft)}
   @media(max-width:560px){.city-bars{padding:.65rem}.bar-grid{grid-template-columns:1fr}.bar-facts,.bar-night-plan p,.bar-cabaret p,.city-bars>.note{font-size:.95rem;line-height:1.6}.bar-facts dt{font-size:.73rem}.bar-card .kicker{letter-spacing:.07em}}
+
+  /* Date-specific choices stay folded until the group wants an alternative. */
+  .day .day-event-options{grid-column:3/5;min-width:0;margin:0;border-top:1px solid var(--line)}
+  .day-event-options>summary{gap:.7rem;justify-content:space-between;min-height:48px;padding:.55rem 0;font-size:.76rem;line-height:1.4;list-style:none}
+  .day-event-options>summary::-webkit-details-marker{display:none}.day-event-options>summary:before{content:"+";font-size:1.1rem}.day-event-options[open]>summary:before{content:"−"}
+  .day-event-options>summary span:first-child{flex:1}.day-event-count{font:700 .65rem/1.3 var(--mono);color:var(--ink-soft)}
+  .day-event-intro{font-size:.8rem;line-height:1.5;color:var(--ink-soft);margin:0 0 .75rem}
+  .day-event-list{display:grid;gap:.75rem}.day-event-choice{min-width:0;padding:.9rem;border:1px solid var(--line);background:var(--paper)}
+  .day-event-choice h4{font:400 1.2rem/1.25 var(--serif);margin:.35rem 0}.day-event-choice p{font-size:.85rem;line-height:1.6;color:var(--ink-soft);margin:.5rem 0}
+  .day-event-when,.day-event-status{display:block;font:700 .63rem/1.5 var(--mono);overflow-wrap:anywhere}.day-event-when{color:var(--cinnabar)}.day-event-status{color:var(--jade-deep)}
+  .day-event-choice .actions{margin-top:.6rem;display:flex;flex-wrap:wrap;gap:.4rem}.day-event-choice .actions a{min-height:44px;display:inline-flex;align-items:center;max-width:100%;padding:.45rem .6rem;overflow-wrap:anywhere}
+  @media(min-width:561px) and (max-width:850px){.day .day-event-options{grid-column:2/4}}
+  @media(max-width:560px){.day .day-event-options{grid-column:1/-1}.day-event-options>summary{font-size:.83rem}.day-event-choice h4{font-size:1.25rem}.day-event-when,.day-event-status{font-size:.67rem}}
+  @media print{.day .day-event-options{grid-column:1/-1}.day-event-options>summary{display:block}.day-event-options .day-event-list{display:grid!important}}
 </style>
 </head>
 <body>
@@ -206,24 +220,24 @@
       <nav class="city-jumps" aria-label="Open a city guide"><a href="#hong-kong">Hong Kong <span>Nov 13–17</span></a><a href="#chongqing">Chongqing <span>Nov 17–20</span></a><a href="#shanghai">Shanghai <span>Nov 20–25</span></a><a href="#taipei">Taipei <span>Nov 25–29</span></a></nav>
       <p class="note">Sixteen consecutive hotel nights, with no stay shorter than three nights. Hotel confirmations cover one room for two adults at each base; the crew’s other rooms still need their own confirmation. All times are local. Airport and city-transfer targets are planning allowances, not check-in cutoffs or guaranteed journey times.</p>
       <p class="note"><b>Cali + crew:</b> <a href="#friends-hotel-chongqing">Chongqing Nov 17–20 · Westin, about 21 min walking from us</a>; <a href="#friends-hotel-shanghai">Shanghai Nov 20–24 · Portman Ritz-Carlton, about 69 min walking from us</a>. Our Shanghai stay runs through Nov 25.</p>
-      <p class="note status-key"><b>How to read the plan:</b> <b>Confirmed reservation</b> = booking evidence checked. <b>Published program · not booked</b> = the organizer lists the date, but we have no ticket. <b>Tentative</b> = a suggested visit, recurring pattern or specific performance still needs confirmation. Recommendations are alternatives; they do not add new commitments. Checked Oct 20, 2026.</p>
+      <p class="note status-key"><b>How to read the plan:</b> <b>Confirmed reservation</b> = booking evidence checked. <b>Published program · not booked</b> = the organizer lists the date, but we have no ticket. <b>Tentative</b> = a suggested visit, recurring pattern or specific performance still needs confirmation. Recommendations are alternatives; they do not add new commitments. Reservation evidence checked Oct 20; optional events refreshed Nov 7, 2026.</p>
       <div class="itin">
         <div class="day travel"><span class="date">Fri · Nov 13</span><span class="place">Hong Kong</span><span class="plan">UA869’s published schedule arrives at 7:20 p.m. HKT, checked in United’s flight search; departure is Nov 12 at 11:45 a.m. PST from San Francisco. Airport Express or taxi → Salisbury → nearby food. Arrange the hotel’s acknowledgement for arrival after 9 p.m.; no timed attraction or market.</span><span class="sleep">HK 1/4</span></div>
         <div class="day"><span class="date">Sat · Nov 14</span><span class="place">Central + Peak</span><span class="plan">Central, Tai Kwun and the Peak, with Lugard Road at blue hour if the weather is clear. BIGBANG is skipped. Yardbird dinner for two is an unbooked recommendation, subject to its Oct 31 release. If Sunday becomes Shenzhen, move M+ here by replacing or shortening Central/Peak, rather than adding a third major block.</span><span class="sleep">HK 2/4</span></div>
-        <div class="day dinner-booked" id="dinner-nov15"><span class="date">Sun · Nov 15</span><span class="place">M+ / Shenzhen option</span><span class="plan">Default: M+ from 10 a.m.; choose Design Ah! or Myths and Monsters (published exhibitions, tickets not booked). WestK Jazz Fest runs Nov 13–24: check the Nov 15 free outdoor set times before adding a short lawn stop, then Star Ferry if time allows. Skip the 8 p.m. Cory Wong concert because it overlaps Hutong. Confirmed Hutong dinner, 7–9 p.m. Hong Kong time for two at 18/F, H Zentre, 15 Middle Road, Tsim Sha Tsui. Two-hour seating; table held 15 minutes. Smart casual; gentlemen need closed-toed shoes and sleeved shirts. A window table requires a deposit; otherwise subject to availability. Minimum-spend and cancellation/no-show charges remain unconfirmed. Finish the daytime plan with a dinner buffer. Shenzhen remains optional and replaces the daytime route only after an issuing port confirms U.S. eligibility and the separate SEZ visa is issued. HK → Shenzhen → HK does not qualify for the main 240-hour transit plan; move M+ to Saturday if choosing Shenzhen.</span><span class="sleep">HK 3/4</span><div class="day-booking"><span class="booking-badge is-confirmed">Confirmed dinner</span><b>Hutong</b><span class="booking-time">7–9 p.m. · Hong Kong time · 2 guests · table held 15 minutes</span></div></div>
-        <div class="day dinner-booked" id="dinner-nov16"><span class="date">Mon · Nov 16</span><span class="place">West Kowloon culture</span><span class="plan">Hong Kong Palace Museum, open Monday 10 a.m.–6 p.m.: target Design for the Forbidden City, the published Qing imperial-workshops exhibition (admission not booked; check current gallery access). Then waterfront or a relaxed neighborhood/spa block. M+ is closed Mondays. Confirmed T’ang Court dinner at 6:30 p.m. Hong Kong time for two at The Langham, 8 Peking Road, Tsim Sha Tsui, Kowloon. The table is held for 15 minutes; arrive on time. Smart casual; men may not wear shorts, sandals, flip-flops, plastic footwear or sleeveless shirts. Deposit, minimum spend and cancellation/no-show terms remain to confirm. Temple Street only after dinner if time and energy allow; Xiqu Centre only with a confirmed performance time that fits around dinner.</span><span class="sleep">HK 4/4</span><div class="day-booking"><span class="booking-badge is-confirmed">Confirmed dinner</span><b>T’ang Court</b><span class="meal-price">~US$100–180/person<small><a href="https://www.langhamhotels.com/content/dam/langhamhotels/tlhkg-pdfs/260521_Digital.pdf" target="_blank" rel="noopener noreferrer">HK$800–1,400 · à la carte · incl. 10% service · + drinks</a></small></span><span class="booking-time">6:30 p.m. · Hong Kong time · 2 guests</span></div></div>
+        <div class="day dinner-booked" id="dinner-nov15"><span class="date">Sun · Nov 15</span><span class="place">M+ / Shenzhen option</span><span class="plan">Default: M+ from 10 a.m.; choose Design Ah! or Myths and Monsters (published exhibitions, tickets not booked). Optional: shorten M+ for the separate Sunday giant-puppet parade, 2:30–4 p.m. in Causeway Bay, replacing the ferry/other afternoon wandering. The main free WestK outdoor weekend is Nov 21–22, after our Hong Kong stay; do not rely on a Nov 15 lawn set. Skip the 8 p.m. Cory Wong concert because it overlaps Hutong. Confirmed Hutong dinner, 7–9 p.m. Hong Kong time for two at 18/F, H Zentre, 15 Middle Road, Tsim Sha Tsui. Two-hour seating; table held 15 minutes. Smart casual; gentlemen need closed-toed shoes and sleeved shirts. A window table requires a deposit; otherwise subject to availability. Minimum-spend and cancellation/no-show charges remain unconfirmed. Finish the daytime plan with a dinner buffer. Shenzhen remains optional and replaces the daytime route only after an issuing port confirms U.S. eligibility and the separate SEZ visa is issued. HK → Shenzhen → HK does not qualify for the main 240-hour transit plan; move M+ to Saturday if choosing Shenzhen.</span><span class="sleep">HK 3/4</span><div class="day-booking"><span class="booking-badge is-confirmed">Confirmed dinner</span><b>Hutong</b><span class="booking-time">7–9 p.m. · Hong Kong time · 2 guests · table held 15 minutes</span></div></div>
+        <div class="day dinner-booked" id="dinner-nov16"><span class="date">Mon · Nov 16</span><span class="place">West Kowloon culture</span><span class="plan">Hong Kong Palace Museum, open Monday 10 a.m.–6 p.m.: choose Qing Court in Four Seasons in Gallery 2 and/or Design for the Forbidden City in Gallery 5 (admission not booked). General galleries 1–7 remain the intended visit; Galleries 8 and 9 are closed until further notice, so check current access. Then waterfront or a relaxed neighborhood/spa block. M+ is closed Mondays. Confirmed T’ang Court dinner at 6:30 p.m. Hong Kong time for two at The Langham, 8 Peking Road, Tsim Sha Tsui, Kowloon. The table is held for 15 minutes; arrive on time. Smart casual; men may not wear shorts, sandals, flip-flops, plastic footwear or sleeveless shirts. Deposit, minimum spend and cancellation/no-show terms remain to confirm. Temple Street only after dinner if time and energy allow; Xiqu Centre only with a confirmed performance time that fits around dinner.</span><span class="sleep">HK 4/4</span><div class="day-booking"><span class="booking-badge is-confirmed">Confirmed dinner</span><b>T’ang Court</b><span class="meal-price">~US$100–180/person<small><a href="https://www.langhamhotels.com/content/dam/langhamhotels/tlhkg-pdfs/260521_Digital.pdf" target="_blank" rel="noopener noreferrer">HK$800–1,400 · à la carte · incl. 10% service · + drinks</a></small></span><span class="booking-time">6:30 p.m. · Hong Kong time · 2 guests</span></div></div>
         <div class="day travel"><span class="date">Tue · Nov 17</span><span class="place">→ Chongqing</span><span class="plan">CX966 HKG 1:20 p.m. → CKG 4 p.m. Aim to leave Salisbury 9:15–9:30 a.m. and reach HKG 10:20–10:30; do not wait for 11 a.m. hotel checkout. Request 240-hour temporary entry with onward ticket and hotel documents. JW Marriott check-in, then an easy Bayi Road food crawl.</span><span class="sleep">CQ 1/3</span></div>
-        <div class="day"><span class="date">Wed · Nov 18</span><span class="place">Pandas + vertical city</span><span class="plan">Chongqing Zoo pandas first, about 8:30–11 a.m.; return on Line 2 via Liziba and choose a short Eling or alley walk after lunch. Ye Wang Tea Stall or Longmenhao/Nanbin is the optional sunset outing; arrive 4:30–5 p.m. for the 5:57 p.m. sunset. Opera can replace the riverfront evening once a dated performance is confirmed. Huang Yuming BBQ is now the tentative Nov 19 dinner target, not tonight.</span><span class="sleep">CQ 2/3</span></div>
+        <div class="day"><span class="date">Wed · Nov 18</span><span class="place">Pandas + vertical city</span><span class="plan">Chongqing Zoo pandas first, about 8:30–11 a.m.; return on Line 2 via Liziba and choose a short Eling or alley walk after lunch. Ye Wang Tea Stall or Longmenhao/Nanbin is the optional sunset outing; arrive 4:30–5 p.m. for the 5:57 p.m. sunset. Optional evening choices: Kuba Derej jazz at 坚果NUTS, 8:30–10 p.m., or the recurring 7:30 p.m. acrobatic show 《长江》 after confirming that session. For jazz, replace the south-bank sunset with Guanyinqiao dinner. No published drone show matches our Nov 17–19 evenings. Huang Yuming BBQ is now the tentative Nov 19 dinner target, not tonight.</span><span class="sleep">CQ 2/3</span></div>
         <div class="day"><span class="date">Thu · Nov 19</span><span class="place">Two rivers + robots</span><span class="plan">Tentative: request a morning paid robot dynamic demonstration in ShuiTu; published opening hours are 10 a.m.–noon and 1:30–4:30 p.m., but no Nov 19 performance is booked. Otherwise choose one city-based half-day. Huang Yuming BBQ is the tentative 5 p.m. dinner target for four (concierge request drafted, not sent or confirmed). Allow a long return from ShuiTu and the steep final approach; avoid an afternoon robot slot if keeping dinner. Aim for the 5:56 p.m. sunset only if the venue and timing work.</span><span class="sleep">CQ 3/3</span></div>
         <div class="day travel"><span class="date">Fri · Nov 20</span><span class="place">→ Shanghai</span><span class="plan">HO1250 CKG 11:50 a.m. → PVG Pudong 2:20 p.m.; aim for CKG airport around 9 a.m. Check rollers, with one cabin piece ≤5 kg. Transfer to Atour X at the Bund. Blizzard at the Oriental Art Center, 425 Dingxiang Road, is published for 7:30 p.m. (tickets not booked). Attendance depends on actual tickets and an on-time transfer: decide around 5 p.m. at the hotel, leave around 6 p.m., or protect a quiet evening.</span><span class="sleep">SHA 1/5</span></div>
         <div class="day special"><span class="date">Sat · Nov 21</span><span class="place">French Concession + drones</span><span class="plan">Tentative: Unitree store around 11:15 a.m.; this is a proposed visit time, not a scheduled robot show. Confirm any demonstration directly, then keep the French Concession compact. Dishui Lake’s recurring 8 p.m. Saturday show is not confirmed for Nov 21. Confirm on Nov 19–20; if it runs, leave the Bund around 4:30–5 p.m., budget roughly two hours each way, and settle viewing point, weather/airspace status and return transport. Otherwise choose ERA 2 at Shanghai Circus World: official Nov 21 calendar lists 2 p.m. and 7:30 p.m., 60-minute version; tickets not booked. Choose one evening plan.</span><span class="sleep">SHA 2/5</span></div>
-        <div class="day dinner-booked" id="dinner-nov22"><span class="date">Sun · Nov 22</span><span class="place">Pudong + museum</span><span class="plan">Shanghai Museum East from 10 a.m., a focused gallery visit, then Lujiazui and ferry to the Bund at dusk; finish the waterfront block in time for dinner. Ordinary individual admission needs no reservation; special exhibitions and interactive areas can differ. The Met jewelry show is announced for November, but its opening before our visit still needs checking. Confirmed dinner at Mr &amp; Mrs Bund, 6–8:15 p.m. Shanghai time, for four guests at a window-area table (6F, 18 Zhong Shan Dong Yi Road). No deposit or minimum spend; cancellation/no-show charges remain to confirm. After dinner, an optional nearby drink from the <a href="#shanghai-bars">hotel bar guide</a>; Wujiang Road–Fengshengli remains a farther alternative if energy holds.</span><span class="sleep">SHA 3/5</span><div class="day-booking"><span class="booking-badge is-confirmed">Confirmed dinner</span><b>Mr &amp; Mrs Bund</b><span class="meal-price">~US$75–150/person<small><a href="https://www.mmbund.com/wp-content/uploads/sites/4/2026/05/Mr-Mrs-Bund-Dinner-Menu-May-2026-S.pdf" target="_blank" rel="noopener noreferrer">RMB 500–1,000 · à la carte · + drinks/service</a></small></span><span class="booking-time">6 p.m. · Shanghai time · 4 guests · window-area table · release 8:15 p.m.</span></div></div>
+        <div class="day dinner-booked" id="dinner-nov22"><span class="date">Sun · Nov 22</span><span class="place">Pudong + museum</span><span class="plan">Shanghai Museum East from 10 a.m., a focused gallery visit, then Lujiazui and ferry to the Bund at dusk; finish the waterfront block in time for dinner. Ordinary individual admission needs no reservation; special exhibitions and interactive areas can differ. Optional focus: the Met jewelry exhibition opens Nov 18 in the First Special Exhibition Hall, published as free. Check exhibition-specific reservations and passport access before visiting. Confirmed dinner at Mr &amp; Mrs Bund, 6–8:15 p.m. Shanghai time, for four guests at a window-area table (6F, 18 Zhong Shan Dong Yi Road). No deposit or minimum spend; cancellation/no-show charges remain to confirm. After dinner, an optional nearby drink from the <a href="#shanghai-bars">hotel bar guide</a>; Wujiang Road–Fengshengli remains a farther alternative if energy holds.</span><span class="sleep">SHA 3/5</span><div class="day-booking"><span class="booking-badge is-confirmed">Confirmed dinner</span><b>Mr &amp; Mrs Bund</b><span class="meal-price">~US$75–150/person<small><a href="https://www.mmbund.com/wp-content/uploads/sites/4/2026/05/Mr-Mrs-Bund-Dinner-Menu-May-2026-S.pdf" target="_blank" rel="noopener noreferrer">RMB 500–1,000 · à la carte · + drinks/service</a></small></span><span class="booking-time">6 p.m. · Shanghai time · 4 guests · window-area table · release 8:15 p.m.</span></div></div>
         <div class="day special"><span class="date">Mon · Nov 23</span><span class="place">Suzhou · gardens + canals</span><span class="plan">Selected day trip: taxi from Atour X, 130 Hankou Road, to Shanghai Railway Station (上海站), then a high-speed train to Suzhou Railway Station (苏州站) and a taxi to Humble Administrator’s Garden. Allow about 1¾–2½ hours hotel to garden, including station checks; actual traffic and trains may vary. Planning target: leave around 8 a.m., train around 9 a.m., garden around 10 a.m.; lunch and Pingjiang Road, then a return train around 6 p.m. and hotel around 7 p.m. These are targets, not booked departures. Rail and garden admission are not booked. Train tickets for Nov 23 are expected to open Nov 9; reserve both directions and bring original passports. Reserve a morning garden slot separately 1–7 days ahead; confirm passport booking with Atour X. Suzhou Museum is closed Monday. Natural History Museum is the Shanghai rain fallback. Tuesday spa is an alternative to the Science Museum.</span><span class="sleep">SHA 4/5</span></div>
         <div class="day"><span class="date">Tue · Nov 24</span><span class="place">Wild animal park / city day</span><span class="plan">Choose one full-day plan. <a href="#shanghai-wild-animal-park">Shanghai Wild Animal Park</a> is the animal outing: target 9 a.m. opening, take the standard safari bus and explore the walking areas. Allow roughly 60–90+ min each way by taxi from Atour X, or 1½–2 hours by metro plus a local transfer; estimates, not live routing. The park lists November hours of 9 a.m.–5 p.m. and standard adult admission of RMB 190; tickets are not booked. This replaces Yu Garden and the science / spa block. Alternatively keep Yu Garden at 9 a.m., Old City lunch and choose either the Science &amp; Technology Museum or Yang·SPACE. Lao Zheng Xing dinner for four remains an unbooked suggestion; leave a generous return buffer before reserving. Suzhou stays on Monday.</span><span class="sleep">SHA 5/5</span></div>
         <div class="day travel"><span class="date">Wed · Nov 25</span><span class="place">→ Taipei</span><span class="plan">Checkout/store bags at Atour X; aim to leave around 12:30 p.m. and reach SHA Hongqiao Terminal 1 around 1:15 p.m. CI202 departs 4:15 p.m., lands TSA Songshan Terminal 1 at 6:20 p.m. Check in at San Want Residences in Zhongshan. Raohe only from roughly 8–8:30 p.m. if arrival is smooth; nearby dinner or Ningxia is the easier fallback.</span><span class="sleep">TPE 1/4</span></div>
         <div class="day special"><span class="date">Thu · Nov 26</span><span class="place">Thanksgiving + show</span><span class="plan">Protect Thanksgiving with Jen’s family until time and location are confirmed. Dihua/Longshan can fit in the morning. Shilin YES at 7:30 p.m. is optional only if family timing, Mandarin-language participation and food allergies work; arrive at the ground-floor plaza at 7 p.m. No theater commitment before the family plan is settled.</span><span class="sleep">TPE 2/4</span></div>
         <div class="day special"><span class="date">Fri · Nov 27</span><span class="place">Museum + hot spring</span><span class="plan">Default: National Palace Museum from 9 a.m. through lunch, then Grand View Beitou’s public bath with queue allowance. Published alternatives, all unbooked: TaipeiEYE’s The Leopard at 8 p.m. near Zhongshan, Karencici at 7:30 p.m. in Xinzhuang, or Banqiao Christmasland lights from 5:30 p.m. and market/esports until 10 p.m. Choose one evening and shorten the soak for travel. The Shilin Residence chrysanthemum festival starts today (Nov 27–Dec 13; daily hours to confirm); a garden visit replaces part of the museum/soak day.</span><span class="sleep">TPE 3/4</span></div>
-        <div class="day special"><span class="date">Sat · Nov 28</span><span class="place">Choose your finale</span><span class="plan">A at 6:30 p.m. for two is selected but not booked, pending final confirmation and the November menu check. If choosing A, skip the 6 p.m. Wall show and a full-day escape; Shrek at 1:30 p.m. is an optional afternoon only with a comfortable transfer buffer. Otherwise choose one finale: Shrek or 名譽傳說 at The Wall, doors 5 p.m./show 6 p.m.; tickets still to confirm. A full north-coast, Yingge or mountain day replaces the finale. Qingshan’s Nov 28–30 date range is published; procession times/routes remain tentative and the main Nov 30 procession is after departure. A short chrysanthemum visit before Shrek is optional only with time to spare. Christmasland is an alternative evening, not an add-on to A or The Wall; expect crowds.</span><span class="sleep">TPE 4/4</span></div>
+        <div class="day special"><span class="date">Sat · Nov 28</span><span class="place">Choose your finale</span><span class="plan">A at 6:30 p.m. for two is selected but not booked, pending final confirmation and the November menu check. If choosing A, skip the 6 p.m. Wall show and a full-day escape; Shrek at 1:30 p.m. is an optional afternoon only with a comfortable transfer buffer. Otherwise choose one finale: Shrek or 名譽傳說 at The Wall, doors 5 p.m./show 6 p.m.; tickets still to confirm. A full north-coast, Yingge or mountain day replaces the finale. Qingshan’s Nov 28–30 date range is published. Local route reporting puts Saturday’s procession start at 4 p.m. and separate floats at 7:30 p.m.; confirm the final temple notice. These compete with A dinner; the main Nov 30 procession is after departure. A short chrysanthemum visit before Shrek is optional only with time to spare. Christmasland is an alternative evening, not an add-on to A or The Wall; expect crowds.</span><span class="sleep">TPE 4/4</span></div>
         <div class="day travel"><span class="date">Sun · Nov 29</span><span class="place">→ Austin</span><span class="plan">Checkout/store bags before the suggested Mountain &amp; Sea House noon à la carte lunch for two; it is not booked. Aim to leave San Want 4:15–4:30 p.m. and reach TPE Taoyuan Terminal 2 around 5:30 p.m. JX32 departs 8:30 p.m. → SEA 3:05 p.m.; Alaska AS375/JX7046 at 5:08 p.m. → AUS 11:14 p.m., all Nov 29. The eastbound date-line crossing returns the same day. Seattle’s 2h03 connection is for bags, CBP, recheck and security; no HITORIE.</span><span class="sleep">—</span></div>
       </div>
     </section>
@@ -431,9 +445,9 @@
 
       <article class="city" id="shanghai">
         <div class="city-hero"><img class="zoom" loading="lazy" src="images/thumbs/shanghai/wukang-road.jpg" data-full="images/shanghai/wukang-road.jpg" alt="Plane trees and architecture along Wukang Road in Shanghai"><div class="city-title"><span class="dates">Nov 20–25 · 5 nights</span><h3>Shanghai</h3><p>The longest mainland stay earns a rhythm: old lanes, world-class museums, skyline theatre and one slow day.</p></div></div>
-        <div class="city-body"><div><h4>Traveler-backed priorities</h4><div class="picks"><div class="pick"><em>Essential</em><b>The Bund at blue hour</b><span>Walk north toward Waibaidu Bridge while the historic façades and Pudong skyline light up. The free riverfront delivers the iconic view; return by public ferry rather than the sightseeing tunnel.</span></div><div class="pick"><em>Essential</em><b>Former French Concession slowly</b><span>Wukang Mansion is one photo, not the event. Continue along Wukang, Anfu and Fuxing roads for plane trees, villas, cafés, boutiques and neighborhood texture.</span></div><div class="pick"><em>Essential</em><b>Shanghai Museum East</b><span>Protect a focused half-day for the strongest galleries. The Met jewelry exhibition has a November announcement, but its exact opening before Nov 22 needs checking. General individual admission needs no reservation; special exhibits/interactive areas may. Open 10 a.m.–6 p.m., last entry 5 p.m.; closed Tuesdays.</span></div><div class="pick"><em class="quick">Go at opening</em><b>Yu Garden—not just the bazaar</b><span>The actual Ming garden earns 90 minutes before crowds. The surrounding City God Temple bazaar is photogenic but heavily commercial; leave when it stops being fun.</span></div><div class="pick"><em class="if">Choose one</em><b>Suzhou · selected day trip</b><span>Monday Nov 23 is now Suzhou: Humble Administrator’s Garden, lunch and Pingjiang Road canals. Trains and admission are not booked. Suzhou Museum closes Monday; Natural History Museum is the Shanghai rain fallback.</span></div></div></div><div><h4>Eat with intent</h4><ul class="foodlist"><li><b>Lao Zheng Xing:</b> Not booked · <span class="usd-estimate">≈US$20–40</span> (RMB 150–250) planning before drinks · 15–20 min walk from Atour X. Contact required; no live inventory or booking confirmed. Nov 24 dinner is the cleanest suggested window. Nov 23 is reserved for Suzhou; keep any Nov 24 spa visit clear of dinner. Ask Atour X to confirm the 556 Fuzhou Road branch and menu.<span class="meal-price">~US$20–40/person<small>RMB 150–250 · + drinks/service</small></span></li><li><b>Lai Lai Xiao Long · Huangpu:</b> Not booked · <span class="usd-estimate">≈US$9–15</span> (RMB 60–100) planning before drinks · 15–20 min walk from Atour X. Allow for a queue; current reservation policy is unverified. Go early or at lunch and check the current dumpling choices.<span class="meal-price">~US$9–15/person<small>RMB 60–100 · + drinks/service</small></span></li><li><b>Ginza Onodera · Bund 18:</b> Optional · Not booked · Listed dinner ~US$328/person incl. 10% service; lunch ~US$115 / 210. Drinks extra; reconfirm menu. before drinks · 5–10 min walk from Atour X. Phone confirmation required: the official TableCheck link could not be resolved in the snapshot. November price and availability remain unverified; ask the hotel to confirm seating and the menu.<span class="meal-price">~US$328/person<small><a href="https://onodera-group.com/sushi-shanghai/dinnermenu/" target="_blank" rel="noopener noreferrer">RMB 2,000 + 10% · lunch ~US$115 / 210 · dinner incl. 10% service · + drinks</a></small></span></li><li><b>Uni Shushi · Xintiandi:</b> Optional · Not booked · Reported <span class="usd-estimate">≈US$74 / US$104</span> (RMB 498 / 698) omakase · reconfirm menu and service charges before drinks · 15–25 min taxi · radius exception from Atour X. Reserve for four only after confirming the current menu, availability and total charges. Reported prices are not a verified current offer.<span class="meal-price">~US$74 or US$104/person<small>RMB 498 / 698 · reported menus · + drinks/service</small></span></li><li><b>Cheng Long Hang · Huangpu:</b> Optional · Not booked · <span class="usd-estimate">≈US$50–90</span> (RMB 350–600) planning before drinks · 5–10 min walk from Atour X. The booking widget was inconclusive in the dated snapshot; this does not prove it is full. Contact the restaurant or hotel to confirm availability, menu fit and current price.<span class="meal-price">~US$50–90/person<small>RMB 350–600 · + drinks/service</small></span></li><li><b>Meet the Bund · original BFC branch:</b> Optional · Not booked · <span class="usd-estimate">≈US$120–180</span> (RMB 800–1,200) planning · à la carte before drinks · 10–15 min taxi from Atour X. Contact required; no confirmed inventory. Specify the original BFC branch and ask about a suitable à la carte order and current seafood prices.<span class="meal-price">~US$120–180/person<small>RMB 800–1,200 · + drinks/service</small></span></li><li><b>Ling Long · Waldorf Astoria:</b> Optional · Not booked · <span class="usd-estimate">≈US$374</span> (RMB 2,507) planning incl. 15% service · <span class="usd-estimate">≈US$325</span> (RMB 2,180) base before drinks · 10–15 min walk from Atour X. Contact required; availability is unverified. Listed Wednesday–Sunday service makes Nov 20 or 21 possible windows. Review the current tasting menu and reconfirm service days before reserving.<span class="meal-price">~US$374/person<small>RMB 2,507 · incl. 15% service · + drinks</small></span></li><li><b>Confirmed view dinner:</b> Mr &amp; Mrs Bund · Sun · Nov 22, 2026 · 6 p.m. · Shanghai time · 4 guests · window-area table · table release 8:15 p.m.<span class="meal-price">~US$75–150/person<small><a href="https://www.mmbund.com/wp-content/uploads/sites/4/2026/05/Mr-Mrs-Bund-Dinner-Menu-May-2026-S.pdf" target="_blank" rel="noopener noreferrer">RMB 500–1,000 · à la carte · + drinks/service</a></small></span></li></ul><details class="reference-fold"><summary>Other local food ideas · not booked</summary><ul class="foodlist"><li><b>Local splurge:</b> Fu 1088 in its 1920s townhouse; reserve a group room.<span class="meal-price">~US$90/person<small><a href="https://you.ctrip.com/food/2/6983202.html" target="_blank" rel="noopener noreferrer">RMB 601 · reported average · room minimum varies</a></small></span></li><li><b>XLB:</b> Jia Jia Tang Bao at 127 Huanghe Road and Lai Lai Xiao Long at 506 Tianjin Road.<span class="meal-price">~US$6–15/person<small><a href="https://english.shanghai.gov.cn/en-GlobalTasteinShanghai2026-LocalFlavors/20260316/00b0c6d1698d406c8d532a6e169e1a1e.html" target="_blank" rel="noopener noreferrer">RMB 41–100 · Jia Jia / Lai Lai · order varies</a></small></span></li><li><b>Shanghainese comfort:</b> Ren He Guan or Old Jesse for red-braised pork, smoked fish and seasonal crab.<span class="meal-price">~US$30/person<small><a href="https://au.trip.com/moments/theme/poi-ren-he-guan-28576182-comprehensive-guides-993136/" target="_blank" rel="noopener noreferrer">RMB 180–186 · Old Jesse / Ren He Guan · reported averages</a></small></span></li></ul></details><div class="reality"><b>Do not burn time</b><br>Use East Nanjing Road only as a connector unless shopping is the goal. Skip the Bund sightseeing tunnel and do not stack Shanghai Tower, Oriental Pearl and rooftop drinks—the skyline repeats.</div><div class="actions"><a href="https://www.tripadvisor.com/Attraction_Review-g308272-d324259-Reviews-Yu_Garden-Shanghai.html">Traveler reviews ↗</a><a href="https://notesfromchina.com/blog/shanghai-3-day-itinerary/">Independent itinerary ↗</a><a href="https://www.meet-in-shanghai.net/en/news/all-the-exhibitions-coming-to-shanghai-museum-in-2026-%E2%80%93-save-this-list-238693/">2026 exhibitions ↗</a></div></div></div>
+        <div class="city-body"><div><h4>Traveler-backed priorities</h4><div class="picks"><div class="pick"><em>Essential</em><b>The Bund at blue hour</b><span>Walk north toward Waibaidu Bridge while the historic façades and Pudong skyline light up. The free riverfront delivers the iconic view; return by public ferry rather than the sightseeing tunnel.</span></div><div class="pick"><em>Essential</em><b>Former French Concession slowly</b><span>Wukang Mansion is one photo, not the event. Continue along Wukang, Anfu and Fuxing roads for plane trees, villas, cafés, boutiques and neighborhood texture.</span></div><div class="pick"><em>Essential</em><b>Shanghai Museum East</b><span>Protect a focused half-day for the strongest galleries. The Met jewelry exhibition opens Nov 18, before our visit; check its exhibition-specific reservation and passport access. General individual admission needs no reservation; special exhibits/interactive areas may. Open 10 a.m.–6 p.m., last entry 5 p.m.; closed Tuesdays.</span></div><div class="pick"><em class="quick">Go at opening</em><b>Yu Garden—not just the bazaar</b><span>The actual Ming garden earns 90 minutes before crowds. The surrounding City God Temple bazaar is photogenic but heavily commercial; leave when it stops being fun.</span></div><div class="pick"><em class="if">Choose one</em><b>Suzhou · selected day trip</b><span>Monday Nov 23 is now Suzhou: Humble Administrator’s Garden, lunch and Pingjiang Road canals. Trains and admission are not booked. Suzhou Museum closes Monday; Natural History Museum is the Shanghai rain fallback.</span></div></div></div><div><h4>Eat with intent</h4><ul class="foodlist"><li><b>Lao Zheng Xing:</b> Not booked · <span class="usd-estimate">≈US$20–40</span> (RMB 150–250) planning before drinks · 15–20 min walk from Atour X. Contact required; no live inventory or booking confirmed. Nov 24 dinner is the cleanest suggested window. Nov 23 is reserved for Suzhou; keep any Nov 24 spa visit clear of dinner. Ask Atour X to confirm the 556 Fuzhou Road branch and menu.<span class="meal-price">~US$20–40/person<small>RMB 150–250 · + drinks/service</small></span></li><li><b>Lai Lai Xiao Long · Huangpu:</b> Not booked · <span class="usd-estimate">≈US$9–15</span> (RMB 60–100) planning before drinks · 15–20 min walk from Atour X. Allow for a queue; current reservation policy is unverified. Go early or at lunch and check the current dumpling choices.<span class="meal-price">~US$9–15/person<small>RMB 60–100 · + drinks/service</small></span></li><li><b>Ginza Onodera · Bund 18:</b> Optional · Not booked · Listed dinner ~US$328/person incl. 10% service; lunch ~US$115 / 210. Drinks extra; reconfirm menu. before drinks · 5–10 min walk from Atour X. Phone confirmation required: the official TableCheck link could not be resolved in the snapshot. November price and availability remain unverified; ask the hotel to confirm seating and the menu.<span class="meal-price">~US$328/person<small><a href="https://onodera-group.com/sushi-shanghai/dinnermenu/" target="_blank" rel="noopener noreferrer">RMB 2,000 + 10% · lunch ~US$115 / 210 · dinner incl. 10% service · + drinks</a></small></span></li><li><b>Uni Shushi · Xintiandi:</b> Optional · Not booked · Reported <span class="usd-estimate">≈US$74 / US$104</span> (RMB 498 / 698) omakase · reconfirm menu and service charges before drinks · 15–25 min taxi · radius exception from Atour X. Reserve for four only after confirming the current menu, availability and total charges. Reported prices are not a verified current offer.<span class="meal-price">~US$74 or US$104/person<small>RMB 498 / 698 · reported menus · + drinks/service</small></span></li><li><b>Cheng Long Hang · Huangpu:</b> Optional · Not booked · <span class="usd-estimate">≈US$50–90</span> (RMB 350–600) planning before drinks · 5–10 min walk from Atour X. The booking widget was inconclusive in the dated snapshot; this does not prove it is full. Contact the restaurant or hotel to confirm availability, menu fit and current price.<span class="meal-price">~US$50–90/person<small>RMB 350–600 · + drinks/service</small></span></li><li><b>Meet the Bund · original BFC branch:</b> Optional · Not booked · <span class="usd-estimate">≈US$120–180</span> (RMB 800–1,200) planning · à la carte before drinks · 10–15 min taxi from Atour X. Contact required; no confirmed inventory. Specify the original BFC branch and ask about a suitable à la carte order and current seafood prices.<span class="meal-price">~US$120–180/person<small>RMB 800–1,200 · + drinks/service</small></span></li><li><b>Ling Long · Waldorf Astoria:</b> Optional · Not booked · <span class="usd-estimate">≈US$374</span> (RMB 2,507) planning incl. 15% service · <span class="usd-estimate">≈US$325</span> (RMB 2,180) base before drinks · 10–15 min walk from Atour X. Contact required; availability is unverified. Listed Wednesday–Sunday service makes Nov 20 or 21 possible windows. Review the current tasting menu and reconfirm service days before reserving.<span class="meal-price">~US$374/person<small>RMB 2,507 · incl. 15% service · + drinks</small></span></li><li><b>Confirmed view dinner:</b> Mr &amp; Mrs Bund · Sun · Nov 22, 2026 · 6 p.m. · Shanghai time · 4 guests · window-area table · table release 8:15 p.m.<span class="meal-price">~US$75–150/person<small><a href="https://www.mmbund.com/wp-content/uploads/sites/4/2026/05/Mr-Mrs-Bund-Dinner-Menu-May-2026-S.pdf" target="_blank" rel="noopener noreferrer">RMB 500–1,000 · à la carte · + drinks/service</a></small></span></li></ul><details class="reference-fold"><summary>Other local food ideas · not booked</summary><ul class="foodlist"><li><b>Local splurge:</b> Fu 1088 in its 1920s townhouse; reserve a group room.<span class="meal-price">~US$90/person<small><a href="https://you.ctrip.com/food/2/6983202.html" target="_blank" rel="noopener noreferrer">RMB 601 · reported average · room minimum varies</a></small></span></li><li><b>XLB:</b> Jia Jia Tang Bao at 127 Huanghe Road and Lai Lai Xiao Long at 506 Tianjin Road.<span class="meal-price">~US$6–15/person<small><a href="https://english.shanghai.gov.cn/en-GlobalTasteinShanghai2026-LocalFlavors/20260316/00b0c6d1698d406c8d532a6e169e1a1e.html" target="_blank" rel="noopener noreferrer">RMB 41–100 · Jia Jia / Lai Lai · order varies</a></small></span></li><li><b>Shanghainese comfort:</b> Ren He Guan or Old Jesse for red-braised pork, smoked fish and seasonal crab.<span class="meal-price">~US$30/person<small><a href="https://au.trip.com/moments/theme/poi-ren-he-guan-28576182-comprehensive-guides-993136/" target="_blank" rel="noopener noreferrer">RMB 180–186 · Old Jesse / Ren He Guan · reported averages</a></small></span></li></ul></details><div class="reality"><b>Do not burn time</b><br>Use East Nanjing Road only as a connector unless shopping is the goal. Skip the Bund sightseeing tunnel and do not stack Shanghai Tower, Oriental Pearl and rooftop drinks—the skyline repeats.</div><div class="actions"><a href="https://www.tripadvisor.com/Attraction_Review-g308272-d324259-Reviews-Yu_Garden-Shanghai.html">Traveler reviews ↗</a><a href="https://notesfromchina.com/blog/shanghai-3-day-itinerary/">Independent itinerary ↗</a><a href="https://www.meet-in-shanghai.net/en/news/all-the-exhibitions-coming-to-shanghai-museum-in-2026-%E2%80%93-save-this-list-238693/">2026 exhibitions ↗</a></div></div></div>
         <div class="city-food city-tech" id="shanghai-robots"><div class="city-food-head"><div><span class="kicker">Technology stop · central Shanghai + Pudong</span><h4>Unitree store first; science museum separately</h4><p>These are two different stops, not one compact route: the Unitree Embodied AI Experience Store is central at Jiuguang Department Store, while the Shanghai Science &amp; Technology Museum is the deeper science backup in Pudong.</p></div></div><article class="card event-card"><span class="event-city">Shanghai · Nov 21–24</span><h3>Try the weekend store demo; Tuesday is science or spa</h3><span class="pill">Tentative · store visit, no scheduled show</span><p>Use Saturday, Nov 21 around 11:15 a.m. as the preferred store attempt; recent Chinese coverage and opening footage show public interaction and dancing, but there is no official fixed daily performance timetable. If that does not work, skip it or replace another block; Sunday morning already belongs to Museum East in Pudong.</p><div class="event-fit"><b>Booking plan</b>Ask the store that morning whether a live Unitree demo is running. If skipping the full-day Wild Animal Park, keep Tuesday, Nov 24 for a shorter Science &amp; Technology Museum visit after Yu Garden at opening; the science museum closes 5 p.m. and is closed Mondays; choose this or the Tuesday bathhouse block, leaving Monday free for Suzhou.</div><div class="actions"><a class="primary" href="https://www.chinanews.com.cn/m/tp/hd/2026/0601/180273.shtml">China News store info ↗</a><a href="https://english.shanghai.gov.cn/en-FirstStores/20260602/7a0cf9e70f5c47d3afec197e62cfd887.html">Shanghai official listing ↗</a><a href="https://jingxuan.douyin.com/m/video/7645931066645171502">Opening clip 中文 ↗</a><a href="https://www.sstm.org.cn/">Science Museum ↗</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Unitree+Embodied+AI+Experience+Store+Jiuguang+Shanghai">Unitree map ↗</a></div></article></div>
-        <div class="city-food city-tech" id="shanghai-drone-show"><div class="city-food-head"><div><span class="kicker">Saturday night spectacle · Dishui Lake</span><h4>Keep Nov 21 for drones only if confirmed</h4><p>Official Lingang coverage describes recurring weekend shows. Secondary listings give an 8 p.m. Saturday format of roughly 14 minutes of drones and six of fireworks; Nov 21 itself remains unconfirmed.</p></div></div><article class="card event-card"><span class="event-city">Shanghai · Sat · Nov 21 · expected 8 p.m.</span><h3>Dishui Lake drone-and-fireworks show</h3><span class="pill">Tentative · Nov 21 not confirmed</span><p>This is the best drone-show fit anywhere on the trip, but it is a dedicated Lingang excursion rather than a central Shanghai add-on. From the Bund / East Nanjing Road, budget at least 1¾–2 hours each way as a planning allowance: Line 2 → Longyang Road → Line 16 to Dishui Lake, plus walking to the viewing point. Check the live route and specific last train before committing.</p><div class="event-fit"><b>Execution plan</b>Leave the hotel area around 4:30–5 p.m. and aim to reach the lake by 7 p.m.; allow roughly two hours each way. Choose this instead of ERA or another evening outing. Reconfirm the specific Nov 21 show through 上海临港 or Hi临港 24–48 hours ahead, including viewing point and weather/flight restrictions. Before departure, arrange a return car or confirm the last train and connections; the show ending does not guarantee a workable metro ride home.</div><div class="actions"><a class="primary" href="https://www.lingang.gov.cn/html/website/lg/index/news/Mediafocus/2069237972186759169.html">Lingang confirmation ↗</a><a href="https://sh.bendibao.com/news/202656/305677.shtm">Current show details ↗</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Dishui+Lake+Shanghai">Dishui Lake map ↗</a></div></article></div>
+        <div class="city-food city-tech" id="shanghai-drone-show"><div class="city-food-head"><div><span class="kicker">Saturday night spectacle · Dishui Lake</span><h4>Keep Nov 21 for drones only if confirmed</h4><p>Official Lingang coverage describes recurring weekend shows. Secondary listings give an 8 p.m. Saturday format of roughly 14 minutes of drones and six of fireworks; Nov 21 itself remains unconfirmed.</p></div></div><article class="card event-card"><span class="event-city">Shanghai · Sat · Nov 21 · expected 8 p.m.</span><h3>Dishui Lake drone-and-fireworks show</h3><span class="pill">Tentative · Nov 21 not confirmed</span><p>This is an optional Shanghai drone-and-fireworks excursion. Hong Kong’s Nov 14 Hung Hom show is another option closer to the hotel, while Dishui requires a deliberate cross-city outing. From the Bund / East Nanjing Road, budget at least 1¾–2 hours each way as a planning allowance: Line 2 → Longyang Road → Line 16 to Dishui Lake, plus walking to the viewing point. Check the live route and specific last train before committing.</p><div class="event-fit"><b>Execution plan</b>Leave the hotel area around 4:30–5 p.m. and aim to reach the lake by 7 p.m.; allow roughly two hours each way. Choose this instead of ERA or another evening outing. Reconfirm the specific Nov 21 show through 上海临港 or Hi临港 24–48 hours ahead, including viewing point and weather/flight restrictions. Before departure, arrange a return car or confirm the last train and connections; the show ending does not guarantee a workable metro ride home.</div><div class="actions"><a class="primary" href="https://www.lingang.gov.cn/html/website/lg/index/news/Mediafocus/2069237972186759169.html">Lingang confirmation ↗</a><a href="https://sh.bendibao.com/news/202656/305677.shtm">Current show details ↗</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Dishui+Lake+Shanghai">Dishui Lake map ↗</a></div></article></div>
         <div class="city-food" id="shanghai-food"><div class="city-food-head"><div><span class="kicker">Stay + eat · booked hotel base</span><h4>Restaurants from Atour X · 130 Hankou Road</h4><p>Prioritize Lao Zheng Xing for a flexible local à la carte meal and Lai Lai for a casual pork-dumpling lunch. Mr &amp; Mrs Bund on Nov 22 remains confirmed. Sushi remains optional after a menu check; Cheng Long Hang and Meet the Bund are seafood-led alternatives, not must-do meals. Ling Long is an optional tasting-menu splurge.</p><p class="restaurant-estimates"> Hotel travel times are one-way estimates, not live routing; traffic, queues and stairs can add time. Confirm current menus and service charges when reserving.</p></div><a class="food-hotel-link" href="#hotels">Booked hotel ↗</a></div><div class="restaurant-grid">
 <article class="card restaurant restaurant-booked" data-booking-status="confirmed"><span class="booking-badge is-confirmed">Confirmed</span><span class="citylabel">Shanghai · Sun · Nov 22</span><h3>Mr &amp; Mrs Bund</h3><span class="meal-price">~US$75–150/person<small><a href="https://www.mmbund.com/wp-content/uploads/sites/4/2026/05/Mr-Mrs-Bund-Dinner-Menu-May-2026-S.pdf" target="_blank" rel="noopener noreferrer">RMB 500–1,000 · à la carte · + drinks/service</a></small></span><p class="why">Sun · Nov 22, 2026 · 6 p.m. · Shanghai time · 4 guests · window-area table. The table releases at 8:15 p.m.</p><div class="order"><b>Address</b>6F, 18 Zhong Shan Dong Yi Road, Shanghai.</div><div class="order"><b>Booking terms</b>No deposit or minimum spend. Cancellation/no-show charges remain to confirm.</div><div class="order"><b>Menu plan</b>Choose an à la carte meat, chicken and vegetable order, with shrimp if wanted. Seafood towers and fixed sets are optional. Reconfirm the November menu.</div><div class="actions"><a href="https://www.mmbund.com/wp-content/uploads/sites/4/2026/07/Mr-Mrs-Bund-Dinner-Menu-2026-S.pdf">Official à la carte menu ↗</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Mr+and+Mrs+Bund+18+Zhong+Shan+Dong+Yi+Road+Shanghai">Map ↗</a></div></article>
 <article class="card restaurant" data-restaurant-id="lao-zheng-xing" data-booking-status="unbooked"><span class="booking-badge is-unbooked">Not booked</span><span class="citylabel">Local priority · one Michelin star</span><h3>Lao Zheng Xing</h3><span class="meal-price">~US$20–40/person<small>RMB 150–250 · + drinks/service</small></span><p class="why">Priority Shanghainese à la carte meal for four: choose shared meat, vegetables and shrimp dishes from the current menu.</p><div class="order"><b>Branch / address</b>556 Fuzhou Road</div><div class="order"><b>Per person · before drinks</b><span class="usd-estimate">≈US$20–40</span> (RMB 150–250) planning</div><div class="order"><b>From hotel · estimate</b>15–20 min walk</div><div class="order"><b>Booking guidance · not booked</b>Contact required; no live inventory or booking confirmed. Nov 24 dinner is the cleanest suggested window. Nov 23 is reserved for Suzhou; keep any Nov 24 spa visit clear of dinner. Ask Atour X to confirm the 556 Fuzhou Road branch and menu.</div><div class="actions"><a href="https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/lao-zheng-xing-huangpu">Michelin Guide ↗</a><a href="https://www.google.com/maps/search/?api=1&amp;query=Lao%20Zheng%20Xing%20556%20Fuzhou%20Road%20Shanghai">Map ↗</a></div></article>
@@ -583,12 +597,12 @@
 
     <section id="events">
       <div class="head"><span class="num">08</span><h2>Events worth keeping</h2><span class="rule"></span></div>
-      <p class="note">Checked Oct 20. Confirmed reservations have booking evidence; published programs have organizer-listed dates but no tickets booked; tentative options still need the specific date, performance or logistics confirmed. Choose alternatives around existing dinners.</p>
+      <p class="note">Optional events refreshed Nov 7. Confirmed reservations have booking evidence; published programs have organizer-listed dates but no tickets booked; tentative options still need the specific date, performance or logistics confirmed. Choose alternatives around existing dinners.</p>
       <div class="grid event-grid">
-        <article class="card event-card"><span class="event-city">Hong Kong · Sun · Nov 15 · daytime</span><h3>WestK Jazz Fest · free outdoor music</h3><span class="pill">Published festival · free-set times tentative</span><p>The organizer lists Nov 13–24 across West Kowloon, with free and paid programs. Look for a relaxed outdoor set near M+; the individual Nov 15 free-set times still need confirmation.</p><div class="event-fit"><b>Best fit</b>A short stop after M+, leaving a generous buffer for Hutong at 7 p.m. Cory Wong × Cy Leo at 8 p.m. conflicts with that confirmed dinner; do not book both.</div><div class="actions"><a href="https://www.westk.hk/en/event/cathay-westk-jazz-fest">Festival program ↗</a></div></article>
+        <article class="card event-card"><span class="event-city">Hong Kong · festival Nov 13–24</span><h3>WestK Jazz Fest · check the actual program</h3><span class="pill">Main free outdoor weekend Nov 21–22 · after our HK stay</span><p>The festival spans both weekends, but the new free outdoor/healing program is advertised for Nov 21–22. No individual Nov 15 free lawn set was established in the Nov 7 review.</p><div class="event-fit"><b>Optional only</b>Keep M+ on Sunday. Do not build the afternoon around an assumed free jazz set; the 2:30 p.m. puppet parade is a separate choice. Cory Wong at 8 p.m. conflicts with Hutong.</div><div class="actions"><a href="https://www.westk.hk/en/event/cathay-westk-jazz-fest">Current program ↗</a></div></article>
         <article class="card event-card"><span class="event-city">Hong Kong · Sun · Nov 15</span><h3>M+ · Design Ah! or Myths and Monsters</h3><span class="pill">Published exhibitions · admission not booked</span><p>Design Ah! (Jun 27, 2026–Jan 10, 2027) explores everyday design through playful, hands-on experiences. Myths and Monsters (Oct 17, 2026–Apr 4, 2027) focuses on fantasy art in Asia.</p><div class="event-fit"><b>Best fit</b>Choose one for the existing M+ morning from 10 a.m.; check its exhibition-specific ticket. Do not assume general admission includes both. M+ closes Mondays.</div><div class="actions"><a href="https://www.mplus.org.hk/en/exhibitions/design-ah-experience-the-wonder-of-everyday-design/">Design Ah! ↗</a><a href="https://www.mplus.org.hk/en/exhibitions/myths-and-monsters-the-art-of-fantasy-in-asia/">Myths and Monsters ↗</a></div></article>
         <article class="card event-card"><span class="event-city">Hong Kong · Mon · Nov 16</span><h3>Qing imperial workshops at the Palace Museum</h3><span class="pill">Published exhibition · admission not booked</span><p>Design for the Forbidden City: Imperial Workshops of the Qing Court opened Sep 30, 2026, with general-admission access announced by the museum.</p><div class="event-fit"><b>Best fit</b>A specific focus for the existing HKPM day, 10 a.m.–6 p.m.; verify gallery access and ticket before going. Keep T’ang Court at 6:30 p.m.</div><div class="actions"><a href="https://www.hkpm.org.hk/en/about/press-release/hong-kong-hong-kong-palace-museum-presents-new-exhibition-design-for-the-forbidden-city-imperial-workshops-of-the-qing-court-exploring-the-enduring-spirit-of-traditional-aesthetics-through-a-contemporary-lens-public-opening-30-september-2026">Museum announcement ↗</a></div></article>
-        <article class="card event-card"><span class="event-city">Shanghai · Sat · Nov 21 · 2 or 7:30 p.m.</span><h3>ERA 2 · Shanghai Circus World acrobatics</h3><span class="pill">Published performances · not booked</span><p>The official booking calendar lists Nov 21 performances at 2 p.m. and 7:30 p.m., labelled the 60-minute version. Ticket inventory can change. No selectable Nov 23 performance appeared in the checked calendar.</p><div class="event-fit"><b>Best fit</b>The 7:30 p.m. show is the indoor alternative if Dishui is unconfirmed or cancelled. Choose the matinee only by shortening the daytime route; do not stack every option.</div><div class="actions"><a href="https://www.era-shanghai.com/pc/booking">Official booking calendar ↗</a></div></article>
+        <article class="card event-card"><span class="event-city">Shanghai · Nov 21 · 2 / 7:30 p.m.; Nov 24 · 7:30 p.m.</span><h3>ERA 2 · Shanghai Circus World acrobatics</h3><span class="pill">Published performances · not booked</span><p>Live calendar checked Nov 7: Nov 21 at 2 p.m. and 7:30 p.m., labelled the 60-minute version; Nov 24 at 7:30 p.m. No selectable Nov 23 performance. Tickets are not booked; check the selected program and remaining seats.</p><div class="event-fit"><b>Best fit</b>The 7:30 p.m. show is the indoor alternative if Dishui is unconfirmed or cancelled. Choose the matinee only by shortening the daytime route; do not stack every option.</div><div class="actions"><a href="https://www.era-shanghai.com/pc/booking">Official booking calendar ↗</a></div></article>
         <article class="card event-card"><span class="event-city">Taipei · Fri · Nov 27 · 8 p.m.</span><h3>TaipeiEYE · The Leopard</h3><span class="pill">Published program · not booked</span><p>The official repertoire lists The Leopard Nov 18–Dec 5 on Wednesdays, Fridays and Saturdays at 8 p.m. In our stay, that means Nov 25, 27 and 28.</p><div class="event-fit"><b>Best fit</b>Nov 27 is the cleanest cultural evening near Zhongshan, replacing Karencici or Christmasland. Nov 25 is fragile after arrival; Nov 28 competes with the selected A dinner. Check ticket inventory, subtitle details and arrival guidance.</div><div class="actions"><a href="https://www.taipeieye.com/en/program/nowshowing/">Official repertoire ↗</a></div></article>
         <article class="card event-card"><span class="event-city">Taipei · Nov 27 or 28 · daytime</span><h3>Shilin Residence chrysanthemum festival</h3><span class="pill">Published Nov 27–Dec 13 · daily hours tentative</span><p>Taipei’s official listing gives Nov 27–Dec 13, 2026. Daily opening hours for this edition still need confirmation; it does not start on Thanksgiving.</p><div class="event-fit"><b>Best fit</b>Replace part of Nov 27’s museum/soak plan, or make a short Nov 28 visit only if the transfer to 1:30 p.m. Shrek stays comfortable. Allow for festival crowds.</div><div class="actions"><a href="https://travel.taipei/en/event-calendar/details/66782">Official dated listing ↗</a></div></article>
         <article class="card event-card"><span class="event-city">Taipei · Nov 27–29 · Banqiao</span><h3>Christmasland · lights, market + esports</h3><span class="pill">Published program · optional, not booked</span><p>Official light-show hours are 5:30–11 p.m. on the hour and half-hour, with the last audible show at 10 p.m.; special events can change playback. The Christmas market × Asia esports event is listed Nov 27–29, 11 a.m.–10 p.m.</p><div class="event-fit"><b>Best fit</b>Choose Nov 27 instead of Karencici/Ningxia, or Nov 28 instead of A/The Wall. Banqiao needs its own transfer; it is not beside Zepp in Xinzhuang. Expect busy crowds. Nov 29 is departure day, so prefer an earlier date.</div><div class="actions"><a href="https://christmasland.ntpc.gov.tw/zone.php?t=1">Light shows ↗</a><a href="https://christmasland.ntpc.gov.tw/event.php">Dated events ↗</a></div></article>
@@ -600,11 +614,11 @@
         <article class="card event-card"><span class="event-city">Hong Kong · Nov 14 or 15</span><h3>BIGBANG World Tour</h3><span class="pill">Skipped</span><p>Skipped for this trip. Keep Nov 14 for the Central/Peak route and an optional Yardbird dinner; Nov 15 defaults to M+ / Hong Kong with confirmed Hutong dinner, 7–9 p.m. for two. The concert no longer constrains either day.</p><div class="event-fit"><b>Book it when</b>No concert booking planned; retain this listing as a reference only.</div><div class="actions"><a class="primary" href="https://artist.ygfamily.com/ARTISTS/BIGBANG/concert/worldtour/index.html">Official tour ↗</a><a href="https://partnernet.hktb.com/en/destination/events_festivals/index.html?eventID=87182">HKTB listing ↗</a></div></article>
         <article class="card event-card"><span class="event-city">Hong Kong · M+ Nov 15; HKPM Nov 16</span><h3>West Kowloon on separate museum days</h3><span class="pill">Published exhibitions · admission not booked</span><p>M+ is closed Monday: use Sunday Nov 15 by default, or Saturday if Shenzhen replaces Sunday. Hong Kong Palace Museum is open Monday Nov 16, 10 a.m.–6 p.m., and closed Tuesday. Choose Design Ah! or Myths and Monsters at M+, and Design for the Forbidden City: Imperial Workshops of the Qing Court at HKPM. Check the correct exhibition ticket and current gallery access; see the dated recommendations below.</p><div class="event-fit"><b>Book it when</b>Reserve any timed museum admission if required; keep the evening open for Xiqu Centre only if its November schedule fits.</div><div class="actions"><a class="primary" href="https://www.hkpm.org.hk/en/exhibition">HKPM ↗</a><a href="https://www.mplus.org.hk/en/exhibitions/">M+ ↗</a></div></article>
         <div class="event-group-label"><span>Tentative programs · check dated lineups</span><h3>Keep one flexible night in each mainland city</h3></div>
-        <article class="card event-card"><span class="event-city">Hong Kong · Nov 16 evening</span><h3>Small-venue live music</h3><span class="pill">Flexible · lineup releases later</span><p>For optional music after dinner, check The Wanch for rock and indie, Peel Fresco for intimate jazz, or The Aftermath for underground sets.</p><div class="event-fit"><b>Book it when</b>Check the weekly November lineups in October; these are better walk-in targets than events to reserve now.</div><div class="actions"><a class="primary" href="https://www.thewanch.hk/">The Wanch ↗</a><a href="https://placebook.hk/en/place/peel-fresco-music-lounge/">Peel Fresco ↗</a><a href="https://www.theaftermath-hk.club/">The Aftermath ↗</a></div></article>
-        <article class="card event-card"><span class="event-city">Chongqing · Nov 18 or 19</span><h3>Sichuan opera + Chongqing 1949 option</h3><span class="pill">Tentative · November performance to confirm</span><p>Consider Sichuan opera as a cultural option; no November performance is confirmed here. Leave one evening flexible for Chongqing 1949, the larger immersive historical show, if an official Nov 17–19 performance is released.</p><div class="event-fit"><b>Book it when</b>The November performance calendar posts; do not lock this against a sightseeing day yet.</div><div class="actions"><a class="primary" href="https://www.cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/ggwh/wh/ychdyg/202512/t20251231_15284701.html">Sichuan opera ↗</a><a href="https://www.cq1949.net/">Chongqing 1949 ↗</a></div></article>
+        <article class="card event-card"><span class="event-city">Hong Kong · Nov 16 evening</span><h3>Small-venue live music</h3><span class="pill">Flexible · lineup releases later</span><p>For optional music after dinner, check The Wanch for rock and indie, Peel Fresco for intimate jazz, or The Aftermath for underground sets.</p><div class="event-fit"><b>Book it when</b>The Wanch now lists Nov 16 Free Jam × Open Mic, 8 p.m.–11:59 p.m. Check the dated listing and current admission conditions; go only after dinner without rushing.</div><div class="actions"><a class="primary" href="https://www.thewanch.hk/">The Wanch ↗</a><a href="https://placebook.hk/en/place/peel-fresco-music-lounge/">Peel Fresco ↗</a><a href="https://www.theaftermath-hk.club/">The Aftermath ↗</a></div></article>
+        <article class="card event-card"><span class="event-city">Chongqing · Nov 18 or 19</span><h3>Sichuan opera + Chongqing 1949 option</h3><span class="pill">Recurring programs · trip-date tickets to confirm</span><p>Current resident listings advertise 映像山城 at 2 / 4 / 7 p.m. and Chongqing 1949 at 2 / 4 / 7:30 p.m. These are recurring schedules, not verified Nov 18–19 tickets. The separate production 醉人的川剧 lists Friday/Saturday dates that miss our stay.</p><div class="event-fit"><b>Book it when</b>Confirm the actual dated session, venue and ticket. Choose one show instead of another evening/half-day; 1949 requires a deliberate trip to Ciqikou.</div><div class="actions"><a class="primary" href="https://www.cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/ggwh/wh/ychdyg/202512/t20251231_15284701.html">Sichuan opera ↗</a><a href="https://www.cq1949.net/">Chongqing 1949 ↗</a></div></article>
         <div class="event-group-label"><span>Published performances · target around the transfers</span><h3>Strong dates, but protect energy and transit time</h3></div>
         <article class="card event-card"><span class="event-city">Shanghai · Fri · Nov 20 · 7:30 p.m.</span><h3>Blizzard 35th Anniversary Game Symphony</h3><span class="pill">Published program · not booked</span><p>Jason Hayes leads music from Warcraft, Diablo, StarCraft, Hearthstone and Overwatch. The official listing gives Nov 20 at 7:30 p.m., Oriental Art Center, 425 Dingxiang Road. It remains possible after HO1250’s 2:20 p.m. Pudong arrival if the transfer runs normally; live ticket inventory is unverified.</p><div class="event-fit"><b>Book it when</b>Check current seats through the official listing’s ticket route. Decide around 5 p.m. after hotel arrival; leave around 6 p.m. if on time. Skip if the PVG transfer runs late; avoid a nonrefundable dinner.</div><div class="actions"><a class="primary" href="https://www.meet-in-shanghai.net/cn/concert/blizzard-35th-anniversary-official-game-symphony-concert-led-by-jason-hayes-399073/">Official listing ↗</a></div></article>
-        <article class="card event-card"><span class="event-city">Shanghai · Sat · Nov 21 · expected 8 p.m.</span><h3>Dishui Lake drone-and-fireworks show</h3><span class="pill">Tentative · Nov 21 not confirmed</span><p>The free recurring Lingang show is the trip’s best drone-show fit: about 14 minutes of drone formations followed by six minutes of fireworks over Dishui Lake. It requires a deliberate cross-city excursion from the Bund hotel. Nov 21 itself is unconfirmed.</p><div class="event-fit"><b>Choose one evening</b>Leave around 4:30–5 p.m., allow roughly two hours each way, aim to arrive by 7 p.m., and reconfirm the individual date 24–48 hours ahead through 上海临港 or Hi临港. Weather and flight restrictions can cause changes.</div><div class="actions"><a class="primary" href="#shanghai-drone-show">City plan ↗</a><a href="https://www.lingang.gov.cn/html/website/lg/index/news/Mediafocus/2069237972186759169.html">Lingang confirmation ↗</a><a href="https://sh.bendibao.com/news/202656/305677.shtm">Current details ↗</a></div></article>
+        <article class="card event-card"><span class="event-city">Shanghai · Sat · Nov 21 · expected 8 p.m.</span><h3>Dishui Lake drone-and-fireworks show</h3><span class="pill">Tentative · Nov 21 not confirmed</span><p>The free recurring Lingang show is an optional Shanghai excursion: about 14 minutes of drone formations followed by six minutes of fireworks over Dishui Lake. It requires a deliberate cross-city excursion from the Bund hotel. Nov 21 itself is unconfirmed.</p><div class="event-fit"><b>Choose one evening</b>Leave around 4:30–5 p.m., allow roughly two hours each way, aim to arrive by 7 p.m., and reconfirm the individual date 24–48 hours ahead through 上海临港 or Hi临港. Weather and flight restrictions can cause changes.</div><div class="actions"><a class="primary" href="#shanghai-drone-show">City plan ↗</a><a href="https://www.lingang.gov.cn/html/website/lg/index/news/Mediafocus/2069237972186759169.html">Lingang confirmation ↗</a><a href="https://sh.bendibao.com/news/202656/305677.shtm">Current details ↗</a></div></article>
         <article class="card event-card"><span class="event-city">Taipei · Thu · Nov 26 · 7:30 p.m.</span><h3>Shilin YES!</h3><span class="pill">Published program · not booked · family timing pending</span><p>An immersive 90-minute performance about Shilin Night Market and Taipei history, in Mandarin Chinese, partly walking, including snacks with peanut/seafood/egg allergens. English support is unverified. Target Nov 26 first, but other published slots are Nov 27 at 7:30 p.m., Nov 28 at 6 p.m. and Nov 29 at 12:30 p.m., each competing with existing plans.</p><div class="event-fit"><b>Book it when</b>Family time/location, language and dietary suitability are confirmed. Arrive 30 minutes early at the ground-floor plaza; keep Thanksgiving protected.</div><div class="actions"><a class="primary" href="https://tpac.org.taipei/en/program/2040">Official program ↗</a></div></article>
         <article class="card event-card"><span class="event-city">Taipei · Fri · Nov 27</span><h3>Karencici · TSO needs recheck</h3><span class="pill">Published Karencici program · not booked</span><p>Karencici at Zepp New Taipei in Xinzhuang at 7:30 p.m. is the published music option if Taiwanese pop is a priority. The current official TSO calendar does not show a Nov 27 performance, so do not book the orchestra listing until that date appears.</p><div class="event-fit"><b>Choose one</b>If booking Karencici, finish Beitou by 4:30 p.m. and allow cross-city travel; otherwise keep the night open for a newly released small-venue show.</div><div class="actions"><a class="primary" href="https://warnermusictwtw.kktix.cc/events/ofgkrikd">Karencici tickets ↗</a><a href="https://www.tso.gov.taipei/News.aspx?n=BC7BED8580080804&amp;sms=8BB1830722073F63">TSO calendar ↗</a></div></article>
         <div class="event-group-label"><span>Optional finale · choose one</span><h3>Do not stack the Taipei crowd-heavy options</h3></div>
@@ -617,7 +631,7 @@
 
     <section id="prep">
       <div class="head"><span class="num">04</span><h2>Book the practical pieces</h2><span class="rule"></span></div>
-      <p class="note"><b>Supporting trip prep:</b> Choose published programs now if interested: ERA Nov 21 and TaipeiEYE Nov 27 are unbooked options. Chongqing 1949, Xiqu Centre and local live music still need dated November listings. Reconfirm the Nov 21 Dishui Lake drone show through 上海临港 or Hi临港 24–48 hours ahead. For Shanghai and Chongqing, check 秀动/ShowStart, MAO, Yuyintang, 7Hertz, VAS, PHASE, VOX and Modern Sky Lab as the November schedules fill in. Then lock the practical reservations below.</p>
+      <p class="note"><b>Supporting trip prep:</b> Open each day’s optional events to compare the refreshed Nov 7 choices. ERA Nov 21/24, Chongqing jazz Nov 18 and Taipei theater Nov 27 are published but unbooked; recurring resident shows and Xiqu Centre still need the actual session checked. Reconfirm the Nov 21 Dishui Lake drone show through 上海临港 or Hi临港 24–48 hours ahead. For Shanghai and Chongqing, check 秀动/ShowStart, MAO, Yuyintang, 7Hertz, VAS, PHASE, VOX and Modern Sky Lab as the November schedules fill in. Then lock the practical reservations below.</p>
       <div class="prep">
         <article class="card check"><span class="pill">Now · verify</span><h3>Close the booking gaps</h3><ul><li>Add the Austin → SFO flight number/date, connection or overnight and through-ticket arrangements; UA869’s Nov 12–13 published schedule is checked</li><li>Get Salisbury acknowledgement holding the room after 9 p.m.</li><li>Confirm Thanksgiving time/location before buying Thursday theater tickets</li><li>Verify every crew member’s flights, room, passport and dietary/access needs; the receipts here cover two adults</li></ul></article>
         <article class="card check"><span class="pill">Now · deadline diary</span><h3>Hotel payments and storage</h3><ul><li>Salisbury and JW Marriott: nonrefundable; JW’s rate is also nonchangeable</li><li>Atour: free cancellation before Nov 20, 00:00 Shanghai time; breakfast unconfirmed</li><li>San Want: free cancellation through Nov 21, 11:59 p.m. Taipei time; then TWD 4,750 fee</li><li>San Want: TWD 21,256 at property; confirm listed TWD 8,000 cash deposit and arrange cash</li><li>Confirm bag storage at Atour Nov 25 and San Want Nov 29</li></ul></article>
@@ -744,23 +758,475 @@
   // Keep the complete itinerary in the HTML; enhance it with a scannable overview.
   const dayOverviews=[
     'UA869 published arrival 7:20 p.m. HKT; departs SFO Nov 12 at 11:45 a.m. PST. Schedule checked with United. Easy Salisbury evening.',
-    'Central and the Peak; BIGBANG skipped. Yardbird dinner for two is suggested, not booked.',
-    'M+ Design Ah! or Myths and Monsters; optional WestK free jazz (set times to confirm). Hutong confirmed 7–9 p.m. Shenzhen replaces daytime plans.',
-    'Palace Museum: Qing imperial workshops, admission not booked; 10 a.m.–6 p.m. T’ang Court confirmed 6:30 p.m.; M+ closed Monday.',
+    'Central and the Peak; optional PMQ chocolate festival and 8 p.m. Hung Hom drones (reconfirm). Night parade is an alternative. Yardbird not booked.',
+    'M+ morning; optional Sunday puppet parade 2:30–4 p.m. replaces the afternoon. Hutong confirmed 7–9 p.m. Shenzhen replaces the daytime route.',
+    'Palace Museum: Four Seasons / imperial workshops, 10 a.m.–6 p.m. T’ang Court confirmed 6:30 p.m.; optional late Wanch music.',
     'Leave Salisbury 9:15–9:30 a.m. CX966: HKG 1:20 p.m. → CKG 4 p.m. Carry transit-entry documents.',
-    'Pandas, Liziba, alleys and one sunset stop. Opera needs a dated listing and replaces the evening riverfront route.',
-    'Tentative: morning paid robot demo, then Huang Yuming BBQ at 5 p.m. for four. Neither booked; concierge request is a draft.',
-    'Reach CKG around 9 a.m. HO1250: 11:50 a.m. → PVG 2:20 p.m. Check rollers; concert remains conditional.',
-    'Unitree visit tentative; Nov 21 drones unconfirmed. Published ERA 2 at 2 or 7:30 p.m. is an unbooked alternative. Choose one evening.',
-    'Museum East from 10 a.m., then Pudong and the Bund before our dinner. Check special-exhibition access.',
+    'Pandas, Liziba and alleys. Optional 8:30 p.m. jazz or an acrobatic show replaces the riverfront evening; choose one.',
+    'Robot demo and 5 p.m. BBQ remain tentative. Optional archaeology, acrobatics or 7:30 p.m. symphony; settle dinner and transfers before choosing.',
+    'Reach CKG around 9 a.m. HO1250: 11:50 a.m. → PVG 2:20 p.m. Optional concert or late-opening photography, depending on arrival and energy.',
+    'Choose neighborhoods, Tech Week / WePlay, or the craft fair. Dishui drones remain unconfirmed; ERA at 2 or 7:30 p.m. is an optional indoor evening.',
+    'Museum East from 10 a.m.; optional Met jewelry exhibition. Pudong and the Bund before dinner; late photography only if energy remains.',
     'Suzhou selected: Humble Administrator’s Garden, lunch and Pingjiang Road canals. Trains/admission not booked; Suzhou Museum closed Monday.',
-    'Choose Wild Animal Park as a full-day outing, or Yu Garden plus science / spa. Tickets and Lao Zheng Xing dinner are not booked.',
+    'Choose the full-day animal park or a city day. Optional sculpture / photography, and ERA at 7:30 p.m.; allow time for dinner. Nothing booked.',
     'Leave the hotel around 12:30 p.m. CI202: SHA Hongqiao 4:15 p.m. → TSA Songshan 6:20 p.m.',
     'Thanksgiving with Jen’s family comes first. Morning sights and the evening show remain optional.',
-    'Museum + Beitou, or shorten for chrysanthemums. Choose one unbooked evening: TaipeiEYE 8 p.m., Karencici 7:30 p.m., or Christmasland.',
-    'A 6:30 p.m. is selected, not booked. Shrek, The Wall, Christmasland and Qingshan are alternatives; Qingshan procession details remain tentative.',
+    'Museum + Beitou, or a shorter flower outing. Choose one optional evening: English-subtitled ghost opera, free opera, TaipeiEYE, music or Christmasland.',
+    'A at 6:30 p.m. is selected, not booked. Optional morning crafts, sound art or flowers; Shrek at 1:30 p.m. needs a transfer buffer. Evening alternatives replace dinner.',
     'Mountain & Sea House noon lunch for two suggested, not booked. Leave San Want 4:15–4:30 p.m. for the 8:30 p.m. TPE flight.'
   ];
+
+  // One source for optional date cards and the corresponding city event lists.
+  const DAY_EVENT_OPTIONS = [
+  {
+    "id": "pmq-chocolate",
+    "city": "Hong Kong",
+    "days": [
+      14,
+      15
+    ],
+    "title": "PMQ · Belgian Chocolate Festival",
+    "when": "Nov 14–15 · 11 a.m.–8 p.m. · Central",
+    "status": "Published festival",
+    "text": "Chocolate stalls, sculpture-making, tastings and courtyard performances at PMQ, 35 Aberdeen Street. Paid workshops have separate places and fees.",
+    "fit": "Saturday: a short stop during Central/Tai Kwun wandering. Sunday: choose this instead of part of M+ or the parade; do not add every stop.",
+    "source": "https://www.belgiandays.hk/zh_TW/event/zhu-gu-li-wen-hua-jie-62/register",
+    "map": "PMQ 35 Aberdeen Street Hong Kong",
+    "more": null
+  },
+  {
+    "id": "hung-hom-drones",
+    "city": "Hong Kong",
+    "days": [
+      14
+    ],
+    "title": "Hung Hom · 2,000-drone light show",
+    "when": "Sat Nov 14 · expected 8–8:15 p.m. · Hung Hom waterfront",
+    "status": "Recurring · reconfirm on the day",
+    "text": "Free waterfront viewing. The organizer advertises Friday/Saturday shows; the November listing includes Nov 14. Weather or operational notices can change the show.",
+    "fit": "Leave the Peak with travel time for Hung Hom and fit any Yardbird dinner around the show. Choose this OR Saturday’s night parade; Sunday has a separate daytime parade.",
+    "source": "https://bau.com.hk/web/article/1557842196334575616/web/content_1557842196334575616.html",
+    "map": "Hung Hom New Harbourfront Hong Kong",
+    "more": [
+      "November listing",
+      "https://victoriawaters.com/tc/blog/hong-kong-drone-show-schedule-2026"
+    ]
+  },
+  {
+    "id": "night-puppet-parade",
+    "city": "Hong Kong",
+    "days": [
+      14
+    ],
+    "title": "Arts in the Park · illuminated puppet parade",
+    "when": "Sat Nov 14 · 8:30–10 p.m. · Causeway Bay",
+    "status": "Published program",
+    "text": "Free night procession with giant illuminated puppets and costumes, from Lee Garden One toward Kai Chiu Road.",
+    "fit": "The alternative to Hung Hom drones tonight. Allow dinner and crowd-access time; the two night events are too far apart to combine comfortably.",
+    "source": "https://www.hkyaf.com/events/1085/Standard%20Chartered%20Arts%20in%20the%20Park%202026%3A%20Night%20Parade",
+    "map": "Lee Garden One Causeway Bay Hong Kong",
+    "more": null
+  },
+  {
+    "id": "sunday-puppet-parade",
+    "city": "Hong Kong",
+    "days": [
+      15
+    ],
+    "title": "Arts in the Park · Sunday giant-puppet parade",
+    "when": "Sun Nov 15 · 2:30–4 p.m. · Victoria Park → East Point Road",
+    "status": "Published program",
+    "text": "A separate free daytime parade: ten four-metre puppets and a 500-person procession through Causeway Bay.",
+    "fit": "Shorten M+ to a focused morning, have lunch and allow about an hour for transfer/crowd access. Replace the ferry/other afternoon wandering, then return for Hutong at 7 p.m. Skip if choosing Shenzhen.",
+    "source": "https://www.hkyaf.com/events/1084/Standard%20Chartered%20Arts%20in%20the%20Park%202026%3A%20Grand%20Finale%20Parade",
+    "map": "Victoria Park Causeway Bay Hong Kong",
+    "more": null
+  },
+  {
+    "id": "youth-square-drones",
+    "city": "Hong Kong",
+    "days": [
+      14,
+      15
+    ],
+    "title": "Youth Square · hands-on drones",
+    "when": "Nov 14–15 · 10 a.m.–6 p.m. · Chai Wan",
+    "status": "Published program",
+    "text": "Free drone-control experiences and simulations at Youth Square’s 2F Y Theatre. A drone-football final is listed for Sunday; exact match times and English workshop support remain unverified.",
+    "fit": "A deliberate tech outing replacing a substantial daytime block. This is an indoor experience, not an evening light show. Sunday still needs a return buffer before Hutong.",
+    "source": "https://www.youthsquare.hk/play/YSDroneFunFest2026",
+    "map": "Youth Square Chai Wan Hong Kong",
+    "more": null
+  },
+  {
+    "id": "harbour-race",
+    "city": "Hong Kong",
+    "days": [
+      15
+    ],
+    "title": "Victoria Harbour Race · early spectator look",
+    "when": "Sun Nov 15 · race starts 7:30 a.m. · Avenue of Stars finish",
+    "status": "Published program",
+    "text": "Watch the cross-harbour swim finish near the hotel’s waterfront if naturally awake. Race participation is not available through this guide.",
+    "fit": "An optional early look only; check waterfront access and do not make it a reason to rush the rest of Sunday.",
+    "source": "https://www.hkharbourrace.com/race-information/?lang=hk",
+    "map": "Avenue of Stars Hong Kong",
+    "more": null
+  },
+  {
+    "id": "hkpm-four-seasons",
+    "city": "Hong Kong",
+    "days": [
+      16
+    ],
+    "title": "Palace Museum · Qing Court in Four Seasons",
+    "when": "Mon Nov 16 · museum 10 a.m.–6 p.m. · Gallery 2",
+    "status": "Published exhibition",
+    "text": "Opened Nov 4: court treasures, seasonal traditions and interactive installations. General admission is published at HK$70 for Galleries 1–7.",
+    "fit": "Choose this and/or Gallery 5’s imperial workshops inside the existing museum visit. Galleries 8 and 9 are currently closed until further notice. Protect T’ang Court at 6:30 p.m.",
+    "source": "https://www.hkpm.org.hk/en/about/press-release/hong-kong-palace-museum-s-new-thematic-exhibition-qing-court-in-four-seasons-life-and-culture-of-the-imperial-household-opens-4-november-2026",
+    "map": "Hong Kong Palace Museum",
+    "more": [
+      "Gallery notices",
+      "https://www.hkpm.org.hk/tc/announcement/2026-07-14/temporary-closure-of-galleries-updates"
+    ]
+  },
+  {
+    "id": "wanch-open-mic",
+    "city": "Hong Kong",
+    "days": [
+      16
+    ],
+    "title": "The Wanch · Free Jam × Open Mic",
+    "when": "Mon Nov 16 · 8 p.m.–11:59 p.m. · Wan Chai",
+    "status": "Published program",
+    "text": "A dated late music option at The Wanch, 90 Jaffe Road. Check current admission, drink and seating arrangements.",
+    "fit": "Only after finishing T’ang Court without rushing. Allow a separate cross-harbour journey; the 8 p.m. start is not a dinner departure deadline.",
+    "source": "https://www.thewanch.hk/event/free-jam-x-the-wanch-open-mic-3/",
+    "map": "The Wanch 90 Jaffe Road Hong Kong",
+    "more": null
+  },
+  {
+    "id": "kuba-derej-jazz",
+    "city": "Chongqing",
+    "days": [
+      18
+    ],
+    "title": "Kuba Derej Trio · Polish jazz at 坚果NUTS",
+    "when": "Wed Nov 18 · 8:30–10 p.m. · Guanyinqiao",
+    "status": "Published program",
+    "text": "Piano, bass and drums in a small live venue at Guanyinqiao New One Street, Building C, F1. Published tickets from RMB 80; seating/standing and remaining tickets need checking.",
+    "fit": "Replace the south-bank sunset outing with Guanyinqiao dinner and music. Choose jazz or a resident show tonight.",
+    "source": "https://www.sina.cn/news/detail/5361166222361066.html",
+    "map": "坚果NUTS 观音桥新壹街C馆 重庆",
+    "more": [
+      "Ticket listing",
+      "https://huodong.com/event/detail/iqkmoh"
+    ]
+  },
+  {
+    "id": "yangtze-acrobatics",
+    "city": "Chongqing",
+    "days": [
+      18,
+      19
+    ],
+    "title": "《长江》 · Yangtze acrobatic spectacle",
+    "when": "Nov 18 or 19 · advertised daily 7:30 p.m. · Nanbin East Road",
+    "status": "Recurring · confirm the actual session",
+    "text": "Large visual/acrobatic production at Chongqing International Circus City, 4 Nanbin East Road. The November program lists RMB 116–326; trip-date tickets and English narration are unverified.",
+    "fit": "An alternative to jazz, opera or another riverfront evening. On Nov 19, settle dinner timing and transport first. Consider this OR Shanghai ERA if one acrobatic show is enough.",
+    "source": "https://www.cqnews.net/web/content_1568053039196295168.html",
+    "map": "重庆国际马戏城 南滨东路4号",
+    "more": [
+      "November program",
+      "https://www.cqnews.net/web/content_1567865543527256064.html"
+    ]
+  },
+  {
+    "id": "wotu-symphony",
+    "city": "Chongqing",
+    "days": [
+      19
+    ],
+    "title": "《沃土》 · symphonic epic",
+    "when": "Thu Nov 19 · 7:30 p.m. · Shi Guangnan Grand Theater",
+    "status": "Published program",
+    "text": "Chengdu Symphony Orchestra at 7 Yanyu Road, Nan’an. Published RMB 60/120/180, about 90 minutes; remaining seats and ticket collection need checking.",
+    "fit": "Choose this instead of another evening show. The tentative 5 p.m. hillside BBQ needs a settled finish and transfer before committing to the curtain time.",
+    "source": "https://www.cqnews.net/web/content_1567865543527256064.html",
+    "map": "施光南大剧院 重庆 烟雨路7号",
+    "more": null
+  },
+  {
+    "id": "longgupo-exhibition",
+    "city": "Chongqing",
+    "days": [
+      19
+    ],
+    "title": "Three Gorges Museum · Longgupo archaeology",
+    "when": "Thu Nov 19 · daytime fallback · exhibition through Jan 3",
+    "status": "Published exhibition · entry to confirm",
+    "text": "龙骨坡的故事——“巫山人”考古探秘: fossils, stone tools and early regional archaeology, 4F temporary gallery D. Exhibition published as free; check museum hours and passport-entry process.",
+    "fit": "A city-based indoor half-day if the distant robot demonstration does not happen. Replace a daytime block rather than add it between robots and BBQ.",
+    "source": "https://cq.people.com.cn/n2/2026/0929/c367650-41711219.html",
+    "map": "重庆中国三峡博物馆",
+    "more": null
+  },
+  {
+    "id": "hongqiao-tech-week",
+    "city": "Shanghai",
+    "days": [
+      21
+    ],
+    "title": "Hongqiao Tech Week · AI, robots + interactive exhibits",
+    "when": "Nov 20–22 · best fit Sat Nov 21 · NECC Halls 1.1 / 2.1",
+    "status": "Published event · register before going",
+    "text": "A trade-oriented tech expo with interactive exhibits. The current ordinary pass is advertised free; the conference pass is separate. International registration supports email verification and passport entry, ages 16+. No pass issued; opening hours/demo sessions still need checking.",
+    "fit": "Replace the Unitree/French Concession daytime route with a substantial expo visit. WePlay is separately ticketed in Hall 2.2. Do not finish late here and rush across the city to Dishui Lake.",
+    "source": "https://www.hongqiaotechweek.com/register/",
+    "map": "National Exhibition and Convention Center Shanghai",
+    "more": [
+      "International registration",
+      "https://hongqiaotechweek.imconlinereg.com/hqtw-en/login"
+    ]
+  },
+  {
+    "id": "weplay-expo",
+    "city": "Shanghai",
+    "days": [
+      21
+    ],
+    "title": "WePlay & ZFX · games + digital hardware",
+    "when": "Nov 21–22 · best fit Sat Nov 21 · NECC Hall 2.2",
+    "status": "Published event · not booked",
+    "text": "Games, independent developers and digital hardware at 333 Songze Avenue. Use the current NECC venue, not the old Expo Centre. Check hours, tickets and foreign-passport checkout through the organizer’s Bilibili route.",
+    "fit": "A substantial daytime alternative. Tech Week shares the complex but has separate access; choose according to interest and time. Sunday would replace Museum East and still needs the 6 p.m. dinner buffer.",
+    "source": "https://www.weplaymore.com/",
+    "map": "国家会展中心 上海 崧泽大道333号",
+    "more": [
+      "Official ticket route",
+      "https://show.bilibili.com/platform/detail.html?id=1007030"
+    ]
+  },
+  {
+    "id": "revelations-crafts",
+    "city": "Shanghai",
+    "days": [
+      21
+    ],
+    "title": "REVELATIONS CHINA · contemporary craft biennial",
+    "when": "Public-date listing Nov 20–23 · best fit Sat Nov 21 · Jing’an",
+    "status": "Published event · public hours to confirm",
+    "text": "Ceramics, glass, metal, textiles and furniture at Shanghai Exhibition Centre, 1000 Yan’an Middle Road. Organizer dates are Nov 19–23; confirm public admission, daily hours and current ticket price.",
+    "fit": "The craft/design alternative to Tech Week, WePlay or a full neighborhood day. This central venue is different from NECC. Monday is possible only if dropping the selected Suzhou day.",
+    "source": "https://www.revelations-china.com/",
+    "map": "Shanghai Exhibition Centre 1000 Yanan Middle Road",
+    "more": null
+  },
+  {
+    "id": "fotografiska-hong-kong",
+    "city": "Shanghai",
+    "days": [
+      20,
+      22,
+      24
+    ],
+    "title": "Fotografiska · Fan Ho and Hong Kong photography",
+    "when": "Daily 10:30 a.m.–11 p.m. · 127 Guangfu Road",
+    "status": "Published exhibition · admission to check",
+    "text": "Hong Kong Reframed: Fan Ho and the Salon Generation opened Oct 30, with a published run through Feb 21. Photography beside Suzhou Creek; check current entry price and last admission.",
+    "fit": "Nov 20: a flexible alternative to the concert after settling in. Nov 22: only after the confirmed dinner if energy remains. Nov 24: choose as part of a city day or evening, with dinner time protected.",
+    "source": "https://shanghai.fotografiska.com/zh/exhibitions/group-exhibition-hk",
+    "map": "Fotografiska Shanghai 127 Guangfu Road",
+    "more": [
+      "Visitor hours",
+      "https://shanghai.fotografiska.com/zh/visit"
+    ]
+  },
+  {
+    "id": "met-jewelry",
+    "city": "Shanghai",
+    "days": [
+      22
+    ],
+    "title": "Museum East · Met jewelry exhibition",
+    "when": "Sun Nov 22 · inside the planned Museum East visit",
+    "status": "Published Nov 18 opening · admission not booked",
+    "text": "环宇璀璨 opens Nov 18 in the First Special Exhibition Hall, with 192 Met objects/groups and Chinese treasures. Published as free; check any exhibition-specific reservation and passport requirements.",
+    "fit": "Choose a focused gallery visit within the existing museum morning. Keep Pudong/waterfront travel and Mr & Mrs Bund at 6–8:15 p.m. comfortable.",
+    "source": "https://www.thepaper.cn/newsDetail_forward_34370883",
+    "map": "Shanghai Museum East 1952 Century Avenue",
+    "more": null
+  },
+  {
+    "id": "jingan-sculpture",
+    "city": "Shanghai",
+    "days": [
+      24
+    ],
+    "title": "Jing’an Sculpture Park · international exhibition",
+    "when": "Tue Nov 24 · flexible city-day option · exhibition through Dec 31",
+    "status": "Published exhibition · artwork hours to confirm",
+    "text": "Outdoor sculpture, light, sound and digital works. The park is described as open 24 hours, but that does not establish each artwork’s activation time. The separate Zhu Bingren bronze show runs Nov 6–Dec 20; indoor hours still need checking.",
+    "fit": "A central alternative if skipping the full-day Wild Animal Park. Choose one or two nearby city blocks; allow a dinner buffer before any ERA ticket.",
+    "source": "https://whlyj.sh.gov.cn/gqfc/20260920/edb5d29adf864ec79b48f62e0c4982cc.html",
+    "map": "Jingan Sculpture Park Shanghai",
+    "more": null
+  },
+  {
+    "id": "era-tuesday",
+    "city": "Shanghai",
+    "days": [
+      24
+    ],
+    "title": "ERA 2 · Tuesday acrobatics",
+    "when": "Tue Nov 24 · 7:30 p.m. · Shanghai Circus World",
+    "status": "Published performance · not booked",
+    "text": "The live official calendar was checked Nov 7 and lists a Nov 24 evening performance. Check the chosen ticket’s program length, remaining seats and arrival guidance.",
+    "fit": "Use Tuesday if Saturday goes to an expo or another outing. Confirm dinner timing first, especially after a long animal-park day. Nov 23 had no selectable performance.",
+    "source": "https://www.era-shanghai.com/pc/booking",
+    "map": "Shanghai Circus World 2266 Gonghexin Road",
+    "more": null
+  },
+  {
+    "id": "pacific-quartet",
+    "city": "Taipei",
+    "days": [
+      26
+    ],
+    "title": "The Light of the Pacific · German–Taiwan quartet",
+    "when": "Thu Nov 26 · 7:30 p.m. · HeHe Cultural Space, Zhongshan",
+    "status": "Published program · family timing first",
+    "text": "An intimate quartet mixing jazz, classical and Eastern music at 4F, 9 Nanjing East Road Section 3. Check current tickets and seating.",
+    "fit": "Only if Thanksgiving with Jen’s family finishes comfortably. Choose this OR Shilin YES; keep the family plan first.",
+    "source": "https://www.opentix.life/event/2108107139636789249",
+    "map": "禾禾文化空間 南京東路三段9號 台北",
+    "more": null
+  },
+  {
+    "id": "phantoms-opera",
+    "city": "Taipei",
+    "days": [
+      27
+    ],
+    "title": "《南都幽靈夜譚》 · Taiwanese ghost-story opera",
+    "when": "Fri Nov 27 · 7:30–10:20 p.m. · Taiwan Traditional Theatre Center",
+    "status": "Published program · not booked",
+    "text": "A historical ghost comedy in Taiwanese Hokkien with explicitly confirmed English and Chinese subtitles. 170 minutes including intermission; published NT$600–3,200.",
+    "fit": "Choose this instead of TaipeiEYE, Karencici, free opera or Christmasland. Shorten Beitou and allow dinner/transfer time. Nov 28/29 matinees end at 5:20 p.m., making dinner/departure tighter.",
+    "source": "https://event.culture.tw/mocweb/reg/XCT/Detail.init.ctr?actId=60151",
+    "map": "臺灣戲曲中心 文林路751號 台北",
+    "more": null
+  },
+  {
+    "id": "songshan-free-opera",
+    "city": "Taipei",
+    "days": [
+      27
+    ],
+    "title": "Songshan · free Taiwanese opera + Raohe",
+    "when": "Fri Nov 27 · 7 p.m. · Songshan Station south-side square",
+    "status": "Published series · troupe/language to confirm",
+    "text": "Free seating for the city’s Taiwanese opera series, beside Songshan Road/Raohe Street. This location runs Nov 27–Dec 3; the exact troupe, subtitles and running time still need checking.",
+    "fit": "The relaxed local-culture alternative to a ticketed theater evening. Combine with Raohe food and replace the other Nov 27 shows/lights, rather than trying to see several.",
+    "source": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=FC2EBF431109F4FC&sms=9A0025CA3D7482D6",
+    "map": "松山車站 南側交四廣場 台北",
+    "more": null
+  },
+  {
+    "id": "lipu-string",
+    "city": "Taipei",
+    "days": [
+      27
+    ],
+    "title": "Lipu String · Give Thanks Night",
+    "when": "Fri Nov 27 · 8:30–10:30 p.m. · Dream Plaza 6F, Xinyi",
+    "status": "Published program · not booked",
+    "text": "Strings reinterpret pop, Taiwanese and Western songs at Starbucks Reserve, 11 Songgao Road. NT$700 includes two specified drinks. Doors 7:30 p.m.; seated and standing areas, no reserved seats.",
+    "fit": "A later music alternative if the Beitou day runs longer. Choose it instead of another evening show; a seat is not guaranteed.",
+    "source": "https://www.accupass.com/event/2611030615453481135120",
+    "map": "Starbucks Reserve Dream Plaza 11 Songgao Road Taipei",
+    "more": null
+  },
+  {
+    "id": "montue-crafts",
+    "city": "Taipei",
+    "days": [
+      28
+    ],
+    "title": "MoNTUE · Taiwan–Kanazawa craft exhibition",
+    "when": "Sat Nov 28 · ordinary hours 10 a.m.–6 p.m. · Da’an",
+    "status": "Published exhibition · free",
+    "text": "CONFLUENCE / 共流 brings together Taiwanese and Japanese craft, Nov 14–Feb 21. MoNTUE, 134 Heping East Road Section 2; ordinary hours Tuesday–Sunday, 10 a.m.–6 p.m.",
+    "fit": "A focused morning alternative to a class or another museum. If also choosing 1:30 p.m. Shrek, keep the visit short and allow cross-city travel. Protect the selected 6:30 p.m. A dinner.",
+    "source": "https://www.ncafroc.org.tw/event_detail.html?sid=6847",
+    "map": "MoNTUE 134 Heping East Road Section 2 Taipei",
+    "more": [
+      "Museum hours",
+      "https://montue.ntue.edu.tw/en/visit/"
+    ]
+  },
+  {
+    "id": "ntsec-sound-art",
+    "city": "Taipei",
+    "days": [
+      28
+    ],
+    "title": "NTSEC · science, sound + light art",
+    "when": "Sat Nov 28 · daytime alternative · Shilin",
+    "status": "Published exhibit · daily access to reconfirm",
+    "text": "《寂靜之間》 turns particle, cosmic-ray and CO₂ data into sound, image and light. Official indexed notice lists Nov 7–Dec 27, free at B1 south corridor by the small black-box foyer. Check current hours and access.",
+    "fit": "A short north-side science/art stop instead of another daytime activity. Choose this, crafts or flowers; do not turn the morning into a museum circuit before Shrek.",
+    "source": "https://www.ntsec.gov.tw/article/detail.aspx?a=6174",
+    "map": "National Taiwan Science Education Center Taipei",
+    "more": null
+  },
+  {
+    "id": "taiwan-flora-show",
+    "city": "Taipei",
+    "days": [
+      27,
+      28
+    ],
+    "title": "Taiwan Flora Show · orchids + floral design",
+    "when": "Nov 27–29 · 10 a.m.–5 p.m. · Yuanshan EXPO Dome + plaza",
+    "status": "Published event · free entry",
+    "text": "New flower varieties, orchids, floral displays and sales at Taipei Expo Park. General public entry is free; workshops/talks may need separate registration and fees. Separate from Shilin’s chrysanthemum festival.",
+    "fit": "Nov 27: replaces part of the museum/soak day. Nov 28: a focused daytime alternative, with time for any chosen show and dinner. Prefer these days over a rushed departure-day visit.",
+    "source": "https://www.expopark.taipei/News_Photo_Content.aspx?n=247&s=4590&sms=9029",
+    "map": "Taipei Expo Dome Yuanshan",
+    "more": null
+  }
+];
+  function eventEscape(value){return String(value).replace(/[&<>"']/g,char=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]))}
+  function eventLinks(item){
+    const links=[['Program + details',item.source],...(item.more?[item.more]:[]),['Map',`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.map)}`]];
+    return links.map(([label,url])=>`<a href="${eventEscape(url)}" target="_blank" rel="noopener noreferrer">${eventEscape(label)} ↗</a>`).join('');
+  }
+  function eventCopy(item){return `<p>${eventEscape(item.text)}</p><p><b>Fits when:</b> ${eventEscape(item.fit)}</p><div class="actions">${eventLinks(item)}</div>`}
+  const eventGrid=document.querySelector('#events>.event-grid');
+  DAY_EVENT_OPTIONS.forEach(item=>{
+    const card=document.createElement('article');card.className='card event-card';card.id=`event-${item.id}`;
+    card.innerHTML=`<span class="event-city">${eventEscape(item.city)} · ${eventEscape(item.when)}</span><h3>${eventEscape(item.title)}</h3><span class="pill">Optional · ${eventEscape(item.status)} · no reservation held</span>${eventCopy(item)}`;
+    eventGrid.append(card);
+  });
+  document.querySelectorAll('#itinerary .day').forEach((day,index)=>{
+    const choices=DAY_EVENT_OPTIONS.filter(item=>item.days.includes(index+13));if(!choices.length)return;
+    const details=document.createElement('details');details.className='day-event-options';details.id=`day-options-nov${index+13}`;
+    const summary=document.createElement('summary');
+    summary.innerHTML=`<span>Optional events + experiences</span><span class="day-event-count">${choices.length} choices</span>`;
+    summary.setAttribute('aria-label',`Optional events and experiences for ${day.querySelector('.date').textContent}`);
+    details.append(summary);
+    const intro=document.createElement('p');intro.className='day-event-intro';intro.textContent='Decide on the day. These replace other activities and hold no tickets or reservations. Event details checked Nov 7; reconfirm current access before heading out.';details.append(intro);
+    const list=document.createElement('div');list.className='day-event-list';
+    choices.forEach(item=>{
+      const card=document.createElement('article');card.className='day-event-choice';card.dataset.event=item.id;
+      card.innerHTML=`<span class="day-event-when">${eventEscape(item.when)}</span><h4>${eventEscape(item.title)}</h4><span class="day-event-status">Optional · ${eventEscape(item.status)}</span>${eventCopy(item)}`;
+      list.append(card);
+    });details.append(list);day.append(details);
+  });
+
   const dayActivityLinks={
     1:[['Sha Tin race afternoon','sha-tin']],
     2:[['Aqua Luna before Hutong','aqua-luna']],
