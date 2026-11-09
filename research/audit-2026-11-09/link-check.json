@@ -1,0 +1,2237 @@
+{
+  "checked": "2026-11-09",
+  "scope": "Public source URLs in HTML and JavaScript; maps, photos, social posts and traveler reviews excluded. HTTP success does not prove opening or availability.",
+  "links": [
+    {
+      "url": "http://cq.bendibao.com/tour/2023814/134205.shtm",
+      "http_status": 200,
+      "final_url": "http://cq.bendibao.com/tour/2023814/134205.shtm",
+      "title": "重庆云端之眼游玩攻略（营业时间+门票价格+亮点）- 重庆本地宝",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "http://cq.bendibao.com/tour/202578/155317.shtm",
+      "http_status": 200,
+      "final_url": "http://cq.bendibao.com/tour/202578/155317.shtm",
+      "title": "重庆两江小渡游玩攻略（时刻表+乘船码头+优惠购票）- 重庆本地宝",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "http://cq.bendibao.com/tour/2025819/157185.shtm",
+      "http_status": 200,
+      "final_url": "http://cq.bendibao.com/tour/2025819/157185.shtm",
+      "title": "2025重庆WFC会仙楼观景台游玩攻略（开放时间+地址+购票）- 重庆本地宝",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "http://m.dianping.com/shop/1182057948",
+      "http_status": 200,
+      "final_url": "http://m.dianping.com/shop/1182057948",
+      "title": "【丁老头烤肉·听民谣看夜景】电话_地址_价格_营业时间_上新街融合烤肉团购 - [undefined] - 大众点评网",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "http://www.liangjiangyou.com/jiage.html",
+      "http_status": 200,
+      "final_url": "http://www.liangjiangyou.com/jiage.html",
+      "title": "重庆两江游价格-重庆两江游时间-重庆两江游船票价与游览时间",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://212hk.com/",
+      "http_status": 200,
+      "final_url": "https://212hk.com/",
+      "title": "212HK - Hong Kong&#039;s Premier Indoor Pickleball Hub",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://500times.udn.com/wtimes/story/122412/9703152",
+      "http_status": 200,
+      "final_url": "https://500times.udn.com/wtimes/story/122412/9703152",
+      "title": "2026米其林一星掬Kiku！秋季菜單料理長Kevin以台灣風土譜寫現代日料 | 500盤 | 500輯",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://aqualuna.com.hk/experiences/evening-harbour-cruise/",
+      "http_status": 200,
+      "final_url": "https://aqualuna.com.hk/experiences/evening-harbour-cruise/",
+      "title": "Evening Harbour Cruise 維多利亞港晚間航遊 | aqualuna Hong Kong",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://artist.ygfamily.com/ARTISTS/BIGBANG/concert/worldtour/index.html",
+      "http_status": 200,
+      "final_url": "https://ygbigbang.com/concert/worldtour/",
+      "title": "BIGBANG 2026-2027 WORLD TOUR",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://au.trip.com/moments/theme/poi-ren-he-guan-28576182-comprehensive-guides-993136/",
+      "http_status": 200,
+      "final_url": "https://au.trip.com/moments/theme/poi-ren-he-guan-28576182-comprehensive-guides-993136/",
+      "title": "2026 Recommended Comprehensive guides in REN HE GUAN·SHANGHAI CUISINE (Updated November)| Trip Moments",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://bau.com.hk/web/article/1557842196334575616/web/content_1557842196334575616.html",
+      "http_status": 200,
+      "final_url": "https://bau.com.hk/web/article/1557842196334575616/web/content_1557842196334575616.html",
+      "title": "2000架無人機逢周末點亮維港 紅磡新海濱光影盛宴正在上演-紫荊網",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://bobbytravel.tw/australia-dairy-company/",
+      "http_status": 200,
+      "final_url": "https://bobbytravel.tw/australia-dairy-company/",
+      "title": "【香港】澳洲牛奶公司：屹立不搖好評排隊店！必吃滑嫩炒蛋、燉奶超經典 - 波比看世界",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://booking.china-airlines.com/ManageBookingPortal/Login?lang=us-en&country=us&locale=en",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://bookings.taian-table.com/booking",
+      "http_status": 200,
+      "final_url": "https://bookings.taian-table.com/booking",
+      "title": "React App",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://cgj.cq.gov.cn/zwxx_173/bmdt/mtkd/202402/t20240204_12900117.html",
+      "http_status": null,
+      "result": "URLError: <urlopen error timed out>"
+    },
+    {
+      "url": "https://chinaroutesguide.com/what-to-eat-in-chongqing/",
+      "http_status": 200,
+      "final_url": "https://chinaroutesguide.com/what-to-eat-in-chongqing/",
+      "title": "What to Eat in Chongqing",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://christmasland.ntpc.gov.tw/event.php",
+      "http_status": 200,
+      "final_url": "https://christmasland.ntpc.gov.tw/event.php",
+      "title": "新北歡樂耶誕城 官方網站",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://christmasland.ntpc.gov.tw/zone.php?t=1",
+      "http_status": 200,
+      "final_url": "https://christmasland.ntpc.gov.tw/zone.php?t=1",
+      "title": "新北歡樂耶誕城 官方網站",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://cmp.whlyj.sh.gov.cn/CMP/news_view.ac?id=8fc657d1203e4e618a5f4c8c73ba43ab",
+      "http_status": 200,
+      "final_url": "https://cmp.whlyj.sh.gov.cn/CMP/news_view.ac?id=8fc657d1203e4e618a5f4c8c73ba43ab",
+      "title": "新闻列表",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://cn.rooseveltclub.cn/roosevelt-sky-bar/",
+      "http_status": 200,
+      "final_url": "https://cn.rooseveltclub.cn/roosevelt-sky-bar/",
+      "title": "Shanghai Roosevelt Club | 上海罗斯福会所 官方网站 | 罗斯福色戒酒吧",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://cookinn.tw/signature-taiwanese-dumplings-and-noodles-2/",
+      "http_status": 200,
+      "final_url": "https://cookinn.tw/signature-taiwanese-dumplings-and-noodles-2/",
+      "title": "Xiao Long Bao &amp; Beef Noodles - Cookinn Taiwan 旅人料理教室",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://cq.bendibao.com/tour/202394/134862.shtm",
+      "http_status": 200,
+      "final_url": "https://cq.bendibao.com/challenge?return=%2Ftour%2F202394%2F134862.shtm&reason=rate",
+      "title": "请完成拼图验证以继续访问",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://cq.cri.cn/n/20260303/c100d532-79dd-4289-9083-b27d1b5a9c9f.html",
+      "http_status": 200,
+      "final_url": "https://cq.cri.cn/n/20260303/c100d532-79dd-4289-9083-b27d1b5a9c9f.html",
+      "title": "重庆机器人AI应用展示中心开放-国际在线",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://cq.people.com.cn/n2/2026/0929/c367650-41711219.html",
+      "http_status": null,
+      "result": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismat"
+    },
+    {
+      "url": "https://cqjlp.gov.cn/zwxx/qxdt/202503/t20250325_14441264_jinglao.html",
+      "http_status": null,
+      "result": "URLError: <urlopen error timed out>"
+    },
+    {
+      "url": "https://danielfooddiary.com/2025/08/22/neighborhoodhongkong/",
+      "http_status": 200,
+      "final_url": "https://danielfooddiary.com/2025/08/22/neighborhoodhongkong/",
+      "title": "Neighborhood, HONG KONG – Chef David Lai’s Asia’s 50 Best Restaurant with Signature Salt Baked Chicken | DanielFoodDiary.com",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://dfz.cq.gov.cn/zqlswh/fjms_417821/202311/t20231102_12511056.html",
+      "http_status": null,
+      "result": "URLError: <urlopen error timed out>"
+    },
+    {
+      "url": "https://en.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G300021256745679608",
+      "http_status": 200,
+      "final_url": "https://en.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G300021256745679608",
+      "title": "Visit Museum | New Taipei City Yingge Ceramics Museum",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://en.ch.com/static/InternalTermsConditions",
+      "http_status": 200,
+      "final_url": "https://en.ch.com/static/InternalTermsConditions",
+      "title": "General Terms and Conditions for Carriage of Passengers &amp; Baggage of Spring Airlines Co., Ltd. - Official Website of Spring Airlines",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html",
+      "http_status": 200,
+      "final_url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html",
+      "title": "",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://en.wuxi.gov.cn/2025-10/14/c_1131992.htm",
+      "http_status": 200,
+      "final_url": "https://en.wuxi.gov.cn/2025-10/14/c_1131992.htm",
+      "title": "China Yixing Ceramics Museum (中国宜兴陶瓷博物馆)",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://en.wuzhen.com.cn/web/introduction?id=2",
+      "http_status": null,
+      "result": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get l"
+    },
+    {
+      "url": "https://en.wuzhen.com.cn/web/traver/periphery",
+      "http_status": null,
+      "result": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get l"
+    },
+    {
+      "url": "https://eng.taiwan.net.tw/m1.aspx?id=155&sno=0002091",
+      "http_status": 200,
+      "final_url": "https://eng.taiwan.net.tw/m1.aspx?id=155&sno=0002091",
+      "title": "Yehliu Geopark > New Taipei City > Tourism Administration, Republic of China (Taiwan)",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://english.cq.gov.cn/specials/Enjoy/Zoos/202608/t20260810_15912219.html",
+      "http_status": null,
+      "result": "URLError: <urlopen error timed out>"
+    },
+    {
+      "url": "https://english.gondola.taipei/",
+      "http_status": 200,
+      "final_url": "https://english.gondola.taipei/",
+      "title": "Maokong Gondola",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://english.shanghai.gov.cn/en-FirstStores/20260602/7a0cf9e70f5c47d3afec197e62cfd887.html",
+      "http_status": 200,
+      "final_url": "https://english.shanghai.gov.cn/en-FirstStores/20260602/7a0cf9e70f5c47d3afec197e62cfd887.html",
+      "title": "Unitree Robotics opens first Asia store in Shanghai",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://english.shanghai.gov.cn/en-GlobalTasteinShanghai2026-LocalFlavors/20260316/00b0c6d1698d406c8d532a6e169e1a1e.html",
+      "http_status": 200,
+      "final_url": "https://english.shanghai.gov.cn/en-GlobalTasteinShanghai2026-LocalFlavors/20260316/00b0c6d1698d406c8d532a6e169e1a1e.html",
+      "title": "'Xiaolongbao': A small dumpling with a big story_Local Flavors",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://english.shanghai.gov.cn/en-Individuals-ImmigrationandVisas-Visa-freepolicies/20260709/d70a1231ba4641ff9a024e53751ad480.html",
+      "http_status": 200,
+      "final_url": "https://english.shanghai.gov.cn/en-Individuals-ImmigrationandVisas-Visa-freepolicies/20260709/d70a1231ba4641ff9a024e53751ad480.html",
+      "title": "240-hour visa-free transit policy_Visa-free policies",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260421/7b108876c4b54081a29f2aec3e8616d1.html",
+      "http_status": 200,
+      "final_url": "https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260421/7b108876c4b54081a29f2aec3e8616d1.html",
+      "title": "Shanghai bathhouses attract global tourists",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://english.shanghai.gov.cn/en-PlanANightOut/20231206/04f4626499ef46cab5a5862e577e3c68.html",
+      "http_status": 200,
+      "final_url": "https://english.shanghai.gov.cn/en-PlanANightOut/20231206/04f4626499ef46cab5a5862e577e3c68.html",
+      "title": "Yuyuan Bazaar",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://english.shanghai.gov.cn/en-PlanANightOut/20260611/02482adef79945c59420be335c9b99d3.html",
+      "http_status": 200,
+      "final_url": "https://english.shanghai.gov.cn/en-PlanANightOut/20260611/02482adef79945c59420be335c9b99d3.html",
+      "title": "Five Shanghai night markets for hot summer vibes",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://english.shanghai.gov.cn/en-PlanANightOut/20260623/77c5f8ba615140af9c6499c262607846.html",
+      "http_status": 200,
+      "final_url": "https://english.shanghai.gov.cn/en-PlanANightOut/20260623/77c5f8ba615140af9c6499c262607846.html",
+      "title": "Ten places to experience Shanghai by night",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://english.shanghai.gov.cn/en-Souvenir/20260730/6e7eaa0648dd4bd4a6c47fb4134efb89.html",
+      "http_status": 200,
+      "final_url": "https://english.shanghai.gov.cn/en-Souvenir/20260730/6e7eaa0648dd4bd4a6c47fb4134efb89.html",
+      "title": "Shanghai museums get creative with cultural merchandise_Souvenir",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://english.shanghai.gov.cn/en-SpecialtyShoppingAreas/20260309/ff5833405cf248feb4ef9985e9d69428.html",
+      "http_status": 200,
+      "final_url": "https://english.shanghai.gov.cn/en-SpecialtyShoppingAreas/20260309/ff5833405cf248feb4ef9985e9d69428.html",
+      "title": "Exploring youth-focused shops at M50 Creative Park",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://english.zoo.gov.taipei/cp.aspx?n=4AC205302039EC51",
+      "http_status": 200,
+      "final_url": "https://english.zoo.gov.taipei/cp.aspx?n=4AC205302039EC51",
+      "title": "Taipei Zoo-Opening Times-Daytime Hours",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://entertainment.hkjc.com/zh-hk/visit-us/sha-tin-racecourse",
+      "http_status": 200,
+      "final_url": "https://entertainment.hkjc.com/zh-hk/visit-us/sha-tin-racecourse",
+      "title": "計劃行程 - 沙田馬場 - 馬場活動 - 香港賽馬會",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://ep.shxwcb.com/2026/06/11/img/020611.pdf",
+      "http_status": 200,
+      "final_url": "https://ep.shxwcb.com/2026/06/11/img/020611.pdf",
+      "title": "",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://event.culture.tw/mocweb/reg/XCT/Detail.init.ctr?actId=60151",
+      "http_status": 200,
+      "final_url": "https://event.culture.tw/mocweb/reg/XCT/Detail.init.ctr?actId=60151",
+      "title": "活動明細",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://finance.sina.com.cn/roll/2026-07-11/doc-inihmvnu3230697.shtml",
+      "http_status": 200,
+      "final_url": "https://finance.sina.com.cn/roll/2026-07-11/doc-inihmvnu3230697.shtml",
+      "title": "两岸和平小天使走进重庆机器人AI应用展示中心 感受科技魅力_新浪财经_新浪网",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://fushan.tfri.gov.tw/en/visit.aspx?id=weJtPdmWy2k%3D",
+      "http_status": 200,
+      "final_url": "https://fushan.tfri.gov.tw/en/visit.aspx?id=weJtPdmWy2k%3D",
+      "title": "Fushan Botanical Garden Fushan Botanical Garden Ministry of Agriculture, R.O.C.(Taiwan)",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://global.juneyaoair.com/carryOnBaggage",
+      "http_status": 200,
+      "final_url": "https://global.juneyaoair.com/carryOnBaggage",
+      "title": "Juneyaoair",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://global.juneyaoair.com/checkedBaggage",
+      "http_status": 200,
+      "final_url": "https://global.juneyaoair.com/checkedBaggage",
+      "title": "Juneyaoair",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://gs.ctrip.com/html5/you/foods/fooddetail/0/8641722.html",
+      "http_status": 200,
+      "final_url": "https://gs.ctrip.com/html5/you/foods/fooddetail/0/8641722.html",
+      "title": "重庆洞亭火锅(防空洞店)攻略,洞亭火锅(防空洞店)套餐/特色菜品推荐_菜单/人均消费/电话/地址/菜系/点评/营业时间_餐厅介绍_哪个菜好吃【携程美食】",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://gs.ctrip.com/html5/you/foods/fooddetail/2036793/11896102.html",
+      "http_status": 200,
+      "final_url": "https://gs.ctrip.com/html5/you/foods/fooddetail/2036793/11896102.html",
+      "title": "重庆杨记隆府·江湖菜(重庆总店)攻略,杨记隆府·江湖菜(重庆总店)套餐/特色菜品推荐_菜单/人均消费/电话/地址/菜系/点评/营业时间_餐厅介绍_哪个菜好吃【携程美食】",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://guide.michelin.com/",
+      "http_status": 202,
+      "final_url": "https://guide.michelin.com/",
+      "title": "",
+      "result": "HTTP accepted / challenge response; page content and venue operation not verified"
+    },
+    {
+      "url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/lao-zheng-xing-huangpu",
+      "http_status": 202,
+      "final_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/lao-zheng-xing-huangpu",
+      "title": "",
+      "result": "HTTP accepted / challenge response; page content and venue operation not verified"
+    },
+    {
+      "url": "https://guide.michelin.com/en/taipei-region/taipei/restaurant/kiku-1216129",
+      "http_status": 202,
+      "final_url": "https://guide.michelin.com/en/taipei-region/taipei/restaurant/kiku-1216129",
+      "title": "",
+      "result": "HTTP accepted / challenge response; page content and venue operation not verified"
+    },
+    {
+      "url": "https://guide.michelin.com/en/taipei-region/taipei/restaurant/logy",
+      "http_status": 202,
+      "final_url": "https://guide.michelin.com/en/taipei-region/taipei/restaurant/logy",
+      "title": "",
+      "result": "HTTP accepted / challenge response; page content and venue operation not verified"
+    },
+    {
+      "url": "https://guide.michelin.com/en/taipei-region/taipei/restaurant/tairroir",
+      "http_status": 202,
+      "final_url": "https://guide.michelin.com/en/taipei-region/taipei/restaurant/tairroir",
+      "title": "",
+      "result": "HTTP accepted / challenge response; page content and venue operation not verified"
+    },
+    {
+      "url": "https://guide.michelin.com/gb/en/hong-kong-region/hong-kong/restaurant/yat-lok",
+      "http_status": 202,
+      "final_url": "https://guide.michelin.com/gb/en/hong-kong-region/hong-kong/restaurant/yat-lok",
+      "title": "",
+      "result": "HTTP accepted / challenge response; page content and venue operation not verified"
+    },
+    {
+      "url": "https://guide.michelin.com/ie/en/shanghai-municipality/shanghai/restaurant/meet-the-bund",
+      "http_status": 202,
+      "final_url": "https://guide.michelin.com/ie/en/shanghai-municipality/shanghai/restaurant/meet-the-bund",
+      "title": "",
+      "result": "HTTP accepted / challenge response; page content and venue operation not verified"
+    },
+    {
+      "url": "https://guide.michelin.com/se/en/shanghai-municipality/shanghai/restaurant/taian-table",
+      "http_status": 202,
+      "final_url": "https://guide.michelin.com/se/en/shanghai-municipality/shanghai/restaurant/taian-table",
+      "title": "",
+      "result": "HTTP accepted / challenge response; page content and venue operation not verified"
+    },
+    {
+      "url": "https://guide.michelin.com/sg/en/shanghai-municipality/shanghai/restaurant/cheng-long-hang-huangpu",
+      "http_status": 202,
+      "final_url": "https://guide.michelin.com/sg/en/shanghai-municipality/shanghai/restaurant/cheng-long-hang-huangpu",
+      "title": "",
+      "result": "HTTP accepted / challenge response; page content and venue operation not verified"
+    },
+    {
+      "url": "https://guide.michelin.com/sg/en/shanghai-municipality/shanghai/restaurant/fu-he-hui",
+      "http_status": 202,
+      "final_url": "https://guide.michelin.com/sg/en/shanghai-municipality/shanghai/restaurant/fu-he-hui",
+      "title": "",
+      "result": "HTTP accepted / challenge response; page content and venue operation not verified"
+    },
+    {
+      "url": "https://guide.michelin.com/tw/en/taipei-region/taipei/restaurant/embers",
+      "http_status": 202,
+      "final_url": "https://guide.michelin.com/tw/en/taipei-region/taipei/restaurant/embers",
+      "title": "",
+      "result": "HTTP accepted / challenge response; page content and venue operation not verified"
+    },
+    {
+      "url": "https://guide.michelin.com/us/en/article/travel/where-to-eat-at-raohe-night-market-taipei",
+      "http_status": 202,
+      "final_url": "https://guide.michelin.com/us/en/article/travel/where-to-eat-at-raohe-night-market-taipei",
+      "title": "",
+      "result": "HTTP accepted / challenge response; page content and venue operation not verified"
+    },
+    {
+      "url": "https://guide.michelin.com/us/en/hong-kong-region/hong-kong/restaurant/t-ang-court",
+      "http_status": 202,
+      "final_url": "https://guide.michelin.com/us/en/hong-kong-region/hong-kong/restaurant/t-ang-court",
+      "title": "",
+      "result": "HTTP accepted / challenge response; page content and venue operation not verified"
+    },
+    {
+      "url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/fu-1088",
+      "http_status": 202,
+      "final_url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/fu-1088",
+      "title": "",
+      "result": "HTTP accepted / challenge response; page content and venue operation not verified"
+    },
+    {
+      "url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/qiao-ai-lai-lai-xiao-long-huangpu",
+      "http_status": 202,
+      "final_url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/qiao-ai-lai-lai-xiao-long-huangpu",
+      "title": "",
+      "result": "HTTP accepted / challenge response; page content and venue operation not verified"
+    },
+    {
+      "url": "https://guide.michelin.com/us/en/taipei-region/taipei/restaurant/a",
+      "http_status": 202,
+      "final_url": "https://guide.michelin.com/us/en/taipei-region/taipei/restaurant/a",
+      "title": "",
+      "result": "HTTP accepted / challenge response; page content and venue operation not verified"
+    },
+    {
+      "url": "https://guide.michelin.com/us/en/taipei-region/taipei/restaurant/mume",
+      "http_status": 202,
+      "final_url": "https://guide.michelin.com/us/en/taipei-region/taipei/restaurant/mume",
+      "title": "",
+      "result": "HTTP accepted / challenge response; page content and venue operation not verified"
+    },
+    {
+      "url": "https://gutspromotion.kktix.cc/events/hitorie2026",
+      "http_status": 200,
+      "final_url": "https://gutspromotion.kktix.cc/events/hitorie2026",
+      "title": "HITORI-ESCAPE ASIA TOUR 2026 【TAIPEI】",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://gutspromotion.kktix.cc/events/myds2026",
+      "http_status": 200,
+      "final_url": "https://gutspromotion.kktix.cc/events/myds2026",
+      "title": "名譽傳說 1st ONEMAN TOUR 2026",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://hk.trip.com/restaurant/china/chongqing/detail/restaurant-148922867/",
+      "http_status": 200,
+      "final_url": "https://hk.trip.com/restaurant/china/chongqing/detail/restaurant-148922867/",
+      "title": "陳胖子火鍋（總店） (重慶 解放碑/洪崖洞)－餐牌、食評及資訊｜Trip.com",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://hongqiaotechweek.imconlinereg.com/hqtw-en/login",
+      "http_status": 200,
+      "final_url": "https://hongqiaotechweek.imconlinereg.com/hqtw-en/login",
+      "title": "Visitor Registration for Hongqiao Tech Week",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://huodong.com/event/detail/iqkmoh",
+      "http_status": 200,
+      "final_url": "https://huodong.com/event/detail/iqkmoh",
+      "title": "波兰古典爵士Kuba Derej三重奏 - 坚果NUTS - 活动网",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://hutong.com.hk/menus/",
+      "http_status": 200,
+      "final_url": "https://hutong.com.hk/menus/",
+      "title": "Menus | Hutong | Northern Chinese Cuisine | Hong Kong",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://hutong.com.hk/reservations/",
+      "http_status": 200,
+      "final_url": "https://hutong.com.hk/reservations/",
+      "title": "Reservations | Hutong | Chinese Restaurant | Hong Kong",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://inline.app/booking/-LOEGOiuX6eKriFBx6i2:inline-live-2a466/-LOEGOjuv4YoLm5tNnI-",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://inline.app/booking/-NWefFEmfAI9IZ5SCse3:inline-live-3/-NWefFRVmykbQ6_RUnBk",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://inline.app/booking/-NbtEY_pi5UMJOZJqdQ3:inline-live-3/-NbtEYmCvLCf_ZMqv6ow?language=zh-tw",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://jda.cq.gov.cn/web/article/web/content_1461428557456216064.html",
+      "http_status": 200,
+      "final_url": "https://jda.cq.gov.cn/web/article/web/content_1461428557456216064.html",
+      "title": "跟着档案游巴蜀 | 雕梁载史 馆韵长流 ——重庆湖广会馆_重庆档案信息网",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://jingxuan.douyin.com/m/video/7645931066645171502",
+      "http_status": 200,
+      "final_url": "https://www.douyin.com/video/7645931066645171502",
+      "title": "",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://kfbg.org/en/directions-to-KFBG",
+      "http_status": 200,
+      "final_url": "https://www.kfbg.org/en/directions-to-KFBG",
+      "title": "Directions to KFBG::Kadoorie Farm and Botanic Garden",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://kfbg.org/en/general-information",
+      "http_status": 200,
+      "final_url": "https://www.kfbg.org/en/general-information",
+      "title": "General Information::Kadoorie Farm and Botanic Garden",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://logy.tw/reservation.html",
+      "http_status": 200,
+      "final_url": "https://logy.tw/reservation.html",
+      "title": "logy",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://m.dianping.com/discovery/1004365945",
+      "http_status": 200,
+      "final_url": "https://verify.meituan.com/v2/app/general_page?requestCode=c670735ce8fb45b5a7bc28d622e8f0c7&adaptor=auto&action=spiderindefence&succCallbackUrl=https%3A%2F%2Foptimus-mtsi.meituan.com%2Foptimus%2FverifyResult%3ForiginUrl%3Dhttps%253A%252F%252Fm.dianping.com%252Fdiscovery%252F1004365945&theme=dianping",
+      "title": "验证中心",
+      "result": "Redirected to anti-bot verification; venue operation not verified"
+    },
+    {
+      "url": "https://m.dianping.com/shop/19226430?msource=applemaps",
+      "http_status": 200,
+      "final_url": "https://verify.meituan.com/v2/app/general_page?requestCode=bd8ceb800a224f29a55af78dfee1a0c7&adaptor=auto&action=spiderindefence&succCallbackUrl=https%3A%2F%2Foptimus-mtsi.meituan.com%2Foptimus%2FverifyResult%3ForiginUrl%3Dhttps%253A%252F%252Fm.dianping.com%252Fshop%252F19226430%253Fmsource%253Dapplemaps&theme=dianping",
+      "title": "验证中心",
+      "result": "Redirected to anti-bot verification; venue operation not verified"
+    },
+    {
+      "url": "https://m.thecaptainbarshanghai.com.cn/col.jsp?id=103",
+      "http_status": null,
+      "result": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismat"
+    },
+    {
+      "url": "https://montue.ntue.edu.tw/en/visit/",
+      "http_status": 200,
+      "final_url": "https://montue.ntue.edu.tw/en/visit/",
+      "title": "VISIT | 北師美術館",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://newtaipei.travel/en",
+      "http_status": 200,
+      "final_url": "https://newtaipei.travel/en",
+      "title": "New Taipei City Travel",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://newtaipei.travel/en/Attractions/Detail/111459",
+      "http_status": 200,
+      "final_url": "https://newtaipei.travel/en/Attractions/Detail/111459",
+      "title": "Yingge Ceramics Museum | New Taipei City Travel",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://newtaipei.travel/en/attractions/detail/112334",
+      "http_status": 200,
+      "final_url": "https://newtaipei.travel/en/attractions/detail/112334",
+      "title": "Yingge Old Street | New Taipei City Travel",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://newtaipei.travel/en/shop/business-district",
+      "http_status": 200,
+      "final_url": "https://newtaipei.travel/en/shop/business-district",
+      "title": "Explore the commercial districts of old streets | New Taipei City Travel",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://notesfromchina.com/blog/shanghai-3-day-itinerary/",
+      "http_status": 200,
+      "final_url": "https://notesfromchina.com/blog/shanghai-3-day-itinerary/",
+      "title": "Shanghai 3-Day Itinerary: The Bund, French Concession &amp; Dumplings",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://onodera-group.com/sushi-shanghai/",
+      "http_status": 200,
+      "final_url": "https://onodera-group.com/sushi-shanghai/",
+      "title": "鮨 銀座おのでら 上海店 | 銀座おのでら",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://onodera-group.com/sushi-shanghai/dinnermenu/",
+      "http_status": 200,
+      "final_url": "https://onodera-group.com/sushi-shanghai/dinnermenu/",
+      "title": "鮨 [上海店] ディナーメニュー | 銀座おのでら",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://partnernet.hktb.com/en/destination/events_festivals/index.html?eventID=87182",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://pickleballcn.com/courts/cn/chongqing/e23-pi-ke-qiu-ju-le-bu/",
+      "http_status": 200,
+      "final_url": "https://pickleballcn.com/courts/cn/chongqing/e23-pi-ke-qiu-ju-le-bu/",
+      "title": "E23匹克球俱乐部(一奥天地店)，重庆匹克球场地 | 中匹在线",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://pickleballcn.com/courts/cn/chongqing/zhongyanggongyuandayuecheng/",
+      "http_status": 200,
+      "final_url": "https://pickleballcn.com/courts/cn/chongqing/zhongyanggongyuandayuecheng/",
+      "title": "重庆中央公园大悦城匹克球场，重庆匹克球场地 | 中匹在线",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://pickleballcn.com/courts/cn/shanghai/ccb13c4f629/",
+      "http_status": 200,
+      "final_url": "https://pickleballcn.com/courts/cn/shanghai/ccb13c4f629/",
+      "title": "PopBounce，上海匹克球场地 | 中匹在线",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://pickleballcn.com/courts/cn/shanghai/stadium-indoor-pickleball/",
+      "http_status": 200,
+      "final_url": "https://pickleballcn.com/courts/cn/shanghai/stadium-indoor-pickleball/",
+      "title": "上海体育场室内匹克球馆，上海匹克球场地 | 中匹在线",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://placebook.hk/en/place/peel-fresco-music-lounge/",
+      "http_status": null,
+      "result": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismat"
+    },
+    {
+      "url": "https://rachelgouk.com/affordable-omakase-uni-shushi-expands-to-xintiandi/",
+      "http_status": 200,
+      "final_url": "https://rachelgouk.com/affordable-omakase-uni-shushi-expands-to-xintiandi/",
+      "title": "Affordable Omakase: Uni Shushi Expands To Xintiandi | Nomfluence",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://rachelgouk.com/fu-he-hui-shanghais-extraordinary-vegetarian-restaurant/",
+      "http_status": 200,
+      "final_url": "https://rachelgouk.com/fu-he-hui-shanghais-extraordinary-vegetarian-restaurant/",
+      "title": "Fu He Hui: Shanghai&#x27;s Extraordinary Vegetarian Restaurant | Nomfluence",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://racing.hkjc.com/en-us/local/information/fixture?CalMonth=11&CalYear=2026",
+      "http_status": 200,
+      "final_url": "https://racing.hkjc.com/en-us/local/information/fixture?CalMonth=11&CalYear=2026",
+      "title": "Fixture - Horse Racing - The Hong Kong Jockey Club",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://rate.bot.com.tw/xrt?Lang=en-US",
+      "http_status": 200,
+      "final_url": "https://rate.bot.com.tw/xrt?Lang=en-US",
+      "title": "Challenge Validation",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://s.nia.gov.cn/ArrivalCardFillingPC/",
+      "http_status": 200,
+      "final_url": "https://s.nia.gov.cn/ArrivalCardFillingPC/",
+      "title": "入境卡填报",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://sh.bendibao.com/news/202656/305677.shtm",
+      "http_status": 200,
+      "final_url": "https://sh.bendibao.com/news/202656/305677.shtm",
+      "title": "2026上海临港无人机烟花秀表演活动常态化演出通知- 上海本地宝",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://sh.taian-table.cn/wp-content/uploads/2026/07/20260710_MENU_54_V51.pdf",
+      "http_status": 200,
+      "final_url": "https://sh.taian-table.cn/wp-content/uploads/2026/07/20260710_MENU_54_V51.pdf",
+      "title": "",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://shanghai.fotografiska.com/zh/exhibitions/group-exhibition-hk",
+      "http_status": 200,
+      "final_url": "https://shanghai.fotografiska.com/zh/exhibitions/group-exhibition-hk",
+      "title": "再构香港 | Fotografiska 影像艺术中心",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://shanghai.fotografiska.com/zh/visit",
+      "http_status": 200,
+      "final_url": "https://shanghai.fotografiska.com/zh/visit",
+      "title": "每日营业，开放至深夜 | Fotografiska 影像艺术中心",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://show.bilibili.com/platform/detail.html?id=1007030",
+      "http_status": 200,
+      "final_url": "https://show.bilibili.com/platform/detail.html?id=1007030",
+      "title": "bilibili会员购漫展票务",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://sp-pickleball.com/venues/pick-le-mode",
+      "http_status": 200,
+      "final_url": "https://sp-pickleball.com/venues/pick-le-mode",
+      "title": "Pick Le Mode 匹克模｜內湖24小時匹克球館、體驗課與場租 | SP Pickleball Club",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://sp-pickleball.com/venues/pickle-day-a11-pickleball-court",
+      "http_status": 200,
+      "final_url": "https://sp-pickleball.com/venues/pickle-day-a11-pickleball-court",
+      "title": "新光 A11 匹克球｜信義區場地、費用與預約資訊 | SP Pickleball Club",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://tairroir.com/dinner?locale=en",
+      "http_status": 200,
+      "final_url": "https://tairroir.com/dinner?locale=en",
+      "title": "Tairroir  - dinner",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://toronto.china-consulate.gov.cn/eng/vp/VISA/202512/t20251204_11766986.htm",
+      "http_status": 200,
+      "final_url": "https://toronto.china-consulate.gov.cn/eng/vp/VISA/202512/t20251204_11766986.htm",
+      "title": "Visa Exemption Eligibility_Consulate-General of the People's Republic of China in Toronto",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://tpac.org.taipei/en/program/2040",
+      "http_status": 200,
+      "final_url": "https://tpac.org.taipei/en/program/2040",
+      "title": "沉浸式劇場《士林YES！》 ● 臺北表演藝術中心",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://tpac.org.taipei/program/2051",
+      "http_status": 200,
+      "final_url": "https://tpac.org.taipei/program/2051",
+      "title": "倫敦全本音樂劇《史瑞克》 ● 臺北表演藝術中心",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://tpbg.tfri.gov.tw/en/Opening.html",
+      "http_status": 200,
+      "final_url": "https://tpbg.tfri.gov.tw/en/Opening.html",
+      "title": "Opening - Visitor Information - Taipei Botanical Garden",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://travel.taipei/en/attraction/details/1686",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://travel.taipei/en/attraction/details/1692",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://travel.taipei/en/attraction/details/1697",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://travel.taipei/en/attraction/details/2098",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://travel.taipei/en/attraction/details/2153",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://travel.taipei/en/event-calendar/details/66782",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://travelnews.qunar.com/qa_strategy/chongqing-authentic-sichuan-cuisine-food-guide",
+      "http_status": 200,
+      "final_url": "https://travelnews.qunar.com/qa_strategy/chongqing-authentic-sichuan-cuisine-food-guide",
+      "title": "重庆正宗川渝美食攻略有哪些？ - 去哪儿",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://tw.trip.com/moments/poi-city-151629794/",
+      "http_status": 200,
+      "final_url": "https://tw.trip.com/moments/poi-city-151629794/",
+      "title": "2026丁老頭烤肉·聽民謠看夜景 | 重慶餐廳指南與旅客實拍 | Trip Moments",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://twac.immigration.gov.tw/",
+      "http_status": 200,
+      "final_url": "https://twac.immigration.gov.tw/",
+      "title": "TWAC Taiwan Arrival Card",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://uevent.udnfunlife.com/shrek2026/ticket",
+      "http_status": 429,
+      "result": "blocked"
+    },
+    {
+      "url": "https://untourfoodtours.com/shanghai-street-eats-breakfast/",
+      "http_status": 200,
+      "final_url": "https://untourfoodtours.com/shanghai-street-eats-breakfast/",
+      "title": "SHANGHAI STREET EATS BREAKFAST - UnTour Food Tours",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://us.trip.com/moments/detail/taipei-360-135980560/",
+      "http_status": 200,
+      "final_url": "https://us.trip.com/moments/detail/taipei-360-135980560/",
+      "title": "Din Tai Fung 101 | Trip.com Taipei",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://us.trip.com/restaurant/china/chongqing/detail/peijie-hotpot-15318356/",
+      "http_status": 200,
+      "final_url": "https://us.trip.com/restaurant/china/chongqing/detail/peijie-hotpot-15318356/",
+      "title": "PEIJIE HOTPOT (Jiefangbei Area/Hong Ya Dong, Chongqing) - Restaurant reviews, menu &amp; contact | Trip.com",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://victoriawaters.com/tc/blog/hong-kong-drone-show-schedule-2026",
+      "http_status": 200,
+      "final_url": "https://victoriawaters.com/tc/blog/hong-kong-drone-show-schedule-2026",
+      "title": "2026 香港無人機表演時間表、主題及最佳觀賞位置｜維港發展",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://warnermusictwtw.kktix.cc/events/ofgkrikd",
+      "http_status": 200,
+      "final_url": "https://warnermusictwtw.kktix.cc/events/ofgkrikd",
+      "title": "Karencici The Loser Live In Concert",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://webassets2.starlux-airlines.com/en-US/Images/STARLUX_Airlines_General_rules_tcm8-7082.pdf",
+      "http_status": 200,
+      "final_url": "https://webassets2.starlux-airlines.com/en-US/Images/STARLUX_Airlines_General_rules_tcm8-7082.pdf",
+      "title": "",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/1248/",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/1334/",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/813/",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://whlyj.sh.gov.cn/gqfc/20260920/edb5d29adf864ec79b48f62e0c4982cc.html",
+      "http_status": 200,
+      "final_url": "https://whlyj.sh.gov.cn/gqfc/20260920/edb5d29adf864ec79b48f62e0c4982cc.html",
+      "title": "上海静安国际雕塑展9月启幕，静安雕塑公园变身日夜艺术场_各区风采_上海市文化和旅游局",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://whlyj.sh.gov.cn/msg/20250928/db0cbc0a1edf478f99c4900522a56e3b.html",
+      "http_status": 200,
+      "final_url": "https://whlyj.sh.gov.cn/msg/20250928/db0cbc0a1edf478f99c4900522a56e3b.html",
+      "title": "2025年上海市美术馆名录_美术馆_上海市文化和旅游局",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://wingrestaurant.hk/",
+      "http_status": 200,
+      "final_url": "https://wingrestaurant.hk/",
+      "title": "Home | WING Restaurant",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://wingrestaurant.hk/menu",
+      "http_status": 200,
+      "final_url": "https://wingrestaurant.hk/menu",
+      "title": "Menu | WING Restaurant",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://wingrestaurant.hk/reservation-terms-and-conditions",
+      "http_status": 200,
+      "final_url": "https://wingrestaurant.hk/reservation-terms-and-conditions",
+      "title": "Reservation Policy | WING Restaurant",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.10100.com/article/143502121",
+      "http_status": 200,
+      "final_url": "https://www.10100.com/article/143502121",
+      "title": "本期精彩内容｜Playbill Of June 17-21 at CANDOR- 大数跨境",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.12306.cn/en/index.html",
+      "http_status": 200,
+      "final_url": "https://www.12306.cn/en/index.html",
+      "title": "12306 CHINA RAILWAY",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.240hoursinchina.com/en-us/chongqing/guide/24hour-spa",
+      "http_status": 200,
+      "final_url": "https://www.240hoursinchina.com/en-us/chongqing/guide/24hour-spa",
+      "title": "Qianxi Hot Spring Chongqing: Complete Guide to a 24 Hour Chinese Spa - Chongqing - 240 China Travel Guide",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.3gmuseum.cn/",
+      "http_status": 200,
+      "final_url": "https://www.3gmuseum.cn/",
+      "title": "重庆中国三峡博物馆",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.aa.com/i18n/travel-info/baggage/carry-on-baggage.jsp",
+      "http_status": 200,
+      "final_url": "https://www.aa.com/web/i18n/travel-info/baggage/carry-on-baggage.html",
+      "title": "Carry-on bags and size limits | American Airlines",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.accupass.com/event/2611030615453481135120",
+      "http_status": 200,
+      "final_url": "https://www.accupass.com/event/2611030615453481135120",
+      "title": "GIVE THANKS NIGHT｜感恩音樂派對 ft. 離譜樂團｜ACCUPASS",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.addiction.com.tw/",
+      "http_status": 200,
+      "final_url": "https://www.addiction.com.tw/",
+      "title": ": :  : 上引水產 ADDICTION : : : 立吞壽司 : 魚貨現撈 : 備長炭海鮮燒烤 : 上選食材 : 嚴選海鮮 :",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.agoda.com/",
+      "http_status": 200,
+      "final_url": "https://www.agoda.com/",
+      "title": "",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.alaskaair.com/content/travel-info/baggage/carry-on-luggage",
+      "http_status": 200,
+      "final_url": "https://www.alaskaair.com/content/travel-info/baggage/carry-on-luggage",
+      "title": "Carry-on luggage size limit - Alaska Airlines and Hawaiian Airlines",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.amap.com/place/B0J2TMY7EH",
+      "http_status": 200,
+      "final_url": "https://www.amap.com/place/B0J2TMY7EH?amap_migrate_retry=1",
+      "title": "高德地图",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.amap.com/place/B0KUV1F64M",
+      "http_status": 200,
+      "final_url": "https://www.amap.com/place/B0KUV1F64M?amap_migrate_retry=1",
+      "title": "高德地图",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.belgiandays.hk/zh_TW/event/zhu-gu-li-wen-hua-jie-62/register",
+      "http_status": 200,
+      "final_url": "https://www.belgiandays.hk/zh_TW/event/zhu-gu-li-wen-hua-jie-62/register",
+      "title": "Chocolate Festival",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html",
+      "http_status": 200,
+      "final_url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html",
+      "title": "Bureau of Consular Affairs, Ministry of Foreign Affairs, Republic of China(Taiwan)-Visa-Exempt Entry",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.booking.com/hotel/tw/san-want-residences-taipei.html",
+      "http_status": 202,
+      "final_url": "https://www.booking.com/hotel/tw/san-want-residences-taipei.html",
+      "title": "",
+      "result": "HTTP accepted / challenge response; page content and venue operation not verified"
+    },
+    {
+      "url": "https://www.capitaland.com/cn/en/shop/malls/raffles-city-chongqing.html",
+      "http_status": 200,
+      "final_url": "https://www.capitaland.com/en/errors/404.html",
+      "title": "Not Found | CapitaLand",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.cathaypacific.com/cx/en_US/book-a-trip/book-flights/new-economy-fares.html",
+      "http_status": 200,
+      "final_url": "https://www.cathaypacific.com/cx/en_US/book-a-trip/book-flights/new-economy-fares.html",
+      "title": "Our Economy fares | Cathay US",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.cathaypacific.com/cx/en_US/manage-booking.html",
+      "http_status": 200,
+      "final_url": "https://www.cathaypacific.com/mb/#/en_US/login",
+      "title": "Manage Booking | Online Check-in",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.cbg.cn/a/4929/20260624/9838689ba8e64b589e936ae83c1d6397.html",
+      "http_status": null,
+      "result": "ConnectionResetError: [Errno 54] Connection reset by peer"
+    },
+    {
+      "url": "https://www.china-airlines.com/us/en/prepare-for-the-fly/information/baggage/carry-on-baggage",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.chinanews.com.cn/m/tp/hd/2026/0601/180273.shtml",
+      "http_status": 200,
+      "final_url": "https://www.chinanews.com.cn/m/tp/hd/2026/0601/180273.shtml",
+      "title": "宇树科技具身智能体验馆亚洲首店亮相上海-中国新闻网",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.cityhui.com/shop/20300.html",
+      "http_status": null,
+      "result": "URLError: <urlopen error timed out>"
+    },
+    {
+      "url": "https://www.citynewsservice.cn/articles/cns/hai-lights/hai-lights/yn6o3b9n",
+      "http_status": 200,
+      "final_url": "https://www.citynewsservice.cn/articles/cns/hai-lights/hai-lights/yn6o3b9n",
+      "title": "[Hai Lights] Where to Soak This Winter in and Beyond Shanghai - City News Service",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.cksmh.gov.tw/en/",
+      "http_status": 200,
+      "final_url": "https://www.cksmh.gov.tw/en/",
+      "title": "National Chiang Kai-shek Memorial Hall",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.cq.gov.cn/ywdt/jrcq/202407/t20240705_13349267_app.html",
+      "http_status": null,
+      "result": "URLError: <urlopen error timed out>"
+    },
+    {
+      "url": "https://www.cq.gov.cn/ywdt/jrcq/202411/t20241106_13773153_app.html",
+      "http_status": null,
+      "result": "URLError: <urlopen error timed out>"
+    },
+    {
+      "url": "https://www.cq.gov.cn/zjcq/cycq/zmjd/zqaaaaajjq/202606/t20260604_15729058.html",
+      "http_status": null,
+      "result": "URLError: <urlopen error timed out>"
+    },
+    {
+      "url": "https://www.cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/ggwh/ly/zxdt/202506/t20250624_14714972.html",
+      "http_status": null,
+      "result": "URLError: <urlopen error timed out>"
+    },
+    {
+      "url": "https://www.cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/ggwh/wh/ychdyg/202512/t20251231_15284701.html",
+      "http_status": null,
+      "result": "URLError: <urlopen error timed out>"
+    },
+    {
+      "url": "https://www.cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/kj/kjzx/202603/t20260304_15495307.html",
+      "http_status": null,
+      "result": "URLError: <urlopen error timed out>"
+    },
+    {
+      "url": "https://www.cq1949.net/",
+      "http_status": 200,
+      "final_url": "https://www.cq1949.net/website/pc/index.html?m_code=dwr1Op9C3C5qVSng3ZWSFA",
+      "title": "重庆1949大剧院",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.cqjb.gov.cn/zwxx_190/qxdt/202404/t20240402_13101327.html",
+      "http_status": null,
+      "result": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+    },
+    {
+      "url": "https://www.cqna.gov.cn/zjna/ns/hlns/nsjd/202601/t20260129_15362830.html",
+      "http_status": null,
+      "result": "URLError: <urlopen error timed out>"
+    },
+    {
+      "url": "https://www.cqnews.net/web/content_1567865543527256064.html",
+      "http_status": 200,
+      "final_url": "https://www.cqnews.net/web/content_1567865543527256064.html",
+      "title": "第九届非博会明日开幕 100万元文旅惠民消费券同步上线-华龙网-重庆市委市政府官方新闻门户",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.cqnews.net/web/content_1568053039196295168.html",
+      "http_status": 200,
+      "final_url": "https://www.cqnews.net/web/content_1568053039196295168.html",
+      "title": "文艺早知道 | 燃情的说唱、婉转的川剧…… 剧院展馆邀你赴一场艺术之约-华龙网-重庆市委市政府官方新闻门户",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.cqspb.gov.cn/wzywb/exploreleisure/attractions/202209/t20220930_11159549.html",
+      "http_status": null,
+      "result": "URLError: <urlopen error timed out>"
+    },
+    {
+      "url": "https://www.csnbgsh.com/portal/ticket/guide",
+      "http_status": 200,
+      "final_url": "https://www.csnbgsh.com/portal/ticket/guide",
+      "title": "",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.dintaifung.com.tw/eng/",
+      "http_status": 200,
+      "final_url": "https://www.dintaifung.com.tw/eng/",
+      "title": "鼎泰豐・Din Tai Fung・ディンタイフォン・딘타이펑",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.discoverhongkong.com/eng/attractions/your-guide-to-experiencing-hong-kong.html",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.discoverhongkong.com/eng/events/event.id86002.v-mart.html",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.discoverhongkong.com/eng/explore/culture/chi-lin-nunnery.html",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.discoverhongkong.com/eng/explore/dining/cha-chaan-teng.html",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.discoverhongkong.com/eng/explore/great-outdoor/sai-kung.html",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.discoverhongkong.com/eng/explore/neighbourhoods/sham-shui-po.html",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.discoverhongkong.com/eng/neighbourhoods/outlying-islands/the-best-things-to-do-on-lantau-island.html",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-apliu-street.html",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-jade-market-and-jade-street.html",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-ladies-market.html",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-pmq.html",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-sham-shui-po-fabric-market.html",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.discoverhongkong.com/eng/shopping/where-to-shop-for-authentic-hong-kong-souvenirs-and-keepsakes.html",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.discoverhongkong.com/us/explore/attractions/temple-street/local-delicacies-and-nearby-attractions.html",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.emperorspa.com.tw/facilities.html",
+      "http_status": null,
+      "result": "URLError: <urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "url": "https://www.emperorspa.com.tw/news.aspx",
+      "http_status": null,
+      "result": "URLError: <urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "url": "https://www.era-shanghai.com/pc/booking",
+      "http_status": 200,
+      "final_url": "https://www.era-shanghai.com/pc/booking",
+      "title": "EraShanghai - 时空之旅门票-上海马戏城门票－订购［era时空之旅］上海马戏城官方网站门票！",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.expopark.taipei/News_Photo_Content.aspx?n=247&s=4590&sms=9029",
+      "http_status": 200,
+      "final_url": "https://www.expopark.taipei/News_Photo_Content.aspx?n=247&s=4590&sms=9029",
+      "title": "2026臺灣花卉推介會",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.fairmont.com/zh/hotels/shanghai/fairmont-peace-hotel/dining.html",
+      "http_status": 200,
+      "final_url": "https://www.fairmont.com/zh/hotels/shanghai/fairmont-peace-hotel/dining.html",
+      "title": "上海餐厅和酒吧 - 上海和平饭店（费尔蒙旗下酒店）",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.flight.info/UA869",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.foodpanda.hk/restaurant/acrh/yat-lok-restaurant-central-extended-delivery",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.genieyip.com/blog/shanghai-bathhouses-guide",
+      "http_status": 200,
+      "final_url": "https://www.genieyip.com/blog/shanghai-bathhouses-guide",
+      "title": "Shanghai Bathhouses Guide &mdash; Genie Yip",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.gia.edu/jade/buyers-guide",
+      "http_status": 200,
+      "final_url": "https://www.gia.edu/jade/buyers-guide",
+      "title": "What Is Jade Gemstone | Jade Stone – GIA",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.gohk.gov.hk/en/spots/spot_detail.php?spot=Lascar+Row",
+      "http_status": 200,
+      "final_url": "https://www.gohk.gov.hk/en/spots/spot_detail.php?spot=Lascar+Row",
+      "title": "Hong Kong Fun in 18 Districts - Lascar Row",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.google.com/travel/flights?q=CI202%20SHA%20TSA%20November%2025%202026",
+      "http_status": 200,
+      "final_url": "https://www.google.com/travel/flights/unsupported?q=CI202+SHA+TSA+November+25+2026&ucpp=CkZodHRwczovL3d3dy5nb29nbGUuY29tL3RyYXZlbC9mbGlnaHRzP3E9Q0kyMDIrU0hBK1RTQStOb3ZlbWJlcisyNSsyMDI2",
+      "title": "",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.google.com/travel/flights?q=HO1250%20Chongqing%20Shanghai%20November%2020%202026",
+      "http_status": 200,
+      "final_url": "https://www.google.com/travel/flights/unsupported?q=HO1250+Chongqing+Shanghai+November+20+2026&ucpp=ClJodHRwczovL3d3dy5nb29nbGUuY29tL3RyYXZlbC9mbGlnaHRzP3E9SE8xMjUwK0Nob25ncWluZytTaGFuZ2hhaStOb3ZlbWJlcisyMCsyMDI2",
+      "title": "",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.gvrb.com.tw/en/service/%E6%B9%AF%E5%B1%8B-2/",
+      "http_status": 200,
+      "final_url": "https://www.gvrb.com.tw/en/service/%E6%B9%AF%E5%B1%8B-2/",
+      "title": "Private hot spring room - Grand View Resort Beitou",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.gvrb.com.tw/en/service/%E9%9C%B2%E5%A4%A9%E9%A2%A8%E5%91%82/",
+      "http_status": 200,
+      "final_url": "https://www.gvrb.com.tw/en/service/%E9%9C%B2%E5%A4%A9%E9%A2%A8%E5%91%82/",
+      "title": "Public hot spring - Grand View Resort Beitou",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.hilton.com/zh-hant/hotels/shawawa-waldorf-astoria-shanghai-on-the-bund/dining/",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.hkharbourrace.com/race-information/?lang=hk",
+      "http_status": 200,
+      "final_url": "https://www.hkharbourrace.com/race-information/?lang=hk",
+      "title": "賽事資料 - 維港泳 2026",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.hko.gov.hk/en/cis/normal/1991_2020/normals.htm",
+      "http_status": 200,
+      "final_url": "https://www.hko.gov.hk/en/cis/normal/1991_2020/normals.htm",
+      "title": "Monthly Meteorological Normals for Hong Kong (1991-2020)｜Hong Kong Observatory(HKO)｜Climatological Normals and Extremes",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.hkpm.org.hk/en/about/press-release/hong-kong-hong-kong-palace-museum-presents-new-exhibition-design-for-the-forbidden-city-imperial-workshops-of-the-qing-court-exploring-the-enduring-spirit-of-traditional-aesthetics-through-a-contemporary-lens-public-opening-30-september-2026",
+      "http_status": 200,
+      "final_url": "https://www.hkpm.org.hk/en/about/press-release/hong-kong-palace-museum-presents-new-exhibition-design-for-the-forbidden-city-imperial-workshops-of-the-qing-court-exploring-the-enduring-spirit-of-traditional-aesthetics-through-a-contemporary-lens-public-opening-30-september-2026",
+      "title": "Hong Kong Palace Museum | Hong Kong Palace Museum Presents New Exhibition “Design for the Forbidden City: Imperial Workshops of the Qing Court” Explor",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.hkpm.org.hk/en/about/press-release/hong-kong-palace-museum-s-new-thematic-exhibition-qing-court-in-four-seasons-life-and-culture-of-the-imperial-household-opens-4-november-2026",
+      "http_status": 200,
+      "final_url": "https://www.hkpm.org.hk/en/about/press-release/hong-kong-palace-museum-s-new-thematic-exhibition-qing-court-in-four-seasons-life-and-culture-of-the-imperial-household-opens-4-november-2026",
+      "title": "Hong Kong Palace Museum | Hong Kong Palace Museum’s New Thematic Exhibition “Qing Court in Four Seasons: Life and Culture of the Imperial Household” O",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.hkpm.org.hk/en/exhibition",
+      "http_status": 200,
+      "final_url": "https://www.hkpm.org.hk/en/exhibition",
+      "title": "Hong Kong Palace Museum | Exhibitions",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.hkpm.org.hk/en/visit/plan-your-visit",
+      "http_status": 200,
+      "final_url": "https://www.hkpm.org.hk/en/visit/plan-your-visit",
+      "title": "Hong Kong Palace Museum | Plan your visit",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.hkpm.org.hk/tc/announcement/2026-07-14/temporary-closure-of-galleries-updates",
+      "http_status": 200,
+      "final_url": "https://www.hkpm.org.hk/tc/announcement/2026-07-14/temporary-closure-of-galleries-updates",
+      "title": "香港故宮文化博物館 | 部分展廳暫停開放",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.hkyaf.com/events/1084/Standard%20Chartered%20Arts%20in%20the%20Park%202026%3A%20Grand%20Finale%20Parade",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.hkyaf.com/events/1085/Standard%20Chartered%20Arts%20in%20the%20Park%202026%3A%20Night%20Parade",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.hkzbg.gov.hk/en/visitPage.html",
+      "http_status": 200,
+      "final_url": "https://www.hkzbg.gov.hk/en/visitPage.html",
+      "title": "Hong Kong Zoological and Botanical Gardens - Visit",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.holeefook.com.hk/",
+      "http_status": 200,
+      "final_url": "https://www.holeefook.com.hk/",
+      "title": "Ho Lee Fook 口利福 | A Chinese Restaurant With A Hong Kong Heart | Black Sheep",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.holeefook.com.hk/s/HLF_main_menu_Oct2026_Digital.pdf",
+      "http_status": 200,
+      "final_url": "https://static1.squarespace.com/static/5b963019c258b4fee2aaa328/t/6ac48fdee5035068d9b1a749/1791266782763/HLF_main_menu_Oct2026_Digital.pdf",
+      "title": "",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.hongqiaotechweek.com/register/",
+      "http_status": 200,
+      "final_url": "https://www.hongqiaotechweek.com/register/",
+      "title": "登记参观 - 虹桥国际科技周",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.huashan1914.com/w/huashan1914EN/",
+      "http_status": 200,
+      "final_url": "https://www.huashan1914.com/",
+      "title": "華山活動 - 華山1914文化創意產業園區",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.ichongqing.info/",
+      "http_status": 200,
+      "final_url": "https://www.ichongqing.info/",
+      "title": "Chongqing Tourism, Culture, Business and International-Exchange | ichongqing",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.ichongqing.info/2025/04/08/chongqing-launches-chongqing-gift-as-the-must-have-souvenir-for-travelers/",
+      "http_status": 200,
+      "final_url": "https://www.ichongqing.info/2025/04/08/chongqing-launches-chongqing-gift-as-the-must-have-souvenir-for-travelers/",
+      "title": "Chongqing Launches 'Chongqing Gift' as the Must-Have Souvenir for Travelers | ichongqing",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.ichongqing.info/2026/01/30/from-ski-slopes-to-rural-coffee-shops-how-chongqing-wulong-achieved-dual-growth-in-visitors-and-spending-in-2025/",
+      "http_status": 200,
+      "final_url": "https://www.ichongqing.info/2026/01/30/from-ski-slopes-to-rural-coffee-shops-how-chongqing-wulong-achieved-dual-growth-in-visitors-and-spending-in-2025/",
+      "title": "From Ski Slopes to Rural Coffee Shops: How Chongqing Wulong Achieved Dual Growth in Visitors and Spending in 2025 | ichongqing",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.ichongqing.info/2026/04/30/beat-the-may-day-crowds-three-riverside-walks-that-unlock-chongqings-iconic-sights/",
+      "http_status": 200,
+      "final_url": "https://www.ichongqing.info/2026/04/30/beat-the-may-day-crowds-three-riverside-walks-that-unlock-chongqings-iconic-sights/",
+      "title": "Beat the May Day Crowds: Three Riverside Walks That Unlock Chongqing's Iconic Sights | ichongqing",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.ichongqing.info/attraction/longmenhao-old-street/",
+      "http_status": 200,
+      "final_url": "https://www.ichongqing.info/attraction/longmenhao-old-street/",
+      "title": "Longmenhao Old Street | ichongqing",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.klook.com/en-US/activity/139018-yang-space-soup-spa-life/",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.klook.com/en-US/activity/185515-qushui-lanting-shanghai/",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.klook.com/en-US/activity/187366-shuiguotangquan-wujiaochang-store/",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.klook.com/en-US/activity/29808-shanghai-wild-animal-park-ticket/",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.klook.com/zh-TW/activity/57963-taipei-kuo-yuan-ye-foods-mango-crisp-diy-experience-diy-experience/",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.kuos.com/zh-TW/pages/pineapple-cake-diy-introduction",
+      "http_status": 200,
+      "final_url": "https://www.kuos.com/zh-TW/pages/pineapple-cake-diy-introduction",
+      "title": "懷舊鳳梨酥 DIY 課程介紹 郭元益",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.langhamhotels.com/content/dam/langhamhotels/tlhkg-pdfs/260521_Digital.pdf",
+      "http_status": 200,
+      "final_url": "https://www.langhamhotels.com/content/dam/langhamhotels/tlhkg-pdfs/260521_Digital.pdf",
+      "title": "",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/",
+      "http_status": 200,
+      "final_url": "https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/",
+      "title": "T’ang Court | Michelin-Starred Cantonese Restaurant | The Langham, Shanghai, Xintiandi",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.lingang.gov.cn/html/website/lg/index/news/Mediafocus/2069237972186759169.html",
+      "http_status": 200,
+      "final_url": "https://www.lingang.gov.cn/html/website/lg/index/news/Mediafocus/2069237972186759169.html",
+      "title": "首页 - 中国（上海）自由贸易试验区临港新片区管理委员会",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.lostheaven.com.cn/restaurant/lost-heaven/",
+      "http_status": null,
+      "result": "URLError: <urlopen error [SSL: TLSV1_ALERT_INTERNAL_ERROR] tlsv1 alert internal error (_ssl.c:1081)>"
+    },
+    {
+      "url": "https://www.marriott.com.cn/hotels/shaeb-the-shanghai-edition/dining/",
+      "http_status": 200,
+      "final_url": "https://www.marriott.com.cn/hotels/shaeb-the-shanghai-edition/dining/",
+      "title": "Bund Area Restaurant - Shanghai Rooftop Bar - Cantonese | The Shanghai EDITION",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/ckgjw-jw-marriott-hotel-chongqing/overview/",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/ckgwi-the-westin-chongqing-liberation-square/overview/",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.meet-in-shanghai.net/",
+      "http_status": 200,
+      "final_url": "https://www.meet-in-shanghai.net/",
+      "title": "Shanghai Travel Guide | Official site for Shanghai Municipal Administration of Culture and Tourism",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.meet-in-shanghai.net/cn/concert/blizzard-35th-anniversary-official-game-symphony-concert-led-by-jason-hayes-399073/",
+      "http_status": 200,
+      "final_url": "https://www.meet-in-shanghai.net/cn/concert/blizzard-35th-anniversary-official-game-symphony-concert-led-by-jason-hayes-399073/",
+      "title": "暴雪35周年官方游戏交响音乐会（Jason Hayes 领衔）_暴雪35周年官方游戏交响音乐会（Jason Hayes 领衔）地址/电话/开放时间-上海市文旅推广网",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.meet-in-shanghai.net/en/",
+      "http_status": 200,
+      "final_url": "https://www.meet-in-shanghai.net/en/",
+      "title": "Shanghai Travel Guide | Official site for Shanghai Municipal Administration of Culture and Tourism",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.meet-in-shanghai.net/en/guide/discover-the-captivating-bathhouses-of-shanghai-553207/",
+      "http_status": 200,
+      "final_url": "https://www.meet-in-shanghai.net/en/guide/discover-the-captivating-bathhouses-of-shanghai-553207/",
+      "title": "Discover the captivating bathhouses of Shanghai-The Official Shanghai China Travel Website",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.meet-in-shanghai.net/en/minhang-district/qibao-ancient-town-746455/",
+      "http_status": 200,
+      "final_url": "https://www.meet-in-shanghai.net/en/minhang-district/qibao-ancient-town-746455/",
+      "title": "Qibao Ancient Town-The Official Shanghai China Travel Website",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.meet-in-shanghai.net/en/news/all-the-exhibitions-coming-to-shanghai-museum-in-2026-%E2%80%93-save-this-list-238693/",
+      "http_status": 200,
+      "final_url": "https://www.meet-in-shanghai.net/en/news/all-the-exhibitions-coming-to-shanghai-museum-in-2026-%E2%80%93-save-this-list-238693/",
+      "title": "All the Exhibitions Coming to Shanghai Museum in 2026 – Save This List-The Official Shanghai China Travel Website",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.meet-in-shanghai.net/en/shopping/fuzhou-road-culture-street-762373/",
+      "http_status": 200,
+      "final_url": "https://www.meet-in-shanghai.net/en/shopping/fuzhou-road-culture-street-762373/",
+      "title": "Fuzhou Road Culture Street-The Official Shanghai China Travel Website",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.metro-orientalplaza.com/html/content/25/09/1501.shtml",
+      "http_status": 200,
+      "final_url": "https://www.metro-orientalplaza.com/html/content/25/09/1501.shtml",
+      "title": "�����������ű��Ǽ���ʳָ��",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang",
+      "http_status": 200,
+      "final_url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang",
+      "title": "MICHELIN Guide Shanghai, Jiangsu, Zhejiang first Edition | Michelin",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-taiwan",
+      "http_status": 200,
+      "final_url": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-taiwan",
+      "title": "The MICHELIN Guide Taiwan 2026 | Michelin",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.mmbund.com/wp-content/uploads/sites/4/2026/05/Mr-Mrs-Bund-Dinner-Menu-May-2026-S.pdf",
+      "http_status": 200,
+      "final_url": "https://www.mmbund.com/wp-content/uploads/sites/4/2026/05/Mr-Mrs-Bund-Dinner-Menu-May-2026-S.pdf",
+      "title": "",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.mmbund.com/wp-content/uploads/sites/4/2026/07/Mr-Mrs-Bund-Dinner-Menu-2026-S.pdf",
+      "http_status": 200,
+      "final_url": "https://www.mmbund.com/wp-content/uploads/sites/4/2026/07/Mr-Mrs-Bund-Dinner-Menu-2026-S.pdf",
+      "title": "",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.mountain-n-seahouse.com/zh-hant/dish_set/main_course/",
+      "http_status": 200,
+      "final_url": "https://www.mountain-n-seahouse.com/zh-hant/dish_set/main_course/",
+      "title": "主菜 彙整 - 山海樓",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.mplus.org.hk/en/",
+      "http_status": 200,
+      "final_url": "https://www.mplus.org.hk/en/",
+      "title": "Welcome to M+ | Museum of Contemporary Art, Hong Kong",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.mplus.org.hk/en/exhibitions/",
+      "http_status": 200,
+      "final_url": "https://www.mplus.org.hk/en/exhibitions/",
+      "title": "Exhibitions | M+ Museum",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.mplus.org.hk/en/exhibitions/design-ah-experience-the-wonder-of-everyday-design/",
+      "http_status": 200,
+      "final_url": "https://www.mplus.org.hk/en/exhibitions/design-ah-experience-the-wonder-of-everyday-design/",
+      "title": "Design Ah! Experience the Wonder of Everyday Design | M+ Museum",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.mplus.org.hk/en/exhibitions/myths-and-monsters-the-art-of-fantasy-in-asia/",
+      "http_status": 200,
+      "final_url": "https://www.mplus.org.hk/en/exhibitions/myths-and-monsters-the-art-of-fantasy-in-asia/",
+      "title": "Myths and Monsters: The Art of Fantasy in Asia | M+ Museum",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.mplus.org.hk/en/plan-your-visit/",
+      "http_status": 200,
+      "final_url": "https://www.mplus.org.hk/en/plan-your-visit/",
+      "title": "Plan Your Visit | M+ Museum",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.myguide-hongkong.com/restaurants/one-dim-sum",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.ncafroc.org.tw/event_detail.html?sid=6847",
+      "http_status": 200,
+      "final_url": "https://www.ncafroc.org.tw/event_detail.html?sid=6847",
+      "title": "展演櫥窗內頁 | 國家文化藝術基金會",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.nia.gov.cn/n897453/c1751080/content.html",
+      "http_status": 200,
+      "final_url": "https://www.nia.gov.cn/n897453/c1751080/content.html",
+      "title": "",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.nickkembel.com/taipei-itinerary-3-days/",
+      "http_status": 200,
+      "final_url": "https://www.nickkembel.com/taipei-itinerary-3-days/",
+      "title": "How to Spend 3 Awesome Days in Taipei: A Detailed Itinerary - Nickkembel Travels",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.ntsec.gov.tw/article/detail.aspx?a=6174",
+      "http_status": null,
+      "result": "TimeoutError: The read operation timed out"
+    },
+    {
+      "url": "https://www.openrice.com/en/hongkong/menu/18164/takeaway",
+      "http_status": 200,
+      "final_url": "https://www.openrice.com/en/hongkong/menu/18164/takeaway",
+      "title": "",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.opentable.com.tw/r/embers-taipei-city",
+      "http_status": null,
+      "result": "TimeoutError: The read operation timed out"
+    },
+    {
+      "url": "https://www.opentix.life/event/2108107139636789249",
+      "http_status": 200,
+      "final_url": "https://www.opentix.life/event/2108107139636789249",
+      "title": "《太平洋的光 》德國與台灣四重奏：爵士×古典×東方 — OPENTIX兩廳院文化生活",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.panda.org.cn/en/service/ticket/",
+      "http_status": 200,
+      "final_url": "https://www.panda.org.cn/en/service/ticket/",
+      "title": "Tickets",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.peijielaohuoguo.com/store/",
+      "http_status": null,
+      "result": "URLError: <urlopen error [Errno 54] Connection reset by peer>"
+    },
+    {
+      "url": "https://www.peninsula.com.cn/en/shanghai/wellness/luxury-hotel-spa",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.portseattle.org/page/international-connections",
+      "http_status": 200,
+      "final_url": "https://www.portseattle.org/page/international-connections",
+      "title": "International Connections | Port of Seattle",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.revelations-china.com/",
+      "http_status": 200,
+      "final_url": "https://www.revelations-china.com/",
+      "title": "Home - Revelations China",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.ritzcarlton.com/en/hotels/sharz-the-portman-ritz-carlton-shanghai/overview/",
+      "http_status": 200,
+      "final_url": "https://www.ritzcarlton.com/en/hotels/sharz-the-portman-ritz-carlton-shanghai/overview/",
+      "title": "The Portman Ritz-Carlton, Shanghai | Luxury Hotel on West Nanjing Road",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.sevenrooms.com/explore/hutonghongkong/reservations/create/search?date=2026-11-15",
+      "http_status": 200,
+      "final_url": "https://www.sevenrooms.com/explore/hutonghongkong/reservations/create/search?date=2026-11-15",
+      "title": "SevenRooms",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.shairport.com/cxf/index.html",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.shbg.org/sites/zhiwuyuan/InfoContent.aspx?ctgId=69631fe2-9beb-4223-8ba4-03467aba9640&infoId=9f292a5f-49a8-4af7-86b8-33e1bb220a8e",
+      "http_status": 200,
+      "final_url": "https://www.shbg.org/?site=zhiwuyuan",
+      "title": "上海植物园",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.shcn.gov.cn/english/col1140/20260527/1310012.html",
+      "http_status": 200,
+      "final_url": "https://www.shcn.gov.cn/english/col1140/20260527/1310012.html",
+      "title": "changning people govmment-Local News-Tianshan Tea City becomes new hotspot for international tourists",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.shhkjrm.com/",
+      "http_status": 200,
+      "final_url": "https://www.shhkjrm.com/",
+      "title": "上海犹太难民纪念馆",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.shwzoo.com/",
+      "http_status": 200,
+      "final_url": "https://www.swap-shendi.com/",
+      "title": "上海野生动物园",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.sina.cn/news/detail/5361166222361066.html",
+      "http_status": 200,
+      "final_url": "https://www.sina.cn/news/detail/5361166222361066.html",
+      "title": "18 岁波兰三重奏登陆重庆，把古典爵士的优雅揉进夜色|KUBA DEREJ TRIO|坚果|古典爵士|重庆_新浪新闻",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.snhm.org.cn/cgfw/cgzx.htm",
+      "http_status": 200,
+      "final_url": "https://www.snhm.org.cn/cgfw/cgzx.htm",
+      "title": "参观咨询",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.sohu.com/a/1052638279_122745326",
+      "http_status": 200,
+      "final_url": "https://www.sohu.com/a/1052638279_122745326",
+      "title": "重庆的十大顶级高端餐厅，您吃过几个？赶紧收藏了！_菜品_食材_地址",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.songshanculturalpark.org/",
+      "http_status": 200,
+      "final_url": "https://www.songshanculturalpark.org/",
+      "title": "松山文創園區",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.sstm.org.cn/",
+      "http_status": 200,
+      "final_url": "https://www.sstm.org.cn/",
+      "title": "上海科技馆官网",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.stackdpb.com/pages/play",
+      "http_status": 200,
+      "final_url": "https://www.stackdpb.com/pages/play",
+      "title": "Play\n   – Stackd",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.starlux-airlines.com/en-TW",
+      "http_status": 200,
+      "final_url": "https://www.starlux-airlines.com/en-TW",
+      "title": "STARLUX Airlines Official Website",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.suzhou.gov.cn/szsrmzf/mszx/202606/face4650ec2245ce818aecc53eb4aaaa.shtml",
+      "http_status": 200,
+      "final_url": "https://www.suzhou.gov.cn/szsrmzf/mszx/202606/face4650ec2245ce818aecc53eb4aaaa.shtml",
+      "title": "74年来首次调整 拙政园19日起提前至6:45开园 - 苏州市人民政府",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.taipeieye.com/en/program/nowshowing/",
+      "http_status": 200,
+      "final_url": "https://www.taipeieye.com/en/program/nowshowing/",
+      "title": "TaipeiEYE -",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.taipeitourism.org/raohe-night-market/",
+      "http_status": 200,
+      "final_url": "https://www.taipeitourism.org/raohe-night-market/",
+      "title": "Raohe Night Market: Why Locals Call It the Best (2026) - Taipei Tourism Guide",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.taiwanobsessed.com/addiction-aquatic-development-taipei/",
+      "http_status": 200,
+      "final_url": "https://www.taiwanobsessed.com/addiction-aquatic-development-taipei/",
+      "title": "Addiction Aquatic Development Taipei: What It Is &amp; How to Visit - Taiwan Obsessed",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=FC2EBF431109F4FC&sms=9A0025CA3D7482D6",
+      "http_status": 200,
+      "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=FC2EBF431109F4FC&sms=9A0025CA3D7482D6",
+      "title": "臺北市藝文推廣處-大稻埕戲苑活動-【臺北市115年歌仔戲觀摩匯演】～免費入座！每晚7點，好戲開鑼～",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.the50.com/restaurants/best-in-asia/the-list/Meet-The-Bund.html",
+      "http_status": 200,
+      "final_url": "https://www.the50.com/restaurants/best-in-asia/the-list/Meet-The-Bund.html",
+      "title": "Meet The Bund | Asia’s 50 Best Restaurants 2026 | Ranked No. 6",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.the50.com/restaurants/best-in-asia/the-list/ling-long.html",
+      "http_status": 200,
+      "final_url": "https://www.the50.com/restaurants/best-in-asia/the-list/ling-long.html",
+      "title": "Ling Long | Asia’s 50 Best Restaurants 2026 | Ranked No. 9",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.theaftermath-hk.club/",
+      "http_status": 200,
+      "final_url": "https://www.theaftermath-hk.club/",
+      "title": "",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.thechairmangroup.com/",
+      "http_status": 503,
+      "result": "http_error; not proof of venue closure"
+    },
+    {
+      "url": "https://www.themirahotel.com/hong-kong/en/offer/wellness/miraspa-pool-day-pass/",
+      "http_status": 200,
+      "final_url": "https://www.themirahotel.com/hong-kong/en/offer/wellness/miraspa-pool-day-pass/",
+      "title": "Pool &amp; Gym Day Pass | The Mira Hong Kong",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.themirahotel.com/hong-kong/en/wellness/",
+      "http_status": 200,
+      "final_url": "https://www.themirahotel.com/hong-kong/en/wellness/",
+      "title": "Wellness at MiraSpa | Award Winning Hotel Spa | The Mira Hong Kong",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.thepaper.cn/newsDetail_forward_34370883",
+      "http_status": 200,
+      "final_url": "https://www.thepaper.cn/newsDetail_forward_34370883",
+      "title": "上博新展预告丨环宇璀璨：大都会艺术博物馆珠宝珍藏展_澎湃号·湃客_澎湃新闻-The Paper",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.thewanch.hk/",
+      "http_status": 200,
+      "final_url": "https://www.thewanch.hk/",
+      "title": "The Wanch &#8211; Hong Kong&#039;s Live Music Club",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.thewanch.hk/event/free-jam-x-the-wanch-open-mic-3/",
+      "http_status": 200,
+      "final_url": "https://www.thewanch.hk/event/free-jam-x-the-wanch-open-mic-3/",
+      "title": "Free Jam x The Wanch Open Mic &#8211; The Wanch",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.theworlds50best.com/restaurants/best-in-asia/the-list/",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.theworlds50best.com/restaurants/best-in-asia/the-list/Fu-He-Hui.html",
+      "http_status": 200,
+      "final_url": "https://www.the50.com/restaurants/best-in-asia/the-list/Fu-He-Hui.html",
+      "title": "Fu He Hui | Asia’s 50 Best Restaurants 2026 | Ranked No. 11",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.theworlds50best.com/restaurants/best-in-asia/the-list/Logy.html",
+      "http_status": 200,
+      "final_url": "https://www.the50.com/restaurants/best-in-asia/the-list/Logy.html",
+      "title": "Logy | Asia’s 50 Best Restaurants 2026 | Ranked No. 22",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.theworlds50best.com/restaurants/best-in-asia/the-list/Neighborhood.html",
+      "http_status": 200,
+      "final_url": "https://www.the50.com/restaurants/best-in-asia/the-list/Neighborhood.html",
+      "title": "Neighborhood | Asia’s 50 Best Restaurants 2026 | Ranked No. 24",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.theworlds50best.com/restaurants/best-in-asia/the-list/The-Chairman.html",
+      "http_status": 200,
+      "final_url": "https://www.the50.com/restaurants/best-in-asia/the-list/The-Chairman.html",
+      "title": "The Chairman | Asia’s 50 Best Restaurants 2026 | Ranked No. 1",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.theworlds50best.com/restaurants/best-in-asia/the-list/Wing.html",
+      "http_status": 200,
+      "final_url": "https://www.the50.com/restaurants/best-in-asia/the-list/Wing.html",
+      "title": "Wing | Asia’s 50 Best Restaurants 2026 | Ranked No. 2",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.timeanddate.com/sun/china/chongqing?month=11&year=2026",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.timeout.com/hong-kong/things-to-do/11-tourist-attractions-hongkongers-never-go-to",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.travel.taipei/en/attraction",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.travel.taipei/en/attraction/all/night-markets",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.travel.taipei/en/attraction/details/1691",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.travel.taipei/en/attraction/details/1692",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.travel.taipei/en/news/details/37639",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.travel.taipei/en/pictorial/article/61787",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.travel.taipei/en/shop/details/5527",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.travel.taipei/immersive/en/a-0-1/",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.travel.taipei/zh-tw/event-calendar/details/66400",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.trip.com/restaurant/china/chongqing/detail/pipayuan-372387/",
+      "http_status": 200,
+      "final_url": "https://www.trip.com/restaurant/china/chongqing/detail/pipayuan-372387/",
+      "title": "PIPAYUAN (Nanping, Chongqing) - Restaurant reviews, menu &amp; contact | Trip.com",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.trip.com/trains/china/route/chongqing-north-to-chengdu-east/",
+      "http_status": 200,
+      "final_url": "https://www.trip.com/trains/china/route/chongqing-north-to-chengdu-east/",
+      "title": "Chongqing North to Chengdu East High-Speed Train Tickets",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.tripadvisor.se/Restaurant_Review-g308272-d2035728-Reviews-Yang_s_Fried_Dumplings_HuangHe_Road-Shanghai.html",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.trvlogue.com/en/hing-kee-restaurant-hong-kong",
+      "http_status": 429,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.tso.gov.taipei/News.aspx?n=BC7BED8580080804&sms=8BB1830722073F63",
+      "http_status": 200,
+      "final_url": "https://www.tso.gov.taipei/News.aspx?n=BC7BED8580080804&sms=8BB1830722073F63",
+      "title": "臺北市立交響樂團-音樂會",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.united.com/en/us/fsr/choose-flights?f=SFO&t=HKG&d=2026-11-12&tt=1&px=1%2C0%2C0%2C0%2C0%2C0%2C0%2C0",
+      "http_status": null,
+      "result": "TimeoutError: The read operation timed out"
+    },
+    {
+      "url": "https://www.voykit.com/taipei/eat/ningxia-night-market",
+      "http_status": 200,
+      "final_url": "https://www.voykit.com/taipei/eat/ningxia-night-market",
+      "title": "Ningxia Night Market · Taipei · Voykit",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.weplaymore.com/",
+      "http_status": 502,
+      "result": "http_error; not proof of venue closure"
+    },
+    {
+      "url": "https://www.westk.hk/en/event/cathay-westk-jazz-fest",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.wetlandpark.gov.hk/en/information/hours",
+      "http_status": 200,
+      "final_url": "https://wetlandpark.gov.hk/en/information/hours",
+      "title": "Hong Kong Wetland Park\t\t\t- Ticketing and Admission\r\n\t- Opening Hours",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.wetlandpark.gov.hk/en/whatsnew/1851",
+      "http_status": 200,
+      "final_url": "https://wetlandpark.gov.hk/en/whatsnew/1851",
+      "title": "Hong Kong Wetland Park - What's New - Upgrading of Exhibition Galleries and some Visitor Facilities of the Hong Kong Wetland Park (Updated in October ",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.wwf.org.hk/en/wetlands/visit/",
+      "http_status": 403,
+      "result": "blocked"
+    },
+    {
+      "url": "https://www.ymcahk.org.hk/thesalisbury/en/accommodation/index.html",
+      "http_status": 200,
+      "final_url": "https://www.ymcahk.org.hk/thesalisbury/en/accommodation/index.html",
+      "title": "The Salisbury - YMCA of Hong Kong - Accommodation",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.ymsnp.gov.tw/en/sglarticle/trail-classification-system",
+      "http_status": 200,
+      "final_url": "https://www.ymsnp.gov.tw/en/sglarticle/trail-classification-system",
+      "title": "中華民國內政部國家公園署全球資訊網",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.yonder.fr/cityguides/hong-kong/restaurants/the-chairman",
+      "http_status": null,
+      "result": "TimeoutError: The read operation timed out"
+    },
+    {
+      "url": "https://www.youthsquare.hk/play/YSDroneFunFest2026",
+      "http_status": 200,
+      "final_url": "https://www.youthsquare.hk/play/YSDroneFunFest2026",
+      "title": "青年廣場 | 飛越 Teen 際：YS 無人機競飛嘉年華",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://www.yugarden.com.cn/Page/WxyGarden/notice.html",
+      "http_status": 504,
+      "result": "http_error; not proof of venue closure"
+    },
+    {
+      "url": "https://xb.caac.gov.cn/XB_XWZX/XB_DQYW/202507/t20250710_227953.html",
+      "http_status": 200,
+      "final_url": "https://xb.caac.gov.cn/XB_XWZX/XB_DQYW/202507/t20250710_227953.html",
+      "title": "西北局扎实推进充电宝乘机新规落地",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://xshhotels.com/sgtq_shwjc",
+      "http_status": 200,
+      "final_url": "https://xshhotels.com/sgtq_shwjc",
+      "title": "象上汇酒店集团有限公司-水裹汤泉_上海五角场",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://yardbirdrestaurant.com/info",
+      "http_status": 200,
+      "final_url": "https://yardbirdrestaurant.com/info",
+      "title": "INFO &mdash; Yardbird",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://yardbirdrestaurant.com/menu",
+      "http_status": 200,
+      "final_url": "https://yardbirdrestaurant.com/menu",
+      "title": "MENU &mdash; Yardbird",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://yardbirdrestaurant.com/reserve",
+      "http_status": 200,
+      "final_url": "https://yardbirdrestaurant.com/reserve",
+      "title": "RESERVATIONS &mdash; Yardbird",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://you.ctrip.com/asks/158/18983796.html",
+      "http_status": 200,
+      "final_url": "https://you.ctrip.com/asks/158/18983796.html",
+      "title": "重庆湖广会馆需要预约吗？散客",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://you.ctrip.com/food/158/145018920.html",
+      "http_status": 200,
+      "final_url": "https://you.ctrip.com/food/158/145018920.html",
+      "title": "",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://you.ctrip.com/food/2/6983202.html",
+      "http_status": 200,
+      "final_url": "https://you.ctrip.com/food/2/6983202.html",
+      "title": "",
+      "result": "reachable; operating hours not established by HTTP"
+    },
+    {
+      "url": "https://you.ctrip.com/sight/shanghai2/136463991.html",
+      "http_status": 200,
+      "final_url": "https://you.ctrip.com/sight/shanghai2/136463991.html",
+      "title": "上海漾·SPACE汤泉生活游玩攻略简介,上海漾·SPACE汤泉生活门票/地址/图片/开放时间/照片/门票价格【携程攻略】",
+      "result": "reachable; operating hours not established by HTTP"
+    }
+  ]
+}
