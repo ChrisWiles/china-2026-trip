@@ -1,0 +1,65 @@
+{
+  "retrieved_date_central": "2026-11-11",
+  "hko_issue_time": "2026-11-12T07:50:00+08:00",
+  "hong_kong": [
+    {
+      "date": "20261113",
+      "low_c": 23,
+      "high_c": 27,
+      "significant_rain_category": "Medium"
+    },
+    {
+      "date": "20261114",
+      "low_c": 23,
+      "high_c": 27,
+      "significant_rain_category": "Medium High"
+    },
+    {
+      "date": "20261115",
+      "low_c": 24,
+      "high_c": 28,
+      "significant_rain_category": "Low"
+    },
+    {
+      "date": "20261116",
+      "low_c": 24,
+      "high_c": 27,
+      "significant_rain_category": "Low"
+    },
+    {
+      "date": "20261117",
+      "low_c": 24,
+      "high_c": 27,
+      "significant_rain_category": "Medium Low"
+    }
+  ],
+  "mainland_source": "https://www.weather.com.cn/weather/101040100.shtml",
+  "mainland_forecast_end": "2026-11-18",
+  "chongqing": [
+    {
+      "date": "2026-11-17",
+      "low_c": 12,
+      "high_c": 16,
+      "outlook": "Light rain becoming overcast"
+    },
+    {
+      "date": "2026-11-18",
+      "low_c": 12,
+      "high_c": 16,
+      "outlook": "Overcast"
+    }
+  ],
+  "optional_chengdu": {
+    "date": "2026-11-18",
+    "low_c": 8,
+    "high_c": 15,
+    "outlook": "Cloudy becoming showers"
+  },
+  "optional_shenzhen": {
+    "date": "2026-11-15",
+    "low_c": 22,
+    "high_c": 28,
+    "outlook": "Cloudy becoming light rain"
+  },
+  "later_dates": "No daily forecast asserted outside checked short-range horizons; seasonal guidance only."
+}

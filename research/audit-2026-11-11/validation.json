@@ -1,0 +1,80 @@
+{
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "index_sha256": "9762220ce081db2276d8cc4196d439d062c8bbfebacddb7617c650c76812bb33",
+  "sw_sha256": "cf8777f621f721d3583e7d4732f9642c254933c9f7ed8d9ada53c589ec98495f",
+  "page_error_initial": [],
+  "document_dimensions": {
+    "innerWidth": 375,
+    "body": 375,
+    "root": 375
+  },
+  "missing_hash_targets": [],
+  "inline_image_violations": [],
+  "nav_targets": [
+    {
+      "label": "Days",
+      "height": 44,
+      "width": 49.734375
+    },
+    {
+      "label": "Cities",
+      "height": 44,
+      "width": 54.734375
+    },
+    {
+      "label": "Flights",
+      "height": 44,
+      "width": 61.046875
+    },
+    {
+      "label": "Maps",
+      "height": 44,
+      "width": 52.671875
+    },
+    {
+      "label": "Weather",
+      "height": 44,
+      "width": 70.5625
+    },
+    {
+      "label": "Prep",
+      "height": 44,
+      "width": 48.25
+    }
+  ],
+  "weather_tables": [
+    {
+      "width": 347,
+      "scrollWidth": 720,
+      "overflow": "auto"
+    },
+    {
+      "width": 347,
+      "scrollWidth": 720,
+      "overflow": "auto"
+    },
+    {
+      "width": 347,
+      "scrollWidth": 720,
+      "overflow": "auto"
+    }
+  ],
+  "detail_sheet_present": true,
+  "cache_state": {
+    "names": [
+      "china-trip-0fb4e7e146e46dcc"
+    ],
+    "entries": 201,
+    "updatedGuide": true,
+    "flightWarning": true
+  },
+  "offline_guide_loaded": true,
+  "offline_weather_nav": true,
+  "offline_full_photo_loaded": true,
+  "page_errors_all": [],
+  "forecast_horizon_labels_present": true,
+  "passed": true
+}

@@ -1,0 +1,2389 @@
+{
+  "checked_date_central": "2026-11-11",
+  "purpose": "Source accessibility only; HTTP success is not venue-opening or inventory verification.",
+  "results": [
+    {
+      "url": "http://cq.bendibao.com/tour/2023814/134205.shtm",
+      "index": 0,
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='cq.bendibao.com', port=443): Max retries exceeded with url: /tour/2023814/134205.shtm (Caused "
+    },
+    {
+      "url": "http://cq.bendibao.com/tour/202578/155317.shtm",
+      "index": 1,
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='cq.bendibao.com', port=443): Max retries exceeded with url: /tour/202578/155317.shtm (Caused b"
+    },
+    {
+      "url": "http://cq.bendibao.com/tour/2025819/157185.shtm",
+      "index": 2,
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='cq.bendibao.com', port=443): Max retries exceeded with url: /tour/2025819/157185.shtm (Caused "
+    },
+    {
+      "url": "http://www.liangjiangyou.com/jiage.html",
+      "index": 3,
+      "status": 200,
+      "final_url": "http://www.liangjiangyou.com/jiage.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "重庆两江游价格-重庆两江游时间-重庆两江游船票价与游览时间",
+      "chars": 1464
+    },
+    {
+      "url": "https://212hk.com/",
+      "index": 4,
+      "status": 200,
+      "final_url": "https://212hk.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "212HK - Hong Kong's Premier Indoor Pickleball Hub",
+      "chars": 6588
+    },
+    {
+      "url": "https://500times.udn.com/wtimes/story/122412/9703152",
+      "index": 5,
+      "status": 200,
+      "final_url": "https://500times.udn.com/wtimes/story/122412/9703152",
+      "content_type": "text/html; charset=utf-8",
+      "title": "2026米其林一星掬Kiku！秋季菜單料理長Kevin以台灣風土譜寫現代日料 | 500盤 | 500輯",
+      "chars": 7721
+    },
+    {
+      "url": "https://aqualuna.com.hk/experiences/evening-harbour-cruise/",
+      "index": 6,
+      "status": 200,
+      "final_url": "https://aqualuna.com.hk/experiences/evening-harbour-cruise/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Evening Harbour Cruise 維多利亞港晚間航遊 | aqualuna Hong Kong",
+      "chars": 3268
+    },
+    {
+      "url": "https://artist.ygfamily.com/ARTISTS/BIGBANG/concert/worldtour/index.html",
+      "index": 7,
+      "status": 200,
+      "final_url": "https://ygbigbang.com/concert/worldtour/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "BIGBANG 2026-2027 WORLD TOUR < XX : COSMOS >",
+      "chars": 2159
+    },
+    {
+      "url": "https://bau.com.hk/web/article/1557842196334575616/web/content_1557842196334575616.html",
+      "index": 8,
+      "status": 200,
+      "final_url": "https://bau.com.hk/web/article/1557842196334575616/web/content_1557842196334575616.html",
+      "content_type": "text/html",
+      "title": "2000架無人機逢周末點亮維港 紅磡新海濱光影盛宴正在上演-紫荊網",
+      "chars": 4712
+    },
+    {
+      "url": "https://bobbytravel.tw/australia-dairy-company/",
+      "index": 9,
+      "status": 200,
+      "final_url": "https://bobbytravel.tw/australia-dairy-company/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "【香港】澳洲牛奶公司：屹立不搖好評排隊店！必吃滑嫩炒蛋、燉奶超經典 - 波比看世界",
+      "chars": 4160
+    },
+    {
+      "url": "https://booking.china-airlines.com/ManageBookingPortal/Login?lang=us-en&country=us&locale=en",
+      "index": 10,
+      "status": 403,
+      "final_url": "https://booking.china-airlines.com/ManageBookingPortal/Login?lang=us-en&country=us&locale=en",
+      "content_type": "text/html",
+      "title": "Access Denied",
+      "chars": 246
+    },
+    {
+      "url": "https://chinaroutesguide.com/what-to-eat-in-chongqing/",
+      "index": 11,
+      "status": 200,
+      "final_url": "https://chinaroutesguide.com/what-to-eat-in-chongqing/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "What to Eat in Chongqing",
+      "chars": 14161
+    },
+    {
+      "url": "https://christmasland.ntpc.gov.tw/event.php",
+      "index": 12,
+      "status": 200,
+      "final_url": "https://christmasland.ntpc.gov.tw/event.php",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "新北歡樂耶誕城 官方網站",
+      "chars": 974
+    },
+    {
+      "url": "https://christmasland.ntpc.gov.tw/zone.php?t=1",
+      "index": 13,
+      "status": 200,
+      "final_url": "https://christmasland.ntpc.gov.tw/zone.php?t=1",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "新北歡樂耶誕城 官方網站",
+      "chars": 6538
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:2023-06-23_%E9%87%8D%E6%85%B6%E6%B9%96%E5%BB%A3%E6%9C%83%E9%A4%A8_02.jpg",
+      "index": 14,
+      "status": 200,
+      "final_url": "https://commons.wikimedia.org/wiki/File:2023-06-23_%E9%87%8D%E6%85%B6%E6%B9%96%E5%BB%A3%E6%9C%83%E9%A4%A8_02.jpg",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "File:2023-06-23 重慶湖廣會館 02.jpg - Wikimedia Commons",
+      "chars": 4851
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:20260322_Hong_Kong_Derby_finish_line.jpg",
+      "index": 15,
+      "status": 200,
+      "final_url": "https://commons.wikimedia.org/wiki/File:20260322_Hong_Kong_Derby_finish_line.jpg",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "File:20260322 Hong Kong Derby finish line.jpg - Wikimedia Commons",
+      "chars": 4472
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Aqua_Luna_at_Tsim_Sha_Tsui_202411.jpg",
+      "index": 16,
+      "status": 200,
+      "final_url": "https://commons.wikimedia.org/wiki/File:Aqua_Luna_at_Tsim_Sha_Tsui_202411.jpg",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "File:Aqua Luna at Tsim Sha Tsui 202411.jpg - Wikimedia Commons",
+      "chars": 5193
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Jianbing_on_plate.jpg",
+      "index": 17,
+      "status": 200,
+      "final_url": "https://commons.wikimedia.org/wiki/File:Jianbing_on_plate.jpg",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "File:Jianbing on plate.jpg - Wikimedia Commons",
+      "chars": 4578
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Shanghai_Maglev_Train.jpg",
+      "index": 18,
+      "status": 200,
+      "final_url": "https://commons.wikimedia.org/wiki/File:Shanghai_Maglev_Train.jpg",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "File:Shanghai Maglev Train.jpg - Wikimedia Commons",
+      "chars": 5268
+    },
+    {
+      "url": "https://commons.wikimedia.org/wiki/File:Taiwanese_Pineapple_Cake_001.jpg",
+      "index": 19,
+      "status": 200,
+      "final_url": "https://commons.wikimedia.org/wiki/File:Taiwanese_Pineapple_Cake_001.jpg",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "File:Taiwanese Pineapple Cake 001.jpg - Wikimedia Commons",
+      "chars": 4538
+    },
+    {
+      "url": "https://cookinn.tw/signature-taiwanese-dumplings-and-noodles-2/",
+      "index": 20,
+      "status": 200,
+      "final_url": "https://cookinn.tw/signature-taiwanese-dumplings-and-noodles-2/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Xiao Long Bao & Beef Noodles - Cookinn Taiwan 旅人料理教室",
+      "chars": 2115
+    },
+    {
+      "url": "https://cq.bendibao.com/tour/202394/134862.shtm",
+      "index": 21,
+      "error": "ReadTimeout: HTTPSConnectionPool(host='cq.bendibao.com', port=443): Read timed out. (read timeout=8)"
+    },
+    {
+      "url": "https://cq.cri.cn/n/20260303/c100d532-79dd-4289-9083-b27d1b5a9c9f.html",
+      "index": 22,
+      "status": 200,
+      "final_url": "https://cq.cri.cn/n/20260303/c100d532-79dd-4289-9083-b27d1b5a9c9f.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "重庆机器人AI应用展示中心开放-国际在线",
+      "chars": 3062
+    },
+    {
+      "url": "https://cq.people.com.cn/n2/2026/0929/c367650-41711219.html",
+      "index": 23,
+      "error": "SSLError: HTTPSConnectionPool(host='cq.people.com.cn', port=443): Max retries exceeded with url: /n2/2026/0929/c367650-41711219.ht"
+    },
+    {
+      "url": "https://cqjlp.gov.cn/zwxx/qxdt/202503/t20250325_14441264_jinglao.html",
+      "index": 24,
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='cqjlp.gov.cn', port=443): Max retries exceeded with url: /zwxx/qxdt/202503/t20250325_14441264_"
+    },
+    {
+      "url": "https://danielfooddiary.com/2025/08/22/neighborhoodhongkong/",
+      "index": 25,
+      "status": 200,
+      "final_url": "https://danielfooddiary.com/2025/08/22/neighborhoodhongkong/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Neighborhood, HONG KONG – Chef David Lai’s Asia’s 50 Best Restaurant with Signature Salt Baked Chicken | DanielFoodDiary.com",
+      "chars": 12833
+    },
+    {
+      "url": "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=fnd&lang=en",
+      "index": 26,
+      "status": 200,
+      "final_url": "https://data.weather.gov.hk/weatherAPI/opendata/weather.php?dataType=fnd&lang=en",
+      "content_type": "application/json; charset=utf-8",
+      "title": "",
+      "chars": 4860
+    },
+    {
+      "url": "https://dfz.cq.gov.cn/zqlswh/fjms_417821/202311/t20231102_12511056.html",
+      "index": 27,
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='dfz.cq.gov.cn', port=443): Max retries exceeded with url: /zqlswh/fjms_417821/202311/t20231102"
+    },
+    {
+      "url": "https://en.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G300021256745679608",
+      "index": 28,
+      "status": 200,
+      "final_url": "https://en.ceramics.ntpc.gov.tw/xmdoc/cont?xsmsid=0G300021256745679608",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Visit Museum | New Taipei City Yingge Ceramics Museum",
+      "chars": 4085
+    },
+    {
+      "url": "https://en.ch.com/static/InternalTermsConditions",
+      "index": 29,
+      "status": 200,
+      "final_url": "https://en.ch.com/static/InternalTermsConditions",
+      "content_type": "text/html; charset=utf-8",
+      "title": "General Terms and Conditions for Carriage of Passengers & Baggage of Spring Airlines Co., Ltd. - Official Website of Spring Airlines",
+      "chars": 234989
+    },
+    {
+      "url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html",
+      "index": 30,
+      "status": 200,
+      "final_url": "https://en.nia.gov.cn/n147418/n147463/c183412/content.html",
+      "content_type": "text/html",
+      "title": "Policy Interpretation_National Immigration administration",
+      "chars": 2750
+    },
+    {
+      "url": "https://en.wuxi.gov.cn/2025-10/14/c_1131992.htm",
+      "index": 31,
+      "status": 200,
+      "final_url": "https://en.wuxi.gov.cn/2025-10/14/c_1131992.htm",
+      "content_type": "text/html",
+      "title": "China Yixing Ceramics Museum (中国宜兴陶瓷博物馆)",
+      "chars": 1682
+    },
+    {
+      "url": "https://en.wuzhen.com.cn/web/introduction?id=2",
+      "index": 32,
+      "error": "SSLError: HTTPSConnectionPool(host='en.wuzhen.com.cn', port=443): Max retries exceeded with url: /web/introduction?id=2 (Caused by"
+    },
+    {
+      "url": "https://en.wuzhen.com.cn/web/traver/periphery",
+      "index": 33,
+      "error": "SSLError: HTTPSConnectionPool(host='en.wuzhen.com.cn', port=443): Max retries exceeded with url: /web/traver/periphery (Caused by "
+    },
+    {
+      "url": "https://eng.taiwan.net.tw/m1.aspx?id=155&sno=0002091",
+      "index": 34,
+      "status": 200,
+      "final_url": "https://eng.taiwan.net.tw/m1.aspx?id=155&sno=0002091",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Yehliu Geopark > New Taipei City > Tourism Administration, Republic of China (Taiwan)",
+      "chars": 5390
+    },
+    {
+      "url": "https://english.cq.gov.cn/specials/Enjoy/Zoos/202608/t20260810_15912219.html",
+      "index": 35,
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='english.cq.gov.cn', port=443): Max retries exceeded with url: /specials/Enjoy/Zoos/202608/t202"
+    },
+    {
+      "url": "https://english.shanghai.gov.cn/en-FirstStores/20260602/7a0cf9e70f5c47d3afec197e62cfd887.html",
+      "index": 36,
+      "status": 200,
+      "final_url": "https://english.shanghai.gov.cn/en-FirstStores/20260602/7a0cf9e70f5c47d3afec197e62cfd887.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Unitree Robotics opens first Asia store in Shanghai",
+      "chars": 1747
+    },
+    {
+      "url": "https://english.shanghai.gov.cn/en-GlobalTasteinShanghai2026-LocalFlavors/20260316/00b0c6d1698d406c8d532a6e169e1a1e.html",
+      "index": 37,
+      "status": 200,
+      "final_url": "https://english.shanghai.gov.cn/en-GlobalTasteinShanghai2026-LocalFlavors/20260316/00b0c6d1698d406c8d532a6e169e1a1e.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "'Xiaolongbao': A small dumpling with a big story_Local Flavors",
+      "chars": 7706
+    },
+    {
+      "url": "https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260421/7b108876c4b54081a29f2aec3e8616d1.html",
+      "index": 38,
+      "status": 200,
+      "final_url": "https://english.shanghai.gov.cn/en-Latest-WhatsNew/20260421/7b108876c4b54081a29f2aec3e8616d1.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Shanghai bathhouses attract global tourists",
+      "chars": 2374
+    },
+    {
+      "url": "https://english.shanghai.gov.cn/en-PlanANightOut/20231206/04f4626499ef46cab5a5862e577e3c68.html",
+      "index": 39,
+      "status": 200,
+      "final_url": "https://english.shanghai.gov.cn/en-PlanANightOut/20231206/04f4626499ef46cab5a5862e577e3c68.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Yuyuan Bazaar",
+      "chars": 1272
+    },
+    {
+      "url": "https://english.zoo.gov.taipei/cp.aspx?n=4AC205302039EC51",
+      "index": 40,
+      "status": 200,
+      "final_url": "https://english.zoo.gov.taipei/cp.aspx?n=4AC205302039EC51",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Taipei Zoo-Opening Times-Daytime Hours",
+      "chars": 3657
+    },
+    {
+      "url": "https://entertainment.hkjc.com/zh-hk/visit-us/sha-tin-racecourse",
+      "index": 41,
+      "status": 200,
+      "final_url": "https://entertainment.hkjc.com/zh-hk/visit-us/sha-tin-racecourse",
+      "content_type": "text/html; charset=utf-8",
+      "title": "計劃行程 - 沙田馬場 - 馬場活動 - 香港賽馬會",
+      "chars": 1984
+    },
+    {
+      "url": "https://event.culture.tw/mocweb/reg/XCT/Detail.init.ctr?actId=60151",
+      "index": 42,
+      "status": 200,
+      "final_url": "https://event.culture.tw/mocweb/reg/XCT/Detail.init.ctr?actId=60151",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "活動明細",
+      "chars": 2280
+    },
+    {
+      "url": "https://finance.sina.com.cn/roll/2026-07-11/doc-inihmvnu3230697.shtml",
+      "index": 43,
+      "status": 200,
+      "final_url": "https://finance.sina.com.cn/roll/2026-07-11/doc-inihmvnu3230697.shtml",
+      "content_type": "text/html",
+      "title": "两岸和平小天使走进重庆机器人AI应用展示中心 感受科技魅力_新浪财经_新浪网",
+      "chars": 3148
+    },
+    {
+      "url": "https://fushan.tfri.gov.tw/en/visit.aspx?id=weJtPdmWy2k%3D",
+      "index": 44,
+      "status": 200,
+      "final_url": "https://fushan.tfri.gov.tw/en/visit.aspx?id=weJtPdmWy2k%3D",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Fushan Botanical Garden Fushan Botanical Garden Ministry of Agriculture, R.O.C.(Taiwan)",
+      "chars": 69591
+    },
+    {
+      "url": "https://global.juneyaoair.com/carryOnBaggage",
+      "index": 45,
+      "status": 200,
+      "final_url": "https://global.juneyaoair.com/carryOnBaggage",
+      "content_type": "text/html;charset=utf-8",
+      "title": "Juneyaoair",
+      "chars": 4182
+    },
+    {
+      "url": "https://global.juneyaoair.com/checkedBaggage",
+      "index": 46,
+      "status": 200,
+      "final_url": "https://global.juneyaoair.com/checkedBaggage",
+      "content_type": "text/html;charset=utf-8",
+      "title": "Juneyaoair",
+      "chars": 8797
+    },
+    {
+      "url": "https://gs.ctrip.com/html5/you/foods/fooddetail/0/8641722.html",
+      "index": 47,
+      "status": 200,
+      "final_url": "https://gs.ctrip.com/html5/you/foods/fooddetail/0/8641722.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "重庆洞亭火锅(防空洞店)攻略,洞亭火锅(防空洞店)套餐/特色菜品推荐_菜单/人均消费/电话/地址/菜系/点评/营业时间_餐厅介绍_哪个菜好吃【携程美食】",
+      "chars": 1839
+    },
+    {
+      "url": "https://gs.ctrip.com/html5/you/foods/fooddetail/2036793/11896102.html",
+      "index": 48,
+      "status": 200,
+      "final_url": "https://gs.ctrip.com/html5/you/foods/fooddetail/2036793/11896102.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "重庆杨记隆府·江湖菜(重庆总店)攻略,杨记隆府·江湖菜(重庆总店)套餐/特色菜品推荐_菜单/人均消费/电话/地址/菜系/点评/营业时间_餐厅介绍_哪个菜好吃【携程美食】",
+      "chars": 1701
+    },
+    {
+      "url": "https://guide.michelin.com/",
+      "index": 49,
+      "status": 202,
+      "final_url": "https://guide.michelin.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "chars": 0
+    },
+    {
+      "url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/lao-zheng-xing-huangpu",
+      "index": 50,
+      "status": 202,
+      "final_url": "https://guide.michelin.com/en/shanghai-municipality/shanghai/restaurant/lao-zheng-xing-huangpu",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "chars": 0
+    },
+    {
+      "url": "https://guide.michelin.com/en/taipei-region/taipei/restaurant/kiku-1216129",
+      "index": 51,
+      "status": 202,
+      "final_url": "https://guide.michelin.com/en/taipei-region/taipei/restaurant/kiku-1216129",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "chars": 0
+    },
+    {
+      "url": "https://guide.michelin.com/en/taipei-region/taipei/restaurant/logy",
+      "index": 52,
+      "status": 202,
+      "final_url": "https://guide.michelin.com/en/taipei-region/taipei/restaurant/logy",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "chars": 0
+    },
+    {
+      "url": "https://guide.michelin.com/en/taipei-region/taipei/restaurant/tairroir",
+      "index": 53,
+      "status": 202,
+      "final_url": "https://guide.michelin.com/en/taipei-region/taipei/restaurant/tairroir",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "chars": 0
+    },
+    {
+      "url": "https://guide.michelin.com/gb/en/hong-kong-region/hong-kong/restaurant/yat-lok",
+      "index": 54,
+      "status": 202,
+      "final_url": "https://guide.michelin.com/gb/en/hong-kong-region/hong-kong/restaurant/yat-lok",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "chars": 0
+    },
+    {
+      "url": "https://guide.michelin.com/ie/en/shanghai-municipality/shanghai/restaurant/meet-the-bund",
+      "index": 55,
+      "status": 202,
+      "final_url": "https://guide.michelin.com/ie/en/shanghai-municipality/shanghai/restaurant/meet-the-bund",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "chars": 0
+    },
+    {
+      "url": "https://guide.michelin.com/sg/en/shanghai-municipality/shanghai/restaurant/cheng-long-hang-huangpu",
+      "index": 56,
+      "status": 202,
+      "final_url": "https://guide.michelin.com/sg/en/shanghai-municipality/shanghai/restaurant/cheng-long-hang-huangpu",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "chars": 0
+    },
+    {
+      "url": "https://guide.michelin.com/sg/en/shanghai-municipality/shanghai/restaurant/fu-he-hui",
+      "index": 57,
+      "status": 202,
+      "final_url": "https://guide.michelin.com/sg/en/shanghai-municipality/shanghai/restaurant/fu-he-hui",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "chars": 0
+    },
+    {
+      "url": "https://guide.michelin.com/tw/en/taipei-region/taipei/restaurant/embers",
+      "index": 58,
+      "status": 202,
+      "final_url": "https://guide.michelin.com/tw/en/taipei-region/taipei/restaurant/embers",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "chars": 0
+    },
+    {
+      "url": "https://guide.michelin.com/us/en/article/travel/where-to-eat-at-raohe-night-market-taipei",
+      "index": 59,
+      "status": 202,
+      "final_url": "https://guide.michelin.com/us/en/article/travel/where-to-eat-at-raohe-night-market-taipei",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "chars": 0
+    },
+    {
+      "url": "https://guide.michelin.com/us/en/hong-kong-region/hong-kong/restaurant/t-ang-court",
+      "index": 60,
+      "status": 202,
+      "final_url": "https://guide.michelin.com/us/en/hong-kong-region/hong-kong/restaurant/t-ang-court",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "chars": 0
+    },
+    {
+      "url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/fu-1088",
+      "index": 61,
+      "status": 202,
+      "final_url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/fu-1088",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "chars": 0
+    },
+    {
+      "url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/qiao-ai-lai-lai-xiao-long-huangpu",
+      "index": 62,
+      "status": 202,
+      "final_url": "https://guide.michelin.com/us/en/shanghai-municipality/shanghai/restaurant/qiao-ai-lai-lai-xiao-long-huangpu",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "chars": 0
+    },
+    {
+      "url": "https://guide.michelin.com/us/en/taipei-region/taipei/restaurant/mume",
+      "index": 63,
+      "status": 202,
+      "final_url": "https://guide.michelin.com/us/en/taipei-region/taipei/restaurant/mume",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "",
+      "chars": 0
+    },
+    {
+      "url": "https://gutspromotion.kktix.cc/events/hitorie2026",
+      "index": 64,
+      "status": 200,
+      "final_url": "https://gutspromotion.kktix.cc/events/hitorie2026",
+      "content_type": "text/html; charset=utf-8",
+      "title": "HITORI-ESCAPE ASIA TOUR 2026 【TAIPEI】",
+      "chars": 5420
+    },
+    {
+      "url": "https://gutspromotion.kktix.cc/events/myds2026",
+      "index": 65,
+      "status": 200,
+      "final_url": "https://gutspromotion.kktix.cc/events/myds2026",
+      "content_type": "text/html; charset=utf-8",
+      "title": "名譽傳說 1st ONEMAN TOUR 2026",
+      "chars": 5438
+    },
+    {
+      "url": "https://hk.trip.com/restaurant/china/chongqing/detail/restaurant-148922867/",
+      "index": 66,
+      "status": 200,
+      "final_url": "https://hk.trip.com/restaurant/china/chongqing/detail/restaurant-148922867/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "陳胖子火鍋（總店） (重慶 解放碑/洪崖洞)－餐牌、食評及資訊｜Trip.com",
+      "chars": 645
+    },
+    {
+      "url": "https://huodong.com/event/detail/iqkmoh",
+      "index": 67,
+      "status": 200,
+      "final_url": "https://huodong.com/event/detail/iqkmoh",
+      "content_type": "text/html; charset=utf-8",
+      "title": "波兰古典爵士Kuba Derej三重奏 - 坚果NUTS - 活动网",
+      "chars": 1296
+    },
+    {
+      "url": "https://hutong.com.hk/reservations/",
+      "index": 68,
+      "status": 200,
+      "final_url": "https://hutong.com.hk/reservations/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Reservations | Hutong | Chinese Restaurant | Hong Kong",
+      "chars": 1264
+    },
+    {
+      "url": "https://info.cec.gov.tw/vote2026/",
+      "index": 69,
+      "status": 200,
+      "final_url": "https://info.cec.gov.tw/vote2026/",
+      "content_type": "text/html",
+      "title": "中央選舉委員會選舉專區",
+      "chars": 11
+    },
+    {
+      "url": "https://inline.app/booking/-LOEGOiuX6eKriFBx6i2:inline-live-2a466/-LOEGOjuv4YoLm5tNnI-",
+      "index": 70,
+      "status": 403,
+      "final_url": "https://inline.app/booking/-LOEGOiuX6eKriFBx6i2:inline-live-2a466/-LOEGOjuv4YoLm5tNnI-",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Attention Required! | Cloudflare",
+      "chars": 753
+    },
+    {
+      "url": "https://inline.app/booking/-NbtEY_pi5UMJOZJqdQ3:inline-live-3/-NbtEYmCvLCf_ZMqv6ow?language=zh-tw",
+      "index": 71,
+      "status": 403,
+      "final_url": "https://inline.app/booking/-NbtEY_pi5UMJOZJqdQ3:inline-live-3/-NbtEYmCvLCf_ZMqv6ow?language=zh-tw",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Attention Required! | Cloudflare",
+      "chars": 753
+    },
+    {
+      "url": "https://jda.cq.gov.cn/web/article/web/content_1461428557456216064.html",
+      "index": 72,
+      "status": 200,
+      "final_url": "https://jda.cq.gov.cn/web/article/web/content_1461428557456216064.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "跟着档案游巴蜀 | 雕梁载史 馆韵长流 ——重庆湖广会馆_重庆档案信息网",
+      "chars": 2654
+    },
+    {
+      "url": "https://jingxuan.douyin.com/m/video/7645931066645171502",
+      "index": 73,
+      "status": 200,
+      "final_url": "https://www.douyin.com/video/7645931066645171502",
+      "content_type": "text/html",
+      "title": "",
+      "chars": 0
+    },
+    {
+      "url": "https://kfbg.org/en/directions-to-KFBG",
+      "index": 74,
+      "status": 200,
+      "final_url": "https://www.kfbg.org/en/directions-to-KFBG",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Directions to KFBG::Kadoorie Farm and Botanic Garden",
+      "chars": 3831
+    },
+    {
+      "url": "https://kfbg.org/en/general-information",
+      "index": 75,
+      "status": 200,
+      "final_url": "https://www.kfbg.org/en/general-information",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "General Information::Kadoorie Farm and Botanic Garden",
+      "chars": 3901
+    },
+    {
+      "url": "https://logy.tw/reservation.html",
+      "index": 76,
+      "status": 200,
+      "final_url": "https://logy.tw/reservation.html",
+      "content_type": "text/html",
+      "title": "logy",
+      "chars": 3692
+    },
+    {
+      "url": "https://montue.ntue.edu.tw/en/visit/",
+      "index": 77,
+      "status": 200,
+      "final_url": "https://montue.ntue.edu.tw/en/visit/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "VISIT | 北師美術館",
+      "chars": 1733
+    },
+    {
+      "url": "https://newtaipei.travel/en",
+      "index": 78,
+      "status": 200,
+      "final_url": "https://newtaipei.travel/en",
+      "content_type": "text/html; charset=utf-8",
+      "title": "New Taipei City Travel",
+      "chars": 3901
+    },
+    {
+      "url": "https://newtaipei.travel/en/shop/business-district",
+      "index": 79,
+      "status": 200,
+      "final_url": "https://newtaipei.travel/en/shop/business-district",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Explore the commercial districts of old streets | New Taipei City Travel",
+      "chars": 9786
+    },
+    {
+      "url": "https://notesfromchina.com/blog/shanghai-3-day-itinerary/",
+      "index": 80,
+      "status": 200,
+      "final_url": "https://notesfromchina.com/blog/shanghai-3-day-itinerary/",
+      "content_type": "text/html",
+      "title": "Shanghai 3-Day Itinerary: The Bund, French Concession & Dumplings",
+      "chars": 26728
+    },
+    {
+      "url": "https://onodera-group.com/sushi-shanghai/",
+      "index": 81,
+      "status": 200,
+      "final_url": "https://onodera-group.com/sushi-shanghai/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "鮨 銀座おのでら 上海店 | 銀座おのでら",
+      "chars": 1221
+    },
+    {
+      "url": "https://onodera-group.com/sushi-shanghai/dinnermenu/",
+      "index": 82,
+      "status": 200,
+      "final_url": "https://onodera-group.com/sushi-shanghai/dinnermenu/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "鮨 [上海店] ディナーメニュー | 銀座おのでら",
+      "chars": 89
+    },
+    {
+      "url": "https://partnernet.hktb.com/en/destination/events_festivals/index.html?eventID=87182",
+      "index": 83,
+      "status": 403,
+      "final_url": "https://partnernet.hktb.com/en/destination/events_festivals/index.html?eventID=87182",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "chars": 58
+    },
+    {
+      "url": "https://pickleballcn.com/courts/cn/chongqing/e23-pi-ke-qiu-ju-le-bu/",
+      "index": 84,
+      "status": 200,
+      "final_url": "https://pickleballcn.com/courts/cn/chongqing/e23-pi-ke-qiu-ju-le-bu/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "E23匹克球俱乐部(一奥天地店)，重庆匹克球场地 | 中匹在线",
+      "chars": 871
+    },
+    {
+      "url": "https://pickleballcn.com/courts/cn/chongqing/zhongyanggongyuandayuecheng/",
+      "index": 85,
+      "status": 200,
+      "final_url": "https://pickleballcn.com/courts/cn/chongqing/zhongyanggongyuandayuecheng/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "重庆中央公园大悦城匹克球场，重庆匹克球场地 | 中匹在线",
+      "chars": 780
+    },
+    {
+      "url": "https://pickleballcn.com/courts/cn/shanghai/ccb13c4f629/",
+      "index": 86,
+      "status": 200,
+      "final_url": "https://pickleballcn.com/courts/cn/shanghai/ccb13c4f629/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "PopBounce，上海匹克球场地 | 中匹在线",
+      "chars": 909
+    },
+    {
+      "url": "https://pickleballcn.com/courts/cn/shanghai/stadium-indoor-pickleball/",
+      "index": 87,
+      "status": 200,
+      "final_url": "https://pickleballcn.com/courts/cn/shanghai/stadium-indoor-pickleball/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "上海体育场室内匹克球馆，上海匹克球场地 | 中匹在线",
+      "chars": 773
+    },
+    {
+      "url": "https://placebook.hk/en/place/peel-fresco-music-lounge/",
+      "index": 88,
+      "error": "SSLError: HTTPSConnectionPool(host='placebook.hk', port=443): Max retries exceeded with url: /en/place/peel-fresco-music-lounge/ ("
+    },
+    {
+      "url": "https://rachelgouk.com/affordable-omakase-uni-shushi-expands-to-xintiandi/",
+      "index": 89,
+      "status": 200,
+      "final_url": "https://rachelgouk.com/affordable-omakase-uni-shushi-expands-to-xintiandi/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Affordable Omakase: Uni Shushi Expands To Xintiandi | Nomfluence",
+      "chars": 3412
+    },
+    {
+      "url": "https://rachelgouk.com/fu-he-hui-shanghais-extraordinary-vegetarian-restaurant/",
+      "index": 90,
+      "status": 200,
+      "final_url": "https://rachelgouk.com/fu-he-hui-shanghais-extraordinary-vegetarian-restaurant/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Fu He Hui: Shanghai's Extraordinary Vegetarian Restaurant | Nomfluence",
+      "chars": 4411
+    },
+    {
+      "url": "https://racing.hkjc.com/en-us/local/information/fixture?CalMonth=11&CalYear=2026",
+      "index": 91,
+      "status": 200,
+      "final_url": "https://racing.hkjc.com/en-us/local/information/fixture?CalMonth=11&CalYear=2026",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Fixture - Horse Racing - The Hong Kong Jockey Club",
+      "chars": 6784
+    },
+    {
+      "url": "https://restaurant-a.com/",
+      "index": 92,
+      "status": 200,
+      "final_url": "https://restaurant-a.com/",
+      "content_type": "text/html",
+      "title": "Restaurant-A",
+      "chars": 353
+    },
+    {
+      "url": "https://s.nia.gov.cn/ArrivalCardFillingPC/",
+      "index": 93,
+      "status": 200,
+      "final_url": "https://s.nia.gov.cn/ArrivalCardFillingPC/",
+      "content_type": "text/html",
+      "title": "入境卡填报",
+      "chars": 107
+    },
+    {
+      "url": "https://sh.bendibao.com/news/202656/305677.shtm",
+      "index": 94,
+      "status": 200,
+      "final_url": "https://sh.bendibao.com/news/202656/305677.shtm",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "2026上海临港无人机烟花秀表演活动常态化演出通知- 上海本地宝",
+      "chars": 4375
+    },
+    {
+      "url": "https://sh.taian-table.cn/faq/",
+      "index": 95,
+      "status": 200,
+      "final_url": "https://sh.taian-table.cn/faq/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "FAQ – Taian Table Shanghai",
+      "chars": 10130
+    },
+    {
+      "url": "https://shanghai.fotografiska.com/zh/visit",
+      "index": 96,
+      "status": 200,
+      "final_url": "https://shanghai.fotografiska.com/zh/visit",
+      "content_type": "text/html; charset=utf-8",
+      "title": "每日营业，开放至深夜 | Fotografiska 影像艺术中心",
+      "chars": 851
+    },
+    {
+      "url": "https://show.bilibili.com/platform/detail.html?id=1007030",
+      "index": 97,
+      "status": 200,
+      "final_url": "https://show.bilibili.com/platform/detail.html?id=1007030",
+      "content_type": "text/html; charset=utf-8",
+      "title": "bilibili会员购漫展票务",
+      "chars": 15
+    },
+    {
+      "url": "https://sp-pickleball.com/venues/pick-le-mode",
+      "index": 98,
+      "status": 200,
+      "final_url": "https://sp-pickleball.com/venues/pick-le-mode",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Pick Le Mode 匹克模｜內湖24小時匹克球館、體驗課與場租 | SP Pickleball Club",
+      "chars": 3850
+    },
+    {
+      "url": "https://sp-pickleball.com/venues/pickle-day-a11-pickleball-court",
+      "index": 99,
+      "status": 200,
+      "final_url": "https://sp-pickleball.com/venues/pickle-day-a11-pickleball-court",
+      "content_type": "text/html; charset=utf-8",
+      "title": "新光 A11 匹克球｜信義區場地、費用與預約資訊 | SP Pickleball Club",
+      "chars": 2791
+    },
+    {
+      "url": "https://tairroir.com/dinner?locale=en",
+      "index": 100,
+      "status": 200,
+      "final_url": "https://tairroir.com/dinner?locale=en",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Tairroir  - dinner",
+      "chars": 1310
+    },
+    {
+      "url": "https://toronto.china-consulate.gov.cn/eng/vp/VISA/202512/t20251204_11766986.htm",
+      "index": 101,
+      "status": 200,
+      "final_url": "https://toronto.china-consulate.gov.cn/eng/vp/VISA/202512/t20251204_11766986.htm",
+      "content_type": "text/html",
+      "title": "Visa Exemption Eligibility_Consulate-General of the People's Republic of China in Toronto",
+      "chars": 15028
+    },
+    {
+      "url": "https://tpac.org.taipei/en/program/2040",
+      "index": 102,
+      "status": 200,
+      "final_url": "https://tpac.org.taipei/en/program/2040",
+      "content_type": "text/html;charset=utf-8",
+      "title": "沉浸式劇場《士林YES！》 ● 臺北表演藝術中心",
+      "chars": 1368
+    },
+    {
+      "url": "https://tpac.org.taipei/program/2051",
+      "index": 103,
+      "status": 200,
+      "final_url": "https://tpac.org.taipei/program/2051",
+      "content_type": "text/html;charset=utf-8",
+      "title": "倫敦全本音樂劇《史瑞克》 ● 臺北表演藝術中心",
+      "chars": 4601
+    },
+    {
+      "url": "https://tpbg.tfri.gov.tw/en/Opening.html",
+      "index": 104,
+      "status": 200,
+      "final_url": "https://tpbg.tfri.gov.tw/en/Opening.html",
+      "content_type": "text/html",
+      "title": "Opening - Visitor Information - Taipei Botanical Garden",
+      "chars": 1286
+    },
+    {
+      "url": "https://travel.taipei/en/event-calendar/details/66782",
+      "index": 105,
+      "status": 403,
+      "final_url": "https://travel.taipei/en/event-calendar/details/66782",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "chars": 58
+    },
+    {
+      "url": "https://travelnews.qunar.com/qa_strategy/chongqing-authentic-sichuan-cuisine-food-guide",
+      "index": 106,
+      "status": 200,
+      "final_url": "https://travelnews.qunar.com/qa_strategy/chongqing-authentic-sichuan-cuisine-food-guide",
+      "content_type": "text/html; charset=utf-8",
+      "title": "重庆正宗川渝美食攻略有哪些？ - 去哪儿",
+      "chars": 1836
+    },
+    {
+      "url": "https://tw.trip.com/moments/poi-city-151629794/",
+      "index": 107,
+      "status": 200,
+      "final_url": "https://tw.trip.com/moments/poi-city-151629794/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "2026丁老頭烤肉·聽民謠看夜景 | 重慶餐廳指南與旅客實拍 | Trip Moments",
+      "chars": 8324
+    },
+    {
+      "url": "https://twac.immigration.gov.tw/",
+      "index": 108,
+      "status": 200,
+      "final_url": "https://twac.immigration.gov.tw/",
+      "content_type": "text/html",
+      "title": "TWAC Taiwan Arrival Card",
+      "chars": 71
+    },
+    {
+      "url": "https://untourfoodtours.com/shanghai-street-eats-breakfast/",
+      "index": 109,
+      "status": 200,
+      "final_url": "https://untourfoodtours.com/shanghai-street-eats-breakfast/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "SHANGHAI STREET EATS BREAKFAST - UnTour Food Tours",
+      "chars": 4797
+    },
+    {
+      "url": "https://us.trip.com/moments/detail/taipei-360-135980560/",
+      "index": 110,
+      "status": 200,
+      "final_url": "https://us.trip.com/moments/detail/taipei-360-135980560/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Din Tai Fung 101 | Trip.com Taipei",
+      "chars": 10180
+    },
+    {
+      "url": "https://victoriawaters.com/tc/blog/hong-kong-drone-show-schedule-2026",
+      "index": 111,
+      "status": 200,
+      "final_url": "https://victoriawaters.com/tc/blog/hong-kong-drone-show-schedule-2026",
+      "content_type": "text/html",
+      "title": "2026 香港無人機表演時間表、主題及最佳觀賞位置｜維港發展",
+      "chars": 2747
+    },
+    {
+      "url": "https://warnermusictwtw.kktix.cc/events/ofgkrikd",
+      "index": 112,
+      "status": 200,
+      "final_url": "https://warnermusictwtw.kktix.cc/events/ofgkrikd",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Karencici The Loser Live In Concert",
+      "chars": 5643
+    },
+    {
+      "url": "https://webassets2.starlux-airlines.com/en-US/Images/STARLUX_Airlines_General_rules_tcm8-7082.pdf",
+      "index": 113,
+      "status": 200,
+      "final_url": "https://webassets2.starlux-airlines.com/en-US/Images/STARLUX_Airlines_General_rules_tcm8-7082.pdf",
+      "content_type": "application/pdf",
+      "title": "PDF; document not parsed in link pass"
+    },
+    {
+      "url": "https://wetlandpark.gov.hk/en/whatsnew/1851",
+      "index": 114,
+      "status": 200,
+      "final_url": "https://wetlandpark.gov.hk/en/whatsnew/1851",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Hong Kong Wetland Park - What's New - Upgrading of Exhibition Galleries and some Visitor Facilities of the Hong Kong Wetland Park (Updated in October 2026)",
+      "chars": 1709
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/1248/",
+      "index": 115,
+      "status": 403,
+      "final_url": "https://whc.unesco.org/en/list/1248/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "chars": 58
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/1334/",
+      "index": 116,
+      "status": 403,
+      "final_url": "https://whc.unesco.org/en/list/1334/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "chars": 58
+    },
+    {
+      "url": "https://whc.unesco.org/en/list/813/",
+      "index": 117,
+      "status": 403,
+      "final_url": "https://whc.unesco.org/en/list/813/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "chars": 58
+    },
+    {
+      "url": "https://whlyj.sh.gov.cn/gqfc/20260920/edb5d29adf864ec79b48f62e0c4982cc.html",
+      "index": 118,
+      "status": 200,
+      "final_url": "https://whlyj.sh.gov.cn/gqfc/20260920/edb5d29adf864ec79b48f62e0c4982cc.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "上海静安国际雕塑展9月启幕，静安雕塑公园变身日夜艺术场_各区风采_上海市文化和旅游局",
+      "chars": 2130
+    },
+    {
+      "url": "https://wingrestaurant.hk/reservation-terms-and-conditions",
+      "index": 119,
+      "status": 200,
+      "final_url": "https://wingrestaurant.hk/reservation-terms-and-conditions",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Reservation Policy | WING Restaurant",
+      "chars": 2672
+    },
+    {
+      "url": "https://www.240hoursinchina.com/en-us/chongqing/guide/24hour-spa",
+      "index": 120,
+      "status": 200,
+      "final_url": "https://www.240hoursinchina.com/en-us/chongqing/guide/24hour-spa",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Qianxi Hot Spring Chongqing: Complete Guide to a 24 Hour Chinese Spa - Chongqing - 240 China Travel Guide",
+      "chars": 12380
+    },
+    {
+      "url": "https://www.3gmuseum.cn/",
+      "index": 121,
+      "status": 200,
+      "final_url": "https://www.3gmuseum.cn/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "重庆中国三峡博物馆",
+      "chars": 9
+    },
+    {
+      "url": "https://www.aa.com/i18n/travel-info/baggage/carry-on-baggage.jsp",
+      "index": 122,
+      "status": 200,
+      "final_url": "https://www.aa.com/web/i18n/travel-info/baggage/carry-on-baggage.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Carry-on bags and size limits | American Airlines",
+      "chars": 3766
+    },
+    {
+      "url": "https://www.accupass.com/event/2611030615453481135120",
+      "index": 123,
+      "status": 200,
+      "final_url": "https://www.accupass.com/event/2611030615453481135120",
+      "content_type": "text/html; charset=utf-8",
+      "title": "GIVE THANKS NIGHT｜感恩音樂派對 ft. 離譜樂團｜ACCUPASS",
+      "chars": 3347
+    },
+    {
+      "url": "https://www.agoda.com/",
+      "index": 124,
+      "status": 200,
+      "final_url": "https://www.agoda.com/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "",
+      "chars": 0
+    },
+    {
+      "url": "https://www.alaskaair.com/content/travel-info/baggage/carry-on-luggage",
+      "index": 125,
+      "status": 406,
+      "final_url": "https://www.alaskaair.com/content/travel-info/baggage/carry-on-luggage",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Looks like we hit some turbulence - ATMOS Rewards",
+      "chars": 317
+    },
+    {
+      "url": "https://www.belgiandays.hk/zh_TW/event/zhu-gu-li-wen-hua-jie-62/register",
+      "index": 126,
+      "status": 200,
+      "final_url": "https://www.belgiandays.hk/zh_TW/event/zhu-gu-li-wen-hua-jie-62/register",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Chocolate Festival",
+      "chars": 3078
+    },
+    {
+      "url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html",
+      "index": 127,
+      "status": 200,
+      "final_url": "https://www.boca.gov.tw/cp-149-4486-7785a-2.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Bureau of Consular Affairs, Ministry of Foreign Affairs, Republic of China(Taiwan)-Visa-Exempt Entry",
+      "chars": 9327
+    },
+    {
+      "url": "https://www.booking.com/hotel/tw/san-want-residences-taipei.html",
+      "index": 128,
+      "status": 202,
+      "final_url": "https://www.booking.com/hotel/tw/san-want-residences-taipei.html",
+      "content_type": "text/html",
+      "title": "",
+      "chars": 166
+    },
+    {
+      "url": "https://www.cathaypacific.com/content/dam/cx/legal-and-privacy/cx-et-conditions-of-contracts-notices.pdf",
+      "index": 129,
+      "status": 200,
+      "final_url": "https://www.cathaypacific.com/content/dam/cx/legal-and-privacy/cx-et-conditions-of-contracts-notices.pdf",
+      "content_type": "application/pdf",
+      "title": "PDF; document not parsed in link pass"
+    },
+    {
+      "url": "https://www.cathaypacific.com/cx/en_US/book-a-trip/book-flights/new-economy-fares.html",
+      "index": 130,
+      "status": 200,
+      "final_url": "https://www.cathaypacific.com/cx/en_US/book-a-trip/book-flights/new-economy-fares.html",
+      "content_type": "text/html;charset=utf-8",
+      "title": "Our Economy fares | Cathay US",
+      "chars": 2837
+    },
+    {
+      "url": "https://www.cathaypacific.com/cx/en_US/manage-booking.html",
+      "index": 131,
+      "status": 200,
+      "final_url": "https://www.cathaypacific.com/mb/#/en_US/login",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Manage Booking | Online Check-in",
+      "chars": 32
+    },
+    {
+      "url": "https://www.cbg.cn/a/4929/20260624/9838689ba8e64b589e936ae83c1d6397.html",
+      "index": 132,
+      "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+    },
+    {
+      "url": "https://www.china-airlines.com/us/en/prepare-for-the-fly/information/baggage/carry-on-baggage",
+      "index": 133,
+      "status": 403,
+      "final_url": "https://www.china-airlines.com/us/en/prepare-for-the-fly/information/baggage/carry-on-baggage",
+      "content_type": "text/html",
+      "title": "Access Denied",
+      "chars": 278
+    },
+    {
+      "url": "https://www.chinanews.com.cn/m/tp/hd/2026/0601/180273.shtml",
+      "index": 134,
+      "status": 200,
+      "final_url": "https://www.chinanews.com.cn/m/tp/hd/2026/0601/180273.shtml",
+      "content_type": "text/html",
+      "title": "宇树科技具身智能体验馆亚洲首店亮相上海-中国新闻网",
+      "chars": 477
+    },
+    {
+      "url": "https://www.cityhui.com/shop/20300.html",
+      "index": 135,
+      "error": "ConnectionError: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))"
+    },
+    {
+      "url": "https://www.citynewsservice.cn/articles/cns/hai-lights/hai-lights/yn6o3b9n",
+      "index": 136,
+      "status": 200,
+      "final_url": "https://www.citynewsservice.cn/articles/cns/hai-lights/hai-lights/yn6o3b9n",
+      "content_type": "text/html; charset=utf-8",
+      "title": "[Hai Lights] Where to Soak This Winter in and Beyond Shanghai - City News Service",
+      "chars": 18758
+    },
+    {
+      "url": "https://www.cq.gov.cn/ywdt/bmts/202502/t20250211_14293414.html",
+      "index": 137,
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.cq.gov.cn', port=443): Max retries exceeded with url: /ywdt/bmts/202502/t20250211_14293414"
+    },
+    {
+      "url": "https://www.cq.gov.cn/ywdt/jrcq/202411/t20241106_13773153_app.html",
+      "index": 138,
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.cq.gov.cn', port=443): Max retries exceeded with url: /ywdt/jrcq/202411/t20241106_13773153"
+    },
+    {
+      "url": "https://www.cq.gov.cn/zjcq/cycq/zmjd/zqaaaaajjq/202606/t20260604_15729058.html",
+      "index": 139,
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.cq.gov.cn', port=443): Max retries exceeded with url: /zjcq/cycq/zmjd/zqaaaaajjq/202606/t2"
+    },
+    {
+      "url": "https://www.cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/ggwh/ly/zxdt/202506/t20250624_14714972.html",
+      "index": 140,
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.cq.gov.cn', port=443): Max retries exceeded with url: /zwgk/zfxxgkml/zdlyxxgk/ggwh/ly/zxdt"
+    },
+    {
+      "url": "https://www.cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/ggwh/wh/ychdyg/202512/t20251231_15284701.html",
+      "index": 141,
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.cq.gov.cn', port=443): Max retries exceeded with url: /zwgk/zfxxgkml/zdlyxxgk/ggwh/wh/ychd"
+    },
+    {
+      "url": "https://www.cq.gov.cn/zwgk/zfxxgkml/zdlyxxgk/kj/kjzx/202603/t20260304_15495307.html",
+      "index": 142,
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.cq.gov.cn', port=443): Max retries exceeded with url: /zwgk/zfxxgkml/zdlyxxgk/kj/kjzx/2026"
+    },
+    {
+      "url": "https://www.cq1949.net/",
+      "index": 143,
+      "status": 200,
+      "final_url": "https://www.cq1949.net/website/pc/index.html?m_code=dwr1Op9C3C5qVSng3ZWSFA",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "重庆1949大剧院",
+      "chars": 9
+    },
+    {
+      "url": "https://www.cqna.gov.cn/zjna/ns/hlns/nsjd/202601/t20260129_15362830.html",
+      "index": 144,
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.cqna.gov.cn', port=443): Max retries exceeded with url: /zjna/ns/hlns/nsjd/202601/t2026012"
+    },
+    {
+      "url": "https://www.cqnews.net/web/content_1567865543527256064.html",
+      "index": 145,
+      "status": 200,
+      "final_url": "https://www.cqnews.net/web/content_1567865543527256064.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "第九届非博会明日开幕 100万元文旅惠民消费券同步上线-华龙网-重庆市委市政府官方新闻门户",
+      "chars": 4431
+    },
+    {
+      "url": "https://www.cqnews.net/web/content_1568053039196295168.html",
+      "index": 146,
+      "status": 200,
+      "final_url": "https://www.cqnews.net/web/content_1568053039196295168.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "文艺早知道 | 燃情的说唱、婉转的川剧…… 剧院展馆邀你赴一场艺术之约-华龙网-重庆市委市政府官方新闻门户",
+      "chars": 1652
+    },
+    {
+      "url": "https://www.cqspb.gov.cn/wzywb/exploreleisure/attractions/202209/t20220930_11159549.html",
+      "index": 147,
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.cqspb.gov.cn', port=443): Max retries exceeded with url: /wzywb/exploreleisure/attractions"
+    },
+    {
+      "url": "https://www.csnbgsh.com/portal/ticket/guide",
+      "index": 148,
+      "status": 200,
+      "final_url": "https://www.csnbgsh.com/portal/ticket/guide",
+      "content_type": "text/html; charset=utf-8",
+      "title": "",
+      "chars": 46
+    },
+    {
+      "url": "https://www.cwa.gov.tw/V8/E/W/County/County.html?CID=63",
+      "index": 149,
+      "status": 200,
+      "final_url": "https://www.cwa.gov.tw/V8/E/W/County/County.html?CID=63",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Cities/Counties Forecast | Central Weather Administration",
+      "chars": 825
+    },
+    {
+      "url": "https://www.discoverhongkong.com/eng/attractions/your-guide-to-experiencing-hong-kong.html",
+      "index": 150,
+      "status": 403,
+      "final_url": "https://www.discoverhongkong.com/eng/attractions/your-guide-to-experiencing-hong-kong.html",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "chars": 58
+    },
+    {
+      "url": "https://www.discoverhongkong.com/eng/events/event.id86002.v-mart.html",
+      "index": 151,
+      "status": 403,
+      "final_url": "https://www.discoverhongkong.com/eng/events/event.id86002.v-mart.html",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "chars": 58
+    },
+    {
+      "url": "https://www.discoverhongkong.com/eng/neighbourhoods/outlying-islands/the-best-things-to-do-on-lantau-island.html",
+      "index": 152,
+      "status": 403,
+      "final_url": "https://www.discoverhongkong.com/eng/neighbourhoods/outlying-islands/the-best-things-to-do-on-lantau-island.html",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "chars": 58
+    },
+    {
+      "url": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-sham-shui-po-fabric-market.html",
+      "index": 153,
+      "status": 403,
+      "final_url": "https://www.discoverhongkong.com/eng/place-to-go/travel.guide-sham-shui-po-fabric-market.html",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "chars": 58
+    },
+    {
+      "url": "https://www.emperorspa.com.tw/facilities.html",
+      "index": 154,
+      "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+    },
+    {
+      "url": "https://www.emperorspa.com.tw/news.aspx",
+      "index": 155,
+      "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+    },
+    {
+      "url": "https://www.era-shanghai.com/pc/booking",
+      "index": 156,
+      "status": 200,
+      "final_url": "https://www.era-shanghai.com/pc/booking",
+      "content_type": "text/html; charset=utf-8",
+      "title": "EraShanghai - 时空之旅门票-上海马戏城门票－订购［era时空之旅］上海马戏城官方网站门票！",
+      "chars": 69
+    },
+    {
+      "url": "https://www.expopark.taipei/News_Photo_Content.aspx?n=247&s=4590&sms=9029",
+      "index": 157,
+      "status": 200,
+      "final_url": "https://www.expopark.taipei/News_Photo_Content.aspx?n=247&s=4590&sms=9029",
+      "content_type": "text/html; charset=utf-8",
+      "title": "2026臺灣花卉推介會",
+      "chars": 3330
+    },
+    {
+      "url": "https://www.flight.info/UA869",
+      "index": 158,
+      "status": 403,
+      "final_url": "https://www.flight.info/UA869",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "chars": 58
+    },
+    {
+      "url": "https://www.foodpanda.hk/restaurant/acrh/yat-lok-restaurant-central-extended-delivery",
+      "index": 159,
+      "status": 200,
+      "final_url": "https://www.foodpanda.hk/restaurant/acrh/yat-lok-restaurant-central-extended-delivery",
+      "content_type": "text/html",
+      "title": "Yat Lok Restaurant (Central) [Extended Delivery] Menu, Price & Delivery Near You | foodpanda",
+      "chars": 4967
+    },
+    {
+      "url": "https://www.gohk.gov.hk/en/spots/spot_detail.php?spot=Lascar+Row",
+      "index": 160,
+      "status": 200,
+      "final_url": "https://www.gohk.gov.hk/en/spots/spot_detail.php?spot=Lascar+Row",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Hong Kong Fun in 18 Districts - Lascar Row",
+      "chars": 3176
+    },
+    {
+      "url": "https://www.gvrb.com.tw/en/service/%E6%B9%AF%E5%B1%8B-2/",
+      "index": 161,
+      "status": 200,
+      "final_url": "https://www.gvrb.com.tw/en/service/%E6%B9%AF%E5%B1%8B-2/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Private hot spring room - Grand View Resort Beitou",
+      "chars": 6360
+    },
+    {
+      "url": "https://www.gvrb.com.tw/en/service/%E9%9C%B2%E5%A4%A9%E9%A2%A8%E5%91%82/",
+      "index": 162,
+      "status": 200,
+      "final_url": "https://www.gvrb.com.tw/en/service/%E9%9C%B2%E5%A4%A9%E9%A2%A8%E5%91%82/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Public hot spring - Grand View Resort Beitou",
+      "chars": 4499
+    },
+    {
+      "url": "https://www.hkharbourrace.com/race-information/?lang=hk",
+      "index": 163,
+      "status": 200,
+      "final_url": "https://www.hkharbourrace.com/race-information/?lang=hk",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "賽事資料 - 維港泳 2026",
+      "chars": 12600
+    },
+    {
+      "url": "https://www.hko.gov.hk/en/cis/normal/1991_2020/normals.htm",
+      "index": 164,
+      "status": 200,
+      "final_url": "https://www.hko.gov.hk/en/cis/normal/1991_2020/normals.htm",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Monthly Meteorological Normals for Hong Kong (1991-2020)｜Hong Kong Observatory(HKO)｜Climatological Normals and Extremes",
+      "chars": 9141
+    },
+    {
+      "url": "https://www.hko.gov.hk/textonly/v2/forecast/nday.htm",
+      "index": 165,
+      "status": 200,
+      "final_url": "https://www.hko.gov.hk/textonly/v2/forecast/nday.htm",
+      "content_type": "text/html",
+      "title": "9-day Weather Forecast",
+      "chars": 3455
+    },
+    {
+      "url": "https://www.hko.gov.hk/textonly/v2/warning/warn.htm",
+      "index": 166,
+      "status": 200,
+      "final_url": "https://www.hko.gov.hk/textonly/v2/warning/warn.htm",
+      "content_type": "text/html",
+      "title": "Warning(s) in Force",
+      "chars": 132
+    },
+    {
+      "url": "https://www.hkpm.org.hk/en/exhibition",
+      "index": 167,
+      "status": 200,
+      "final_url": "https://www.hkpm.org.hk/en/exhibition",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Hong Kong Palace Museum | Exhibitions",
+      "chars": 1411
+    },
+    {
+      "url": "https://www.hkpm.org.hk/en/visit/plan-your-visit",
+      "index": 168,
+      "status": 200,
+      "final_url": "https://www.hkpm.org.hk/en/visit/plan-your-visit",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Hong Kong Palace Museum | Plan your visit",
+      "chars": 18404
+    },
+    {
+      "url": "https://www.hkyaf.com/events/1084/Standard%20Chartered%20Arts%20in%20the%20Park%202026%3A%20Grand%20Finale%20Parade",
+      "index": 169,
+      "status": 403,
+      "final_url": "https://www.hkyaf.com/events/1084/Standard%20Chartered%20Arts%20in%20the%20Park%202026%3A%20Grand%20Finale%20Parade",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Attention Required! | Cloudflare",
+      "chars": 752
+    },
+    {
+      "url": "https://www.hkyaf.com/events/1085/Standard%20Chartered%20Arts%20in%20the%20Park%202026%3A%20Night%20Parade",
+      "index": 170,
+      "status": 403,
+      "final_url": "https://www.hkyaf.com/events/1085/Standard%20Chartered%20Arts%20in%20the%20Park%202026%3A%20Night%20Parade",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Attention Required! | Cloudflare",
+      "chars": 752
+    },
+    {
+      "url": "https://www.hkzbg.gov.hk/en/visitPage.html",
+      "index": 171,
+      "status": 200,
+      "final_url": "https://www.hkzbg.gov.hk/en/visitPage.html",
+      "content_type": "text/html",
+      "title": "Hong Kong Zoological and Botanical Gardens - Visit",
+      "chars": 2790
+    },
+    {
+      "url": "https://www.holeefook.com.hk/s/HLF_main_menu_Oct2026_Digital.pdf",
+      "index": 172,
+      "status": 200,
+      "final_url": "https://static1.squarespace.com/static/5b963019c258b4fee2aaa328/t/6ac48fdee5035068d9b1a749/1791266782763/HLF_main_menu_Oct2026_Digital.pdf",
+      "content_type": "application/pdf",
+      "title": "PDF; document not parsed in link pass"
+    },
+    {
+      "url": "https://www.hongqiaotechweek.com/register/",
+      "index": 173,
+      "status": 200,
+      "final_url": "https://www.hongqiaotechweek.com/register/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "登记参观 - 虹桥国际科技周",
+      "chars": 1363
+    },
+    {
+      "url": "https://www.ichongqing.info/2026/01/30/from-ski-slopes-to-rural-coffee-shops-how-chongqing-wulong-achieved-dual-growth-in-visitors-and-spending-in-2025/",
+      "index": 174,
+      "status": 200,
+      "final_url": "https://www.ichongqing.info/2026/01/30/from-ski-slopes-to-rural-coffee-shops-how-chongqing-wulong-achieved-dual-growth-in-visitors-and-spending-in-2025/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "From Ski Slopes to Rural Coffee Shops: How Chongqing Wulong Achieved Dual Growth in Visitors and Spending in 2025 | ichongqing",
+      "chars": 6658
+    },
+    {
+      "url": "https://www.ichongqing.info/2026/04/30/beat-the-may-day-crowds-three-riverside-walks-that-unlock-chongqings-iconic-sights/",
+      "index": 175,
+      "status": 200,
+      "final_url": "https://www.ichongqing.info/2026/04/30/beat-the-may-day-crowds-three-riverside-walks-that-unlock-chongqings-iconic-sights/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Beat the May Day Crowds: Three Riverside Walks That Unlock Chongqing's Iconic Sights | ichongqing",
+      "chars": 5547
+    },
+    {
+      "url": "https://www.ichongqing.info/attraction/longmenhao-old-street/",
+      "index": 176,
+      "status": 200,
+      "final_url": "https://www.ichongqing.info/attraction/longmenhao-old-street/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Longmenhao Old Street | ichongqing",
+      "chars": 2821
+    },
+    {
+      "url": "https://www.instagram.com/p/DU-9DqvDDQk/",
+      "index": 177,
+      "status": 200,
+      "final_url": "https://www.instagram.com/p/DU-9DqvDDQk/",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "title": "Instagram",
+      "chars": 9
+    },
+    {
+      "url": "https://www.klook.com/en-US/activity/139018-yang-space-soup-spa-life/",
+      "index": 178,
+      "status": 403,
+      "final_url": "https://www.klook.com/en-US/activity/139018-yang-space-soup-spa-life/",
+      "content_type": "text/html;charset=utf-8",
+      "title": "klook.com",
+      "chars": 53
+    },
+    {
+      "url": "https://www.klook.com/en-US/activity/185515-qushui-lanting-shanghai/",
+      "index": 179,
+      "status": 403,
+      "final_url": "https://www.klook.com/en-US/activity/185515-qushui-lanting-shanghai/",
+      "content_type": "text/html;charset=utf-8",
+      "title": "klook.com",
+      "chars": 53
+    },
+    {
+      "url": "https://www.klook.com/en-US/activity/187366-shuiguotangquan-wujiaochang-store/",
+      "index": 180,
+      "status": 403,
+      "final_url": "https://www.klook.com/en-US/activity/187366-shuiguotangquan-wujiaochang-store/",
+      "content_type": "text/html;charset=utf-8",
+      "title": "klook.com",
+      "chars": 53
+    },
+    {
+      "url": "https://www.klook.com/zh-TW/activity/57963-taipei-kuo-yuan-ye-foods-mango-crisp-diy-experience-diy-experience/",
+      "index": 181,
+      "status": 403,
+      "final_url": "https://www.klook.com/zh-TW/activity/57963-taipei-kuo-yuan-ye-foods-mango-crisp-diy-experience-diy-experience/",
+      "content_type": "text/html;charset=utf-8",
+      "title": "klook.com",
+      "chars": 53
+    },
+    {
+      "url": "https://www.kuos.com/zh-TW/pages/pineapple-cake-diy-introduction",
+      "index": 182,
+      "status": 200,
+      "final_url": "https://www.kuos.com/zh-TW/pages/pineapple-cake-diy-introduction",
+      "content_type": "text/html; charset=utf-8",
+      "title": "懷舊鳳梨酥 DIY 課程介紹 郭元益",
+      "chars": 86
+    },
+    {
+      "url": "https://www.langhamhotels.com/content/dam/langhamhotels/tlhkg-pdfs/260521_Digital.pdf",
+      "index": 183,
+      "status": 200,
+      "final_url": "https://www.langhamhotels.com/content/dam/langhamhotels/tlhkg-pdfs/260521_Digital.pdf",
+      "content_type": "application/pdf",
+      "title": "PDF; document not parsed in link pass"
+    },
+    {
+      "url": "https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/",
+      "index": 184,
+      "status": 200,
+      "final_url": "https://www.langhamhotels.com/en/the-langham/shanghai/dine/tang-court/",
+      "content_type": "text/html;charset=utf-8",
+      "title": "T’ang Court | Michelin-Starred Cantonese Restaurant | The Langham, Shanghai, Xintiandi",
+      "chars": 3842
+    },
+    {
+      "url": "https://www.lingang.gov.cn/html/website/lg/index/news/Mediafocus/2069237972186759169.html",
+      "index": 185,
+      "status": 200,
+      "final_url": "https://www.lingang.gov.cn/html/website/lg/index/news/Mediafocus/2069237972186759169.html",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "首页 - 中国（上海）自由贸易试验区临港新片区管理委员会",
+      "chars": 5310
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/ckgjw-jw-marriott-hotel-chongqing/overview/",
+      "index": 186,
+      "status": 403,
+      "final_url": "https://www.marriott.com/en-us/hotels/ckgjw-jw-marriott-hotel-chongqing/overview/",
+      "content_type": "text/html",
+      "title": "Access Denied",
+      "chars": 266
+    },
+    {
+      "url": "https://www.marriott.com/en-us/hotels/ckgwi-the-westin-chongqing-liberation-square/overview/",
+      "index": 187,
+      "status": 403,
+      "final_url": "https://www.marriott.com/en-us/hotels/ckgwi-the-westin-chongqing-liberation-square/overview/",
+      "content_type": "text/html",
+      "title": "Access Denied",
+      "chars": 277
+    },
+    {
+      "url": "https://www.meet-in-shanghai.net/cn/concert/blizzard-35th-anniversary-official-game-symphony-concert-led-by-jason-hayes-399073/",
+      "index": 188,
+      "status": 200,
+      "final_url": "https://www.meet-in-shanghai.net/cn/concert/blizzard-35th-anniversary-official-game-symphony-concert-led-by-jason-hayes-399073/",
+      "content_type": "text/html",
+      "title": "暴雪35周年官方游戏交响音乐会（Jason Hayes 领衔）_暴雪35周年官方游戏交响音乐会（Jason Hayes 领衔）地址/电话/开放时间-上海市文旅推广网",
+      "chars": 624
+    },
+    {
+      "url": "https://www.meet-in-shanghai.net/en/guide/discover-the-captivating-bathhouses-of-shanghai-553207/",
+      "index": 189,
+      "status": 200,
+      "final_url": "https://www.meet-in-shanghai.net/en/guide/discover-the-captivating-bathhouses-of-shanghai-553207/",
+      "content_type": "text/html",
+      "title": "Discover the captivating bathhouses of Shanghai-The Official Shanghai China Travel Website",
+      "chars": 9648
+    },
+    {
+      "url": "https://www.meet-in-shanghai.net/en/minhang-district/qibao-ancient-town-746455/",
+      "index": 190,
+      "status": 200,
+      "final_url": "https://www.meet-in-shanghai.net/en/minhang-district/qibao-ancient-town-746455/",
+      "content_type": "text/html",
+      "title": "Qibao Ancient Town-The Official Shanghai China Travel Website",
+      "chars": 3689
+    },
+    {
+      "url": "https://www.meet-in-shanghai.net/en/news/all-the-exhibitions-coming-to-shanghai-museum-in-2026-%E2%80%93-save-this-list-238693/",
+      "index": 191,
+      "status": 200,
+      "final_url": "https://www.meet-in-shanghai.net/en/news/all-the-exhibitions-coming-to-shanghai-museum-in-2026-%E2%80%93-save-this-list-238693/",
+      "content_type": "text/html",
+      "title": "All the Exhibitions Coming to Shanghai Museum in 2026 – Save This List-The Official Shanghai China Travel Website",
+      "chars": 18894
+    },
+    {
+      "url": "https://www.metro-orientalplaza.com/html/content/25/09/1501.shtml",
+      "index": 192,
+      "status": 200,
+      "final_url": "https://www.metro-orientalplaza.com/html/content/25/09/1501.shtml",
+      "content_type": "text/html",
+      "title": "米其星球｜解放碑星级美食指南",
+      "chars": 7206
+    },
+    {
+      "url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang",
+      "index": 193,
+      "status": 200,
+      "final_url": "https://www.michelin.com/en/publications/products-and-services/michelin-guide-shanghai-jiangsu-zhejiang",
+      "content_type": "text/html",
+      "title": "MICHELIN Guide Shanghai, Jiangsu, Zhejiang first Edition | Michelin",
+      "chars": 28930
+    },
+    {
+      "url": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-taiwan",
+      "index": 194,
+      "status": 200,
+      "final_url": "https://www.michelin.com/en/publications/products-and-services/the-michelin-guide-taiwan",
+      "content_type": "text/html",
+      "title": "The MICHELIN Guide Taiwan 2026 | Michelin",
+      "chars": 14352
+    },
+    {
+      "url": "https://www.mmbund.com/wp-content/uploads/sites/4/2026/05/Mr-Mrs-Bund-Dinner-Menu-May-2026-S.pdf",
+      "index": 195,
+      "status": 200,
+      "final_url": "https://www.mmbund.com/wp-content/uploads/sites/4/2026/05/Mr-Mrs-Bund-Dinner-Menu-May-2026-S.pdf",
+      "content_type": "application/pdf",
+      "title": "PDF; document not parsed in link pass"
+    },
+    {
+      "url": "https://www.mmbund.com/wp-content/uploads/sites/4/2026/07/Mr-Mrs-Bund-Dinner-Menu-2026-S.pdf",
+      "index": 196,
+      "status": 200,
+      "final_url": "https://www.mmbund.com/wp-content/uploads/sites/4/2026/07/Mr-Mrs-Bund-Dinner-Menu-2026-S.pdf",
+      "content_type": "application/pdf",
+      "title": "PDF; document not parsed in link pass"
+    },
+    {
+      "url": "https://www.mountain-n-seahouse.com/zh-hant/dish_set/main_course/",
+      "index": 197,
+      "status": 200,
+      "final_url": "https://www.mountain-n-seahouse.com/zh-hant/dish_set/main_course/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "主菜 彙整 - 山海樓",
+      "chars": 5259
+    },
+    {
+      "url": "https://www.mplus.org.hk/en/exhibitions/",
+      "index": 198,
+      "status": 200,
+      "final_url": "https://www.mplus.org.hk/en/exhibitions/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Exhibitions | M+ Museum",
+      "chars": 3562
+    },
+    {
+      "url": "https://www.mplus.org.hk/en/plan-your-visit/",
+      "index": 199,
+      "status": 200,
+      "final_url": "https://www.mplus.org.hk/en/plan-your-visit/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Plan Your Visit | M+ Museum",
+      "chars": 12421
+    },
+    {
+      "url": "https://www.myguide-hongkong.com/restaurants/one-dim-sum",
+      "index": 200,
+      "status": 403,
+      "final_url": "https://www.myguide-hongkong.com/restaurants/one-dim-sum",
+      "content_type": "text/html",
+      "title": "ERROR: The request could not be satisfied",
+      "chars": 553
+    },
+    {
+      "url": "https://www.ncafroc.org.tw/event_detail.html?sid=6847",
+      "index": 201,
+      "status": 200,
+      "final_url": "https://www.ncafroc.org.tw/event_detail.html?sid=6847",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "展演櫥窗內頁 | 國家文化藝術基金會",
+      "chars": 1305
+    },
+    {
+      "url": "https://www.nia.gov.cn/n897453/c1751080/content.html",
+      "index": 202,
+      "status": 200,
+      "final_url": "https://www.nia.gov.cn/n897453/c1751080/content.html",
+      "content_type": "text/html",
+      "title": "关于实施支持扩大开放服务高质量发展10项创新举措的公告",
+      "chars": 4651
+    },
+    {
+      "url": "https://www.nickkembel.com/taipei-itinerary-3-days/",
+      "index": 203,
+      "status": 200,
+      "final_url": "https://www.nickkembel.com/taipei-itinerary-3-days/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "How to Spend 3 Awesome Days in Taipei: A Detailed Itinerary - Nickkembel Travels",
+      "chars": 24625
+    },
+    {
+      "url": "https://www.nmc.cn/publish/forecast/ACQ/shapingba.html",
+      "index": 204,
+      "status": 200,
+      "final_url": "https://www.nmc.cn/publish/forecast/ACQ/shapingba.html",
+      "content_type": "text/html",
+      "title": "沙坪坝-天气预报",
+      "chars": 4823
+    },
+    {
+      "url": "https://www.nmc.cn/publish/forecast/AJS/suzhou.html",
+      "index": 205,
+      "status": 200,
+      "final_url": "https://www.nmc.cn/publish/forecast/AJS/suzhou.html",
+      "content_type": "text/html",
+      "title": "苏州-天气预报",
+      "chars": 4919
+    },
+    {
+      "url": "https://www.nmc.cn/publish/forecast/ASC/chengdu.html",
+      "index": 206,
+      "status": 200,
+      "final_url": "https://www.nmc.cn/publish/forecast/ASC/chengdu.html",
+      "content_type": "text/html",
+      "title": "成都-天气预报",
+      "chars": 4787
+    },
+    {
+      "url": "https://www.nmc.cn/publish/forecast/ASH/shanghai.html",
+      "index": 207,
+      "status": 200,
+      "final_url": "https://www.nmc.cn/publish/forecast/ASH/shanghai.html",
+      "content_type": "text/html",
+      "title": "上海-天气预报",
+      "chars": 4853
+    },
+    {
+      "url": "https://www.npm.gov.tw/Articles.aspx?l=2&sno=02007001",
+      "index": 208,
+      "status": 200,
+      "final_url": "https://www.npm.gov.tw/Articles.aspx?l=2&sno=02007001",
+      "content_type": "text/html; charset=utf-8",
+      "title": "National Palace Museum Visit > Hours",
+      "chars": 2549
+    },
+    {
+      "url": "https://www.ntsec.gov.tw/article/detail.aspx?a=6174",
+      "index": 209,
+      "status": 200,
+      "final_url": "https://www.ntsec.gov.tw/article/detail.aspx?a=6174",
+      "content_type": "text/html; charset=utf-8",
+      "title": "《寂靜之間》科技藝術實驗展 - 國立臺灣科學教育館",
+      "chars": 1362
+    },
+    {
+      "url": "https://www.opentable.com.tw/r/embers-taipei-city",
+      "index": 210,
+      "error": "ReadTimeout: HTTPSConnectionPool(host='www.opentable.com.tw', port=443): Read timed out. (read timeout=18)"
+    },
+    {
+      "url": "https://www.opentix.life/event/2108107139636789249",
+      "index": 211,
+      "status": 200,
+      "final_url": "https://www.opentix.life/event/2108107139636789249",
+      "content_type": "text/html; charset=utf-8",
+      "title": "《太平洋的光 》德國與台灣四重奏：爵士×古典×東方 — OPENTIX兩廳院文化生活",
+      "chars": 3175
+    },
+    {
+      "url": "https://www.panda.org.cn/en/service/opentime/",
+      "index": 212,
+      "status": 200,
+      "final_url": "https://www.panda.org.cn/en/service/opentime/",
+      "content_type": "text/html",
+      "title": "Opening Hours",
+      "chars": 3898
+    },
+    {
+      "url": "https://www.peijielaohuoguo.com/store/",
+      "index": 213,
+      "error": "ConnectionError: ('Connection aborted.', ConnectionResetError(54, 'Connection reset by peer'))"
+    },
+    {
+      "url": "https://www.peninsula.com.cn/en/shanghai/wellness/luxury-hotel-spa",
+      "index": 214,
+      "status": 403,
+      "final_url": "https://www.peninsula.com.cn/en/shanghai/wellness/luxury-hotel-spa",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "chars": 58
+    },
+    {
+      "url": "https://www.portseattle.org/page/international-connections",
+      "index": 215,
+      "status": 200,
+      "final_url": "https://www.portseattle.org/page/international-connections",
+      "content_type": "text/html; charset=utf-8",
+      "title": "International Connections | Port of Seattle",
+      "chars": 6967
+    },
+    {
+      "url": "https://www.revelations-china.com/",
+      "index": 216,
+      "status": 200,
+      "final_url": "https://www.revelations-china.com/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Home - Revelations China",
+      "chars": 9553
+    },
+    {
+      "url": "https://www.ritzcarlton.com/en/hotels/sharz-the-portman-ritz-carlton-shanghai/overview/",
+      "index": 217,
+      "status": 200,
+      "final_url": "https://www.ritzcarlton.com/en/hotels/sharz-the-portman-ritz-carlton-shanghai/overview/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "The Portman Ritz-Carlton, Shanghai | Luxury Hotel on West Nanjing Road",
+      "chars": 10661
+    },
+    {
+      "url": "https://www.shairport.com/cxf/index.html",
+      "index": 218,
+      "status": 403,
+      "final_url": "https://www.shairport.com/cxf/index.html",
+      "content_type": "",
+      "title": "",
+      "chars": 92
+    },
+    {
+      "url": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-east",
+      "index": 219,
+      "status": 200,
+      "final_url": "https://www.shanghaimuseum.cn/mu/frontend/pg/en/service/visit-east",
+      "content_type": "text/html;charset=utf-8",
+      "title": "上海博物馆",
+      "chars": 11228
+    },
+    {
+      "url": "https://www.shbg.org/sites/zhiwuyuan/InfoContent.aspx?ctgId=69631fe2-9beb-4223-8ba4-03467aba9640&infoId=9f292a5f-49a8-4af7-86b8-33e1bb220a8e",
+      "index": 220,
+      "status": 200,
+      "final_url": "https://www.shbg.org/?site=zhiwuyuan",
+      "content_type": "text/html",
+      "title": "上海植物园",
+      "chars": 2447
+    },
+    {
+      "url": "https://www.shcn.gov.cn/english/col1140/20260527/1310012.html",
+      "index": 221,
+      "status": 200,
+      "final_url": "https://www.shcn.gov.cn/english/col1140/20260527/1310012.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "changning people govmment-Local News-Tianshan Tea City becomes new hotspot for international tourists",
+      "chars": 2769
+    },
+    {
+      "url": "https://www.shwzoo.com/index.do?id=4482&newsDetail=",
+      "index": 222,
+      "status": 200,
+      "final_url": "https://www.swap-shendi.com/index.do?id=4482&newsDetail=",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "",
+      "chars": 2656
+    },
+    {
+      "url": "https://www.sina.cn/news/detail/5361166222361066.html",
+      "index": 223,
+      "status": 200,
+      "final_url": "https://www.sina.cn/news/detail/5361166222361066.html",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "18 岁波兰三重奏登陆重庆，把古典爵士的优雅揉进夜色|KUBA DEREJ TRIO|坚果|古典爵士|重庆_新浪新闻",
+      "chars": 517
+    },
+    {
+      "url": "https://www.snhm.org.cn/cgfw/cgzx.htm",
+      "index": 224,
+      "status": 200,
+      "final_url": "https://www.snhm.org.cn/cgfw/cgzx.htm",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "参观咨询",
+      "chars": 2509
+    },
+    {
+      "url": "https://www.sohu.com/a/1052638279_122745326",
+      "index": 225,
+      "status": 200,
+      "final_url": "https://www.sohu.com/a/1052638279_122745326",
+      "content_type": "text/html;charset=UTF-8",
+      "title": "重庆的十大顶级高端餐厅，您吃过几个？赶紧收藏了！_菜品_食材_地址",
+      "chars": 3022
+    },
+    {
+      "url": "https://www.sstm.org.cn/",
+      "index": 226,
+      "status": 200,
+      "final_url": "https://www.sstm.org.cn/",
+      "content_type": "text/html",
+      "title": "上海科技馆官网",
+      "chars": 7
+    },
+    {
+      "url": "https://www.stackdpb.com/pages/play",
+      "index": 227,
+      "status": 200,
+      "final_url": "https://www.stackdpb.com/pages/play",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Play\n   – Stackd",
+      "chars": 1790
+    },
+    {
+      "url": "https://www.starlux-airlines.com/en-TW",
+      "index": 228,
+      "status": 200,
+      "final_url": "https://www.starlux-airlines.com/en-TW",
+      "content_type": "text/html; charset=utf-8",
+      "title": "STARLUX Airlines Official Website",
+      "chars": 1070
+    },
+    {
+      "url": "https://www.taipeieye.com/en/program/nowshowing/",
+      "index": 229,
+      "status": 200,
+      "final_url": "https://www.taipeieye.com/en/program/nowshowing/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "TaipeiEYE -",
+      "chars": 5041
+    },
+    {
+      "url": "https://www.taipeitourism.org/raohe-night-market/",
+      "index": 230,
+      "status": 200,
+      "final_url": "https://www.taipeitourism.org/raohe-night-market/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Raohe Night Market: Why Locals Call It the Best (2026) - Taipei Tourism Guide",
+      "chars": 15698
+    },
+    {
+      "url": "https://www.taiwanobsessed.com/addiction-aquatic-development-taipei/",
+      "index": 231,
+      "status": 200,
+      "final_url": "https://www.taiwanobsessed.com/addiction-aquatic-development-taipei/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Addiction Aquatic Development Taipei: What It Is & How to Visit - Taiwan Obsessed",
+      "chars": 18033
+    },
+    {
+      "url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=FC2EBF431109F4FC&sms=9A0025CA3D7482D6",
+      "index": 232,
+      "status": 200,
+      "final_url": "https://www.tapo.gov.taipei/News_Content.aspx?n=34C47A41C78AB210&s=FC2EBF431109F4FC&sms=9A0025CA3D7482D6",
+      "content_type": "text/html; charset=utf-8",
+      "title": "臺北市藝文推廣處-大稻埕戲苑活動-【臺北市115年歌仔戲觀摩匯演】～免費入座！每晚7點，好戲開鑼～",
+      "chars": 2307
+    },
+    {
+      "url": "https://www.the50.com/restaurants/best-in-asia/the-list/Meet-The-Bund.html",
+      "index": 233,
+      "status": 200,
+      "final_url": "https://www.the50.com/restaurants/best-in-asia/the-list/Meet-The-Bund.html",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Meet The Bund | Asia’s 50 Best Restaurants 2026 | Ranked No. 6",
+      "chars": 2233
+    },
+    {
+      "url": "https://www.the50.com/restaurants/best-in-asia/the-list/ling-long.html",
+      "index": 234,
+      "status": 200,
+      "final_url": "https://www.the50.com/restaurants/best-in-asia/the-list/ling-long.html",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Ling Long | Asia’s 50 Best Restaurants 2026 | Ranked No. 9",
+      "chars": 2135
+    },
+    {
+      "url": "https://www.theaftermath-hk.club/",
+      "index": 235,
+      "status": 200,
+      "final_url": "https://www.theaftermath-hk.club/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "The Aftermath | Live Music | Lower Ground Floor Sunny Building, 57-59 Wyndham Street, Central, Hong Kong",
+      "chars": 223
+    },
+    {
+      "url": "https://www.thechairmangroup.com/",
+      "index": 236,
+      "status": 503,
+      "final_url": "https://www.thechairmangroup.com/",
+      "content_type": "text/html",
+      "title": "暫時未能處理要求 | The Chairman",
+      "chars": 131
+    },
+    {
+      "url": "https://www.themirahotel.com/hong-kong/en/offer/wellness/miraspa-pool-day-pass/",
+      "index": 237,
+      "status": 200,
+      "final_url": "https://www.themirahotel.com/hong-kong/en/offer/wellness/miraspa-pool-day-pass/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Pool & Gym Day Pass | The Mira Hong Kong",
+      "chars": 2700
+    },
+    {
+      "url": "https://www.themirahotel.com/hong-kong/en/wellness/",
+      "index": 238,
+      "status": 200,
+      "final_url": "https://www.themirahotel.com/hong-kong/en/wellness/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Wellness at MiraSpa | Award Winning Hotel Spa | The Mira Hong Kong",
+      "chars": 7114
+    },
+    {
+      "url": "https://www.thepaper.cn/newsDetail_forward_34370883",
+      "index": 239,
+      "status": 200,
+      "final_url": "https://www.thepaper.cn/newsDetail_forward_34370883",
+      "content_type": "text/html; charset=utf-8",
+      "title": "上博新展预告丨环宇璀璨：大都会艺术博物馆珠宝珍藏展_澎湃号·湃客_澎湃新闻-The Paper",
+      "chars": 2701
+    },
+    {
+      "url": "https://www.thewanch.hk/",
+      "index": 240,
+      "status": 200,
+      "final_url": "https://www.thewanch.hk/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "The Wanch – Hong Kong's Live Music Club",
+      "chars": 2391
+    },
+    {
+      "url": "https://www.thewanch.hk/event/free-jam-x-the-wanch-open-mic-3/",
+      "index": 241,
+      "status": 200,
+      "final_url": "https://www.thewanch.hk/event/free-jam-x-the-wanch-open-mic-3/",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Free Jam x The Wanch Open Mic – The Wanch",
+      "chars": 243
+    },
+    {
+      "url": "https://www.theworlds50best.com/restaurants/best-in-asia/the-list/",
+      "index": 242,
+      "status": 403,
+      "final_url": "https://www.the50.com/restaurants/best-in-asia/the-list/",
+      "content_type": "text/html; charset=iso-8859-1",
+      "title": "403 Forbidden",
+      "chars": 74
+    },
+    {
+      "url": "https://www.theworlds50best.com/restaurants/best-in-asia/the-list/Fu-He-Hui.html",
+      "index": 243,
+      "status": 200,
+      "final_url": "https://www.the50.com/restaurants/best-in-asia/the-list/Fu-He-Hui.html",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Fu He Hui | Asia’s 50 Best Restaurants 2026 | Ranked No. 11",
+      "chars": 1789
+    },
+    {
+      "url": "https://www.theworlds50best.com/restaurants/best-in-asia/the-list/Logy.html",
+      "index": 244,
+      "status": 200,
+      "final_url": "https://www.the50.com/restaurants/best-in-asia/the-list/Logy.html",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Logy | Asia’s 50 Best Restaurants 2026 | Ranked No. 22",
+      "chars": 1814
+    },
+    {
+      "url": "https://www.theworlds50best.com/restaurants/best-in-asia/the-list/Neighborhood.html",
+      "index": 245,
+      "status": 200,
+      "final_url": "https://www.the50.com/restaurants/best-in-asia/the-list/Neighborhood.html",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Neighborhood | Asia’s 50 Best Restaurants 2026 | Ranked No. 24",
+      "chars": 1959
+    },
+    {
+      "url": "https://www.theworlds50best.com/restaurants/best-in-asia/the-list/The-Chairman.html",
+      "index": 246,
+      "status": 200,
+      "final_url": "https://www.the50.com/restaurants/best-in-asia/the-list/The-Chairman.html",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "The Chairman | Asia’s 50 Best Restaurants 2026 | Ranked No. 1",
+      "chars": 2646
+    },
+    {
+      "url": "https://www.timeanddate.com/sun/china/chongqing?month=11&year=2026",
+      "index": 247,
+      "status": 403,
+      "final_url": "https://www.timeanddate.com/sun/china/chongqing?month=11&year=2026",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment…",
+      "chars": 96
+    },
+    {
+      "url": "https://www.timeout.com/hong-kong/things-to-do/11-tourist-attractions-hongkongers-never-go-to",
+      "index": 248,
+      "status": 403,
+      "final_url": "https://www.timeout.hk/things-to-do/11-tourist-attractions-hongkongers-never-go-to",
+      "content_type": "text/html",
+      "title": "ERROR: The request could not be satisfied",
+      "chars": 553
+    },
+    {
+      "url": "https://www.travel.taipei/en/attraction",
+      "index": 249,
+      "status": 403,
+      "final_url": "https://www.travel.taipei/en/attraction",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "chars": 58
+    },
+    {
+      "url": "https://www.travel.taipei/en/news/details/37639",
+      "index": 250,
+      "status": 403,
+      "final_url": "https://www.travel.taipei/en/news/details/37639",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "chars": 58
+    },
+    {
+      "url": "https://www.travel.taipei/en/pictorial/article/61787",
+      "index": 251,
+      "status": 403,
+      "final_url": "https://www.travel.taipei/en/pictorial/article/61787",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "chars": 58
+    },
+    {
+      "url": "https://www.travel.taipei/zh-tw/attraction/details/1585",
+      "index": 252,
+      "status": 403,
+      "final_url": "https://www.travel.taipei/zh-tw/attraction/details/1585",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "chars": 58
+    },
+    {
+      "url": "https://www.travel.taipei/zh-tw/event-calendar/details/66400",
+      "index": 253,
+      "status": 403,
+      "final_url": "https://www.travel.taipei/zh-tw/event-calendar/details/66400",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "chars": 58
+    },
+    {
+      "url": "https://www.trip.com/restaurant/china/chongqing/detail/pipayuan-372387/",
+      "index": 254,
+      "status": 200,
+      "final_url": "https://www.trip.com/restaurant/china/chongqing/detail/pipayuan-372387/",
+      "content_type": "text/html; charset=utf-8",
+      "title": "PIPAYUAN (Nanping, Chongqing) - Restaurant reviews, menu & contact | Trip.com",
+      "chars": 2922
+    },
+    {
+      "url": "https://www.tso.gov.taipei/News.aspx?n=BC7BED8580080804&sms=8BB1830722073F63",
+      "index": 255,
+      "status": 200,
+      "final_url": "https://www.tso.gov.taipei/News.aspx?n=BC7BED8580080804&sms=8BB1830722073F63",
+      "content_type": "text/html; charset=utf-8",
+      "title": "臺北市立交響樂團-音樂會",
+      "chars": 1765
+    },
+    {
+      "url": "https://www.united.com/en/us/fsr/choose-flights?f=SFO&t=HKG&d=2026-11-12&tt=1&px=1%2C0%2C0%2C0%2C0%2C0%2C0%2C0",
+      "index": 256,
+      "error": "ReadTimeout: HTTPSConnectionPool(host='www.united.com', port=443): Read timed out. (read timeout=18)"
+    },
+    {
+      "url": "https://www.voykit.com/taipei/eat/ningxia-night-market",
+      "index": 257,
+      "status": 200,
+      "final_url": "https://www.voykit.com/taipei/eat/ningxia-night-market",
+      "content_type": "text/html; charset=utf-8",
+      "title": "Ningxia Night Market · Taipei · Voykit",
+      "chars": 14066
+    },
+    {
+      "url": "https://www.weather.com.cn/weather/101040100.shtml",
+      "index": 258,
+      "status": 200,
+      "final_url": "https://www.weather.com.cn/weather/101040100.shtml",
+      "content_type": "text/html",
+      "title": "重庆天气预报,重庆7天天气预报,重庆15天天气预报,重庆天气查询",
+      "chars": 4531
+    },
+    {
+      "url": "https://www.weather.com.cn/weather/101270101.shtml",
+      "index": 259,
+      "status": 200,
+      "final_url": "https://www.weather.com.cn/weather/101270101.shtml",
+      "content_type": "text/html",
+      "title": "成都天气预报,成都7天天气预报,成都15天天气预报,成都天气查询",
+      "chars": 4566
+    },
+    {
+      "url": "https://www.weather.com.cn/weather/101280601.shtml",
+      "index": 260,
+      "status": 200,
+      "final_url": "https://www.weather.com.cn/weather/101280601.shtml",
+      "content_type": "text/html",
+      "title": "深圳天气预报,深圳7天天气预报,深圳15天天气预报,深圳天气查询",
+      "chars": 4483
+    },
+    {
+      "url": "https://www.weplaymore.com/",
+      "index": 261,
+      "status": 502,
+      "final_url": "https://www.weplaymore.com/",
+      "content_type": "text/html",
+      "title": "502 Bad Gateway",
+      "chars": 44
+    },
+    {
+      "url": "https://www.westk.hk/en/event/cathay-westk-jazz-fest",
+      "index": 262,
+      "status": 403,
+      "final_url": "https://www.westk.hk/en/event/cathay-westk-jazz-fest",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "Just a moment...",
+      "chars": 58
+    },
+    {
+      "url": "https://www.ymcahk.org.hk/thesalisbury/en/accommodation/index.html",
+      "index": 263,
+      "status": 200,
+      "final_url": "https://www.ymcahk.org.hk/thesalisbury/en/accommodation/index.html",
+      "content_type": "text/html; charset=UTF-8",
+      "title": "The Salisbury - YMCA of Hong Kong - Accommodation",
+      "chars": 1496
+    },
+    {
+      "url": "https://www.ymsnp.gov.tw/ch/titlelist/news/4580",
+      "index": 264,
+      "status": 200,
+      "final_url": "https://www.ymsnp.gov.tw/ch/titlelist/news/4580",
+      "content_type": "text/html",
+      "title": "中華民國內政部國家公園署全球資訊網",
+      "chars": 271
+    },
+    {
+      "url": "https://www.yonder.fr/cityguides/hong-kong/restaurants/the-chairman",
+      "index": 265,
+      "status": 200,
+      "final_url": "https://www.yonder.fr/cityguides/hong-kong/restaurants/the-chairman",
+      "content_type": "text/html; charset=utf-8",
+      "title": "The Chairman Restaurant | YONDER",
+      "chars": 4275
+    },
+    {
+      "url": "https://www.youthsquare.hk/play/YSDroneFunFest2026",
+      "index": 266,
+      "status": 200,
+      "final_url": "https://www.youthsquare.hk/play/YSDroneFunFest2026",
+      "content_type": "text/html; charset=utf-8",
+      "title": "青年廣場 | 飛越 Teen 際：YS 無人機競飛嘉年華",
+      "chars": 2635
+    },
+    {
+      "url": "https://www.yugarden.com.cn/Page/WxyGarden/notice.html",
+      "index": 267,
+      "status": 504,
+      "final_url": "https://www.yugarden.com.cn/Page/WxyGarden/notice.html",
+      "content_type": "text/html",
+      "title": "",
+      "chars": 78
+    },
+    {
+      "url": "https://www.yugarden.com.cn/page/articleview/message.html",
+      "index": 268,
+      "status": 200,
+      "final_url": "https://www.yugarden.com.cn/page/articleview/message.html",
+      "content_type": "text/html",
+      "title": "豫园简体中文版",
+      "chars": 713
+    },
+    {
+      "url": "https://xb.caac.gov.cn/XB_XWZX/XB_DQYW/202507/t20250710_227953.html",
+      "index": 269,
+      "status": 200,
+      "final_url": "https://xb.caac.gov.cn/XB_XWZX/XB_DQYW/202507/t20250710_227953.html",
+      "content_type": "text/html",
+      "title": "西北局扎实推进充电宝乘机新规落地",
+      "chars": 1159
+    },
+    {
+      "url": "https://xshhotels.com/sgtq_shwjc",
+      "index": 270,
+      "status": 200,
+      "final_url": "https://xshhotels.com/sgtq_shwjc",
+      "content_type": "text/html; charset=utf-8",
+      "title": "象上汇酒店集团有限公司-水裹汤泉_上海五角场",
+      "chars": 22
+    },
+    {
+      "url": "https://yardbirdrestaurant.com/info",
+      "index": 271,
+      "status": 200,
+      "final_url": "https://yardbirdrestaurant.com/info",
+      "content_type": "text/html;charset=utf-8",
+      "title": "INFO — Yardbird",
+      "chars": 1442
+    },
+    {
+      "url": "https://ylj.suzhou.gov.cn/szsylj/kfsj/wztt.shtml",
+      "index": 272,
+      "status": 200,
+      "final_url": "https://ylj.suzhou.gov.cn/szsylj/kfsj/wztt.shtml",
+      "content_type": "text/html",
+      "title": "开放时间 -\r\n\t\t\t苏州市园林局",
+      "chars": 1824
+    },
+    {
+      "url": "https://you.ctrip.com/asks/158/18983796.html",
+      "index": 273,
+      "status": 200,
+      "final_url": "https://you.ctrip.com/asks/158/18983796.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "重庆湖广会馆需要预约吗？散客",
+      "chars": 1627
+    },
+    {
+      "url": "https://you.ctrip.com/food/158/145018920.html",
+      "index": 274,
+      "status": 200,
+      "final_url": "https://you.ctrip.com/food/158/145018920.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "",
+      "chars": 65028
+    },
+    {
+      "url": "https://you.ctrip.com/food/2/6983202.html",
+      "index": 275,
+      "status": 200,
+      "final_url": "https://you.ctrip.com/food/2/6983202.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "",
+      "chars": 183199
+    },
+    {
+      "url": "https://you.ctrip.com/sight/shanghai2/136463991.html",
+      "index": 276,
+      "status": 200,
+      "final_url": "https://you.ctrip.com/sight/shanghai2/136463991.html",
+      "content_type": "text/html; charset=utf-8",
+      "title": "дёҠжө·жјҫВ·SPACEжұӨжіүз”ҹжҙ»жёёзҺ©ж”»з•Ҙз®Җд»Ӣ,дёҠжө·жјҫВ·SPACEжұӨжіүз”ҹжҙ»й—ЁзҘЁ/ең°еқҖ/еӣҫзүҮ/ејҖж”ҫж—¶й—ҙ/з…§зүҮ/й—ЁзҘЁд»·ж јгҖҗжҗәзЁӢж”»з•ҘгҖ‘",
+      "chars": 189169
+    }
+  ]
+}
